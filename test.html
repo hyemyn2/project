@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+<!--    site1/test.html-->
+    
+<!--
+    
+    1. 가로, 세로 사이즈 설정
+    2. 백그라운드 이미지는 padding으로 이동시킬 수 없음
+        - background-position(위치이동),
+        - background-size로 (사이즈)
+        
+        
+-->
+        
+    <style>
+        .ic_bg{}
+        .ic_bg a{
+            background:url('img/icon.png') no-repeat;
+            font-size:0;
+            
+            width:15px;              /*font-size:0;이어서 아이콘의 크기만큼 높이 너비 둘다 주기*/
+            height:15px;
+            display: inline-block;
+        }
+        
+        
+        .ic_bg a:nth-of-type(1){}
+
+        .ic_bg a:nth-of-type(2){
+            background-position: -33px 0;
+        }
+        
+        .ic_bg a:nth-of-type(3){
+            background-position: -70px 0;
+        }
+        
+    </style>
+    
+    <div class="ic_bg">
+        <a href="#">facebook</a>
+        <a href="#">twitter</a>
+        <a href="#">instagram</a>
+    </div>
+    
+    
+    
+   
+    <style>
+        .shadow{
+            width:500px;
+            height:400px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+            /*x,y,blur,clolor*/
+        }
+        .shadow mark{
+            background:#f00;
+        }
+        
+    </style>
+      
+    <div class="shadow">
+        <mark>you can</mark> get here
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
