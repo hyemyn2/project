@@ -1,0 +1,25 @@
+
+html,body{
+    margin: 0;
+}
+
+
+.cover{
+
+    background:url(../img/cover.jpg);
+    height:100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cover a{
+    display: block;
+    background: white;
+    box-shadow: 10px 10px 20px black;
+    
+    width:300px;
+    padding:15px 10px 5px 10px;
+    text-align: center;
+}
+.cover a img{}

@@ -1,0 +1,200 @@
+@import url('common.css');
+
+
+html,
+body {
+    position: relative;
+}
+
+/*==============header===============*/
+
+header {
+}
+
+.head {
+    
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.head a {}
+
+.head a img {}
+
+
+/*nav*/
+nav {}
+
+nav a {
+    padding: 0 80px;
+}
+
+
+/*others*/
+
+.others {
+    display: flex;
+}
+
+.others .icon {}
+
+.others .icon a {
+    padding: 10px;
+}
+
+.others .icon a img {}
+
+.others .lang {
+    margin-left: 20px;
+
+    position: relative;
+
+}
+
+.others .lang:hover ul {
+    opacity: 1;
+}
+
+.others .lang > a {
+    padding: 2px 6px;
+
+    color: white;
+    background: black;
+}
+
+.others .lang ul {
+    padding: 0;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: .5s;
+
+    position: absolute;
+    left: 0;
+    top: 20px;
+
+
+}
+
+.others .lang ul li {}
+
+.others .lang ul li a {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.others .lang ul li:hover a {
+    color: white;
+}
+
+
+
+/*================main=================*/
+
+
+
+
+
+/*=============footer=================*/
+
+footer {
+    width: 100%;
+    background: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.foot {
+    width: 70%;
+    margin: auto;
+    padding: 40px 0;
+    color: #ece5df;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot a {
+    color: #ece5df;
+    font-size: 14px;
+
+}
+
+.foot > a img {}
+
+.foot .info {
+    position: relative;
+}
+
+.foot .info:after {
+    content: '';
+    display: inline-block;
+    background: #333;
+    width: 2px;
+    height: 50px;
+
+    position: absolute;
+    right:-40px ;top:5px;
+
+}
+
+.foot .info p {
+    margin: 0 0 20px 0;
+}
+
+.foot .info .service {}
+
+.foot .info .service a {
+    padding-right: 15px;
+}
+
+.foot .subscribe {
+    position:relative;
+}
+
+.foot .subscribe:after {
+    content: '';
+    display: inline-block;
+    background: #333;
+    width: 2px;
+    height: 50px;
+
+    position: absolute;
+    right:-50px ;top:5px;
+
+}
+
+.foot .subscribe p {
+    margin: 0;
+}
+
+.foot .subscribe p:nth-of-type(1) {
+    margin: 0 0 15px 0;
+}
+
+.foot .subscribe p:nth-of-type(2) {
+    display: inline-block;
+    width: 250px;
+    border-bottom: 1px solid #ece5df;
+}
+
+.foot .subscribe a {}
+
+.foot .subscribe a img {
+    width: 18px;
+}
+
+.foot .sns {}
+
+.foot .sns a {
+    padding: 0 10px;
+}
+
+.foot .sns a img {}
