@@ -124,3 +124,145 @@ tfoot td:nth-of-type(3) a {
     text-transform: capitalize;
 /*    font-family: 'Julius Sans One', sans-serif;*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------mobile : 768px----------------------------------------------------------*/
+
+@media(max-width:768px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------mobile : 480px----------------------------------------------------------*/
+
+@media(max-width:480px) {
+    
+    
+    .title {
+        width: 100%;
+    }
+
+    .title h1 {
+        width: 90%;
+        margin: 0px auto;
+        padding: 10px 0;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+main{
+        background: url('../img/cart/background.jpg') no-repeat;
+}
+
+
+.content {
+    width: 100%;
+    margin: auto;
+
+}
+
+.content > p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.content .cart {
+    width: 100%;
+    text-align: center;
+}
+
+.content {padding-bottom: 0px;}
+
+
+
+tbody tr td {
+    padding: 35px;
+}
+
+tbody tr td > input {}
+
+tbody tr td:nth-of-type(2) {}
+tbody tr td:nth-of-type(2) p {width: 20%; margin: auto;}
+tbody tr td:nth-of-type(2) p img {width: 100%;}
+
+tbody tr td:nth-of-type(3) {text-align: left;}
+tbody tr td:nth-of-type(3) h2{
+    margin:10px 0;
+    font-size: 1.3em;
+    font-family: 'Julius Sans One', sans-serif;
+}
+tbody tr td:nth-of-type(3) p{margin:0;}
+
+
+
+
+tfoot {
+
+    background: rgba(221,213,206,1);
+
+}
+
+tfoot td:nth-of-type(2){
+    text-align: left;
+}
+tfoot td:nth-of-type(2) p:nth-of-type(2){text-decoration-line: underline;}
+
+
+
+tfoot td:nth-of-type(3) a {
+    background: #000;
+    color:#fff;
+    
+    padding:5px 13px;
+    text-transform: capitalize;
+/*    font-family: 'Julius Sans One', sans-serif;*/
+}
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
