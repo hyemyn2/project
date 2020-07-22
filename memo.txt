@@ -1,6 +1,0 @@
-aside 추가할 것
-ex. top 기능
-
-brandstory
-: 너무 밋밋한 느낌
-ex. 뒤에 배경을 흐리게 사진 깔기
