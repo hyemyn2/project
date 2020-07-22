@@ -1,0 +1,772 @@
+/*
+ALL 앞에 before만 어떻게 없애는지? ->.category ul li:before:nth-of-type(1){display: none;}
+*** .detail, .back{display: none;} 상태
+*/
+
+
+
+
+
+@import url('common.css');
+
+main {
+    margin-bottom: 50px;
+
+    position: relative;
+
+
+}
+
+.title {
+    background: #c4b7ae;
+}
+
+.title h1 {
+    text-transform: uppercase;
+    width: 80%;
+    margin: 100px auto 0 auto;
+    font-size: 18px;
+    padding: 10px 0 10px 50px;
+}
+
+
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.filter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filter .all {
+
+    margin-bottom: 50px;
+
+    position: relative;
+}
+
+.filter .all:hover ul li {
+    opacity: 1;
+}
+
+.filter .all > a {}
+
+.filter .all > a img {
+    padding: 1px 5px;
+    transform: rotate(90deg);
+}
+
+.filter .all ul {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    padding: 0;
+    z-index: 3;
+
+}
+
+.filter .all ul li {
+
+    padding: 0 7px;
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
+}
+
+.filter .all ul li:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.filter .all ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 14px;
+
+}
+
+
+.category {
+    margin: 50px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*    overflow-x: auto;*/
+}
+
+.category ul {
+    padding: 0;
+    display: flex;
+}
+
+.category ul li {
+    position: relative;
+
+}
+
+
+
+
+.category ul li a {
+    font-size: 0.8em;
+
+
+    padding: 20px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bolder;
+}
+
+
+.products {
+
+    position: relative;
+
+
+}
+
+
+.products .click {
+    /*
+    display: flex;
+    justify-content: space-between;
+    
+*/
+
+}
+
+.products .click a {
+    position: absolute;
+}
+
+.products .click a:nth-of-type(1) {
+    left: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.products .click a:nth-of-type(2) {
+    right: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+}
+
+.products ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products ul li {
+    padding: 0 0 30px 0;
+    width: 20%;
+    height: 400px;
+    text-align: center;
+
+    transition: .5s;
+
+}
+
+.products ul li:hover {
+
+    /*    background:rgba(125,136,114,0.4);*/
+    background: rgb(171, 125, 125);
+
+}
+
+
+
+.products ul li > p {
+    width: 100%;
+    height: 300px;
+    margin: 0 0 50px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.products ul li p img {}
+
+
+.products ul li > div {
+    font-size: 14px;
+
+    position: relative;
+}
+
+
+.products ul li h2 {
+    font-size: 14px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.products ul li div p {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.detail {
+
+    width: 50%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+
+    position: relative;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 3;
+
+
+}
+
+.detail .img {
+    width: 45%;
+    background: #d3c2b5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail .img p {
+    margin-left: 10%;
+}
+
+.detail .img p img {}
+
+.detail .txt {
+
+    padding-left: 100px;
+    width: 55%;
+    background: #e4dcd6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.detail .txt h2 {
+    margin: 0;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.detail .txt p:nth-of-type(1) {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bolder;
+}
+
+.detail .txt p:nth-of-type(2) {
+    white-space: pre-line;
+
+    font-size: 12px;
+    line-height: 24px;
+
+
+}
+
+
+.detail .txt a {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 12px;
+
+    width: 80px;
+    text-align: center;
+    background: black;
+    padding: 5px 10px;
+
+    margin-top: 20px;
+}
+
+.detail .off {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+}
+
+.detail .off span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #000;
+}
+
+.detail .off span:nth-of-type(1) {
+    transform: rotate(45deg) translate(5%, 100%);
+}
+
+.detail .off span:nth-of-type(2) {
+    transform: rotate(-45deg);
+}
+
+.detail .arrow {}
+
+.detail .arrow img {
+    position: absolute;
+}
+
+.detail .arrow img:nth-of-type(1) {
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.detail .arrow img:nth-of-type(2) {
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.background {
+    width: 100%;
+    height: 800px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 7%;
+}
+
+
+.detail,
+.background {
+    display: none;
+}
+
+
+
+
+/*-----------------------------------------------tablet : 768px----------------------------------------------------------*/
+
+@media(max-width:768px) {
+
+    .title {
+        width: 100%;
+    }
+
+    .title h1 {
+        width: 90%;
+        margin: 0px auto;
+        padding: 10px 0;
+    }
+
+
+
+
+
+
+
+    .content {
+        width: 100%;
+    }
+
+
+    .filter {
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .filter .all {
+
+        margin-bottom: 0px;
+
+        position: relative;
+    }
+
+
+
+    .filter .all > a {
+        font-size: 12px;
+    }
+
+
+
+    .filter .all ul {
+        position: absolute;
+        left: 15px;
+        top: 20px;
+        padding: 0;
+        z-index: 3;
+    }
+
+    .filter .all ul li a {
+        font-size: 12px;
+    }
+
+
+
+
+
+
+    .category {
+
+        width: 100%;
+        margin: 0;
+        overflow-x: auto;
+    }
+
+    .category ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .category ul li {
+        border: 1px solid #ece5df;
+        margin: 0 1px;
+        padding: 0;
+    }
+
+
+
+    .category ul li > a {
+        display: inline-block;
+        width: auto;
+        padding: 10px;
+        text-align: center;
+
+        background: rgba(0, 0, 0, 0.1);
+        color: #fff;
+
+    }
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+/*    product*/
+    
+    
+    
+    
+    
+   
+.products {
+
+    position: static;
+    width: 90%;
+    margin: 10px auto 120px auto;
+
+}
+
+
+.products .click {
+    position: static;
+display: none;
+}
+
+
+.products ul {
+    padding: 0;
+    margin: 0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.products ul li {
+    padding: 20px 0;
+    width: 48%;
+    height: auto;
+    text-align: center;
+    
+    background: rgba(0,0,0,0.1);
+    margin: 10px 0;
+
+
+}
+
+
+
+.products ul li > p {
+    width: 100%;
+    height: 300px;
+    margin: 0 0 50px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.products ul li p img {}
+
+
+.products ul li > div {
+    font-size: 14px;
+
+    position: relative;
+}
+
+
+.products ul li h2 {
+    font-size: 14px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.products ul li div p {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bolder;
+}
+
+
+
+
+
+/*-----------------------------------------------mobile : 480px----------------------------------------------------------*/
+
+@media(max-width:480px) {
+
+    .title {
+        width: 100%;
+    }
+
+    .title h1 {
+        width: 90%;
+        margin: 0px auto;
+        padding: 10px 0;
+    }
+
+
+
+
+
+
+
+    .content {
+        width: 100%;
+    }
+
+
+    .filter {
+        width: 90%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .filter .all {
+
+        margin-bottom: 0px;
+
+        position: relative;
+    }
+
+
+
+    .filter .all > a {
+        font-size: 12px;
+    }
+
+
+
+    .filter .all ul {
+        position: absolute;
+        left: 15px;
+        top: 20px;
+        padding: 0;
+        z-index: 3;
+    }
+
+    .filter .all ul li a {
+        font-size: 12px;
+    }
+
+
+
+
+
+
+    .category {
+
+        width: 100%;
+        margin: 0;
+        overflow-x: auto;
+    }
+
+    .category ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .category ul li {
+        border: 1px solid #ece5df;
+        margin: 0 1px;
+        padding: 0;
+    }
+
+
+
+    .category ul li > a {
+        display: inline-block;
+        width: auto;
+        padding: 10px;
+        text-align: center;
+
+        background: rgba(0, 0, 0, 0.1);
+        color: #fff;
+
+    }
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+/*    product*/
+    
+    
+    
+    
+    
+   
+.products {
+
+    position: static;
+    width: 90%;
+    margin: 10px auto 120px auto;
+
+}
+
+
+.products .click {
+    position: static;
+display: none;
+}
+
+
+.products ul {
+    padding: 0;
+    margin: 0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.products ul li {
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    
+    background: rgba(0,0,0,0.1);
+    margin: 10px 0;
+
+
+}
+
+
+
+.products ul li > p {
+    width: 100%;
+    height: 300px;
+    margin: 0 0 50px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.products ul li p img {}
+
+
+.products ul li > div {
+    font-size: 14px;
+
+    position: relative;
+}
+
+
+.products ul li h2 {
+    font-size: 14px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.products ul li div p {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bolder;
+}
+
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+}

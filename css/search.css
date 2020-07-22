@@ -1,0 +1,236 @@
+@import url('common.css');
+
+/*display:none;*/
+.keyword:nth-of-type(2),
+.keyword:nth-of-type(3),
+.keyword:nth-of-type(4),
+.keyword:nth-of-type(5),
+.keyword:nth-of-type(6),
+.keyword:nth-of-type(7){
+    display: none;
+}
+
+
+
+
+
+
+
+
+main {
+    margin-bottom: 50px;
+
+    position: relative;
+
+
+}
+
+.title {
+    background: #c4b7ae;
+}
+
+.title h1 {
+    text-transform: uppercase;
+    width: 80%;
+    margin: 100px auto 0 auto;
+    font-size: 18px;
+    padding: 10px 0 10px 50px;
+}
+
+
+
+
+
+
+
+
+
+
+.content {
+
+    width: 50%;
+    height: 400px;
+    margin: auto;
+
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(10%);
+    z-index: 3;
+
+    background: #e4dcd6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .con {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.content .con .search {
+    width: 65%;
+    height: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.search .find {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background: #ece5df;
+}
+
+.search .find > p {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0 0 10px 0;
+}
+
+.search .find .in {}
+
+.search .find .in select {
+    padding: 3px 5px;
+}
+
+.search .find .in option {}
+
+.search .find .in input {
+    width: 45%;
+    padding: 3px 5px;
+
+}
+
+.search .keyword {
+    width: 100%;
+    background: #ece5df;
+    padding: 5px 0;
+
+
+}
+
+.search .keyword h2 {
+    padding-left: 30px;
+    font-size: 1em;
+
+}
+
+.search .keyword h2 p{
+    display: inline-block;
+    margin: 0;
+}
+
+.search .keyword ul {}
+
+.search .keyword ul li {
+    padding: 5px 0;
+    font-size: 12px;
+}
+
+.content .con .ad {
+
+    width: 30%;
+    background: url('../img/search/ad.jpg') no-repeat;
+    background-size: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+
+.ad > h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    white-space: pre-line;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    padding: 10px 30px;
+}
+
+.ad .txt {}
+
+.ad .txt p {
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    margin: 20px 0;
+    font-size: 14px;
+
+}
+
+.ad .txt a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 0;
+
+    text-transform: capitalize;
+
+
+}
+
+
+
+.content .off {
+    position: absolute;
+    right: 1%;
+    top: 5%;
+
+}
+
+.content .off span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: #000;
+}
+
+.content .off span:nth-of-type(1) {
+    transform: rotate(45deg) translate(5%, 100%);
+}
+
+.content .off span:nth-of-type(2) {
+    transform: rotate(-45deg);
+}
+
+.back {
+    width: 100%;
+    height: 800px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 3%;
+}
+
+.back p {}
+
+
+
+
+
+
+
+
+
