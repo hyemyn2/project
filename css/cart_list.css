@@ -7,7 +7,6 @@ main {
 
 
 }
-
 .title {
     background: #c4b7ae;
 }
@@ -30,7 +29,9 @@ main {
 .content .choice {
     margin: 100px 0 150px 0;
 }
-
+.content .rcmmd {
+    margin: 100px 0 150px 0;
+}
 
 
 

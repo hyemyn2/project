@@ -3,8 +3,6 @@
 @import url('common.css');
 
 
-main {}
-
 .title {
     background: #c4b7ae;
 
@@ -34,8 +32,9 @@ main {}
 
 /*content*/
 
-main{
-        background: url('../img/cart/background.jpg') no-repeat;
+main {
+    background: url('../img/cart/background.jpg') no-repeat;
+    height: auto;
 }
 
 
@@ -58,23 +57,22 @@ main{
 
 }
 
-.content {padding-bottom: 280px;}
 
 .content thead {
-    background: rgba(221,213,206,1);
+    background: rgba(221, 213, 206, 1);
 
 
 
 }
 
 .content tbody {
-    background: rgba(236,229,223,0.5);
+    background: rgba(236, 229, 223, 0.5);
 
 }
 
 
 .cart {
-    box-shadow: 4px 4px 10px 2px rgba(0,0,0,0.3);
+    box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
 .content .cart tr th {
@@ -89,40 +87,59 @@ tbody tr td {
 tbody tr td > input {}
 
 tbody tr td:nth-of-type(2) {}
-tbody tr td:nth-of-type(2) p {width: 20%; margin: auto;}
-tbody tr td:nth-of-type(2) p img {width: 100%;}
 
-tbody tr td:nth-of-type(3) {text-align: left;}
-tbody tr td:nth-of-type(3) h2{
-    margin:10px 0;
+tbody tr td:nth-of-type(2) p {
+    width: 20%;
+    margin: auto;
+}
+
+tbody tr td:nth-of-type(2) p img {
+    width: 100%;
+}
+
+tbody tr td:nth-of-type(3) {
+    text-align: left;
+}
+
+tbody tr td:nth-of-type(3) h2 {
+    margin: 10px 0;
     font-size: 1.3em;
     font-family: 'Julius Sans One', sans-serif;
 }
-tbody tr td:nth-of-type(3) p{margin:0;}
 
+tbody tr td:nth-of-type(3) p {
+    margin: 0;
+}
 
+tbody tr td:nth-of-type(5) input {
+    width: 30px;
+    text-align: center;
+}
 
 
 tfoot {
 
-    background: rgba(221,213,206,1);
+    background: rgba(221, 213, 206, 1);
 
 }
 
-tfoot td:nth-of-type(2){
+tfoot td:nth-of-type(2) {
     text-align: left;
 }
-tfoot td:nth-of-type(2) p:nth-of-type(2){text-decoration-line: underline;}
+
+tfoot td:nth-of-type(2) p:nth-of-type(2) {
+    text-decoration-line: underline;
+}
 
 
 
 tfoot td:nth-of-type(3) a {
     background: #000;
-    color:#fff;
-    
-    padding:5px 13px;
+    color: #fff;
+
+    padding: 5px 13px;
     text-transform: capitalize;
-/*    font-family: 'Julius Sans One', sans-serif;*/
+    /*    font-family: 'Julius Sans One', sans-serif;*/
 }
 
 
@@ -159,8 +176,8 @@ tfoot td:nth-of-type(3) a {
 /*-----------------------------------------------mobile : 480px----------------------------------------------------------*/
 
 @media(max-width:480px) {
-    
-    
+
+
     .title {
         width: 100%;
     }
@@ -171,98 +188,259 @@ tfoot td:nth-of-type(3) a {
         padding: 10px 0;
     }
 
+    .content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content > p {
+        font-size: 18px;
+        margin: 30px 10px;
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-main{
-        background: url('../img/cart/background.jpg') no-repeat;
+    .content .cart tr th {
+    padding: 10px 0;
 }
 
+    thead {
+        padding: 0;
+    }
 
-.content {
-    width: 100%;
-    margin: auto;
+    thead tr {
+        display: flex;
+    }
 
-}
+    thead tr th:nth-of-type(1) {
+        display: block;
+        width: 10%;
+        padding: 0;
+    }
 
-.content > p {
-    font-size: 24px;
-    margin: 20px 0;
-}
+    thead tr th:nth-of-type(2) {
+        display: block;
+        width: 90%;
+    }
 
-.content .cart {
-    width: 100%;
-    text-align: center;
-}
-
-.content {padding-bottom: 0px;}
-
-
-
-tbody tr td {
-    padding: 35px;
-}
-
-tbody tr td > input {}
-
-tbody tr td:nth-of-type(2) {}
-tbody tr td:nth-of-type(2) p {width: 20%; margin: auto;}
-tbody tr td:nth-of-type(2) p img {width: 100%;}
-
-tbody tr td:nth-of-type(3) {text-align: left;}
-tbody tr td:nth-of-type(3) h2{
-    margin:10px 0;
-    font-size: 1.3em;
-    font-family: 'Julius Sans One', sans-serif;
-}
-tbody tr td:nth-of-type(3) p{margin:0;}
+    thead tr th:nth-of-type(3),
+    thead tr th:nth-of-type(4),
+    thead tr th:nth-of-type(5) {
+        display: none;
+    }
 
 
 
 
-tfoot {
+    /*
+    .content .cart {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+            box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.3);
 
-    background: rgba(221,213,206,1);
+    }
+    .content .cart tr th {
+        padding: 10px;
+    }
 
-}
-
-tfoot td:nth-of-type(2){
-    text-align: left;
-}
-tfoot td:nth-of-type(2) p:nth-of-type(2){text-decoration-line: underline;}
+    tbody tr td {
+        padding: 35px;
+    }
 
 
+*/
 
-tfoot td:nth-of-type(3) a {
-    background: #000;
-    color:#fff;
+
+    .cart {
+        display: block;
+    }
     
-    padding:5px 13px;
-    text-transform: capitalize;
-/*    font-family: 'Julius Sans One', sans-serif;*/
-}
+    tbody{width: 100%;}
+    tbody tr td{padding: 10px 0;}
+
+    tbody tr {
+        display: flex;
+        height: 300px;
+    }
+
+    tbody tr td:nth-of-type(1) {
+        display: block;
+        width: 10%;
+        height: 100%;
+
+    }
+
+    tbody tr td:nth-of-type(2) {
+        display: block;
+        width: 40%;
+        height: 100%;
+        padding: 0;
+    }
+
+    tbody tr td:nth-of-type(2) img {
+        width: 100%;
+    }
+
+    tbody tr td:nth-of-type(3) {
+        padding: 0;
+    }
+
+    tbody tr td:nth-of-type(3) .txt h2 {
+        font-size: 14px;
+    }
+
+    tbody tr td:nth-of-type(3) .txt p {
+        display: none;
+    }
+
+    tbody tr td:nth-of-type(4) {
+        font-size: 14px;
+    }
+
+    thead tr th:nth-of-type(6),
+    tbody tr td:nth-of-type(6) {
+        display: none;
+    }
+
+
+    tfoot {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background: transparent;
+
+        padding: 30px 30px;
+    }
+
+    tfoot tr {}
 
 
 
+    tfoot tr td:nth-of-type(1) {
+        width: 100%;
+        display: block;
+        text-align: left;
+
+    }
+
+    tfoot tr td:nth-of-type(2) {
+        width: 100%;
+        display: block;
+    }
+
+    tfoot tr td:nth-of-type(3) {
+        display: block;
+        text-align: right;
+    }
+
+
+    tfoot tr td:nth-of-type(3) a {
+        display: inline-block;
+        padding: 5px 13px;
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  
+
+
+    /*
+    tfoot tr td:nth-of-type(1) {
+        display: inline-block;
+        width: 30%;
+
+        float: left;
+    }
+
+    tfoot tr td:nth-of-type(2) {
+        width: 65%;
+        float: right;
+    }
+
+    tfoot tr td:nth-of-type(2):after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    tfoot tr td:nth-of-type(3) {
+        position: absolute;
+        right:3%;
+        bottom: 8%;
+    }
+*/
+
+
+    /*
+
+
+
+    tbody tr td > input {}
+
+    tbody tr td:nth-of-type(2) {}
+
+    tbody tr td:nth-of-type(2) p {
+        width: 20%;
+        margin: auto;
+    }
+
+    tbody tr td:nth-of-type(2) p img {
+        width: 100%;
+    }
+
+    tbody tr td:nth-of-type(3) {
+        text-align: left;
+    }
+
+    tbody tr td:nth-of-type(3) h2 {
+        margin: 10px 0;
+        font-size: 1.3em;
+        font-family: 'Julius Sans One', sans-serif;
+    }
+
+    tbody tr td:nth-of-type(3) p {
+        margin: 0;
+    }
+
+    tbody tr td:nth-of-type(5) input {
+        width: 30px;
+        text-align: center;
+    }
+
+
+    tfoot {
+
+        background: rgba(221, 213, 206, 1);
+
+    }
+
+    tfoot td:nth-of-type(2) {
+        text-align: left;
+    }
+
+    tfoot td:nth-of-type(2) p:nth-of-type(2) {
+        text-decoration-line: underline;
+    }
+
+
+
+    tfoot td:nth-of-type(3) a {
+        background: #000;
+        color: #fff;
+
+        padding: 5px 13px;
+        text-transform: capitalize;
+            font-family: 'Julius Sans One', sans-serif;
+    }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

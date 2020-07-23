@@ -70,7 +70,7 @@ body {
 
 body {
     margin-top: 120px;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
 }
 
 /*==============header===============*/
@@ -173,7 +173,7 @@ nav div {
 }
 
 nav div > a {
-    padding: 0 50px;
+    padding: 0 60px;
     display: inline-block;
     width: 100px;
 }
@@ -184,7 +184,7 @@ nav div > a:hover {
 
 nav div > ul {
     padding: 0;
-    margin: 50px auto;
+    margin: 40px auto;
     position: absolute;
     left: 50px;
     top: -20px;
@@ -194,7 +194,7 @@ nav div > ul {
 
 nav div > ul li {
 
-    padding-left: 20px;
+    padding-left: 40px;
     position: relative;
 }
 
@@ -217,7 +217,7 @@ nav > div > ul li:before {
     border-radius: 100%;
 
     position: absolute;
-    left: -0%;
+    left: 15%;
     top: 40%;
 
     opacity: 0;
@@ -480,11 +480,6 @@ footer {
         box-sizing: border-box;
     }
 
-}
-
-/*====================================480===============================================*/
-
-@media (max-width:480px) {
 
 
 
@@ -796,6 +791,422 @@ header:hover nav div ul {
         float: left;
         width: 10%;
 
+
+    }
+
+
+    .foot > a img {
+        width: 100%;
+    }
+
+    .foot .info {
+        position: relative;
+        display: inline-block;
+
+        float: right;
+        width: 80%;
+    }
+    
+    .foot .info:after {
+    display: none;
+}
+
+
+    .foot .info p {
+        margin: 0 0 5px 0;
+    }
+
+    .foot .info .service {}
+
+    .foot .info .service a {
+        padding-right: 5px;
+        font-size: 8px;
+        text-transform: capitalize;
+
+    }
+
+    .foot .info .service:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .foot .subscribe {
+        position: relative;
+        margin: 60px 0 30px 0;
+    }
+
+
+    .foot .subscribe:after {
+        display: none;
+    }
+
+    .foot .subscribe p {
+        margin: 0;
+    }
+
+    .foot .subscribe p {
+        margin: 0 0 5px 0;
+    }
+
+    .foot .subscribe input {
+
+        width: 200px;
+        padding: 0;
+        border: none;
+        border-bottom: 1px solid #ece5df;
+
+        background: black;
+        color: #ece5df;
+    }
+
+    .foot .subscribe a {
+        display: inline-block;
+        width: 15px;
+
+
+    }
+    
+
+    .foot .subscribe a img {
+        width: 100%;
+    }
+
+    .foot .sns {
+        margin: 10px 0;
+
+    }
+
+    .foot .sns a {
+        padding: 0px;
+        display: inline-block;
+        width: 20px;
+    }
+
+    .foot .sns a img {
+        width: 100%;
+    }
+
+}
+
+/*====================================480===============================================*/
+
+@media (max-width:480px) {
+
+
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+
+
+
+
+    html {}
+
+    body {
+        margin-top: 105px;
+        margin-bottom: 0px;
+
+    }
+
+    header {
+        /*        position: fixed;*/
+
+        width: 100%;
+        background: #ece5df;
+
+        position: relative;
+        z-index: 100;
+
+        position: fixed;
+        left: 0;
+        top: 0;
+
+        box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    /*
+header:hover nav div ul {
+    opacity: 1;
+
+    left: 50px;
+    top: 10px;
+
+}
+*/
+
+    header .whole {
+
+        position: relative;
+        z-index: 1000;
+
+
+    }
+
+
+    .whole {
+        width: 100%;
+        background: #ece5df;
+        position: relative;
+        z-index: 1300;
+
+    }
+
+
+
+    .head {
+
+
+        background: #ece5df;
+        width: 90%;
+        margin: auto;
+        padding: 40px 0 20px 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        position: static;
+
+
+
+    }
+
+
+    .head .burger {
+        display: block;
+        width: 8px;
+    }
+
+    .head .burger span {
+        display: block;
+        margin-bottom: 5px;
+        width: 20px;
+        height: 2px;
+        background: #000;
+    }
+
+
+
+    .head > a {
+        display: inline-block;
+        width: 80px;
+
+        position: absolute;
+        z-index: 150;
+
+        margin-left: 40px;
+    }
+
+    .head > a img {
+        width: 100%;
+        ;
+    }
+
+
+
+
+
+
+
+
+
+    /*nav*/
+    nav {
+
+        opacity: 0;
+        width: 100%;
+        height: 100vh;
+        background: #ece5df;
+        display: block;
+
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        top: 0;
+
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav div {
+        position: static;
+
+        margin: 30px 50px;
+
+        display: inline-block;
+    }
+
+    nav div:nth-of-type(1) {
+        margin-top: 100px;
+    }
+
+    nav div > a {
+        padding: 20px 0;
+        display: block;
+        width: 100%;
+    }
+
+    nav div > a:hover {
+        color: rgb(196, 167, 144);
+    }
+
+    nav div > ul {
+        padding: 0;
+        margin: auto;
+        position: static;
+
+        opacity: 1;
+
+    }
+
+    nav div > ul li {
+
+        padding-left: 20px;
+        position: relative;
+    }
+
+
+
+    nav > div > ul li a {
+        font-size: 14px;
+
+        display: inline-block;
+        padding: 5px 0;
+    }
+
+    nav > div > ul li:before {
+        content: '';
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        background: rgb(196, 167, 144);
+        border-radius: 100%;
+
+        position: absolute;
+        left: -0%;
+        top: 40%;
+
+        opacity: 0;
+        transition: .5s;
+    }
+
+
+
+    /*others*/
+
+    .others {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .others .icon {
+        display: flex;
+    }
+
+    .others .icon a {
+        padding: 10px;
+    }
+
+    .others .icon a img {}
+
+    .others .lang {
+        margin-left: 20px;
+
+        position: relative;
+
+    }
+
+    .others .lang:hover ul {
+        opacity: 1;
+    }
+
+    .others .lang > a {
+        padding: 2px 6px;
+
+        color: white;
+        background: black;
+    }
+
+    .others .lang ul {
+        padding: 0;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: .5s;
+
+        position: absolute;
+        left: 0;
+        top: 20px;
+
+
+    }
+
+    .others .lang ul li {}
+
+    .others .lang ul li a {
+        display: inline-block;
+        padding: 5px 10px;
+    }
+
+    .others .lang ul li:hover a {
+        color: rgb(196, 167, 144);
+
+    }
+
+
+
+
+
+
+
+
+    /*hide*/
+    header:hover .head_2 {
+        opacity: 0;
+    }
+
+
+    /*    footer*/
+
+    footer {
+        position: static;
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .foot {
+        width: 70%;
+        margin: 0 auto;
+        padding: 15px 0;
+        color: #ece5df;
+
+        display: block;
+
+    }
+
+    .foot a {
+        color: #ece5df;
+        font-size: 14px;
+
+    }
+
+    .foot > a {
+        display: inline-block;
+        width: 30px;
+        float: left;
+        width: 10%;
+
     }
 
 
@@ -883,7 +1294,7 @@ header:hover nav div ul {
     }
 
     .foot .sns a {
-        padding: 0 10px;
+        padding: 0px;
         display: inline-block;
         width: 20px;
     }
