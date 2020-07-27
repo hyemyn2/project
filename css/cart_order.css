@@ -156,12 +156,151 @@ tfoot td:nth-of-type(3) a {
 
 
 
-/*-----------------------------------------------mobile : 768px----------------------------------------------------------*/
-
-@media(max-width:768px) {}
 
 
+/*-----------------------------------------------tablet : 768px----------------------------------------------------------*/
 
+@media(max-width:768px) {
+
+
+    .title {
+        width: 100%;
+    }
+
+    .title h1 {
+        width: 90%;
+        margin: 0px auto;
+        padding: 10px 0;
+    }
+
+    .content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content > p {
+        font-size: 18px;
+        margin: 30px 10px;
+    }
+
+
+
+    .cart{display: block;}
+    tbody tr td {
+        width: 20%;
+        padding: 35px 0;
+    }
+
+    thead tr td:nth-of-type(1),
+    tbody tr td:nth-of-type(1) {
+        width: 5%;
+    }
+
+    thead tr td:nth-of-type(4),
+    thead tr td:nth-of-type(5),
+    thead tr td:nth-of-type(6),
+    tbody tr td:nth-of-type(4),
+    tbody tr td:nth-of-type(5),
+    tbody tr td:nth-of-type(6) {
+        width: 10%;
+    }
+
+    tbody tr td:nth-of-type(2) {}
+
+    tbody tr td:nth-of-type(2) p {
+        width: auto;
+        height: 200px;
+        margin: auto;
+    }
+
+    tbody tr td:nth-of-type(2) p img {
+        width: auto;
+        height: 100%;
+    }
+
+    tbody tr td:nth-of-type(3) {
+        text-align: left;
+    }
+
+    tbody tr td:nth-of-type(3) h2 {
+        margin: 10px 0;
+        font-size: 1.3em;
+        font-family: 'Julius Sans One', sans-serif;
+    }
+
+    tbody tr td:nth-of-type(3) p {
+        margin: 0;
+    }
+
+    tbody tr td:nth-of-type(5) input {
+        width: 30px;
+        text-align: center;
+    }
+
+
+    tfoot {
+        display: block;
+        width: 100%;
+        background: rgba(221, 213, 206, 1);
+
+    }
+    
+    tfoot tr{display: block;width: 100%;}
+    tfoot tr td{}
+    
+    tfoot tr td:nth-of-type(1){width: 20%;margin: 0;}
+    tfoot tr td:nth-of-type(2){width: 75%;margin: 0;}
+    tfoot tr td:nth-of-type(3){width: 10%;margin: 0;}
+
+
+    tfoot tr td:nth-of-type(2) {
+        text-align: left;
+        
+    }
+
+    tfoot tr td:nth-of-type(2) p:nth-of-type(2) {
+        text-decoration-line: underline;
+    }
+
+
+
+    tfoot tr td:nth-of-type(3) a {
+        display: inline-block;
+        margin: auto 25px;
+        
+        background: #000;
+        color: #fff;
+
+        padding: 5px 13px;
+        text-transform: capitalize;
+            font-family: 'Julius Sans One', sans-serif;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 
@@ -197,10 +336,10 @@ tfoot td:nth-of-type(3) a {
         font-size: 18px;
         margin: 30px 10px;
     }
-    
+
     .content .cart tr th {
-    padding: 10px 0;
-}
+        padding: 10px 0;
+    }
 
     thead {
         padding: 0;
@@ -253,31 +392,66 @@ tfoot td:nth-of-type(3) a {
     .cart {
         display: block;
     }
-    
-    tbody{width: 100%;}
-    tbody tr td{padding: 10px 0;}
 
-    tbody tr {
-        display: flex;
-        height: 300px;
+    thead {
+        display: block;
     }
 
-    tbody tr td:nth-of-type(1) {
-        display: block;
-        width: 10%;
-        height: 100%;
+    thead tr th:nth-of-type(1) {
+        width: 20%;
+        margin: 0;
+    }
+    
+    thead tr th:nth-of-type(2){
+        width: 80%;
+    }
 
+    tbody {
+        display: block;
+        width: 100%;
+    }
+
+    tbody tr {
+        display: block;
+        height: auto;
+        
+        padding: 30px 0;
+    }
+
+    tbody tr td {
+        padding: 10px 0;
+    }
+
+
+
+
+    tbody tr td:nth-of-type(1) {
+        width: 20%;
+        height: auto;
+        float: left;
+        margin: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     tbody tr td:nth-of-type(2) {
-        display: block;
-        width: 40%;
-        height: 100%;
-        padding: 0;
+        float: left;
+        width: 30%;
     }
 
-    tbody tr td:nth-of-type(2) img {
-        width: 100%;
+    tbody tr td:nth-of-type(2) p {
+        width: auto;
+        height: 120px;
+        margin: 0 auto;
+    }
+
+    tbody tr td:nth-of-type(2) p img {
+        width: auto;
+        height: 100%;
+
+
     }
 
     tbody tr td:nth-of-type(3) {
@@ -296,9 +470,38 @@ tfoot td:nth-of-type(3) a {
         font-size: 14px;
     }
 
+    tbody tr td:nth-of-type(3),
+    tbody tr td:nth-of-type(4),
+    tbody tr td:nth-of-type(5) {
+        float: left;
+        display: block;
+        width: 50%;
+        text-align: left;
+        
+        padding-top: 3%;
+        padding-left: 5%;
+        margin: auto;
+    }
+    
+/*
+    tbody tr td:nth-of-type(5):before{
+        content: 'count : ';
+        display: inline-block;
+        
+        
+    }
+*/
+
+
     thead tr th:nth-of-type(6),
     tbody tr td:nth-of-type(6) {
         display: none;
+    }
+
+    tbody tr:after {
+        content: '';
+        display: block;
+        clear: both;
     }
 
 
@@ -330,112 +533,16 @@ tfoot td:nth-of-type(3) a {
     tfoot tr td:nth-of-type(3) {
         display: block;
         text-align: right;
+    width: 100%;
     }
 
 
     tfoot tr td:nth-of-type(3) a {
         display: inline-block;
         padding: 5px 13px;
-    }
-    
-  
-
-
-    /*
-    tfoot tr td:nth-of-type(1) {
-        display: inline-block;
-        width: 30%;
-
-        float: left;
-    }
-
-    tfoot tr td:nth-of-type(2) {
-        width: 65%;
-        float: right;
-    }
-
-    tfoot tr td:nth-of-type(2):after {
-        content: '';
-        display: block;
-        clear: both;
-    }
-
-    tfoot tr td:nth-of-type(3) {
-        position: absolute;
-        right:3%;
-        bottom: 8%;
-    }
-*/
-
-
-    /*
-
-
-
-    tbody tr td > input {}
-
-    tbody tr td:nth-of-type(2) {}
-
-    tbody tr td:nth-of-type(2) p {
-        width: 20%;
-        margin: auto;
-    }
-
-    tbody tr td:nth-of-type(2) p img {
-        width: 100%;
-    }
-
-    tbody tr td:nth-of-type(3) {
-        text-align: left;
-    }
-
-    tbody tr td:nth-of-type(3) h2 {
-        margin: 10px 0;
-        font-size: 1.3em;
-        font-family: 'Julius Sans One', sans-serif;
-    }
-
-    tbody tr td:nth-of-type(3) p {
         margin: 0;
-    }
-
-    tbody tr td:nth-of-type(5) input {
-        width: 30px;
-        text-align: center;
-    }
-
-
-    tfoot {
-
-        background: rgba(221, 213, 206, 1);
 
     }
-
-    tfoot td:nth-of-type(2) {
-        text-align: left;
-    }
-
-    tfoot td:nth-of-type(2) p:nth-of-type(2) {
-        text-decoration-line: underline;
-    }
-
-
-
-    tfoot td:nth-of-type(3) a {
-        background: #000;
-        color: #fff;
-
-        padding: 5px 13px;
-        text-transform: capitalize;
-            font-family: 'Julius Sans One', sans-serif;
-    }
-*/
-
-
-
-
-
-
 
 
 
@@ -444,3 +551,4 @@ tfoot td:nth-of-type(3) a {
 
 
 }
+
