@@ -137,9 +137,10 @@ header .whole {
 
 }
 
-.head .burger {
+.head .burg {
     display: none;
 }
+
 
 .head > a {
     display: inline-block;
@@ -340,7 +341,9 @@ header:hover .head_2 {
 
 
 
-
+.head .burg {
+    display: none;
+}
 
 
 
@@ -474,21 +477,13 @@ footer {
     }
 
 
-
-
-    * {
-        box-sizing: border-box;
-    }
-
-
-
-
+    
 
 
     html {}
 
     body {
-        margin-top: 105px;
+        margin-top: 140px;
         margin-bottom: 0px;
 
     }
@@ -544,7 +539,7 @@ header:hover nav div ul {
         background: #ece5df;
         width: 90%;
         margin: auto;
-        padding: 40px 0 20px 0;
+        padding: 40px 0 5px 0;
 
         display: flex;
         justify-content: space-between;
@@ -558,12 +553,12 @@ header:hover nav div ul {
     }
 
 
-    .head .burger {
+    .head .burg {
         display: block;
-        width: 8px;
+        width: 10%;
     }
 
-    .head .burger span {
+    .head .burg .burger span {
         display: block;
         margin-bottom: 5px;
         width: 20px;
@@ -571,41 +566,14 @@ header:hover nav div ul {
         background: #000;
     }
 
-
-
-    .head > a {
-        display: inline-block;
-        width: 80px;
-
-        position: absolute;
-        z-index: 150;
-
-        margin-left: 40px;
-    }
-
-    .head > a img {
-        width: 100%;
-        ;
-    }
-
-
-
-
-
-
-
-
-
-    /*nav*/
-    nav {
-
-        opacity: 0;
-        width: 100%;
+    .burg .menu {
+        opacity: 1;
+        width: 40%;
         height: 100vh;
         background: #ece5df;
         display: block;
 
-        position: absolute;
+        position: fixed;
         z-index: 100;
         left: 0;
         top: 0;
@@ -614,31 +582,37 @@ header:hover nav div ul {
 
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        
+        box-shadow: 1px 1px 10px 10px rgba(0,0,0,0.4);
     }
 
-    nav div {
+
+
+    .burg .menu div {
         position: static;
 
-        margin: 30px 50px;
+        margin: 40px 50px;
 
         display: inline-block;
     }
 
-    nav div:nth-of-type(1) {
-        margin-top: 100px;
+    .burg .menu div:nth-of-type(1) {
+        margin-top: 0px;
     }
 
-    nav div > a {
+    .burg .menu div > a {
         padding: 20px 0;
         display: block;
         width: 100%;
     }
 
-    nav div > a:hover {
+    .burg .menu div > a:hover {
         color: rgb(196, 167, 144);
     }
 
-    nav div > ul {
+    .burg .menu div > ul {
         padding: 0;
         margin: auto;
         position: static;
@@ -647,7 +621,7 @@ header:hover nav div ul {
 
     }
 
-    nav div > ul li {
+    .burg .menu div > ul li {
 
         padding-left: 20px;
         position: relative;
@@ -655,36 +629,103 @@ header:hover nav div ul {
 
 
 
-    nav > div > ul li a {
+    .burg .menu > div > ul li a {
         font-size: 14px;
 
         display: inline-block;
         padding: 5px 0;
     }
 
-    nav > div > ul li:before {
-        content: '';
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        background: rgb(196, 167, 144);
-        border-radius: 100%;
 
-        position: absolute;
-        left: -0%;
-        top: 40%;
 
-        opacity: 0;
-        transition: .5s;
+    .burg .menu {
+        display: none;
     }
+
+
+    /*logo*/
+
+    .head > a {
+        width: 15%;
+        margin-left: 0px;
+    }
+
+    .head > a img {
+        width: 100%;
+    }
+
+
+
+
+    /*nav*/
+
+
+
+    .head {
+        position: relative;
+    }
+
+    .head nav {
+        position: fixed;
+        left: 0;
+        top: 40px;
+        margin: 0;
+        transform: translateY(100%);
+
+        width: 100%;
+        background: #ece5df;
+        height: 50px;
+        
+
+        
+    }
+
+    .head nav div {
+        padding: 0;
+        margin: 0;
+
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .head nav div:nth-of-type(1) {
+        width: 30%;
+    }
+
+    .head nav div:nth-of-type(2) {
+        width: 40%;
+    }
+
+    .head nav div:nth-of-type(3) {
+        width: 40%;
+    }
+
+    .head nav div a {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .head nav div ul {
+        display: none;
+    }
+
+
+
+
 
 
 
     /*others*/
 
     .others {
+        width: 75%;
+
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
     }
 
@@ -755,7 +796,6 @@ header:hover nav div ul {
 
 
 
-
     /*=============footer=================*/
 
     footer {
@@ -801,7 +841,7 @@ header:hover nav div ul {
         float: left;
         width: 40%;
         height: 100%;
-                
+
         padding: 0 20px;
 
 
@@ -881,7 +921,7 @@ header:hover nav div ul {
 
     .foot .sns {
         float: left;
-        
+
         margin: 10px auto;
         width: 45%;
         height: 50%;
@@ -965,14 +1005,7 @@ header:hover nav div ul {
 
     header .whole {
 
-        position: relative;
-        z-index: 1000;
 
-
-    }
-
-
-    .whole {
         width: 100%;
         background: #ece5df;
         position: relative;
@@ -988,26 +1021,28 @@ header:hover nav div ul {
         background: #ece5df;
         width: 90%;
         margin: auto;
-        padding: 40px 0 20px 0;
+        padding: 20px 0 5px 0;
 
         display: flex;
         justify-content: space-between;
         align-items: center;
 
 
-        position: static;
+        position: relative;
 
 
 
     }
 
 
-    .head .burger {
+
+
+    .head .burg {
         display: block;
-        width: 8px;
+        width: 10%;
     }
 
-    .head .burger span {
+    .head .burg .burger span {
         display: block;
         margin-bottom: 5px;
         width: 20px;
@@ -1015,41 +1050,14 @@ header:hover nav div ul {
         background: #000;
     }
 
-
-
-    .head > a {
-        display: inline-block;
-        width: 80px;
-
-        position: absolute;
-        z-index: 150;
-
-        margin-left: 40px;
-    }
-
-    .head > a img {
-        width: 100%;
-        ;
-    }
-
-
-
-
-
-
-
-
-
-    /*nav*/
-    nav {
-
-        opacity: 0;
+    .burg .menu {
+        opacity: 1;
         width: 100%;
         height: 100vh;
         background: #ece5df;
         display: block;
 
-        position: absolute;
+        position: fixed;
         z-index: 100;
         left: 0;
         top: 0;
@@ -1058,31 +1066,38 @@ header:hover nav div ul {
 
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        
+        box-shadow: none;
     }
 
-    nav div {
+
+
+    .burg .menu div {
         position: static;
 
-        margin: 30px 50px;
+        margin: 10px 50px;
+        width: 100%;
 
         display: inline-block;
     }
 
-    nav div:nth-of-type(1) {
-        margin-top: 100px;
+    .burg .menu div:nth-of-type(1) {
+        margin-top: 0px;
     }
 
-    nav div > a {
+    .burg .menu div > a {
         padding: 20px 0;
         display: block;
         width: 100%;
     }
 
-    nav div > a:hover {
+    .burg .menu div > a:hover {
         color: rgb(196, 167, 144);
     }
 
-    nav div > ul {
+    .burg .menu div > ul {
         padding: 0;
         margin: auto;
         position: static;
@@ -1091,7 +1106,7 @@ header:hover nav div ul {
 
     }
 
-    nav div > ul li {
+    .burg .menu div > ul li {
 
         padding-left: 20px;
         position: relative;
@@ -1099,36 +1114,95 @@ header:hover nav div ul {
 
 
 
-    nav > div > ul li a {
+    .burg .menu > div > ul li a {
         font-size: 14px;
 
         display: inline-block;
         padding: 5px 0;
     }
 
-    nav > div > ul li:before {
-        content: '';
-        display: inline-block;
-        width: 8px;
-        height: 8px;
-        background: rgb(196, 167, 144);
-        border-radius: 100%;
 
-        position: absolute;
-        left: -0%;
-        top: 40%;
 
-        opacity: 0;
-        transition: .5s;
+    .burg .menu {
+        display: none;
     }
+
+
+    /*logo*/
+
+    .head > a {
+        width: 25%;
+        margin-left: 10px;
+    }
+
+    .head > a img {
+        width: 100%;
+    }
+
+
+
+    /*nav*/
+
+
+
+    .head nav {
+        position: fixed;
+        left: 0;
+        top: 35px;
+        margin: 0;
+        transform: translateY(100%);
+
+        width: 100%;
+        background: #ece5df;
+        height: 35px;
+    }
+
+    .head nav div {
+        padding: 0;
+        margin: 0;
+
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .head nav div:nth-of-type(1) {
+        width: 30%;
+    }
+
+    .head nav div:nth-of-type(2) {
+        width: 40%;
+    }
+
+    .head nav div:nth-of-type(3) {
+        width: 40%;
+    }
+
+    .head nav div a {
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .head nav div ul {
+        display: none;
+    }
+
+
+
+
 
 
 
     /*others*/
 
     .others {
+        width: 65%;
+
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
     }
 
@@ -1213,7 +1287,7 @@ header:hover nav div ul {
     .foot {
         width: 70%;
         height: auto;
-        margin: 0 auto;
+        margin: 20px auto;
         padding: 15px 0;
         color: #ece5df;
 
@@ -1248,7 +1322,7 @@ header:hover nav div ul {
 
         float: right;
         width: 80%;
-        
+
         padding: 0;
 
 
@@ -1283,7 +1357,7 @@ header:hover nav div ul {
         position: static;
         /*        float: none;*/
         width: 100%;
-        margin: 0;
+        margin-top: 20px;
 
     }
 
@@ -1320,6 +1394,7 @@ header:hover nav div ul {
     }
 
     .foot .sns {
+        width: 100%;
         height: auto;
         display: inline-block;
         margin: 10px 0;

@@ -353,6 +353,8 @@ main {
     .content {
         width: 90%;
         margin: 60px auto 20px auto;
+        
+
     }
 
 
@@ -370,6 +372,7 @@ main {
         top: 4%;
     }
 
+    .box > div > a{font-size: 16px;}
 
 
 
