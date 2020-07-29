@@ -6,7 +6,7 @@ body {
 
 .cover {
 
-    background: url(../img/index/cover.jpg);
+    background: url(../img/index/cover_desktop2.jpg) no-repeat;
     height: 100vh;
 
     display: flex;
@@ -59,3 +59,33 @@ body {
 }
 
 .cover a img {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px) {
+    .cover {
+    background: url(../img/index/cover_mobile.jpg) no-repeat;
+        background-size: 100% auto;
+}
+}
+@media(max-width:480px) {
+        .cover {
+    background: url(../img/index/cover_mobile.jpg) no-repeat;
+                    background-size: auto 100%;
+
+}
+
+}
