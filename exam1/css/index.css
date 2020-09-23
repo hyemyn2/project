@@ -69,16 +69,16 @@ header .head nav .burger.active span:nth-of-type(3){transform:rotate(-45deg) tra
 main{}
 main article{display: flex;margin-left: 350px; padding-top: 30px;}
 
-main article .pic{animation: move 1s;}
+main article .pic{animation: movePic 1s;}
 main article .pic img{width: 100%;}
 /* 애니메이션 */
-@keyframes move{
+@keyframes movePic{
     0%{transform:translateX(350px); opacity: 0;}
     50%{transform:translateX(-70px);}
     100%{transform:translateX(0px);}
 }
 
-main article .txt{position:relative; color: #fff; white-space: pre-line; padding-left: 80px;}
+main article .txt{animation: moveTxt 1s; opacity:0.5; position:relative; color: #fff; white-space: pre-line; padding-left: 80px;}
 main article .txt h1{text-shadow: 7px 7px 5px rgba(220,100,0,0.6); font-size: 70px; font-weight: 600; line-height: 80px; margin: 0;padding-top: 90px;}
 main article .txt p{font-size: 18px; font-weight: 200; margin: 20px 0 40px 0}
 main article .txt a{font-size: 16px; font-weight:400; color: #fff !important;}
@@ -93,7 +93,13 @@ main article .txt .pop.active{
     display: flex;
 }
 
-main article .txt .pop .btn{position: absolute; right:480px; top:150px;}
+@keyframes moveTxt{
+    0%{transform:translateX(-350px); opacity: 0;}
+    50%{transform:translateX(70px);}
+    100%{transform:translateX(0px);}
+}
+
+main article .txt .pop .btn{padding: 10px; position: absolute; right:480px; top:150px;}
 main article .txt .pop .btn span{display:block; width: 25px; height: 3px; background: #fff;}
 main article .txt .pop .btn span:nth-of-type(1){transform:rotate(45deg) translateY(20px);}
 main article .txt .pop .btn span:nth-of-type(2){transform:rotate(-45deg) translateY(-20px);}

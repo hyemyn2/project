@@ -19,6 +19,12 @@ function popOff(){
     $('.pop').removeClass('active');
 }
 
+setTimeout(function(){
+    $('.txt').css({"opacity":"1"});
+    $('.txt').css({"transition":"0.5s"});
+},500);
+
+
 }
 
 window.addEventListener('DOMContentLoaded',init);
