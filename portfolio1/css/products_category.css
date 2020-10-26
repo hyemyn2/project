@@ -4,7 +4,13 @@
 
 @import url('common.css');
 
+
+
 main {}
+
+
+footer{position: fixed !important;}
+
 
 .title {
     background: #c4b7ae;
@@ -32,10 +38,10 @@ main {}
 
 .cate .all {
     text-align: right;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
-.cate .all a {}
+.cate .all a {border-bottom: 2px solid #000;}
 
 .cate .all img {
     padding: 1px 5px;
@@ -52,6 +58,8 @@ main {}
 .cate ul li {
     width: 12%;
     position: relative;
+    transition: .5s;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4) ;
 
     /*    margin-bottom: 35px;*/
 
@@ -68,8 +76,11 @@ main {}
 
 .cate ul li > a > img {
     width: 100%;
+    opacity: .2;
+    transition: .5s;
 
 }
+
 
 
 .cate ul li > .txt {
@@ -83,26 +94,33 @@ main {}
 
     text-transform: capitalize;
     text-align: center;
+    font-weight: 200;
 
-    background: rgba(150, 126, 114, 1);
-    color: white;
-
+    background:rgba(150,126,114,0.7);
+    /* background:linear-gradient(to bottom, #967e72 100%,transparent),fixed; */
+    color: #fff;
     transition: .5s;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    text-align: 
+    
 }
 
 .cate ul li > .txt p {
-    margin: 0;
 }
 
-
+.cate ul li:hover{
+    transform: scale(1.05);
+}
 .cate ul li:hover .txt {
     opacity: 0;
+}
+
+.cate ul li:hover a img {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 

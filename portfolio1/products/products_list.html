@@ -4,147 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/products_list.css">
+    <link rel="stylesheet" href="/css/products_list.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/products_list.js"></script>
 
 
 </head>
 
 <body>
 
-
-    <header>
-
-        <div class="whole">
-
-
-
-            <div class="head">
-
-
-                <div class="burg">
-                    <div class="burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <div class="menu">
-                        <div>
-                            <a href="../about/about_brandstory.html">about</a>
-                            <ul>
-                                <li><a href="../about/about_brandstory.html">brand story</a></li>
-                                <li><a href="../about/about_philosophy.html">philosophy</a></li>
-                            </ul>
-                        </div>
-
-                        <div>
-                            <a href="../products/products_category.html">products</a>
-                            <ul>
-                                <li><a href="../products/products_list.html">skin</a></li>
-                                <li><a href="../products/products_list.html">hair</a></li>
-                                <li><a href="../products/products_list.html">hand & body</a></li>
-                                <li><a href="../products/products_list.html">perfume</a></li>
-                                <li><a href="../products/products_list.html">home</a></li>
-                                <li><a href="../products/products_list.html">travel kit</a></li>
-                                <li><a href="../products/products_list.html">gift set</a></li>
-                            </ul>
-                        </div>
-                        <div>
-
-                            <a href="../gallery/gallery_magazines.html">gallery</a>
-                            <ul>
-                                <li><a href="../gallery/gallery_magazines.html">magazines</a></li>
-                                <li><a href="../gallery/gallery_news.html">news</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-                <a href="../main.html">
-                    <img src="../img/header/logo.png" alt="">
-                </a>
-
-
-
-                <nav>
-
-                    <div>
-                        <a href="../about/about_brandstory.html">about</a>
-                        <ul>
-                            <li><a href="../about/about_brandstory.html">brand story</a></li>
-                            <li><a href="../about/about_philosophy.html">philosophy</a></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <a href="../products/products_category.html">products</a>
-                        <ul>
-                            <li><a href="../products/products_list.html">skin</a></li>
-                            <li><a href="../products/products_list.html">hair</a></li>
-                            <li><a href="../products/products_list.html">hand & body</a></li>
-                            <li><a href="../products/products_list.html">perfume</a></li>
-                            <li><a href="../products/products_list.html">home</a></li>
-                            <li><a href="../products/products_list.html">travel kit</a></li>
-                            <li><a href="../products/products_list.html">gift set</a></li>
-                        </ul>
-                    </div>
-                    <div>
-
-                        <a href="../gallery/gallery_magazines.html">gallery</a>
-                        <ul>
-                            <li><a href="../gallery/gallery_magazines.html">magazines</a></li>
-                            <li><a href="../gallery/gallery_news.html">news</a></li>
-                        </ul>
-                    </div>
-                </nav>
-
-
-                <div class="others">
-                    <div class="icon">
-                        <a href="../login/login.html">
-                            <img src="../img/header/icon_acc.png" alt="">
-                        </a>
-                        <a href="../search/search.html">
-                            <img src="../img/header/icon_search.png" alt="">
-                        </a>
-                        <a href="../cart/cart_list.html">
-                            <img src="../img/header/icon_cart.png" alt="">
-                        </a>
-                    </div>
-
-                    <!--
-                    <div class="lang">
-                        <a>en</a>
-                        <ul>
-                            <li><a href="main.html">en</a></li>
-                            <li><a href="main.html">kr</a></li>
-                        </ul>
-                    </div>
--->
-                </div>
-
-            </div>
-        </div>
-
-        <div class="head_2">
-            <div class="hide">
-                <p><img src="../img/header/submenu.jpg" alt=""></p>
-            </div>
-        </div>
-
-    </header>
-
-
-
-
-
-
-
-
+<header></header>
     <main>
 
 
@@ -156,148 +28,100 @@
 
         <div class="content">
             <div class="category">
-                <ul>
-                    <li><a href="#">ALL</a></li>
-                    <li><a href="#">Cleanser</a></li>
-                    <li><a href="#">Treatment & Mask</a></li>
-                    <li><a href="#">Toner</a></li>
-                    <li><a href="#">Hydrater</a></li>
-                    <li><a href="#">Lip & Eye</a></li>
-                    <li><a href="#">Shaving</a></li>
-                    <li><a href="#">Sun Care</a></li>
-                    <li><a href="#">KIT</a></li>
-                    <li><a href="#">Skin-Care Gift</a></li>
+                <span>Get the best products of Aesop</span>
+                <ul class="cate">
+                    <li><a data-type="p000" href="#" class="active">ALL</a></li>
+                    <li><a data-type="p001" href="#">Skin</a></li>
+                    <li><a data-type="p002" href="#">Hair</a></li>
+                    <li><a data-type="p003" href="#">Hand & Body</a></li>
+                    <li><a data-type="p004" href="#">Perfume</a></li>
+                    <li><a data-type="p005" href="#">Home</a></li>
+                    <li><a data-type="p006" href="#">Travel Kit</a></li>
+                    <li><a data-type="p007" href="#">Gift Set</a></li>
                 </ul>
+
+                <div class="filter">
+
+                    <div class="all">
+                        <div class="bx">
+                            <h2>all</h2>
+                            <img src="../img/products/click_arrow.png" alt="">
+                        </div>
+    
+                        <ul>
+                            <li class="active"><a src="all">all</a></li>
+                            <li><a src="price">price</a></li>
+                            <li><a src="popularity">popularity</a></li>
+                        </ul>
+    
+    
+                    </div>
+    
+    
+                </div>
 
 
             </div>
 
-            <div class="filter">
 
-                <div class="all">
 
-                    <a href="#">
-                        high price
-                        <img src="../img/products/click_arrow.png" alt="">
-                    </a>
+            <article>
+                <div class="products">
                     <ul>
-                        <li><a href="#">high price</a></li>
-                        <li><a href="#">low price</a></li>
-                        <li><a href="#">popularity</a></li>
-
+                        <!-- <li>
+                            <p>
+                                <img src="../img/products/item_1.png" alt="">
+                            </p>
+                            
+                            <div>
+                                <h2>Eye Remover</h2>
+                                <p>60ml | $30</p>
+                            </div>
+                        </li> -->
                     </ul>
-
-
                 </div>
-
-
-            </div>
-
-            <div class="products">
-
+                
                 <div class="click">
-                    <a href="#"><img src="../img/products/arrow_left.png" alt=""></a>
-                    <a href="#"><img src="../img/products/arrow_right.png" alt=""></a>
+                    <a href="#" class="arrow_prev"><img src="../img/products/arrow_left2.png" alt=""></a>
+                    <a href="#" class="arrow_next"><img src="../img/products/arrow_right2.png" alt=""></a>
                 </div>
-
-
-                <ul>
-                    <li>
-                        <p>
-                            <img src="../img/products/item_1.png" alt="">
-                        </p>
-
-                        <div>
-                            <h2>Eye Remover</h2>
-                            <p>60ml | $30</p>
-                        </div>
-
-
-
-
-                    </li>
-
-                    <li>
-                        <p>
-                            <img src="../img/products/item_2.png" alt="">
-                        </p>
-
-                        <div>
-                            <h2>Parsely Sead Facial Cleasing Oil</h2>
-                            <p>200ml | $63</p>
-                        </div>
-
-                    </li>
-
-                    <li>
-                        <p>
-                            <img src="../img/products/item_3.png" alt="">
-                        </p>
-                        <div>
-                            <h2>Damascan Rose Facial Treatment</h2>
-                            <p>25ml | $95</p>
-                        </div>
-
-
-                    </li>
-
-                    <li>
-                        <p>
-                            <img src="../img/products/item_4.png" alt="">
-                        </p>
-                        <div>
-                            <h2>Sublime Replenishing Night Masque</h2>
-                            <p>60ml | $150</p>
-                        </div>
-                    </li>
-
-                </ul>
-
-
-
-            </div>
-
-
-
+            </article>
+                
 
         </div>
 
-        <div class="background">
+        <div class="popup">
+            <article>
+                <div class="item_detail">
+                        <!-- <div class="img">
+                            <p>
+                                <img src="../img/products/item_1.png" alt="">
+                            </p>
+                        </div>
 
-            <div class="detail">
+                        <div class="txt">
 
+                            <div class="box">
+                                <h2>Eye Remover</h2>
+                                <p>60ml | $30</p>
+                                <p> 눈 주위의 민감한 피부를 달래고 진정시켜주는 마트리카리아가
+                                    포함된 부드러운 오일 제형의 아이 메이크업 리무브</p>
 
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div> -->
 
-                <div class="img">
-                    <p>
-                        <img src="../img/products/item_1.png" alt="">
-                    </p>
                 </div>
-
-                <div class="txt">
-
-                    <div class="box">
-                        <h2>Eye Remover</h2>
-                        <p>60ml | $30</p>
-                        <p> 눈 주위의 민감한 피부를 달래고 진정시켜주는 마트리카리아가
-                            포함된 부드러운 오일 제형의 아이 메이크업 리무브</p>
-
-                        <a href="#">Add to Cart</a>
-                    </div>
-                </div>
-
-                <div class="off">
+                <div class="item_off">
                     <span></span>
                     <span></span>
                 </div>
 
                 <div class="arrow">
-                    <img src="../img/products/arrow_left.png" alt="">
-                    <img src="../img/products/arrow_right.png" alt="">
+                    <p class="arrow_prev"><img src="../img/products/arrow_left2.png" alt=""></p>
+                    <p class="arrow_next"><img src="../img/products/arrow_right2.png" alt=""></p>
                 </div>
-
-            </div>
-
+            </article>
 
 
         </div>
@@ -306,46 +130,7 @@
 
     </main>
 
-
-
-
-    <footer>
-
-        <div class="foot">
-
-            <a href="#">
-                <img src="../img/footer/footer_logo.png" alt="">
-            </a>
-
-            <div class="info">
-                <p>1800-1987 | aesop@aesop.com</p>
-
-                <div class="service">
-                    <a href="#">help</a>
-                    <a href="#">faq</a>
-                    <a href="#">policies</a>
-                    <a href="#">delivery & refunds</a>
-                </div>
-            </div>
-
-            <div class="subscribe">
-                <p>Subscribe to get Aesop’s Latest News !</p>
-
-                <input type="email" placeholder="Enter your email address !">
-                <a href="#"><img src="../img/footer/footer_check.png" alt=""></a>
-            </div>
-
-            <div class="sns">
-                <a href="#"><img src="../img/footer/sns_insta.png" alt=""></a>
-                <a href="#"><img src="../img/footer/sns_youtube.png" alt=""></a>
-                <a href="#"><img src="../img/footer/sns_twitter.png" alt=""></a>
-                <a href="#"><img src="../img/footer/sns_google.png" alt=""></a>
-            </div>
-
-        </div>
-
-    </footer>
-
+<footer></footer>
 
 
 

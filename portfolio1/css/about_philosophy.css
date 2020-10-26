@@ -18,22 +18,35 @@ main {}
 
 .ban {
     width: 80%;
+    height: 38vh;
     margin: auto;
 
     position: relative;
+    
 
 }
 
-.ban .b_product {
+.ban .b_img{
+    position: absolute;
+    left: 0;top: 0;
+    opacity: 0;
+    height: 100%;
+    /* transition: .5s; */
+}
+.ban .b_img img{height: 100%;}
+
+
+.ban .b_img.active {
+    opacity: 1;
     width: 100%;
     position: relative;
 }
 
-.ban .b_product img {
+.ban .b_img.active img {
     width: 100%;
 }
 
-.ban .b_product > div {
+.ban .b_img.active > div {
     color: white;
     white-space: pre-line;
 
@@ -43,7 +56,11 @@ main {}
 
 }
 
-.ban .b_product > div h2 {
+.ban .b_img:nth-of-type(2).active > div {
+    color: #000;
+}
+
+.ban .b_img.active > div h2 {
 
     margin: 0;
 
@@ -52,14 +69,12 @@ main {}
     line-height: 2em;
 }
 
-.ban .b_product > div p {
+.ban .b_img.active > div p {
     margin: 0;
 
 }
 
-.ban .b_design {
-    display: none;
-}
+
 
 
 
@@ -71,7 +86,7 @@ main {}
 
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -1%;
     transform: translateX(-50%) translateY(-10%);
 
 
@@ -85,6 +100,13 @@ main {}
 
     padding: 10px 150px;
     background: rgba(236, 229, 223, 0.5);
+    transition: .5s;
+
+}
+
+
+.ban .btn > a:hover {
+    background: rgba(236, 229, 223, 0.7);
 }
 
 .ban .btn a.active {
@@ -92,12 +114,25 @@ main {}
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*content*/
 
 
 .content {
     width: 80%;
-
+    height: 1300px;
 
     margin: auto;
 
@@ -223,27 +258,27 @@ main {}
         width: 100%;
     }
 
-    .ban .b_product {
+    .ban .b_img.active {
         width: 100%;
         position: relative;
     }
 
-    .ban .b_product img {
+    .ban .b_img.active img {
         width: 100%;
     }
 
-    .ban .b_product > div {
+    .ban .b_img.active > div {
         position: absolute;
         left: 4%;
         top: 0%;
     }
 
-    .ban .b_product > div h2 {
+    .ban .b_img.active > div h2 {
         font-size: 18px;
         line-height: 36px;
     }
 
-    .ban .b_product > div p {
+    .ban .b_img.active > div p {
         font-size: 14px;
 
     }
@@ -392,27 +427,28 @@ main {}
         width: 100%;
     }
 
-    .ban .b_product {
+    .ban .b_img.active {
         width: 100%;
         position: relative;
     }
 
-    .ban .b_product img {
+    .ban .b_img.active img {
         width: 100%;
     }
 
-    .ban .b_product > div {
+    .ban .b_img.active > div {
         position: absolute;
         left: 4%;
         top: 0%;
+        display: none;
     }
 
-    .ban .b_product > div h2 {
-        font-size: 14px;
-        line-height: 28px;
+    .ban .b_img.active > div h2 {
+        font-size: 10px;
+        line-height: 15px;
     }
 
-    .ban .b_product > div p {
+    .ban .b_img.active > div p {
         font-size: 12px;
 
     }
