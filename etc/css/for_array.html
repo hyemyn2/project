@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <article class="for_array">
+        <h2>for & array</h2>
+        <div>
+            출력값
+        </div>
+    </article>
+
+
+    <script>
+        var result = document.querySelector('.for_array Div');
+
+        var arr = [80, 90, 60, 70]; /*숫자배열*/
+        var arr2 = ['<p></p>', '<p></p>', '<p></p>']; /*텍스트배열*/
+        //        []안의 값을 사용자로부터 받아올 수 있다.
+
+
+
+        /*div 자식요소로 <p></p> 3개*/
+        for (var i = 0; i < arr2.length; i++) {
+            result.innerHTML += arr2[i];
+            //            arr2의 값들의 텍스트를 innerHTML로 인해 tag로 인식 
+        }
+        //        console.log(arr);
+
+
+
+        /*유사배열*/
+        var pTag = document.querySelectorAll('.for_array div p');
+        //        변수 선언 위치가 중요하다. pTag가 만들어지고 난 후(위의 for문 실행 후)에 pTag를 인지한다.
+        // querySelector : 단수개의 element
+        // querySelectorAll : 복수개의 element 잡을 수 있다.->배열과 유사한 형태가 된다.
+        //        배열과 유사하게 생겨서 '유사배열'이라고 부른다.
+
+
+
+        for (var i = 0; i < arr2.length; i++) {
+            pTag[i].innerHTML = i;
+
+            //        pTag[0].innerHTML = i; => 첫번째 ptag에 출력 => i가 총 3번 넣어진다. 0->1->2 : 따라서 결과는 2가 출력
+        }
+
+
+        /*ptag 자식요소로 <span>i</span>*/
+        for (var i = 0; i < arr2.length; i++) {
+            pTag[i].innerHTML = '<span>' + i + '</span>';
+        }
+
+
+
+
+        var arr3 = 'hello world';
+
+        console.log(arr3[0]); /*1번째 문자 출력*/
+        console.log(arr3.length); /*문자 길이*/
+        //        문자도 배열은 아니지만, 유사배열처럼 사용가능
+        //        글자 하나하나 날아다니는 효과 연출 가능
+
+        for (var i = 0; i < arr3.length; i++) {
+            result.innerHTML += '<em>' + arr3[i] + '</em>';
+            //        div안에다가 em tag를 추가하였다.
+        }
+
+
+
+
+
+        var h2 = document.querySelector('.for_array h2');
+        var h2Txt = h2.textContent; /*h2 tag의 글자만 담기*/
+        //        console.log(h2Txt.length);
+
+        h2Txt.textContent = '';
+        //        기존의 데이터를 없애고 빈공간 만들기
+
+        var i;
+
+        for (i = 0; i < h2Txt.length; i++) {
+            h2.innerHTML += '<em>' + h2Txt[i] + '</em>';
+        }
+
+
+
+
+        //        증감 or 감소 연산자
+
+        var z = 10;
+
+        console.log(z++); /*10*/ /*z를 증가하라라는 명령을 줄 뿐이다. 여기서 그 값을 얻지는 못한다.*/
+        console.log(z); /*11*/ /*여기서는 z의 값을 얻는다.*/
+
+        console.log(z--); /*11*/
+        console.log(z); /*10*/
+
+        console.log(++z); /*11*/ /*++/--가 변수 앞에 붙으면 변수의 값을 바로 확인가능*/
+        console.log(--z);
+
+        //        console.log(++z);
+        z = z + 1;
+        console.log(z);
+
+
+        //        console.log(--z);
+        z = z - 1;
+        console.log(z);
+
+
+        z += 1;
+        z -= 1;
+
+    </script>
+
+
+
+    <article>
+        <h2>array ex1</h2>
+        <div class="ex1">
+            <input type="number" name="ex1">
+            <input type="number" name="ex2">
+            <input type="number" name="ex3">
+            <button>확인</button>
+        </div>
+    </article>
+
+    <script>
+        var inputNode = document.querySelectorAll('.ex1 input');
+        var buttonNode = document.querySelector('.ex1 button');
+
+        var total = 0;
+
+        buttonNode.addEventListener('click', function() {
+
+            //  반복문을 이용하여 input value값을 console창에 출력하시오.
+
+            for (var i = 0; i < inputNode.length; i++) {
+
+
+                //  console.log(inputNode[i].value);
+
+                total += Number(inputNode[i].value);
+            }
+            console.log(total);
+        })
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

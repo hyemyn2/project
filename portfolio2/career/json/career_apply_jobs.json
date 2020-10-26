@@ -1,0 +1,446 @@
+{
+    "jobs":[
+        {
+            "type":"p001",
+            "category":"경영지원",
+            "title":"Director, IT Internal Audit",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Benchmarking","Internal Audit"]
+        },
+        {
+            "type":"p001",
+            "category":"경영지원",
+            "title":"Manager, Internal Control",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Benchmarking","Internal Audit"]
+        },
+        {
+            "type":"p001",
+            "category":"경영지원",
+            "title":"Fraud Operation Specialist",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Benchmarking","Internal Audit"]
+        },
+        {
+            "type":"p001",
+            "category":"경영지원",
+            "title":"Principal, Investigation",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Benchmarking","Internal Audit"]
+        },
+        {
+            "type":"p001",
+            "category":"경영지원",
+            "title":"Director, IT Internal Audit",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Benchmarking","Internal Audit"]
+        },
+        {
+            "type":"p001",
+            "category":"경영지원",
+            "title":"Manager, Internal Control",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Benchmarking","Internal Audit"]
+        },
+        {
+            "type":"p001",
+            "category":"경영지원",
+            "title":"Fraud Operation Specialist",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Benchmarking","Internal Audit"]
+        },
+        {
+            "type":"p001",
+            "category":"경영지원",
+            "title":"Principal, Investigation",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Benchmarking","Internal Audit"]
+        },
+        {
+            "type":"p002",
+            "category":"사업관리",
+            "title":"Principal, Business Analyst (GO Analytics)",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Analyst","GO"]
+        },
+        {
+            "type":"p002",
+            "category":"사업관리",
+            "title":"Sr. Construction Project Manager",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Analyst","GO"]
+        },
+        {
+            "type":"p002",
+            "category":"사업관리",
+            "title":"Senior Business Analyst (Retail FP&A)",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Analyst","GO"]
+        },
+        {
+            "type":"p002",
+            "category":"사업관리",
+            "title":"Principal, Business Analyst (GO Analytics)",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Analyst","GO"]
+        },
+        {
+            "type":"p002",
+            "category":"사업관리",
+            "title":"Sr. Construction Project Manager",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Analyst","GO"]
+        },
+        {
+            "type":"p002",
+            "category":"사업관리",
+            "title":"Senior Business Analyst (Retail FP&A)",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Analyst","GO"]
+        },
+        {
+            "type":"p003",
+            "category":"상품관리",
+            "title":"Product Owner (Search and Discovery)",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Product","Owner","Search"]
+        },
+        {
+            "type":"p003",
+            "category":"상품관리",
+            "title":"Product Owner (Search and Discovery)",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Product","Owner","Search"]
+        },
+        {
+            "type":"p003",
+            "category":"상품관리",
+            "title":"Product Owner (Search and Discovery)",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Product","Owner","Search"]
+        },
+        {
+            "type":"p003",
+            "category":"상품관리",
+            "title":"Product Owner (Search and Discovery)",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Product","Owner","Search"]
+        },
+        {
+            "type":"p004",
+            "category":"테크",
+            "title":"Senior, Technical Program Manager",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Program","Data","Platform"]
+        },
+        {
+            "type":"p004",
+            "category":"테크",
+            "title":"Principal, Technical Program Manager (Growth Engineering)",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Growth","Program"]
+        },
+        {
+            "type":"p004",
+            "category":"테크",
+            "title":"Senior, Technical Program Manager",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Program","Data","Platform"]
+        },
+        {
+            "type":"p004",
+            "category":"테크",
+            "title":"Principal, Technical Program Manager (Growth Engineering)",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Growth","Program"]
+        },
+        {
+            "type":"p004",
+            "category":"테크",
+            "title":"Senior, Technical Program Manager",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Program","Data","Platform"]
+        },
+        {
+            "type":"p004",
+            "category":"테크",
+            "title":"Principal, Technical Program Manager (Growth Engineering)",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Growth","Program"]
+        },
+        {
+            "type":"p005",
+            "category":"물류관리",
+            "title":"Principal, Fresh Packaging Innovation",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Packaging","Innovation"]
+        },
+        {
+            "type":"p005",
+            "category":"물류관리",
+            "title":"Principal, Fresh Packaging Innovation",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Packaging","Innovation"]
+        },
+        {
+            "type":"p006",
+            "category":"라스트마일 관리",
+            "title":"Delivery Management Specialist",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Delivery","Specialist"]
+        },
+        {
+            "type":"p007",
+            "category":"공급/재고관리",
+            "title":"",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Product","Owner","Search"]
+        },
+        {
+            "type":"p007",
+            "category":"공급/재고관리",
+            "title":"Principal, Instock Management",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Instock"]
+        },
+        {
+            "type":"p007",
+            "category":"공급/재고관리",
+            "title":"Director of Retail instock",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Retail","Instock"]
+        },
+        {
+            "type":"p007",
+            "category":"공급/재고관리",
+            "title":"",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Product","Owner","Search"]
+        },
+        {
+            "type":"p007",
+            "category":"공급/재고관리",
+            "title":"Principal, Instock Management",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Instock"]
+        },
+        {
+            "type":"p007",
+            "category":"공급/재고관리",
+            "title":"Director of Retail instock",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Retail","Instock"]
+        },
+        {
+            "type":"p008",
+            "category":"마케팅/광고",
+            "title":"Sr. Copywriter, Brand Marketing",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Copywriter","Brand","Marketing"]
+        },
+        {
+            "type":"p008",
+            "category":"마케팅/광고",
+            "title":"Sr. Manager, Brand Marketing",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Manager","Brand","Marketing"]
+        },
+        {
+            "type":"p008",
+            "category":"마케팅/광고",
+            "title":"Sr. Biz Marketing Specialist",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["CRM","Strategy","Biz"]
+        },
+        {
+            "type":"p009",
+            "category":"유통",
+            "title":"Selection Brand Management Specialist",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Selection","Management"]
+        },
+        {
+            "type":"p010",
+            "category":"판매/회계",
+            "title":"Sr.Manager, Account Management",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Eats","Account"]
+        },
+        {
+            "type":"p011",
+            "category":"이커머스",
+            "title":"Catalog Operation(Selection Planning) (Contract)",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Catalog","Planning"]
+        },
+        {
+            "type":"p011",
+            "category":"이커머스",
+            "title":"Associate(Monitoring)",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Monitoring"]
+        },
+        {
+            "type":"p011",
+            "category":"이커머스",
+            "title":"Director of Pricing Operation",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Pricing"]
+        },
+        {
+            "type":"p012",
+            "category":"머천다이징",
+            "title":"Principal, Quality Assurance",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["Food","Assurance"]
+        },
+        {
+            "type":"p013",
+            "category":"고객상담",
+            "title":"EDP CS Operator",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"정규직",
+            "tags":["EDP","CS"]
+        },
+        {
+            "type":"p014",
+            "category":"핀테크",
+            "title":"Sr. Business Development Analyst",
+            "time":"영입종료시",
+            "city":"서울",
+            "country":"한국",
+            "condition":"계약직",
+            "tags":["Eats"]
+        }
+    ]
+
+
+}

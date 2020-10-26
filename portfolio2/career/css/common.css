@@ -1,0 +1,323 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+@font-face {
+  font-family: 'Kakao Light';
+  src: url(fonts/Kakao-aLt.eot);
+  src: local("☺"), url(fonts/Kakao-aLt.eot?#iefix) format("embedded-opentype"), url(fonts/Kakao-aLt.woff) format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Kakao Regular';
+  src: url(fonts/Kakao-bRg.eot);
+  src: local("☺"), url(fonts/Kakao-bRg.eot?#iefix) format("embedded-opentype"), url(fonts/Kakao-bRg.woff) format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Kakao Bold';
+  src: url(fonts/Kakao-cBd.eot);
+  src: local("☺"), url(fonts/Kakao-cBd.eot?#iefix) format("embedded-opentype"), url(fonts/Kakao-cBd.woff) format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'KakaoLight';
+  src: url(fonts/KakaoLight.eot);
+  src: local("☺"), url(fonts/KakaoLight.eot?#iefix) format("embedded-opentype"), url(fonts/KakaoLight.woff) format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'KakaoRegular';
+  src: url(fonts/KakaoRegular.eot);
+  src: local("☺"), url(fonts/KakaoRegular.eot?#iefix) format("embedded-opentype"), url(fonts/KakaoRegular.woff) format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'KakaoBold';
+  src: url(fonts/KakaoBold.eot);
+  src: local("☺"), url(fonts/KakaoBold.eot?#iefix) format("embedded-opentype"), url(fonts/KakaoBold.woff) format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  font-family: "Kakao Light";
+  font-size: 11px;
+  line-height: 0px;
+  color: #000;
+}
+
+body {
+  font-family: 'Kakao Regular';
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header .bg {
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+header .head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px auto;
+  position: relative;
+  z-index: 1000;
+}
+
+header .head .logo {
+  width: 15%;
+  text-align: left;
+  margin-left: 15px;
+}
+
+header .head .logo a {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+header .head .logo a span:nth-of-type(1) {
+  font-size: 24px;
+}
+
+header .head .logo a span:nth-of-type(2) {
+  font-family: 'Kakao Light';
+}
+
+header .head nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0px 0;
+}
+
+header .head nav ul li {
+  padding: 20px 25px;
+}
+
+header .head nav ul li > a {
+  font-family: "Kakao Light";
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  display: inline-block;
+  padding: 3px 0;
+  position: relative;
+  z-index: 2000;
+}
+
+header .head nav ul li .sub {
+  border-bottom: none;
+  width: 100%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 0;
+  top: 61px;
+  height: 0px;
+  z-index: 10;
+  overflow: hidden;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+header .head nav ul li .sub a {
+  display: block;
+  margin: 0 25px;
+}
+
+header .head nav ul li .sub a span {
+  padding: 3px 0;
+  font-family: "Kakao Light";
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+}
+
+header .head nav ul li .sub span:hover {
+  display: inline-block;
+  border-bottom: 1px solid #555;
+}
+
+header .head nav ul li:hover > a {
+  display: inline-block;
+  border-bottom: 1px solid #555;
+}
+
+header .head nav ul li:nth-of-type(3):hover > div {
+  height: 60px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+header .head .login {
+  width: 15%;
+  text-align: right;
+  margin-right: 40px;
+}
+
+header .head .login a {
+  font-size: 13px;
+  position: relative;
+}
+
+header .head .login a:after {
+  content: '';
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border: 5px solid transparent;
+  border-top: 5px solid #999;
+  position: absolute;
+  right: -70%;
+  top: 35%;
+}
+
+footer {
+  background: #fff;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 20px 0 25px 0;
+}
+
+footer .foot, footer .foot_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Kakao Light";
+  font-size: 11px;
+  line-height: 11px;
+  color: #000;
+}
+
+footer .foot .left, footer .foot_2 .left {
+  margin-left: 20px;
+}
+
+footer .foot .left .laws a:first-child, footer .foot_2 .left .laws a:first-child {
+  font-weight: bold;
+}
+
+footer .foot .left .laws a:first-child:after, footer .foot_2 .left .laws a:first-child:after {
+  content: '|';
+  display: inline-block;
+  padding-left: 8px;
+}
+
+footer .foot .left .laws a:last-child, footer .foot_2 .left .laws a:last-child {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+footer .foot .right, footer .foot_2 .right {
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .foot .right .select, footer .foot_2 .right .select {
+  position: relative;
+  margin-left: 35px;
+}
+
+footer .foot .right .select a, footer .foot_2 .right .select a {
+  position: relative;
+}
+
+footer .foot .right .select a:after, footer .foot_2 .right .select a:after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: 3px solid transparent;
+  border-top: 3px solid #555;
+  position: absolute;
+  right: -12px;
+  top: 5px;
+}
+
+footer .foot .right .select ul, footer .foot_2 .right .select ul {
+  position: absolute;
+  right: -12px;
+  bottom: 55px;
+  background: #fff;
+  border: 1px solid #bbb;
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+  display: none;
+}
+
+footer .foot .right .select ul li, footer .foot_2 .right .select ul li {
+  font-family: "Kakao Light";
+  font-size: 11px;
+  line-height: 22px;
+  color: #000;
+  white-space: nowrap;
+}
+/*# sourceMappingURL=common.css.map */

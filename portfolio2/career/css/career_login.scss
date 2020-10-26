@@ -1,0 +1,128 @@
+@import url("common.css");
+
+@mixin font($f, $s, $lh, $c) {
+    font-family: "#{$f}";
+    font-size: $s;
+    line-height: $lh;
+    color: $c;
+}
+
+
+header{
+    border-bottom: 1px solid #e6e6e6;
+    background: #fff !important;
+    left:0; top:0;
+
+    a{
+        color : #000 !important;
+     }
+    }
+
+body{
+    background: #f9f9f9;
+}
+
+main{
+    padding-top: 0px;
+}
+
+
+legend {
+    display: none;
+} // legend->h2 tag로 대체
+
+main {padding-top:80px;}
+
+    body{
+        background: #f9f9f9;
+    }
+.log {
+    width: 33%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+     fieldset {
+        box-sizing: border-box;
+
+        width: 100%;
+        padding: 50px 40px 70px 40px;
+        background: #fff;
+        border: 1px solid #e2e2e2;
+        h2 {
+            margin: 0;
+
+            @include font(Kakao Light, 24px, 24px, #000);
+        }
+
+        .data {
+            padding-top: 30px;
+
+            label {
+                display: inline-block;
+                padding-bottom: 15px;
+
+                @include font(Kakao Light, 16px, 16px, #000);
+            }
+
+            div {
+                width: 100%;
+                border: 1px solid #e2e2e2;
+
+                input {
+                    box-sizing: border-box;
+                    width: 100%;
+                    padding: 15px;
+                    border: none;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                }
+            }
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            padding-top: 50px;
+
+
+            li {
+                position: relative;
+
+                @include font(Kakao Light, 15px, 15px, #000);
+
+                padding: 8px 20px;
+
+                a {
+                    text-decoration-line: underline;
+                    display: inline-block;
+                }
+            }
+
+            li:before {
+                content: '';
+                display: inline-block;
+
+                width:3px; height: 3px;
+                background: #000;
+                position: absolute;
+                left: 0;
+                top: 12px;
+            }
+        }
+    }
+    button {
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+        padding: 20px 0;
+        background: #e6e6e6;
+        border: none;
+
+        @include font(Kakao Light, 18px, 18px, #000);
+    }
+}
