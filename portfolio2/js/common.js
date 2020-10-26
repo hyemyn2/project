@@ -1,8 +1,8 @@
 
 $(function(){
 
-    $('header').load('/inc_head_foot.html header .tie',head);
-    $('footer').load('/inc_head_foot.html footer .foot');
+    $('header').load('../inc_head_foot.html header .tie',head);
+    $('footer').load('../inc_head_foot.html footer .foot');
     
 
 

@@ -3,7 +3,7 @@
         {
             "country":"한국 서울",
             "introText":"쿠팡 본사는 롯데월드호텔 및 롯데월드몰과 가까운 서울 도심에 위치하고 있습니다.",
-            "introImg":"/img/location/seoul.jpg",
+            "introImg":"../img/location/seoul.jpg",
             "ImgSrc":"",
             "cityName":"서울",
             "title":"롯데월드호텔 및 롯데월드몰과 가까운 서울 도심에 위치",
@@ -14,7 +14,7 @@
         {
             "country":"중국 상하이",
             "introText":"상하이 오피스는 식당가와 헬스장 그리고 에버그린호텔과 참타임 스퀘어 쇼핑몰과 인접한 편리한 곳에 위치하고 있습니다.",
-            "introImg":"/img/location/shanghai.jpg",
+            "introImg":"../img/location/shanghai.jpg",
             "ImgSrc":"",
             "cityName":"상하이",
             "title":"롯데월드호텔 및 롯데월드몰과 가까운 서울 도심에 위치",
@@ -25,7 +25,7 @@
         {
             "country":"중국 베이징",
             "introText":"베이징 오피스는 최고급 오피스 타워인 원인디고에 있습니다.",
-            "introImg":"/img/location/beijing.jpg",
+            "introImg":"../img/location/beijing.jpg",
             "ImgSrc":"",
             "cityName":"베이징",
             "title":"롯데월드호텔 및 롯데월드몰과 가까운 서울 도심에 위치",
@@ -36,7 +36,7 @@
         {
             "country":"미국 마운틴뷰",
             "introText":"실리콘밸리에 있는 마운틴뷰 오피스는 미국 항공우주국 에임즈 연구센터와 방문객 건너편에 위치하고 있습니다.",
-            "introImg":"/img/location/mountainview.jpg",
+            "introImg":"../img/location/mountainview.jpg",
             "ImgSrc":"",
             "cityName":"마운틴뷰",
             "title":"롯데월드호텔 및 롯데월드몰과 가까운 서울 도심에 위치",
@@ -47,7 +47,7 @@
         {
             "country":"미국 시애틀",
             "introText":"도심의 중심부에 있으며 식당가와 파이크 플레이스 마켓과 같은 관광명소와 가까운 곳에 위치하고 있습니다.",
-            "introImg":"/img/location/seattle.jpg",
+            "introImg":"../img/location/seattle.jpg",
             "ImgSrc":"",
             "cityName":"시애틀",
             "title":"롯데월드호텔 및 롯데월드몰과 가까운 서울 도심에 위치",
