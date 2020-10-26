@@ -90,7 +90,7 @@ $(function(){
         var menuCareer = document.querySelector('.go_career');
         menuCareer.addEventListener('click',function(e){
             e.preventDefault();
-            window.open("/career/career_main.html","_blank");
+            window.open("/project/portfolio2/career/career_main.html","_blank");
         });
 
         var bg = document.querySelector('.head .burger');
