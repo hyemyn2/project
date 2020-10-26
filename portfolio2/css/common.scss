@@ -1,0 +1,434 @@
+// font
+// font-family: 'NotoSans Regular','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+// font-family: 'Noto Sans', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+
+// font-family: 'Noto Sans KR', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@mixin font($f, $s, $lh, $c) {
+    font-family: $f;
+    font-size: $s;
+    line-height: $lh;
+    color: $c;
+}
+
+// basic
+
+@font-face {
+    font-family: 'Kakao Light';
+    src: url(fonts/Kakao-aLt.eot);
+    src: local("☺"), url(fonts/Kakao-aLt.eot?#iefix) format("embedded-opentype"), url(fonts/Kakao-aLt.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Kakao Regular';
+    src: url(fonts/Kakao-bRg.eot);
+    src: local("☺"), url(fonts/Kakao-bRg.eot?#iefix) format("embedded-opentype"), url(fonts/Kakao-bRg.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Kakao Bold';
+    src: url(fonts/Kakao-cBd.eot);
+    src: local("☺"), url(fonts/Kakao-cBd.eot?#iefix) format("embedded-opentype"), url(fonts/Kakao-cBd.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'KakaoLight';
+    src: url(fonts/KakaoLight.eot);
+    src: local("☺"), url(fonts/KakaoLight.eot?#iefix) format("embedded-opentype"), url(fonts/KakaoLight.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'KakaoRegular';
+    src: url(fonts/KakaoRegular.eot);
+    src: local("☺"), url(fonts/KakaoRegular.eot?#iefix) format("embedded-opentype"), url(fonts/KakaoRegular.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'KakaoBold';
+    src: url(fonts/KakaoBold.eot);
+    src: local("☺"), url(fonts/KakaoBold.eot?#iefix) format("embedded-opentype"), url(fonts/KakaoBold.woff) format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+//control
+
+ul {
+    padding: 0;
+}
+
+// body{font-family: 'Noto Sans KR', sans-serif;}
+body {
+    font-family: 'Kakao Regular';
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    text-decoration-line: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+// body
+
+html {
+    margin: 0;
+}
+
+main {transition: .5s;}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+// header
+
+header {
+    z-index: 1000;
+    background: #fff;
+    border-bottom: 1px solid #e2e2e2;
+    position: fixed;
+    width: 100%;
+
+    .head {
+        width: 92%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 17px auto;
+
+        .burger{
+            display: none;
+        }
+        .logo {
+            a {
+                color: #333;
+                font-size: 18px;
+
+                span:nth-of-type(1) {
+                    font-size: 24px;
+                }
+
+                span:nth-of-type(2) {
+                    font-family: 'Kakao Light';
+                }
+
+                font-weight: 100;
+            }
+        }
+
+        nav {
+            ul {
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    a {
+                        @include font(#{"Noto Sans KR", sans-serif}, 16px, 16px, #1e1e1e);
+
+                        display: inline-block;
+                        padding: 0 25px;
+                        font-weight: 500;
+                    }
+
+                    .sub {
+                        display: none;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        a {}
+                    }
+                }
+            }
+        }
+
+        .lang {
+            text-align: right;
+
+            a {
+                @include font(#{"Noto Sans KR", sans-serif}, 14px, 14px, #666);
+
+                display: inline-block;
+                padding-left: 12px;
+            }
+
+            a:hover {
+                @include font(#{"Noto Sans KR", sans-serif}, 14px, 14px, #1e1e1e);
+
+                font-weight: bold;
+            }
+        }
+    }
+
+    .location {
+        border-top: 1px solid #e2e2e2;
+        padding-left: 50px;
+        height: 60px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        ul {
+            display: flex;
+            justify-content: left;
+            padding-left: 20px;
+        }
+
+        li {
+            @include font(#{"Noto Sans KR", sans-serif}, 14px, 14px, #666);
+
+            margin: 0 10px;
+        }
+    }
+}
+
+footer {
+    transition: .5s;
+    border-top: 1px solid #e2e2e2;
+
+    .foot {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 92%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+            .laws {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+
+                > a {
+                    display: inline-block;
+                    margin:0 5px;
+                    @include font(#{"Noto Sans KR", sans-serif}, 12px, 12px, #666);
+                }
+
+                .select {
+                    position: relative;
+                    margin:0 5px;
+
+                    a {
+                        @include font(#{"Noto Sans KR", sans-serif}, 12px, 12px, #666);
+                    }
+
+                    ul {
+                        display: none;
+                        position: absolute;
+
+                        li {}
+                    }
+                }
+            }
+
+            p {
+                @include font(#{"Noto Sans KR", sans-serif}, 12px, 12px, #666);
+                margin:0;
+                padding-top: 5px;
+            }
+        }
+
+        .right {
+            .select {
+                position: relative;
+
+                a {
+                    @include font(#{"Noto Sans KR", sans-serif}, 12px, 12px, #666);
+                }
+
+                ul {
+                    display: none;
+                    position: absolute;
+
+                    li {}
+                }
+            }
+        }
+    }
+}
+
+// ========== mobile ==========
+
+@media (max-width: 480px) {
+
+
+    main {
+        width: 100%;
+    }
+
+
+    header {
+        z-index: 1000;
+        background: #fff;
+        border-bottom: 1px solid #e2e2e2;
+        position: fixed;
+        width: 100%;
+
+    
+        .head {
+            position: relative;
+            z-index: 1500;
+            width: 92%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            padding: 30px 4%;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+            // height: 60px;
+
+            
+            .burger{
+                position: absolute;
+                left: 5%;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 100;
+                display: block;
+                span{
+                    transition: .5s;
+                    display: block;
+                    width: 20px;
+                    height: 2px;
+                    background: #333;
+                    margin: 5px;
+                }
+            }
+
+            .burger.active{
+                span:nth-of-type(1){
+                    display: none;
+                }
+                span:nth-of-type(2){
+                    width: 0px;
+                    height: 0px;
+                    border: 8px solid transparent;
+                    border-bottom: 10px solid #555;
+                    border-radius: 3px;;
+                    margin: 5px;
+                    background: transparent;
+                }
+                span:nth-of-type(3){
+                    display: none;
+                }
+            }
+    
+            .logo {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+            
+    
+            nav {
+                transition: .5s;
+                display: none;
+                background : rgba(255,255,255,0.9);
+                position: absolute;
+                z-index: 100;
+
+                left: 0;
+                top:0px;
+                width: 100%;
+                box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+                ul {
+                    transition: .5s;
+                    position: relative;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+
+    
+                    li {
+                        transition: .5s;
+                        background : rgba(255,255,255,0.9);
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        border-top: 1px solid #eee;
+                        a {
+                            @include font(#{"Noto Sans KR", sans-serif}, 18px, 70px, #333);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0 25px;
+                            font-weight: 400;
+                        }
+    
+                    }
+                }
+            }
+
+            nav.active{
+                display: block;
+                top: 62px;
+                
+                li:nth-of-type(1){top:0}
+                li:nth-of-type(2){top: 70px;}
+                li:nth-of-type(3){top: 140px;}
+                li:nth-of-type(4){top: 210px; 
+                    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+                }
+
+            }
+    
+            .lang {
+                position: absolute;
+                right: 5%;
+                top: 50%;
+                transform: translateY(-50%);
+                }
+            }
+        }
+    
+        .location {
+            border-top: 1px solid #e2e2e2;
+            padding-left: 0px !important;
+            height: 60px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+    
+            ul {
+                display: flex;
+                justify-content: left;
+                padding-left: 20px;
+            }
+    
+            li {
+                @include font(#{"Noto Sans KR", sans-serif}, 14px, 14px, #666);
+    
+                margin: 0 10px;
+            }
+        }
+    }
+
+
