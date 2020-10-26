@@ -1,7 +1,7 @@
 $(function(){
 
     $.ajax({
-        url:'/career/json/career_apply_jobs.json',
+        url:'../json/career_apply_jobs.json',
         type:'GET',
         success:function(data){
             // console.log(data.jobs);
