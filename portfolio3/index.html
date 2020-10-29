@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
 
@@ -13,8 +16,8 @@
 
         <article class="head">
             <a href="#" class="logo">
-                <span class="logo_txt"><img src="img/logo_w_txt.png" alt=""></span>
-                <span class="logo_img"><img src="img/logo_w_img.png" alt=""></span>
+                <span class="logo_txt"><img src="img/header/logo_w_txt.png" alt=""></span>
+                <span class="logo_img"><img src="img/header/logo_w_img.png" alt=""></span>
             </a>
             <nav>
                 <ul>
@@ -51,13 +54,22 @@
             <div class="title">
                 <span>where to</span>
                 <h2>STAY</h2>
-            </div>  
+            </div>
+            
+            <div class="menu">
+                <ul class="list_rooms">
+                    <li class="active">deluxe room</li>
+                    <li>premier room</li>
+                    <li>club room</li>
+                    <li>orchid suite</li>
+                </ul>
+            </div>
             <div class="img">
+                <p class="sticker"><img src="img/con_stay/logo_sticker.jpg" alt=""></p>
                 <ul>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
+                    <li><img src="img/con_stay/con_stay_1.jpg" alt=""></li>
+                    <li><img src="img/con_stay/con_stay_2.jpg" alt=""></li>
+                    <li><img src="img/con_stay/con_stay_3.jpg" alt=""></li>
                 </ul>
                 <div class="btn">
                     <a href="#" class="arrow_left"></a>
@@ -75,11 +87,14 @@
                 <div class="side">top offers</div>
                 <div class="con">
                     <div class="txt">
-                        <h2>FALL GET AWAY</h2>
-                        <p></p>
+                        <h2>fall away</h2>
+                        <p>몸과 마음의 재충전이 필요한 당신을 위한 가을 여행 제안! 치맥 세트 포함.</p>
+                        <span>2020.08.31 ~ 2020.11.30<br>KRW 310,000
+                            ~
+                            </span>
                     </div>
                     <div class="img">
-                        <img src="" alt="">
+                        <img src="img/con_stay/top_offer.jpg" alt="">
                     </div>
                 </div>
             </div>        
@@ -87,19 +102,333 @@
 
         <article class="con_shop">
 
+            <div class="title">
+                <h2>explore the shoppes</h2>
+                <span>The shoppes at Marina Bay Sands<br>
+                    Take your pick from the latest at The Shoppes</span>
+            </div>
+            <ul class="boxes_shop">
+                <li class="box box_1">
+                    <div class="thumb_img">
+                        <p><img src="img/con_shop/box_all.jpg" alt=""></p>
+                        <span>#all</span>
+                        <div class="hover_effect">
+                            <a href="#">view more</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="box box_2">
+                    <div class="thumb_img">
+                        <p><img src="img/con_shop/box_highlights.jpg" alt=""></p>
+                        <span>#highlights</span>
+                        <div class="hover_effect">
+                            <a href="#">view more</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="box box_3">
+                    <div class="thumb_img">
+                        <p><img src="img/con_shop/box_burberry.jpg" alt=""></p>
+                        <span>#Burberry</span>
+                        <div class="hover_effect">
+                            <a href="#">view more</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="box box_4">
+                    <div class="thumb_img">
+                        <p><img src="img/con_shop/box_fendi.jpg" alt=""></p>
+                        <span>#FENDY</span>
+                        <div class="hover_effect">
+                            <a href="#">view more</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="box box_5">
+                    <div class="thumb_img">
+                        <p><img src="img/con_shop/box_ermenegildo_zegna.jpg" alt=""></p>
+                        <span>#Ermenegildo Zegna</span>
+                        <div class="hover_effect">
+                            <a href="#">view more</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="box box_6">
+                    <div class="thumb_img">
+                        <p><img src="img/con_shop/box_apm_monaco.jpg" alt=""></p>
+                        <span>#APM Monaco</span>
+                        <div class="hover_effect">
+                            <a href="#">view more</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="box box_7">
+                    <div class="thumb_img">
+                        <p><img src="img/con_shop/box_twg_tea.jpg" alt=""></p>
+                        <span>#TWG Tea</span>
+                        <div class="hover_effect">
+                            <a href="#">view more</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
         </article>
 
+        <div class="banner banner_1">
+            <div class="txt">
+                <span>be rewarded as you spend</span>
+                <h2>sands rewards lifestyle</h2>
+                <p>Earn up to 10% instant Reward Dollars at over 250 participating outlets including shopping, dining, hotel stays and more!</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+
         <article class="con_eat_drink">
+            <div class="title">
+                <span>what to</span>
+                <h2>eat & drink</h2>
+                <!-- <p>Restaurants & Bars at Marina Bay Sands   </p> -->
+            </div>
+
+            <div class="cate">
+                <ul>
+                    <li class="featured active">featured</li>
+                    <li class="lunch">lunch</li>
+                    <li class="dinner">dinner</li>
+                    <li class="drinks">drinks</li>
+                    <li class="members_only">members only</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul class="boxes_eat_drink featured">
+                    <li class="box">
+                        <div class="thumb_img">
+                            <p><img src="img/con_eat_drink/box_dine_earn.jpg" alt=""></p>
+                            <span>Dine & Earn</span>
+                            <div class="hover_effect">
+                                <div class="txt">
+                                    <p>Experience culinary excellence at over 30 restaurants and earn up to 10% instant Rewards Dollars when you dine with your complimentary Sands Rewards membership.</p>
+                                </div>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <div class="thumb_img">
+                            <p><img src="img/con_eat_drink/box_privileges.jpg" alt=""></p>
+                            <span>Standard Chartered Privileges</span>
+                            <div class="hover_effect">
+                                <div class="txt">
+                                    <p>Delight in exclusive year-long dining privileges such as 10% off with minimum spend, 20% off total bill and complimentary coffee or tea.</p>
+                                </div>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="boxes_eat_drink lunch active">
+                    <li class="box">
+                        <div class="thumb_img">
+                            <p><img src="img/con_eat_drink/box_chinoiserie.jpg" alt=""></p>
+                            <span>CHINOISERIE</span>
+                            <div class="hover_effect">
+                                <div class="txt">
+                                    <p>Enjoy a sophisticated French-Asian lunch at CHINOISERIE.</p>
+                                </div>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <div class="thumb_img">
+                            <p><img src="img/con_eat_drink/box_mott_32.jpg" alt=""></p>
+                            <span>Mott 32</span>
+                            <div class="hover_effect">
+                                <div class="txt">
+                                    <p>Experience award-winning Chinese cuisine with a wide selection of dim sum and set menus options. </p>
+                                </div>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <div class="thumb_img">
+                            <p><img src="img/con_eat_drink/box_bread_street_kitchen.jpg" alt=""></p>
+                            <span>Bread Street Kitchen</span>
+                            <div class="hover_effect">
+                                <div class="txt">
+                                    <p>Whether for business or pleasure, the lunch menu at Bread Street Kitchen will take you from one stunning course to another in full-flavoured elegance.</p>
+                                </div>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="boxes_eat_drink dinner">
+                    <li class="box">
+                        <div class="thumb_img">
+                            <p><img src="img/con_eat_drink/box_cut.jpg" alt=""></p>
+                            <span>Early CUTs at CUT</span>
+                            <div class="hover_effect">
+                                <div class="txt">
+                                    <p>Indulge in a three-course early dining menu, with choices such as Maryland Blue Crab Cake and USDA Prime New York Sirloin Steak.</p>
+                                </div>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <div class="thumb_img">
+                            <p><img src="img/con_eat_drink/box_yardbird.jpg" alt=""></p>
+                            <span>Yardbird Southern Table & Bar</span>
+                            <div class="hover_effect">
+                                <div class="txt">
+                                    <p>Classic American flavours and warm hospitality come together over shared dishes. Or head to the alfresco bar for hand-crafted cocktails.</p>
+                                </div>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <div class="thumb_img">
+                            <p><img src="img/con_eat_drink/box_late_night.jpg" alt=""></p>
+                            <span>Late Night Dining</span>
+                            <div class="hover_effect">
+                                <div class="txt">
+                                    <p>When the hunger pangs hit in the wee hours, these restaurants will satisfy your cravings.</p>
+                                </div>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="boxes_eat_drink drinks">
+                    <li class="box">
+                        <div class="thumb_img">
+                            <p><img src="img/con_eat_drink/box_wine.jpg" alt=""></p>
+                            <span>Wine Dinners & Promotions </span>
+                            <div class="hover_effect">
+                                <div class="txt">
+                                    <p>Choose from incredible wine deals such as half-priced bottles and seasonal specials. Award-winning sommeliers are also on hand to lend their expertise.</p>
+                                </div>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <div class="thumb_img">
+                            <p><img src="img/con_eat_drink/box_social_hour.jpg" alt=""></p>
+                            <span>Social Hour at Marina Bay Sands</span>
+                            <div class="hover_effect">
+                                <div class="txt">
+                                    <p>Start your mid-week break early with half-priced cocktails on Tuesdays at participating restaurants and bars.</p>
+                                </div>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="box">
+                        <div class="thumb_img">
+                            <p><img src="img/con_eat_drink/box_mixology.jpg" alt=""></p>
+                            <span>10 Years of Mixology</span>
+                            <div class="hover_effect">
+                                <div class="txt">
+                                    <p>To mark our 10 years, bartenders at 11 signature restaurants created delicious and imaginative cocktails for the occasion. Try them from now until 30 Dec at only $20 nett.</p>
+                                </div>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="boxes_eat_drink members_only">
+                    <li class="box">
+                        <div class="thumb_img">
+                            <p><img src="img/con_eat_drink/box_rise.jpg" alt=""></p>
+                            <span>Up to 30% Off at RISE </span>
+                            <div class="hover_effect">
+                                <div class="txt">
+                                    <p>A spread of dishes whipped up with sustainably sourced ingredients await at the RISE buffet.</p>
+                                </div>
+                                <a href="#">view more</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+
+
+
+
 
         </article>
 
         <article class="con_see_do">
 
-        </article>
-
-        <article class="con_event_activites">
 
         </article>
+
+        <article class="con_event_activities">
+            <div class="title">
+                <h2>event & activites</h2>
+                <span>Echibitions at Marina Bay Sands<br>
+                    Enjoy peace of mind with our experienced team managing all aspects of your exhibitions.</span>
+                    <div class="indi">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+            </div>
+
+            <div class="border">
+            <ul class="boxes_event">
+                    <li class="box box_1">
+                        <p><img src="img/con_event_activities/event_exhibition.jpg" alt=""></p>
+                        <div class="txt">
+                            <h2>Exhibitions</h2>
+                            <p>Marina Bay Sands delivers a world-class experience with unique venues for your exhibitions and an experienced team who can manage all aspects of your event.</p>
+                        </div>
+                    </li>
+                    <li class="box box_2">
+                        <p><img src="img/con_event_activities/event_meetings&conventions.jpg" alt=""></p>
+                        <div class="txt">
+                            <h2>Meetings & Conventions</h2>
+                            <p>Host meetings and conventions of any size at Marina Bay Sands. Spread over three levels, the 250 meeting rooms and 24 ballrooms can be configured to your event needs.</p>
+                        </div>
+                    </li>
+                    <li class="box box_3">
+                        <p><img src="img/con_event_activities/event_wedding.jpg" alt=""></p>
+                        <div class="txt">
+                            <h2>Weddings</h2>
+                            <p>Say 'I do' at Asia's most spectacular destination. Whether it's an intimate affair for two or a grand gala for thousands, we promise the experience of a lifetime.</p>
+                        </div>
+                    </li>
+                    <li class="box box_4">
+                        <p><img src="img/con_event_activities/event_corporate_dinners.jpg" alt=""></p>
+                        <div class="txt">
+                            <h2>Corporate Dinners</h2>
+                            <p>Transform your dinner and dance from ordinary to stunning with our corporate event packages that are specially crafted to cater to all your needs.</p>
+                        </div>
+                    </li>
+                    <li class="box box_5">
+                        <p><img src="img/con_event_activities/event_incentive_groups.jpg" alt=""></p>
+                        <div class="txt">
+                            <h2>Incentive Groups</h2>
+                            <p>Treat your team to a customisable and rewarding experience, with the variety of options for accommodation, leisure, dining and entertainment at Marina Bay Sands.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+        </article>
+
+        <footer>
+            <div class="foot"></div>
+        </footer>
 
 
 

@@ -1,6 +1,8 @@
 /* font-family: 'Noto Sans KR', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
+
+*{box-sizing: border-box;}
 html,body{
     margin:0;                           /*기본으로 여백 없애주기*/
     /* background: #000; */
