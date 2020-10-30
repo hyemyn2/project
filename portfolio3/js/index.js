@@ -3,6 +3,21 @@ function init(){
     // console.log(img[1].offsetWidth);
     // console.log(img[1].offsetHeight);
     // 1084 & 530
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
 }
 
 window.addEventListener('DOMContentLoaded',init);
