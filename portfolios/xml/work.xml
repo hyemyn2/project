@@ -5,7 +5,7 @@
     <item class="aesop">
  
             <div class="off">
-                <a href="#"><img src="img/picto/picto_off_w.png" alt="" /></a>
+                <a href="#"><img src="img/picto/arrow_goback_list.png" alt="" /></a>
             </div>
 
             <div class="detail_con">
@@ -150,9 +150,9 @@
 
             <div class="detail_side">
                 <div class="go_project">
-                    <span>VIEW MORE</span>
+                    <a href="#">Explore the website</a>
                 </div>
-                <p><img src="" alt="" /></p>
+                <p><img src="img/works/fixed/fixed_aesop.jpg" alt="" /></p>
             </div>
 
     </item>

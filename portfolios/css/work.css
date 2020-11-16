@@ -22,12 +22,22 @@ main{
     height: 100vh;
     overflow: hidden;
     /* background-color: #e9e9e9; */
+    transition: 1s;
+    opacity: 0;
+    transition: .5s;
+}
+
+main.active-convert{
+    opacity: 1;
     transition: .5s;
 }
 
 /* ============================== sect1 ============================== */
 
 /* --------------------------------------------------- work_pic */
+
+
+
 main .sect1 .work_pic{
     width: 55%;
     height: 48%;
@@ -39,8 +49,6 @@ main .sect1 .work_pic{
 
     
     perspective: 2800px;
-
-
 
 }
 
@@ -250,20 +258,20 @@ main .sect1 .work_txt::before:hover{
 main .sect1 .work_txt .tit{
 
     text-align: right;
-    opacity: 0;
-
+    opacity: 1;
+    /* transition: .5s; */
     /* width: 80%; */
     font-weight: 900;
     font-size: 140px;
     line-height: 138px;
 
-    animation: slowText 1.5s 1s 1 forwards;
+    /* animation: slowText 1.5s 1s 1 forwards; */
 
 }
-@keyframes slowText{
+/* @keyframes slowText{
     0%{opacity: 0;}
     100%{opacity: 1;}
-}
+} */
 
 
 main .sect1 .work_txt .tags{
@@ -364,9 +372,9 @@ main .sect1 .work_indi ul li.active span{
 
 main .sect2{
     position: absolute;
-    z-index: 40000;
+    z-index: 4000;
     left: 0%;
-    top: 0%;
+    top: 0vh;
     background: rgba(31,31,31,1);
     transition: .5s;
 }
@@ -378,18 +386,21 @@ main .sect2.active{
     transition: top .5s 0s;
 }
 
+
+
 main .sect2 .off{
     display: inline-block;
     margin-top: 20px;
-    position: absolute;
+    position: fixed;
     left: 0;
+    top: 2%;
     width: 70%;
 
 
 }
 main .sect2 .off a{
     position: absolute;
-    right: 2%;
+    left: 2%;
     top: 5%;
 }
 
@@ -610,30 +621,84 @@ main .sect2 .detail_side{
     width: 30%;
     height: 100vh;
     background: #e9e9e9;
+    box-shadow: -30px 10px 40px rgba(0,0,0,0.6);
 }
+
+main .sect2 .detail_side{}
+
 main .sect2 .detail_side .go_project{}
-main .sect2 .detail_side .go_project span{
+main .sect2 .detail_side .go_project a{
     font-weight: 700;
-    font-size: 22px;
+    font-size: 16px;
     position: absolute;
-    left: 50%;
-    top: 75%;
-    transform: translateX(-50%);
+    right: 3%;
+    top: 1%;
+    z-index: 2000;
+    /* transform: translateX(-50%); */
     color: #1f1f1f;
     display: inline-block;
-    padding: 10px 70px;
+    padding: 5px 20px;
     background: #e9e9e9;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+    box-shadow: 10px 7px 7px rgba(0,0,0,0.4);
+    transition: .5s;
+}
+main .sect2 .detail_side .go_project a:after{
+    display: inline-block;
+    margin-left: 10px;
+    content: url('../img/picto/picto_triangle_b.png');
+    transform: rotate(180deg);
 }
 
-main .sect2 .detail_side p{}
-main .sect2 .detail_side p img{}
 
+main .sect2 .detail_side .go_project a:hover{
+    box-shadow: 10px 7px 7px rgba(0,0,0,0.6);
+}
+
+main .sect2 .detail_side p{overflow: hidden;}
+main .sect2 .detail_side p img{
+    animation: moveImg 25s 0s infinite both;
+}
+
+@keyframes moveImg{
+    0%{transform: translate(0,0) scale(1);}
+    25%{transform: translate(40px,0) scale(1.2);}
+    50%{transform: translate(-40px,0) scale(1.2);}
+    75%{transform: translate(-40px,50px) scale(1.2);}
+    100%{transform: translate(0,0) scale(1);}
+}
 
 
 
 
 /* ---------------------------------------------- */
-main .sect1{
-    display: none;
+
+main .sect1{z-index: 10000;}
+main .sect2{z-index: -5000;}
+main.active-detail .sect1{z-index: -5000;}
+main.active-detail .sect2{z-index: 10000;}
+
+main .sect1 article .work_pic{
+    opacity: 1;
+    transform:translate(0px);
+    transition: .2s;
+}
+main.active-detail .sect1 .work_pic{
+    opacity: 0;
+    transform:translate(-100px) scale(1.2);
+    /* transition: 1s 1s; */
+    /* transition: transform .5s 0s opacity .5s 1.5s; */
+}
+main .sect1 article:nth-of-type(2){
+    opacity: 1;
+    transition: .5s 1s;
+}
+main.active-detail .sect1 article:nth-of-type(2){
+    opacity: 0;transition: .5s 0s;
+}
+
+main .sect2{opacity: 0; transition: opacity .5s 0s top .5s 0s;}
+main.active-detail .sect2{
+    opacity: 1;
+    transition: opacity .5s 1.5s top .5s 0s;
+
 }

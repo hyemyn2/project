@@ -8,7 +8,7 @@ $(function(){
             // ------------------------------------------------- get data
             var tit, tags, imgSrc, tagName1='', tagName2='';
             var workPic = document.querySelector('main .work_pic .imgs');
-            // var workTxt = document.querySelector('main .work_txt');
+            var main = document.querySelector('main');
             var workTxtBox = document.querySelector('main .work_txt .txt_box');
             var idxWork = 0, idxLast = 0;
 
@@ -22,13 +22,12 @@ $(function(){
 
             workPic.innerHTML = tagName1;
 
+            main.classList.add('active-convert')
 
 
             // ------------------------------------------------- work_txt
 
             // put data
-
-            var btnBtn;
 
             function showTxt(idxWork){
                 k = Math.abs(idxWork%3);
@@ -123,10 +122,10 @@ $(function(){
                 // ------------------------------------------------- work_txt
                 // work_pic : click_event
 
-                var sect2 = document.querySelector('main .sect2');
+                var main = document.querySelector('main');
 
                 workPic.addEventListener('click',function(){
-                    sect2.classList.add('active');
+                    main.classList.add('active-detail');
                 });
 
 
@@ -169,17 +168,21 @@ $(function(){
             //     console.log(workImg[k].offsetTop);
             // }
 
-            // work_detail_pageMove
+            // work_detail_pageMove 
 
 
+            // go about
+            var btnAbout = document.querySelector('header .head_3 .left');
+            btnAbout.addEventListener('click',seeAbout);
 
+            function seeAbout(){
+            console.log(btnAbout)
 
-
-
-
-
-
-            
+                main.classList.remove('active-convert');
+                setTimeout(function(){
+                    location.href = 'index.html';
+                },1000);
+            }
 
         }
 
@@ -204,9 +207,12 @@ $(function(){
             var limitSect2 = sect2.offsetHeight-window.innerHeight;
             var scrollArrow = document.querySelector('main .sect2 .con_prev .scroll_down');
             var topArrow = document.querySelector('main .sect2 .go_top');
+            var main = document.querySelector('main');
 
             window.addEventListener('mousewheel',function(e){
-                pageMove(e);
+                if(main.classList.contains('active-detail')){
+                    pageMove(e);
+                }
             });
 
             function pageMove(e){
@@ -252,6 +258,16 @@ $(function(){
                 upDown=0;
                 pageMove(upDown);
             });
+
+
+            // detail off
+            var main = document.querySelector('main');
+            var detailOff = document.querySelector('main .sect2 .off');
+            detailOff.addEventListener('click',function(){
+                console.log('a')
+                main.classList.remove('active-detail');
+            });
+
         }
     });
 
