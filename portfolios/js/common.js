@@ -1,3 +1,6 @@
+// import * as all from './index.js';
+
+
 
 $(function(){
 
@@ -19,6 +22,28 @@ $(function(){
                     },500);
                 });
             },2500);
+
+            var pageNum = localStorage.pagenum;
+            showPage(localStorage.pagenum);
+        
+            showPage(0);
+        
+            function reset(){
+                if(pageNum!=''){
+                    // console.log(pageNum);
+                    showPage(pageNum);
+                }
+                localStorage.pagenum='';
+            }
+        
+            setTimeout(function(){
+                reset();
+        
+            },100);
+
+
+
+
         }
 
         if(location.href == "http://127.0.0.1:5500/portfolios/work.html"){
@@ -51,6 +76,14 @@ $(function(){
             console.log('a')
             showPage(0);
         });
+
+                    // detail off
+            // var main = document.querySelector('main');
+            var detailOff = document.querySelector('.head_3 .work_detail .left');
+            // detailOff.addEventListener('click',function(){
+            //     console.log('a')
+            //     main.classList.remove('active-detail');
+            // });
             
     }
 
@@ -62,16 +95,13 @@ $(function(){
         }else{
             if(idx!=0) idx--;
         }
-
         showPage(idx);
     }
-
-
 
     function showPage(a){
         idx = a;
         if(idx==0){
-            console.log(idx);
+            // console.log(idx);
                 $('.head_1').addClass('active');
                 $('.head_2').removeClass('active');
                 // $('nav').removeClass('active');

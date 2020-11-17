@@ -61,17 +61,38 @@ main .sect1 .work_pic .imgs{
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transform: rotateX(3deg) rotateY(30deg);
 }
 
-main .sect1 .work_pic .imgs:hover{
+main .sect1.active-list .work_pic .imgs{
+    transition: .5s;
+    position: absolute;
+    left: 24%;
+    top: 38%;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+main .sect1.active-list1 .work_pic .imgs{
+    transform: rotateX(3deg) rotateY(30deg);
+    transition: .5s;
+    position: absolute;
+    left: 24%;
+    top: 38%;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+
+main .sect1.active-list1 .work_pic .imgs:hover{
     transform: rotateX(0deg) rotateY(0deg);
 }
 
 /* indi_hover -> imgs 세로배열 */
 
 
-main .sect1 .work_pic .imgs.active{
+main .sect1.active-list1 .work_pic .imgs.active{
     /* transform: translateZ(0); */
 
     left: 0%;
@@ -85,22 +106,22 @@ main .sect1 .work_pic .imgs.active{
     flex-direction: column; */
 }
 
-main .sect1 .work_pic .imgs.active li{
+main .sect1.active-list1 .work_pic .imgs.active li{
 
     transform: translate(0);
     position: static;
     transform-origin: center center;
 }
 
-main .sect1 .work_pic .imgs.active li:nth-of-type(1){
+main .sect1.active-list1 .work_pic .imgs.active li:nth-of-type(1){
     transform: translateY(0);
 }
-main .sect1 .work_pic .imgs.active li:nth-of-type(2){
+main .sect1.active-list1 .work_pic .imgs.active li:nth-of-type(2){
     transform: translateY(0);
 
     /* transform: translateY(130%); */
 }
-main .sect1 .work_pic .imgs.active li:nth-of-type(3){
+main .sect1.active-list1 .work_pic .imgs.active li:nth-of-type(3){
     transform: translateY(0);
 
     /* transform: translateY(260%); */
@@ -108,7 +129,7 @@ main .sect1 .work_pic .imgs.active li:nth-of-type(3){
 
 
 
-main .sect1 .work_pic .imgs li{
+main .sect1.active-list1 .work_pic .imgs li{
     transition: .5s;
     position: absolute;
     left: 0; top: 0;
@@ -119,7 +140,7 @@ main .sect1 .work_pic .imgs li{
     transform-origin: 100% 100%;
 }
 
-main .sect1 .work_pic .imgs li:nth-of-type(1){
+main .sect1.active-list1 .work_pic .imgs li:nth-of-type(1){
     transform: translate3d(0px,0px,0px);
     z-index:3;
     opacity: 1;
@@ -127,27 +148,27 @@ main .sect1 .work_pic .imgs li:nth-of-type(1){
 
 
 
-main .sect1 .work_pic .imgs li:nth-of-type(2){
+main .sect1.active-list1 .work_pic .imgs li:nth-of-type(2){
     transform: translate3d(0px,0px,-150px);
     z-index:2;
     opacity: 0.8;
 
 }
 
-main .sect1 .work_pic .imgs li:nth-of-type(2).action-next{
+main .sect1.active-list1 .work_pic .imgs li:nth-of-type(2).action-next{
     transform: translate3d(0px,0px,-150px);
     z-index:2;
     opacity: 1;
 }
 
-main .sect1 .work_pic .imgs li:nth-of-type(3){
+main .sect1.active-list1 .work_pic .imgs li:nth-of-type(3){
     transform: translate3d(0px,0px,-300px);
     z-index:1;
     opacity: 0.2;
 }
 
 
-main .sect1 .work_pic .imgs li:nth-of-type(1).action-next{
+main .sect1.active-list1 .work_pic .imgs li:nth-of-type(1).action-next{
     animation: actionNext1 1s linear forwards;
 }
 
@@ -157,7 +178,7 @@ main .sect1 .work_pic .imgs li:nth-of-type(1).action-next{
     100%{transform: translate3d(0px,0px,-300px) rotateY(360deg); opacity: 0;}
 }
 
-main .sect1 .work_pic .imgs li:nth-of-type(3).action-prev{
+main .sect1.active-list1 .work_pic .imgs li:nth-of-type(3).action-prev{
     animation: actionPrev3 1s linear forwards;
 }
 
@@ -172,7 +193,7 @@ main .sect1 .work_pic .imgs li:nth-of-type(3).action-prev{
 
 
 
-main .sect1 .work_pic .imgs li img{
+main .sect1.active-list1 .work_pic .imgs li img{
     width: 100%;
     box-shadow: -4px 0 5px rgba(0,0,0,0.4);
 }
@@ -187,7 +208,7 @@ main .sect1 .work_txt{
     position: absolute;
     z-index: 50000;
     right: 12%;
-    bottom: 35%;
+    bottom: 42%;
     opacity: 1;
     transition: .5s;
 }
@@ -201,8 +222,8 @@ main .sect1 .work_txt.active{
 main .sect1 .work_txt .btn_work_list ul{
     position: fixed;
     z-index: -100000;
-    top: 30%;
-    right: 12%;
+    bottom: 12%;
+    right: 40%;
 
 
 }
@@ -213,25 +234,28 @@ main .sect1 .work_txt .btn_work_list ul .next{
     text-align: center;
     display: inline-block;
     width: 52px;
-    height: 52px;
-    background: rgba(233,233,233,0.1);
+    height: 37px;
+    background: rgba(233,233,233,0.04);
     transition: .2s;
     position: relative;
+    margin: 0 5px;
 }
 
 main .sect1 .work_txt .btn_work_list ul .prev::after{
-    content: url(../img/picto/arrow2_prev_w.png);
+    content: url(../img/picto/half_arrow2_prev_w.png);
     display: inline-block;
     position: absolute;
-    left: 15px;
-    top: 10px;
+    left: 12px;
+    top: 4px;
 }
 main .sect1 .work_txt .btn_work_list ul .next::after{
-    content: url(../img/picto/arrow2_next_w.png);
+    content: url(../img/picto/half_arrow2_next_w.png);
     display: inline-block;
     position: absolute;
-    left: 15px;
-    top: 10px;
+    /* left: 15px;
+    top: 10px; */
+    right: 12px;
+    top: 4px;
 
 } 
 
@@ -300,6 +324,40 @@ main .sect1 .work_txt .tags li{
     margin-left: 30px;
 
 }
+
+/* --------------------------------------------------- list_type */
+
+main .sect1 .list_type{
+    position: absolute;
+    right: 13%;
+    top: 22%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+/* main .sect1 .list_type span{
+    padding-bottom: 8px;
+    padding-right: 15px;
+} */
+main .sect1 .list_type ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .sect1 .list_type ul li{
+    /* border: 1px solid rgba(233,233,233,0.2); */
+    margin: 0 6px;
+    border-radius: 7px;
+    /* box-shadow: inset 10px 10px 10px rgba(233,233,233,0.2); */
+    padding: 7px;
+}
+main .sect1 .list_type ul li.active{
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,1);
+}
+
+
+
+main .sect1 .list_type ul li img{}
 
 /* --------------------------------------------------- indi */
 
@@ -377,10 +435,13 @@ main .sect2{
     top: 0vh;
     background: rgba(31,31,31,1);
     transition: .5s;
+    z-index: 0;
+
 }
 
 main .sect2.active{
     top: 0;
+    z-index: 500000;
     /* background: rgba(233,233,233,1); */
     background: rgba(31,31,31,1);
     transition: top .5s 0s;
@@ -590,6 +651,7 @@ main .sect2 .detail_con .go_top{
     position: fixed;
     right: 32%;
     top: 6%;
+    z-index: 50000;
     padding: 15px 20px 10px 20px;
     background: rgba(233,233,233,1);
     opacity: 0;
@@ -624,35 +686,6 @@ main .sect2 .detail_side{
     box-shadow: -30px 10px 40px rgba(0,0,0,0.6);
 }
 
-main .sect2 .detail_side{}
-
-main .sect2 .detail_side .go_project{}
-main .sect2 .detail_side .go_project a{
-    font-weight: 700;
-    font-size: 16px;
-    position: absolute;
-    right: 3%;
-    top: 1%;
-    z-index: 2000;
-    /* transform: translateX(-50%); */
-    color: #1f1f1f;
-    display: inline-block;
-    padding: 5px 20px;
-    background: #e9e9e9;
-    box-shadow: 10px 7px 7px rgba(0,0,0,0.4);
-    transition: .5s;
-}
-main .sect2 .detail_side .go_project a:after{
-    display: inline-block;
-    margin-left: 10px;
-    content: url('../img/picto/picto_triangle_b.png');
-    transform: rotate(180deg);
-}
-
-
-main .sect2 .detail_side .go_project a:hover{
-    box-shadow: 10px 7px 7px rgba(0,0,0,0.6);
-}
 
 main .sect2 .detail_side p{overflow: hidden;}
 main .sect2 .detail_side p img{
@@ -702,3 +735,70 @@ main.active-detail .sect2{
     transition: opacity .5s 1.5s top .5s 0s;
 
 }
+
+main .sect1{z-index:0}
+main .sect2{z-index:-100}
+
+main.active-detail .sect1{z-index:-100}
+main.active-detail .sect2{z-index:0}
+
+
+/* ------------------------- active-all */
+
+main .sect1.active-list2{
+
+
+}
+
+main {
+    /* overflow: auto; */
+}
+main .sect1.active-list2{
+}
+
+main .sect1.active-list2 .work_pic{
+    /* perspective: 2000px; */
+    transform-style: preserve-3d;
+    left: 12%;
+
+
+}
+
+
+
+main .sect1.active-list2 .work_pic .imgs{
+    transform: rotateX(50deg) translate(0%,50px);
+    /* transform: rotateX(50deg) translate(10%,5%); */
+
+}
+main .sect1.active-list2 .work_pic .imgs:hover{
+    transform: rotateX(50deg) translate(0%,50px);
+}
+main .sect1.active-list2 .work_pic .imgs li:nth-of-type(1),
+main .sect1.active-list2 .work_pic .imgs li:nth-of-type(2),
+main .sect1.active-list2 .work_pic .imgs li:nth-of-type(3){
+    opacity: 1;
+    position: static;
+    transform: translate(0);
+    padding: 60px 0;
+}
+
+
+main .sect1.active-list2 .work_pic .imgs li img{
+
+}
+main .sect1.active-list2 .work_txt{
+    opacity: 0;
+}
+main .sect1.active-list2 .work_txt .btn_work_list{
+    opacity: 0;
+}
+main .sect1.active-list2 .work_txt .btn_work_list ul{}
+main .sect1.active-list2 .work_txt .btn_work_list ul li{}
+main .sect1.active-list2 .work_txt .txt_box{
+    opacity: 0;
+
+}
+main .sect1.active-list2 .work_txt .txt_box .tit{}
+main .sect1.active-list2 .work_txt .txt_box .tags{}
+
