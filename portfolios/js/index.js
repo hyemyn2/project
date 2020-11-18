@@ -5,9 +5,10 @@ function init() {
     function setIndex(){
         // console.log(pageNum)
 
-        var hd, aa, idx = 0;
+        var hd, aa, aaRecent, aaPpl, idx = 0;
         var changeIdx;
         var sectOne = document.querySelector('main .page1 .sect1');
+        var recentImg = document.querySelector('main .page1 .sect1 .recent .pic_recent');
         var sectTwo = document.querySelector('main .page1 .sect2');
         var main = document.querySelector('main');
         var btnHome, navi, btnWork, mid;
@@ -21,14 +22,13 @@ function init() {
             if(pageNum!=''){
                 // console.log(pageNum);
                 showPage(pageNum);
-                navAct(pageNum)
+                navAct(pageNum);
             }
             localStorage.pagenum='';
         }
 
         setTimeout(function(){
             reset();
-
         },100);
 
     
@@ -38,7 +38,7 @@ function init() {
     
         // --------------------------------- mousewheel 함수
 
-        if(pageNum==0){
+        // if(pageNum==0){
 
         setTimeout(function() {
             document.addEventListener('mousewheel', function(e) {
@@ -46,11 +46,12 @@ function init() {
                 clearTimeout(aa);
                 aa = setTimeout(function() {
                     move(upDown);
+                    console.log(idx)
                 }, 500);
             });
         }, 2500);
 
-        }
+        // }
 
     
         function move(upDown) {
@@ -111,7 +112,38 @@ function init() {
                     break;
             }
     
-            // console.log(idx)
+
+            if(idx==3){
+                    aaRecent = setInterval(function(){
+                        setTimeout(function(){
+                            var recentImg = document.querySelector('main .page1 .sect1 .recent .pic_recent');
+                            recentImg.append(recentImg.children[0]);
+                        },150);
+                    },150*recentImg.children.length);
+                // console.log(recentImg)
+            } else{
+                clearInterval(aaRecent);
+            }
+
+        //     if(idx==4){
+        //         var aniUl = document.querySelector('.ani');
+        //         var aniLi = document.querySelector('.ani .ppl');
+        //         var getLi = aniUl.innerHTML;
+        //         console.log(aniLi);
+
+        //         aaPpl = setInterval(function(){
+        //             aniUl.innerHTML = '';
+        //             for(var i=0; i<3; i++){
+        //                 setTimeout(function(){
+        //                 aniUl.innerHTML+=getLi;
+        //                 console.log(aniUl)
+        //                 },1000*i);
+        //             }
+        //         },1000*3);
+        // } else{
+        //     var aniUl = document.querySelector('.ani');
+        //     clearInterval(aaPpl);
+        // }
         }
     
     
@@ -191,8 +223,9 @@ function init() {
                 location.href = 'work.html';
             }, 1000);
         }
-    
 
+
+    
 
     }
     

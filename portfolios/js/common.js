@@ -24,8 +24,8 @@ $(function(){
             },2500);
 
             var pageNum = localStorage.pagenum;
-            showPage(localStorage.pagenum);
-        
+            // showPage(localStorage.pagenum);
+            idx = pageNum;
             showPage(0);
         
             function reset(){
@@ -77,13 +77,14 @@ $(function(){
             showPage(0);
         });
 
-                    // detail off
-            // var main = document.querySelector('main');
-            var detailOff = document.querySelector('.head_3 .work_detail .left');
-            // detailOff.addEventListener('click',function(){
-            //     console.log('a')
-            //     main.classList.remove('active-detail');
-            // });
+        var navi = document.querySelectorAll('header .mid .navi li');
+        var changeIdx = 0;
+        navi.forEach(function(i, k) {
+            navi[k].addEventListener('click', function() {
+                changeIdx = k + 1;
+                showPage(changeIdx);
+            });
+        });
             
     }
 
