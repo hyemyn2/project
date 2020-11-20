@@ -1,0 +1,488 @@
+@import url('common.css');
+
+main {
+    margin-bottom: 50px;
+
+    position: relative;
+
+
+}
+.title {
+    background: #c4b7ae;
+}
+
+.title h1 {
+    text-transform: uppercase;
+    width: 80%;
+    margin: 100px auto 0 auto;
+    font-size: 18px;
+    padding: 10px 0 10px 50px;
+}
+
+
+
+.content {
+    width: 80%;
+    margin: 150px auto 0 auto;
+}
+
+.content .choice {
+    margin: 100px 0 150px 0;
+}
+.content .rcmmd {
+    margin: 100px 0 150px 0;
+}
+
+
+
+
+
+/*------------------------------공통 레이아웃-----------------------------------------*/
+
+.ttl {
+    background: #000;
+    color: #fff;
+    padding: 7px 0px 7px 20px;
+    margin-bottom: 10px;
+
+}
+
+.ttl h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.tag {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tag > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90px;
+    margin: 10px;
+
+    transition: .5s;
+
+}
+
+/*
+.tag > div:hover p{
+    font-weight: bolder;
+}
+*/
+
+.tag div p {
+
+    font-size: 12px;
+
+}
+
+.tag div p:nth-of-type(2) {
+    margin-left: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tag div p img {
+    width: 100%;
+}
+
+/*
+.tag a{
+    
+    margin: 30px 0;
+    font-size: 14px;
+    display: inline-block;
+    width:140px;
+    
+    vertical-align: middle;
+}
+
+*/
+
+
+.products {
+    position: relative;
+}
+
+
+
+
+.products .click {
+    /*
+    display: flex;
+    justify-content: space-between;
+    
+*/
+
+}
+
+.products .click a {
+    position: absolute;
+}
+
+.products .click a:nth-of-type(1) {
+    left: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.products .click a:nth-of-type(2) {
+    right: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+}
+
+.products ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products ul li {
+    padding: 0 0 30px 0;
+    width: 20%;
+    height: 400px;
+    text-align: center;
+
+    transition: .5s;
+
+}
+
+.products ul li:hover {
+
+    /*    background:rgba(125,136,114,0.4);*/
+    background: rgb(171, 125, 125);
+
+}
+
+
+
+.products ul li > p {
+    width: 100%;
+    height: 300px;
+    margin: 0 0 50px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.products ul li p img {}
+
+
+.products ul li > div {
+    font-size: 14px;
+
+    position: relative;
+}
+
+
+.products ul li h2 {
+    font-size: 14px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.products ul li div p {
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------mobile : 768px----------------------------------------------------------*/
+
+@media(max-width:768px) {
+    .title {
+        width: 100%;
+    }
+
+    .title h1 {
+        width: 90%;
+        margin: 0px auto;
+        padding: 10px 0;
+    }
+
+
+    .content {
+        width: 100%;
+        margin: 0px auto 0 auto;
+    }
+
+    .content .choice {
+        margin: 0px 0 100px 0;
+    }
+
+
+
+    .tag {
+        width: 90%;
+        margin: auto;
+    }
+
+    .tag > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: auto;
+        margin: 0px 5px;
+
+        transition: .5s;
+
+    }
+
+    .tag div p:nth-of-type(2) {
+        margin-left: 8px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 7%;
+    }
+
+
+    .tag div p img {
+        width: 100%;
+    }
+
+
+
+
+    .products .click a:nth-of-type(1) {
+        left: 30%;
+        top: 40%;
+        transform: translateY(0%) scale(0.6);
+    }
+
+    .products .click a:nth-of-type(2) {
+        right: 30%;
+        top: 40%;
+        transform: translateY(0%) scale(0.6);
+    }
+
+
+    .products ul {
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .products ul li {
+        padding: 40px 0 30px 0;
+        margin-right:40px;
+        width: 30%;
+
+        height: auto;
+        text-align: center;
+        flex: 0 0 auto;
+    }
+
+
+
+    .products ul li > p {
+        width: 60%;
+
+        height: auto;
+        margin: 0 auto 50px auto;
+
+
+    }
+
+    .products ul li > p img {
+        margin-left: 30px;
+        width: 100%;
+    }
+
+
+    .products ul li > div {
+        font-size: 14px;
+
+        position: relative;
+    }
+
+
+
+    .products ul li input {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------mobile : 480px----------------------------------------------------------*/
+
+@media(max-width:480px) {
+
+    .title {
+        width: 100%;
+    }
+
+    .title h1 {
+        width: 90%;
+        margin: 0px auto;
+        padding: 10px 0;
+    }
+
+
+    .content {
+        width: 100%;
+        margin: 0px auto 0 auto;
+    }
+
+    .content .choice {
+        margin: 0px 0 100px 0;
+    }
+
+
+
+    .tag {
+        width: 90%;
+        margin: auto;
+    }
+
+    .tag > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: auto;
+        margin: 0px 5px;
+
+        transition: .5s;
+
+    }
+
+    .tag div p:nth-of-type(2) {
+        margin-left: 8px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 7%;
+    }
+
+
+    .tag div p img {
+        width: 100%;
+    }
+
+
+
+
+    .products .click a:nth-of-type(1) {
+        left: 3%;
+        top: 40%;
+        transform: translateY(0%) scale(0.6);
+    }
+
+    .products .click a:nth-of-type(2) {
+        right: 3%;
+        top: 40%;
+        transform: translateY(0%) scale(0.6);
+    }
+
+
+    .products ul {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .products ul li {
+        padding: 40px 0 30px 0;
+        width: 100%;
+
+        height: auto;
+        text-align: center;
+        flex: 0 0 auto;
+    }
+
+
+
+    .products ul li > p {
+        width: 30%;
+
+        height: auto;
+        margin: 0 auto 50px auto;
+
+
+    }
+
+    .products ul li > p img {
+        margin-left: 30px;
+        width: 100%;
+    }
+
+
+    .products ul li > div {
+        font-size: 14px;
+
+        position: relative;
+    }
+
+
+
+    .products ul li input {
+        display: none;
+    }
+
+
+
+
+
+}
