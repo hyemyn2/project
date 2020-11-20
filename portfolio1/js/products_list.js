@@ -3,7 +3,7 @@ $(function () {
 
 
     $.ajax({
-        url: '../json/products_list.json',
+        url: '/json/products_list.json',
         type: 'GET',
         beforeSend: function () { },
         complete: function () { },
