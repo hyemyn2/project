@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <img id="profile_pic" src="img_extract.jpeg" alt="profile" width="740" height="900">
+    <canvas id="myCanvas" width="740" height="900" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+
+    <script>
+        document.getElementById("profile_pic").onload = function() {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+
+            var img = document.getElementById("profile_pic"); // 이미지 데이터 호출
+            ctx.drawImage(img, 0, 0); //  캔버스의 위치설정 후 그림
+
+            // 캔버스 그림 그린 후 데이터 get
+            var imgData = ctx.getImageData(0, 0, c.width, c.height);
+            // invert colors
+            // for (var i = 0; i < imgData.data.length; i += 8) {
+
+            //     var num = i;
+            //     for (var k = 0; k < 8; k++) {
+            //         // imgData.data[i + k] = 255 - imgData.data[i];
+            //         imgData.data[i + k] = imgData.data[i];
+            //     }
+            // }
+
+            // console.log(2664000 / 7400)
+
+            for (var i = 0; i < 360; i++) {
+                controlSpeed(i);
+            }
+
+            function controlSpeed(i) {
+                setTimeout(function() {
+                    for (var k = 7400 * i; k < 7400 * (i + 1); k += 40) {
+                        for (var p = 0; p < 40; p++) {
+                            imgData.data[k + p] = imgData.data[k];
+                        }
+                    }
+                    ctx.putImageData(imgData, 0, 0);
+                }, i * 3);
+            }
+
+
+
+
+
+
+            /* 세로간격 넓혀볼 것
+
+                        for (var i = 0; i < 360; i++) {
+                            controlSpeed(i);
+                        }
+
+                        function controlSpeed(i) {
+                            setTimeout(function() {
+                                for (var k = 7400 * i; k < 7400 * (i + 1); k += 100) {
+                                    if (k % 20 == 0) {
+                                        for (var p = 0; p < 100; p++) {
+                                            imgData.data[k + p] = imgData.data[k];
+                                        }
+                                    } else {
+                                        for (var p = 0; p < 100; p++) {
+                                            imgData.data[k + p] = imgData.data[k - (k % 20)];
+                                        }
+                                    }
+
+                                }
+                                ctx.putImageData(imgData, 0, 0);
+                            }, i * 3);
+                        }
+
+
+            */
+
+
+
+
+
+            // setTimeout(function() {
+
+            //     for (var i = 7400 * 0; i < 7400 * 1; i += 10) {
+            //         for (var k = 0; k < 10; k++) {
+            //             // imgData.data[i + k] = 255 - imgData.data[i];
+            //             imgData.data[i + k] = imgData.data[i];
+            //         }
+            //     }
+            //     ctx.putImageData(imgData, 0, 0);
+
+            // }, 0);
+
+            // setTimeout(function() {
+
+            //     for (var i = 7400 * 1; i < 7400 * 2; i += 10) {
+            //         for (var k = 0; k < 10; k++) {
+            //             // imgData.data[i + k] = 255 - imgData.data[i];
+            //             imgData.data[i + k] = imgData.data[i];
+            //         }
+            //     }
+            //     ctx.putImageData(imgData, 0, 0);
+
+            // }, 10);
+
+            // setTimeout(function() {
+
+            //     for (var i = 7400 * 2; i < 7400 * 3; i += 10) {
+            //         for (var k = 0; k < 10; k++) {
+            //             // imgData.data[i + k] = 255 - imgData.data[i];
+            //             imgData.data[i + k] = imgData.data[i];
+            //         }
+            //     }
+            //     ctx.putImageData(imgData, 0, 0);
+
+            // }, 20);
+
+            // setTimeout(function() {
+
+            //     for (var i = 7400 * 3; i < 7400 * 4; i += 10) {
+            //         for (var k = 0; k < 10; k++) {
+            //             // imgData.data[i + k] = 255 - imgData.data[i];
+            //             imgData.data[i + k] = imgData.data[i];
+            //         }
+            //     }
+            //     ctx.putImageData(imgData, 0, 0);
+
+            // }, 30);
+
+            // setTimeout(function() {
+
+            //     for (var i = 7400 * 4; i < 7400 * 5; i += 10) {
+            //         for (var k = 0; k < 10; k++) {
+            //             // imgData.data[i + k] = 255 - imgData.data[i];
+            //             imgData.data[i + k] = imgData.data[i];
+            //         }
+            //     }
+            //     ctx.putImageData(imgData, 0, 0);
+
+            // }, 40);
+
+            // setTimeout(function() {
+
+            //     for (var i = 7400 * 5; i < 7400 * 6; i += 10) {
+            //         for (var k = 0; k < 10; k++) {
+            //             // imgData.data[i + k] = 255 - imgData.data[i];
+            //             imgData.data[i + k] = imgData.data[i];
+            //         }
+            //     }
+            //     ctx.putImageData(imgData, 0, 0);
+
+            // }, 50);
+
+
+
+
+
+
+
+
+
+
+
+        };
+    </script>
+
+</body>
+
+</html>
