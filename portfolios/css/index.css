@@ -266,6 +266,97 @@ main .page1 .sect1.active3 .pic_group {
     transform: translate(0, 0);
     transition: .5s;
 }
+/* ----------------------------------------------------------- lilMoves*/
+
+
+.page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(1) {
+    animation: lilMoves1 3s 2s infinite backwards;
+}
+
+@keyframes lilMoves1{
+    0%{transform: translate(0,0px);}
+    10%{transform: translate(0,-60px); opacity: 1;}
+    30%{transform: translate(0,150px); opacity: 1;}
+    31%{transform: translate(0,150px); opacity: 0.1;}
+    80%{transform: translate(0,-0px);}
+    100%{transform: translate(0,-0px); opacity: 1;}
+}
+
+.page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(2) {
+    animation: lilMoves2 3s 2s infinite backwards;
+}
+
+@keyframes lilMoves2{
+    0%{transform: translate(0,0px);}
+    15%{transform: translate(0,-50px); opacity: 1;}
+    35%{transform: translate(0,150px); opacity: 1;}
+    36%{transform: translate(0,150px); opacity: 0.15;}
+    80%{transform: translate(0,-0px);}
+    100%{transform: translate(0,-0px); opacity: 1;}
+}
+.page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(3) {
+    animation: lilMoves3 3s 2s infinite backwards;
+}
+
+@keyframes lilMoves3{
+    0%{transform: translate(0,0px);}
+    20%{transform: translate(0,-40px); opacity: 1;}
+    40%{transform: translate(0,150px); opacity: 1;}
+    41%{transform: translate(0,150px); opacity: 0.20;}
+    80%{transform: translate(0,-0px);}
+    100%{transform: translate(0,-0px); opacity: 1;}
+}
+.page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(4) {
+    animation: lilMoves4 3s 2s infinite backwards;
+}
+
+@keyframes lilMoves4{
+    0%{transform: translate(0,0px);}
+    25%{transform: translate(0,-30px); opacity: 1;}
+    45%{transform: translate(0,150px); opacity: 1;}
+    46%{transform: translate(0,150px); opacity: 0.25;}
+    80%{transform: translate(0,-0px);}
+    100%{transform: translate(0,-0px); opacity: 1;}
+}
+.page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(5) {
+    animation: lilMoves5 3s 2s infinite backwards;
+}
+
+@keyframes lilMoves5{
+    0%{transform: translate(0,0px);}
+    30%{transform: translate(0,-20px); opacity: 1;}
+    50%{transform: translate(0,150px); opacity: 1;}
+    51%{transform: translate(0,150px); opacity: 0.3;}
+    80%{transform: translate(0,-0px);}
+    100%{transform: translate(0,-0px); opacity: 1;}
+}
+.page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(6) {
+    animation: lilMoves6 3s 2s infinite backwards;
+}
+
+@keyframes lilMoves6{
+    0%{transform: translate(0,0px);}
+    35%{transform: translate(0,-10px); opacity: 1;}
+    55%{transform: translate(0,150px); opacity: 1;}
+    56%{transform: translate(0,150px); opacity: 0.35;}
+    80%{transform: translate(0,-0px);}
+    100%{transform: translate(0,-0px); opacity: 1;}
+}
+
+/* 67a7aa 82423f */
+
+.page1 .sect1.active1 .text_group .intro .iam .name_change .name li:nth-of-type(1),
+.page1 .sect1.active1 .text_group .intro .iam .name_change .name li:nth-of-type(2),
+.page1 .sect1.active1 .text_group .intro .iam .name_change .name li:nth-of-type(3),
+.page1 .sect1.active1 .text_group .intro .iam .name_change .name li:nth-of-type(4),
+.page1 .sect1.active1 .text_group .intro .iam .name_change .name li:nth-of-type(5),
+.page1 .sect1.active1 .text_group .intro .iam .name_change .name li:nth-of-type(6){
+    animation: none;
+}
+
+
+
+/* ----------------------------------------------------------- */
 
 .page1 .sect1 .text_group .intro .iam .name_change .web {
     position: absolute;
@@ -285,20 +376,24 @@ main .page1 .sect1.active3 .pic_group {
 
 .page1 .sect1.active1 .text_group .intro .iam .name_change .name li {
     transform: translate(0, 100%);
+    transition: .5s .5s;
 }
 
 .page1 .sect1.active1 .text_group .intro .iam .name_change .web {
     display: inline-block;
-    animation: wordWeb .5s .0s 1 forwards;
+    animation: wordWeb 1s .5s 1 forwards;
 }
 
 .page1 .sect1.active1 .text_group .intro .iam .name_change .dev p {
-    animation: wordDev .5s .0s 1 forwards;
+    animation: wordDev 1s .5s 1 forwards;
 }
 
 @keyframes wordWeb {
     0% {
         bottom: -100%;
+    }
+    50%{
+        bottom: 130%;
     }
     100% {
         bottom: 100%;
@@ -308,6 +403,9 @@ main .page1 .sect1.active3 .pic_group {
 @keyframes wordDev {
     0% {
         transform: translate(0, 100%);
+    }
+    50%{
+        transform: translate(0, -70%);
     }
     100% {
         transform: translate(0, -3%);
@@ -1376,6 +1474,7 @@ main {}
         line-height: 60px;
         left: 0%;
         top: 50%;
+        transition: .5s;
     }
     
     /* pics_introduction */

@@ -1,8 +1,8 @@
 
 $(function(){
 
-    $('header').load('/project/portfolio2/inc_head_foot.html header .tie',head);
-    $('footer').load('/project/portfolio2/inc_head_foot.html footer .foot');
+    $('header').load('/portfolio2/inc_head_foot.html header .tie',head);
+    $('footer').load('/portfolio2/inc_head_foot.html footer .foot');
     
 
 
@@ -90,7 +90,7 @@ $(function(){
         var menuCareer = document.querySelector('.go_career');
         menuCareer.addEventListener('click',function(e){
             e.preventDefault();
-            window.open("/project/portfolio2/career/career_main.html","_blank");
+            window.open("career/career_main.html","_blank");
         });
 
         var bg = document.querySelector('.head .burger');

@@ -740,11 +740,16 @@ main .sect2 .detail_con .tool_environment dl dd ul li{
 
 /* ---------------------------------------------- go_top */
 
+
+main .sect2 .detail_con{
+    position: relative;
+}
+
 main .sect2 .detail_con .go_top{
     position: fixed;
     right: 32%;
-    top: 6%;
-    z-index: 50000;
+    bottom: 3%;
+    z-index: 500000000;
     padding: 15px 20px 10px 20px;
     background: rgba(233,233,233,1);
     opacity: 0;
@@ -759,7 +764,7 @@ main .sect2 .detail_con .go_top:hover{
 
 main .sect2 .detail_con .go_top.active-up{
     opacity: 1;
-    top: 3%;
+    bottom: 8%;
     transition: .5s;
 }
 
@@ -784,15 +789,28 @@ main .sect2 .detail_side .go_project {
     font-size: 16px;
     position: absolute;
     right: 28%;
-    top: 12%;
+    top: 10%;
     z-index: 2000;
     /* transform: translateX(-50%); */
     color: #1f1f1f;
     display: inline-block;
     padding: 5px 20px;
-    background: #e9e9e9;
+    background: rgba(233,233,233,0.4);
     box-shadow: 10px 7px 7px rgba(0,0,0,0.4);
     transition: .5s;
+    animation: seeWork .8s 0s infinite alternate;
+
+}
+
+@keyframes seeWork {
+    0% {
+        transform: translate(0,15px);
+        box-shadow: 5px 5px 2px rgba(0,0,0,0.4);
+    }
+    100% {
+        transform: translate(0,5px);
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    }
 }
 main .sect2 .detail_side .go_project:after{
     display: inline-block;

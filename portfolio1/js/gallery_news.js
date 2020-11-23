@@ -1,6 +1,6 @@
 $(function(){
     $.ajax({
-        url:'/json/gallery_news.json',
+        url:'../json/gallery_news.json',
         type:'GET',
         success:function(data){
 

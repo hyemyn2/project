@@ -377,6 +377,8 @@ header .head_3.active {
     z-index: 100000;
 }
 
+
+
 header .head_3 .work_list,
 header .head_3 .work_detail{
     width: 90%;
@@ -458,7 +460,7 @@ header .head_3.active-detail .work_list{
     opacity:0;
 }
 header .head_3.active-detail .work_detail{
-    z-index: 1;
+    z-index: -1;
     opacity: 1;
 }
 

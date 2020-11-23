@@ -3,8 +3,8 @@ $(function(){
 // index&sub page의 경로가 다를 경우, 절대 경로 잡기 : / 놓기
 
 
-    $('header').load('/inc_head_foot.html header .tie',head);
-    $('footer').load('/inc_head_foot.html footer .foot');
+    $('header').load('/portfolio1/inc_head_foot.html header .tie',head);
+    $('footer').load('/porfolio1/inc_head_foot.html footer .foot');
 
     function head(){
 

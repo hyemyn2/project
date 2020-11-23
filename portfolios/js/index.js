@@ -305,6 +305,13 @@ function init() {
 <canvas id="myCanvas" width="740" height="900" style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas> */}
 
+        // var profileImg = document.querySelector('.profile_pic');
+        // console.log(profileImg)
+        // profileImg.addEventListener('onload',pixelProfile);
+
+        // function pixelProfile(){
+        //     console.log('a')
+        // }
 
         document.getElementById("profile_pic").onload = function() {
             var c = document.getElementById("profile");
@@ -313,19 +320,8 @@ Your browser does not support the HTML5 canvas tag.</canvas> */}
             var img = document.getElementById("profile_pic"); // 이미지 데이터 호출
             ctx.drawImage(img, 0, 0); //  캔버스의 위치설정 후 그림
 
-            // 캔버스 그림 그린 후 데이터 get
             var imgData = ctx.getImageData(0, 0, c.width, c.height);
-            // invert colors
-            // for (var i = 0; i < imgData.data.length; i += 8) {
 
-            //     var num = i;
-            //     for (var k = 0; k < 8; k++) {
-            //         // imgData.data[i + k] = 255 - imgData.data[i];
-            //         imgData.data[i + k] = imgData.data[i];
-            //     }
-            // }
-
-            // console.log(2664000 / 7400)
 
             for (var i = 0; i < 360; i++) {
                 controlSpeed(i);
@@ -341,8 +337,7 @@ Your browser does not support the HTML5 canvas tag.</canvas> */}
                     ctx.putImageData(imgData, 0, 0);
                 }, i * 3);
             }
-
-        }
+        };
 
 
     }

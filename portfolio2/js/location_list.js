@@ -32,7 +32,7 @@ $(function(){
             city.forEach(function(i){
                 i.addEventListener('click',function(){
                     // console.log(window.location.pathname);
-                    window.location.pathname = "project/portfolio2/location/location_detail.html";
+                    window.location.pathname = "portfolio2/location/location_detail.html";
                     console.log(window.location.pathname)
                     var str = i.childNodes[1].childNodes[0].src;
 
