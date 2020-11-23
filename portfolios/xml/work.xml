@@ -136,9 +136,9 @@
         </div>
 
             <div class="detail_side">
-                <!-- <div class="go_project">
+                <div class="go_project">
                     <a href="#">Explore the website</a>
-                </div> -->
+                </div>
                 <p><img src="img/works/fixed/fixed_aesop.jpg" alt="" /></p>
             </div>
 
@@ -273,6 +273,9 @@
         </div>
 
             <div class="detail_side">
+                <div class="go_project">
+                    <a href="#">Explore the website</a>
+                </div>
                 <p><img src="img/works/fixed/fixed_coupang.jpg" alt="" /></p>
             </div>
 
@@ -407,6 +410,9 @@
         </div>
 
             <div class="detail_side">
+                <div class="go_project">
+                    <a href="#">Explore the website</a>
+                </div>
                 <p><img src="img/works/fixed/fixed_marina_bay_sands.jpg" alt="" /></p>
             </div>
 

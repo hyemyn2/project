@@ -118,7 +118,7 @@ $(function(){
                             workPic.prepend(thumb[2]);
                         bln=true;
 
-                        },900)
+                        },0)
 
                     } else if(k==1){
                         if(idxWork!=2){
@@ -133,7 +133,7 @@ $(function(){
                             workPic.append(thumb[0]);    
                             bln=true;
 
-                        },900)
+                        },0)
                     }
                     showTxt(idxWork);
                     idxLast = idxWork;
@@ -312,6 +312,7 @@ $(function(){
 
                             }
                         });
+                        
 
                         var upDown=0, moveDel=0;
                         var limitSect2 = sect2.offsetHeight-window.innerHeight;
@@ -369,6 +370,21 @@ $(function(){
                             pageMove(upDown);
                         });
 
+
+                        var btnGo = document.querySelector('main .page1 .sect2 .detail_side .go_project');
+
+                        btnGo.addEventListener('click',function(e){
+                            e.preventDefault();
+                            console.log(btnGo)
+
+                            if(getName.classList.contains('aesop')){
+                                window.open("../../portfolio1/index.html","_blank");
+                            } else if(getName.classList.contains('coupang')){
+                                window.open("../../portfolio2/index.html","_blank");
+                            } else if(getName.classList.contains('marina_bay_sands')){
+                                window.open("../../portfolio3/index.html","_blank");
+                            }
+                        });
 
                     }
                 });

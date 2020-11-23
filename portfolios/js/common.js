@@ -85,14 +85,51 @@ $(function(){
                 showPage(changeIdx);
             });
         });
-            
+
+
+// ----------------------------------- copy mail
+
+        var emailBtn = document.querySelector('header .head_1 p');
+        var emailData = document.querySelector('header .head_1 p span');
+        var copyTxt = emailData.innerHTML;
+        emailData.addEventListener('click',copyMail);
+
+        function copyMail() {
+            var range = document.createRange();
+            range.selectNode(emailData.childNodes[0]); //텍스트 정보를 Range 객체에 저장
+            //range.setStart(obj.childNodes[0], 0); //추가
+            //range.setEnd(obj.childNodes[0], 5); //추가
+            var sel = window.getSelection();
+            sel.removeAllRanges(); //기존 선택정보 삭제
+            sel.addRange(range); //텍스트 정보 선택
+            document.execCommand("copy"); //복사
+            sel.removeRange(range); //선택 정보 삭제
+
+            copiedTxt();
+        }
+
+        function copiedTxt(){
+            console.log('a')
+
+            emailData.innerHTML = "hyemyn2@gmail.com<br>Copied";
+            emailBtn.style = "background: rgba(223,54,46,0.7);";
+            emailData.style = "color: #000;";
+
+            setTimeout(function(){
+            emailData.innerHTML = copyTxt;
+            emailBtn.style = "background: rgba(0,0,0,1);";
+            emailData.style = "color: #e9e9e9;";
+            },1000);
+
+        }
     }
 
+// ----------------------------------- head change
 
 
     function move(upDown){
         if(upDown<0){
-            if(idx!=5) idx++
+            if(idx!=4) idx++
         }else{
             if(idx!=0) idx--;
         }
@@ -114,10 +151,28 @@ $(function(){
                 $('.head_1').removeClass('active');
                 $('.head_2 .right').removeClass('active');
     
-                if(idx==5){
+                if(idx==4){
                     $('.head_2 .right').addClass('active');
                 }
             }
+    }
+
+
+
+
+    function copyMail() {
+        var obj = document.getElementById("header .head_1 span");
+        console.log(obj);
+
+        var range = document.createRange();
+        range.selectNode(obj.childNodes[0]); //텍스트 정보를 Range 객체에 저장
+        //range.setStart(obj.childNodes[0], 0); //추가
+        //range.setEnd(obj.childNodes[0], 5); //추가
+        var sel = window.getSelection();
+        sel.removeAllRanges(); //기존 선택정보 삭제
+        sel.addRange(range); //텍스트 정보 선택
+        document.execCommand("copy"); //복사
+        sel.removeRange(range); //선택 정보 삭제
     }
 
 
