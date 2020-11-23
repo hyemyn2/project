@@ -270,7 +270,7 @@ main .page1 .sect1.active3 .pic_group {
 
 
 .page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(1) {
-    /* animation: lilMoves1 3s 2s infinite backwards; */
+    animation: lilMoves1 3s 2s infinite backwards;
 }
 
 @keyframes lilMoves1{
@@ -283,7 +283,7 @@ main .page1 .sect1.active3 .pic_group {
 }
 
 .page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(2) {
-    /* animation: lilMoves2 3s 2s infinite backwards; */
+    animation: lilMoves2 3s 2s infinite backwards;
 }
 
 @keyframes lilMoves2{
@@ -295,7 +295,7 @@ main .page1 .sect1.active3 .pic_group {
     100%{transform: translate(0,-0px); opacity: 1;}
 }
 .page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(3) {
-    /* animation: lilMoves3 3s 2s infinite backwards; */
+    animation: lilMoves3 3s 2s infinite backwards;
 }
 
 @keyframes lilMoves3{
@@ -307,7 +307,7 @@ main .page1 .sect1.active3 .pic_group {
     100%{transform: translate(0,-0px); opacity: 1;}
 }
 .page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(4) {
-    /* animation: lilMoves4 3s 2s infinite backwards; */
+    animation: lilMoves4 3s 2s infinite backwards;
 }
 
 @keyframes lilMoves4{
@@ -319,7 +319,7 @@ main .page1 .sect1.active3 .pic_group {
     100%{transform: translate(0,-0px); opacity: 1;}
 }
 .page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(5) {
-    /* animation: lilMoves5 3s 2s infinite backwards; */
+    animation: lilMoves5 3s 2s infinite backwards;
 }
 
 @keyframes lilMoves5{
@@ -331,7 +331,7 @@ main .page1 .sect1.active3 .pic_group {
     100%{transform: translate(0,-0px); opacity: 1;}
 }
 .page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(6) {
-    /* animation: lilMoves6 3s 2s infinite backwards; */
+    animation: lilMoves6 3s 2s infinite backwards;
 }
 
 @keyframes lilMoves6{

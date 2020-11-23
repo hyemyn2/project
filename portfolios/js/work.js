@@ -1,5 +1,7 @@
 $(function(){
 
+    setTimeout(function(){
+
     $.ajax({
         url:"json/work.json",
         type:"GET",
@@ -403,6 +405,7 @@ $(function(){
 
 
 
+    },200);
 
 
 
