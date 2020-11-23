@@ -36,8 +36,8 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 
             function controlSpeed(i) {
                 setTimeout(function() {
-                    for (var k = 7400 * i; k < 7400 * (i + 1); k += 100) {
-                        for (var p = 0; p < 100; p++) {
+                    for (var k = 7400 * i; k < 7400 * (i + 1); k += 50) {
+                        for (var p = 0; p < 50; p++) {
                             imgData.data[k + p] = imgData.data[k];
                         }
                     }

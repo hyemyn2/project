@@ -156,7 +156,6 @@ header .head_2 .right .work {
 
 header .head_2 .right.active .work {
     /* background: #000; */
-    background: rgba(223,54,46,1);
 
     color: #1f1f1f;
     /* color: #e9e9e9; */
@@ -167,12 +166,18 @@ header .head_2 .right.active .work {
 
 @keyframes seeWork {
     0% {
+        color: #e9e9e9;
         transform: translate(0,15px);
         box-shadow: 5px 5px 2px rgba(0,0,0,0.4);
+        background: rgba(0,0,0,1);
+
     }
     100% {
+        color: #e9e9e9;
         transform: translate(0,5px);
         box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+        background: rgba(223,54,46,1);
+
     }
 }
 
@@ -716,30 +721,6 @@ header .head_2 .right.active .work {
     transition: .5s 1.5s;
 }
 
-header .head_2 .right .work::after {
-    content: url('../img/picto/picto_narrow_arrow_up.png');
-    display: inline-block;
-    position: absolute;
-    right: 40%;
-    top: 350%;
-    opacity: 0;
-    transition: .5s 0s;
-    animation: seeWork .8s 2s infinite alternate;
-}
-
-header .head_2 .right.active .work::after {
-    opacity: 1;
-    transition: .3s 1.5s;
-}
-
-@keyframes seeWork {
-    0% {
-        top: 280%;
-    }
-    100% {
-        top: 150%;
-    }
-}
 
 
 /* header nav{
@@ -1009,10 +990,10 @@ header .head_3.active-detail .work_detail .right:hover{
 /* ------------------------------------- footer */
 
 footer {
-    width: 22%;
+    width: 80%;
     position: fixed;
     right: 0;
-    bottom: -80px;
+    bottom: -72px;
     z-index: 100000;
     transition: .5s;
 }
@@ -1024,7 +1005,7 @@ footer:hover {
 footer .foot_work {
     border-radius: 30px 0 0 0;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.6);
-    padding: 15px 0px 0px 40px;
+    padding: 12px 0px 0px 30px;
     width: 100%;
     background: rgba(233, 233, 233, 0.8);
     color: #1f1f1f;
@@ -1045,7 +1026,7 @@ footer .foot_work .contact {
 
 footer .foot_work .contact h2 {
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 900;
 }
 
@@ -1061,9 +1042,9 @@ footer:hover .foot_work .contact p {
 }
 
 footer .foot_work .info {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 900;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
     color: #1f1f1f;
     opacity: 0.9;
 }

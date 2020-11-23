@@ -165,7 +165,7 @@ $(function(){
                         aaAll = setTimeout(function(){
                             var upDown = e.wheelDelta;
                             moveList(upDown, workImg);
-                        },500);
+                        },0);
                     });
                 });
 

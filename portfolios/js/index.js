@@ -112,6 +112,13 @@ function init() {
                 //     break;
             }
     
+            if(idx==1){
+                setTimeout(function(){
+                    pixelProfile(idx);
+                },1000);
+            } else{
+                // pixelProfile(idx);
+            }
 
             if(idx==3){
                     aaRecent = setInterval(function(){
@@ -300,44 +307,51 @@ function init() {
 
 
 // ------------------------------------ 프로필 모자이크
-
-{/* <img id="profile_pic" src="img_extract.jpeg" alt="profile" width="740" height="900">
-<canvas id="myCanvas" width="740" height="900" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas> */}
-
-        // var profileImg = document.querySelector('.profile_pic');
-        // console.log(profileImg)
-        // profileImg.addEventListener('onload',pixelProfile);
-
-        // function pixelProfile(){
-        //     console.log('a')
-        // }
-
-        document.getElementById("profile_pic").onload = function() {
-            var c = document.getElementById("profile");
-            var ctx = c.getContext("2d");
-
-            var img = document.getElementById("profile_pic"); // 이미지 데이터 호출
-            ctx.drawImage(img, 0, 0); //  캔버스의 위치설정 후 그림
-
-            var imgData = ctx.getImageData(0, 0, c.width, c.height);
-
-
-            for (var i = 0; i < 360; i++) {
-                controlSpeed(i);
-            }
-
-            function controlSpeed(i) {
-                setTimeout(function() {
-                    for (var k = 7400 * i; k < 7400 * (i + 1); k += 40) {
-                        for (var p = 0; p < 40; p++) {
-                            imgData.data[k + p] = imgData.data[k];
-                        }
+        function pixelProfile(idx){
+            
+                var imgParent = document.querySelector('.pic_group .introduction .pic_profile');
+                var imgTag = document.createElement('img');
+                imgParent.append(imgTag);
+            imgTag.setAttribute('id','profile_pic');
+            imgTag.setAttribute('src','img/profile.jpg');
+            
+            document.getElementById("profile_pic").onload = function() {
+                var c = document.getElementById("profile");
+                var ctx = c.getContext("2d");
+                
+                var img = document.getElementById("profile_pic"); // 이미지 데이터 호출
+                ctx.drawImage(img, 0, 0); //  캔버스의 위치설정 후 그림
+                
+                // 캔버스 그림 그린 후 데이터 get
+                var imgData = ctx.getImageData(0, 0, c.width, c.height);
+                imgOrigin = imgData;
+                // invert colors
+                
+                
+                // console.log(2664000 / 7400)
+                
+                if(idx==1){
+                    for (var i = 0; i < 360; i++) {
+                        controlSpeed(i);
                     }
-                    ctx.putImageData(imgData, 0, 0);
-                }, i * 3);
-            }
-        };
+                    
+                    function controlSpeed(i) {
+                        setTimeout(function() {
+                            for (var k = 7400 * i; k < 7400 * (i + 1); k += 37) {
+                                for (var p = 0; p < 37; p++) {
+                                    imgData.data[k + p] = imgData.data[k];
+                                }
+                            }
+                            ctx.putImageData(imgData, 0, 0);
+                        }, i * 3);
+                    }
+                } else{
+                //     ctx.putImageData(imgOrigin, 0, 0);
+                }
+
+                
+            };
+        }
 
 
     }
