@@ -136,12 +136,13 @@ main .content {
     
     main {
         /* padding-top: 90px; */
+        height: 100vh;
     }
     
     main .content {
     
         background: url('../img/main/main_con1.jpg') no-repeat;
-        background-size: 120%;
+        background-size: auto 100%;
     
         width: 100%;
         height: 100vh;
@@ -153,7 +154,7 @@ main .content {
     
     .content:after {
         content: '';
-        display: block;
+        display: none;
     
         width: 100%;
         height: 100vh;
@@ -241,6 +242,35 @@ main .content {
     }
     
 
+ /* tab-mobile */
+ .content .tab_mobile{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.content .tab_mobile p{
+    margin: 0;
+    width: 100%;
+}
+
+.content .tab_mobile p img{
+    width: 100%;
+}
+
+.content .tab_mobile span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Julius Sans One', sans-serif;
+
+    white-space: pre-line;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
 
 
 
@@ -254,7 +284,7 @@ main .content {
 @media(max-width:480px) {
 
     body {
-        overflow: auto;
+        overflow: hidden;
     }
 
 
@@ -264,11 +294,12 @@ main .content {
 
     main .content {
 
-        background: url('../img/main/main_con1.jpg') none;
-        background-size: auto 100%;
+        background:none;
+        background-size: 100% 100%;
 
         width: 100%;
-        height: 75vh;
+        /* height: 100vh; */
+        height: auto;
 
         display: block;
 
@@ -295,93 +326,35 @@ main .content {
         font-family: 'Julius Sans One', sans-serif;
     }
 
-    .content .con {
+ /* tab-mobile */
+    .content .tab_mobile{
         width: 100%;
-        height: 100%;
-        /*        height: 800px;*/
-    }
-
-
-    .content .con:nth-of-type(1) {
-        position: absolute;
-        left: 0%;
-        top: 0;
-        transform: translateX(0) translateY(0);
-    }
-
-
-    .content .con:nth-of-type(2) {
-        position: absolute;
-        left: 100%;
-        top: 0;
-        transform: translateX(0) translateY(0);
-    }
-
-    .content .con:nth-of-type(3) {
-        position: absolute;
-        left: 200%;
-        top: 0;
-        transform: translateX(0) translateY(0);
-    }
-
-
-
-    .con .arrow {
-        display: none;
-    }
-
-    .content .con figure {
+        height: 100vh;
         margin: 0;
+        position: relative;
+    }
 
+    .content .tab_mobile p{
+        margin: 0;
         width: 100%;
-        height: 100%;
     }
 
-
-    .content .con:nth-of-type(1) figure {
-        background: url('../img/main/mobile_1.jpg');
-        background-size: 100% 100%;
+    .content .tab_mobile p img{
+        width: 100%;
     }
 
-    .content .con:nth-of-type(2) figure {
-        background: url('../img/main/mobile_2.jpg');
-        background-size: 100% 100%;
-    }
-
-    .content .con:nth-of-type(3) figure {
-        background: url('../img/main/mobile_3.jpg');
-        background-size: 100% 100%;
-    }
-
-    .content .con figure img {
-        display: none;
-    }
-
-    .content .con figcaption {
+    .content .tab_mobile span{
         position: absolute;
-        left: 15px;
+        left: 0;
         top: 0;
-
-    }
-
-    .content .con figcaption h2 {
         white-space: pre-line;
-
-        margin: 0;
-
-        font-size: 18px;
-        line-height: 36px;
-    }
-
-    .content .con figcaption a {
-        display: none;
-    }
-
-    .content .con figcaption a:after {
-        display: none;
-
-
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
+
+
 
 

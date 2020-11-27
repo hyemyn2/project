@@ -1006,7 +1006,7 @@ header:hover nav div ul {
     /*others*/
 
     .others {
-        width: 75%;
+        width: 70%;
 
         display: flex;
         justify-content: flex-end;
@@ -1014,10 +1014,12 @@ header:hover nav div ul {
     }
 
     .others .icon {
+        width: 100%;
         display: flex;
     }
 
     .others .icon a {
+        display: inline-block;
         padding: 10px;
     }
 
@@ -1092,6 +1094,13 @@ header:hover nav div ul {
     display: block;
 }
 
+
+.head .burg .burger{
+    position: absolute;
+    left: 0;
+    top: -15px;
+    z-index: 500;
+}
 
 
     /*=============footer=================*/
@@ -1319,7 +1328,7 @@ header:hover nav div ul {
         background: #ece5df;
         width: 90%;
         margin: auto;
-        padding: 20px 0 5px 0;
+        padding: 10px 0 5px 0;
 
         display: flex;
         justify-content: space-between;
@@ -1332,6 +1341,8 @@ header:hover nav div ul {
 
     }
 
+
+
     
     .burg .menu {
         opacity: 1;
@@ -1343,7 +1354,7 @@ header:hover nav div ul {
         position: fixed;
         z-index: 100;
         left: 0;
-        top: 0;
+        top: 0px;
 
         margin: 0;
 
@@ -1360,8 +1371,12 @@ header:hover nav div ul {
     /*logo*/
 
     .head > a {
-        width: 25%;
-        margin-left: 10px;
+        position: absolute;
+        left: 15px;
+        top: 20px;
+        width: 20%;
+        display: inline-block;
+        margin-left: 30px;
     }
 
     .head > a img {
@@ -1377,7 +1392,7 @@ header:hover nav div ul {
     .head nav {
         position: fixed;
         left: 0;
-        top: 35px;
+        top: 25px;
         margin: 0;
         transform: translateY(100%);
 
@@ -1428,7 +1443,7 @@ header:hover nav div ul {
     /*others*/
 
     .others {
-        width: 65%;
+        width: 35%;
 
         display: flex;
         justify-content: flex-end;
@@ -1442,6 +1457,23 @@ header:hover nav div ul {
     .others .icon a {
         padding: 10px;
     }
+
+
+    .others .icon a {
+        position: absolute;
+        right: 0; top: 0;
+        padding: 10px;
+        transition: .5s;
+        opacity: 1;
+    }
+    
+    .others .icon a:nth-of-type(1) {right: 80px;}
+    .others .icon a:nth-of-type(2) {right: 40px;}
+    .others .icon a:nth-of-type(3) {right: 0px; z-index: 10}
+    .others .icon a:nth-of-type(4) {right: 0px; display: none; z-index: 5000;}
+
+
+
 
     .others .icon a img {}
 
