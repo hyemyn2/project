@@ -551,14 +551,14 @@ footer .foot_work .info dl .box_email {
     overflow: hidden;
     width: 100%;
 }
-
+/* 
 footer .foot_work .info dl .box_email:after {
     content: url(../img/picto/picto_contact.png);
     display: inline-block;
     position: absolute;
     right: 10%;
     top: 0;
-}
+} */
 
 footer .foot_work .info dl .box_email:after:hover {
     opacity: 0;
@@ -1061,14 +1061,14 @@ footer .foot_work .info dl .box_email {
     overflow: hidden;
     width: 100%;
 }
-
+/* 
 footer .foot_work .info dl .box_email:after {
     content: url(../img/picto/picto_contact.png);
     display: inline-block;
     position: absolute;
     right: 10%;
     top: 0;
-}
+} */
 
 footer .foot_work .info dl .box_email:after:hover {
     opacity: 0;

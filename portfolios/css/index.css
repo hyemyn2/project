@@ -2594,8 +2594,8 @@ transition: transform 1s 1s, right 1s 2s; */
 }
 
 .page1 .sect2.active-move .pic_group .as_person .bord {
-    bottom: 3%;
-    height: 90%;
+    bottom: 15%;
+    height: 70%;
     padding: 50px 0;
     transition: .5 1s;
     /* background-color: #000; */
