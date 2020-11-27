@@ -1,7 +1,9 @@
 @import url('common.css');
 
 
-main {}
+main {
+    padding-bottom: 180px;
+}
 
 .title {
     background: #c4b7ae;

@@ -115,8 +115,10 @@ $(function(){
             
         });
 
-
-            
+        var video = document.getElementId('video');
+        window.addEventListener('DOMContentLoaded',function(){
+            video.play();
+        });
 
 //     <article class="box box_3">
 //     <div class="txt">

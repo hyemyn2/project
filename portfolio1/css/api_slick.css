@@ -144,7 +144,7 @@
     font-size: 0;
     width: 45px; height: 45px;
     position: absolute;
-    top: 56%;
+    top: 60%;
     transform: translateY(-50%);
     background: #000;
     z-index: 9;

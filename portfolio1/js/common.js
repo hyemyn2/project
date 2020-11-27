@@ -157,10 +157,12 @@ $(function(){
 
 
     var hd = document.querySelector('header');
+    var viewSize = window.innerHeight-hd.offsetHeight;
+    console.log(viewSize)
     var upDown=0, moveDel=0;
     var main = document.querySelector('main');
     var bd = document.querySelector('body');
-    var mainH = main.offsetHeight-window.innerHeight+hd.offsetHeight+500;
+    var mainH = main.offsetHeight-viewSize;
 
     console.log(hd)
     // var limitSect2 = sect2.offsetHeight-window.innerHeight;

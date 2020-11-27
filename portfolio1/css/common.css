@@ -26,7 +26,15 @@ body {
     font-weight: bolder;
 }
 
-main{transition: .5s;}
+
+body{
+    position: relative;
+}
+
+main{
+
+    transition: .5s;
+}
 
 
 /*style*/
