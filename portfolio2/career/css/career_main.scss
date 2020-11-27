@@ -62,6 +62,12 @@ body{
         }
         .con{}
     }
+    section:nth-of-type(3){
+        h2{
+        @include font(Kakao Light, 15px, 15px, #fff);
+        font-weight: lighter;
+        }
+    }
 
 }
 
@@ -120,7 +126,8 @@ body{
 }
 
 .work{
-    background:#fc5951;
+    background:#212636;
+
 
     .con{
         width: 100%;
@@ -130,7 +137,8 @@ body{
         align-items: center;
         p{
         width: 100%;
-        @include font(Kakao Regular, 30px, 45px, #000);
+        @include font(Kakao Light, 30px, 45px, #fff);
+        font-weight: lighter;
         text-align: center;
 
         }
@@ -178,6 +186,13 @@ body{
             @include font(Kakao Light, 15px, 15px, #000);
             }
             .con{}
+        }
+
+        section:nth-of-type(3){
+            h2{
+            @include font(Kakao Light, 15px, 15px, #fff);
+            font-weight: lighter;
+            }
         }
     
     }
@@ -237,7 +252,7 @@ body{
     }
     
     .work{
-        background:#fc5951;
+        background:#212636;
     
         .con{
             width: 100%;
@@ -247,7 +262,9 @@ body{
             align-items: center;
             p{
             width: 100%;
-            @include font(Kakao Regular, 30px, 45px, #000);
+            @include font(Kakao Light, 30px, 45px, #fff);
+            font-weight: lighter;
+
             text-align: center;
     
             }
