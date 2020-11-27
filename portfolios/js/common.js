@@ -55,7 +55,7 @@ var idx = 0, aa;
 function head() {
     
 
-    if (location.href.match('index')) {
+    if (!location.href.match('work')) {
         setTimeout(function () {
             document.addEventListener('mousewheel', function (e) {
                 upDown = e.wheelDelta;
