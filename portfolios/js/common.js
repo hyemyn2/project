@@ -53,8 +53,9 @@ $('header').load('inc_head_foot.html header .tie', head);
 var idx = 0, aa;
 
 function head() {
+    
 
-    if (location.href == "http://127.0.0.1:5500/portfolios/index.html") {
+    if (location.href.match('index')) {
         setTimeout(function () {
             document.addEventListener('mousewheel', function (e) {
                 upDown = e.wheelDelta;
@@ -89,7 +90,7 @@ function head() {
 
     }
 
-    if (location.href == "http://127.0.0.1:5500/portfolios/work.html") {
+    if (location.href.match('work')) {
         $('.head_1').removeClass('active');
         $('.head_2').removeClass('active');
         $('.head_3').addClass('active');
