@@ -132,3 +132,126 @@ main{
         }
     }
 }
+
+// mobile
+
+@media (max-width: 480px) {
+
+    main{
+        padding-top: 150px;
+    }
+    
+    .team{
+        .title{
+            width: 90%; margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+    
+            h2{
+                @include font(Kakao Light,40px,40px,#000);
+                font-weight: 700;
+                color: #333; // common.css가 안 먹어서 임시로 써놓음
+    
+                margin: 0;
+            }
+            .selectbox{
+                margin-top: 30px;
+                margin-bottom: 50px;
+
+                box-sizing: border-box;
+                position: relative;
+    
+                width: 210px;
+                border: 1px solid #d4d4d4;
+                background: #fff;
+                position: relative;
+                a{
+    
+                    padding: 0 15px;
+                    @include font(Kakao Light,15px,40px,#000);
+    
+                    span{
+    
+                        position: absolute;
+                        right:10px;
+                        top: 50%;
+    
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        border:5px solid transparent;
+                        border-top: 5px solid #666;
+                    }
+                }
+    
+                ul{
+                    box-sizing: border-box;
+                    width: 210px;
+                    border: 1px solid #d4d4d4;
+                    background: #fff;
+                    padding: 10px 0 10px 15px;
+                    margin: 0;
+                    position: absolute;
+                    left:-1px; top:100%;
+    
+                    li{
+                    @include font(Kakao Light,15px,15px,#000);
+                        padding: 10px 0;
+                    }
+    
+                    li:hover{text-decoration-line: underline;}
+    
+                    display :none;
+                }
+            }
+        }
+    
+        .teamlist{
+    
+            ul{
+    
+                padding: 0;
+                width: 50%;
+                margin: 0px auto 50px auto;
+    
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+    
+    
+                li{
+                    width:100%;
+                    border-bottom: 1px solid #e6e6e6;
+                    padding:50px 0;
+    
+                    p{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                        }
+                    }
+    
+                    .txt{
+                        text-align: center;
+                        p{
+                            margin: 0;
+                    @include font(Kakao Light,15px,30px,#000);
+                    margin-bottom: 5px;
+                        }
+                        span{
+                    @include font(Kakao Regular,18px,18px,#000);
+                        }
+                    }
+    
+                }
+                li:hover .txt{text-decoration-line: underline;}
+    
+            }
+        }
+    }
+
+}

@@ -19,6 +19,8 @@
 
 html,
 body {
+    width: 100%;
+    height: 100vh;
     background: #ece5df;
     font-family: 'Raleway', sans-serif;
     font-weight: bolder;
@@ -194,7 +196,7 @@ nav div > a:hover {
     opacity: 1;
     left: 50px;
     top: 10px;
-    transition: 1s;
+    transition: opacity .5s .3s;
 }
 
 
@@ -271,7 +273,7 @@ nav > div > ul li:hover:before {
 
 .others .icon a:nth-of-type(1) {right: 96px;}
 .others .icon a:nth-of-type(2) {right: 48px;}
-.others .icon a:nth-of-type(3) {right: 0px; z-index: 10000}
+.others .icon a:nth-of-type(3) {right: 0px; z-index: 10}
 .others .icon a:nth-of-type(4) {right: 0px; display: none; z-index: 5000;}
 
 
@@ -356,7 +358,7 @@ nav > div > ul li:hover:before {
 }
 
 .head_2 .hide p {
-    width: 21%;
+    width: 23%;
     margin: 0;
     font-size: 0;
 }
@@ -478,7 +480,7 @@ border: none;
 .detail .txt {
     padding: 60px 120px;
     width: 35%;
-    background: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -588,8 +590,8 @@ border: none;
 .detail .off {
     padding: 20px 10px;
     position: absolute;
-    right: 1%;
-    top: 2%;
+    right: 23%;
+    top: 10%;
 }
 
 .detail .off span {
@@ -816,8 +818,17 @@ header:hover nav div ul {
 
 
     .head .burg {
+        position: relative;
         display: block;
         width: 10%;
+    }
+
+
+    .head .burg .burger{
+        position: absolute;
+        left: 0;
+        top: -20px;
+        z-index: 500;
     }
 
     .head .burg .burger span {
@@ -828,9 +839,14 @@ header:hover nav div ul {
         background: #000;
     }
 
+    .head .burg .burger.active span:nth-of-type(1) {transform: rotate(45deg) translate(0,10px);}
+    .head .burg .burger.active span:nth-of-type(2) {opacity: 0;}
+    .head .burg .burger.active span:nth-of-type(3) {transform: rotate(-45deg) translate(0,-10px);}
+
+
     .burg .menu {
         opacity: 1;
-        width: 40%;
+        width: 60%;
         height: 100vh;
         background: #ece5df;
         display: block;
@@ -848,6 +864,7 @@ header:hover nav div ul {
         align-content: center;
         
         box-shadow: 1px 1px 10px 10px rgba(0,0,0,0.4);
+        padding: 0 0 0 50px;
     }
 
 
@@ -901,7 +918,12 @@ header:hover nav div ul {
 
 
     .burg .menu {
-        display: none;
+        transition: .5s;
+        transform: translate(-120%,0%);
+    }
+
+    .burg .menu.active {
+        transform: translate(0%,0%);
     }
 
 
@@ -1052,9 +1074,23 @@ header:hover nav div ul {
 
 
     /*hide*/
+    header .head_2 {
+        display: none;
+        opacity: 0;
+    }
+
     header:hover .head_2 {
         opacity: 0;
     }
+
+
+
+
+
+
+.head .burg {
+    display: block;
+}
 
 
 
@@ -1296,22 +1332,7 @@ header:hover nav div ul {
 
     }
 
-
-
-
-    .head .burg {
-        display: block;
-        width: 10%;
-    }
-
-    .head .burg .burger span {
-        display: block;
-        margin-bottom: 5px;
-        width: 20px;
-        height: 2px;
-        background: #000;
-    }
-
+    
     .burg .menu {
         opacity: 1;
         width: 100%;
@@ -1331,62 +1352,8 @@ header:hover nav div ul {
         justify-content: center;
         align-content: center;
         
-        box-shadow: none;
-    }
-
-
-
-    .burg .menu div {
-        position: static;
-
-        margin: 10px 50px;
-        width: 100%;
-
-        display: inline-block;
-    }
-
-    .burg .menu div:nth-of-type(1) {
-        margin-top: 0px;
-    }
-
-    .burg .menu div > a {
-        padding: 20px 0;
-        display: block;
-        width: 100%;
-    }
-
-    .burg .menu div > a:hover {
-        color: rgb(196, 167, 144);
-    }
-
-    .burg .menu div > ul {
-        padding: 0;
-        margin: auto;
-        position: static;
-
-        opacity: 1;
-
-    }
-
-    .burg .menu div > ul li {
-
-        padding-left: 20px;
-        position: relative;
-    }
-
-
-
-    .burg .menu > div > ul li a {
-        font-size: 14px;
-
-        display: inline-block;
-        padding: 5px 0;
-    }
-
-
-
-    .burg .menu {
-        display: none;
+        box-shadow: 1px 1px 10px 10px rgba(0,0,0,0.4);
+        padding: 0 0 0 50px;
     }
 
 

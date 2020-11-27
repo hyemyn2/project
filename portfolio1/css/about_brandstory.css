@@ -2,7 +2,9 @@
 
 @media(max-width:1024px) {}
 
-main {}
+main {
+    margin-bottom: 250px;
+}
 
 .title {
     background: #c4b7ae;

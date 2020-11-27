@@ -178,13 +178,15 @@ footer{position: fixed !important;}
         align-content: space-between;
         flex-wrap: wrap;
 
-        margin: 0;
+        margin: 40px 0 0 0;
         padding: 0;
 
     }
 
     .cate ul li {
-        width: 100%;
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
         height: auto;
         position: static;
     }

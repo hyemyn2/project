@@ -313,4 +313,273 @@ main {
 .content:last-child {
   display: none;
 }
+
+@media (max-width: 480px) {
+  .intro {
+    width: 90%;
+    margin: auto;
+  }
+  .intro h2 {
+    margin: 0;
+    font-family: "Kakao Regular";
+    font-size: 22px;
+    line-height: 35px;
+    color: #000;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 90px 0 60px 0;
+    /* js 이용한 후 제거 */
+    /* 여기까지 */
+  }
+  .menu a {
+    font-family: "Kakao Light";
+    font-size: 20px;
+    line-height: 35px;
+    color: #666;
+    display: inline-block;
+    margin-right: 40px;
+    position: relative;
+  }
+  .menu a::after {
+    content: '';
+    display: none;
+    width: 100%;
+    border-top: 1px solid #000;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .menu a:hover {
+    font-family: "Kakao Regular";
+    font-size: 20px;
+    line-height: 35px;
+    color: #000;
+    font-weight: 600;
+  }
+  .menu a:hover::after {
+    display: block;
+  }
+  .menu a.active {
+    font-family: "Kakao Regular";
+    font-size: 20px;
+    line-height: 35px;
+    color: #000;
+    font-weight: 600;
+  }
+  .menu a.active::after {
+    display: block;
+  }
+  .change {
+    width: 90%;
+    margin: auto;
+  }
+  .change .content {
+    display: none;
+  }
+  .change .content .big img {
+    width: 100%;
+  }
+  .change .content article {
+    padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .change .content article span {
+    width: 100%;
+    margin-bottom: 40px;
+    font-family: "Kakao Regular";
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+  }
+  .change .content article .con {
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 50px;
+  }
+  .change .content article:last-child .con {
+    border-bottom: none;
+  }
+  .change .content.active {
+    display: block;
+  }
+  .about {
+    margin-top: 50px;
+  }
+  .about .con span {
+    font-family: "Kakao Regular";
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+  }
+  .about .con .wrap {
+    position: relative;
+  }
+  .about .con .wrap .pic {
+    width: 100%;
+    overflow: hidden;
+  }
+  .about .con .wrap .pic ul {
+    width: 300%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .about .con .wrap .pic ul li {
+    width: 100%;
+  }
+  .about .con .wrap .pic ul li img {
+    width: 100%;
+  }
+  .about .con .wrap .btn button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    border: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .about .con .wrap .btn button img {
+    position: absolute;
+  }
+  .about .con .wrap .btn button:first-child {
+    left: 0;
+  }
+  .about .con .wrap .btn button:last-child {
+    right: 0;
+  }
+  .about .con .wrap .btn button:first-child img {
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .about .con .wrap .btn button:last-child img {
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .about .con .txt ul {
+    margin: 0;
+    padding: 30px 0 0 0;
+  }
+  .about .con .txt ul li {
+    padding: 30px 0;
+  }
+  .about .con .txt ul li span {
+    font-family: "Kakao Regular";
+    font-size: 18px;
+    line-height: 18px;
+    color: #1e1e1e;
+  }
+  .about .con .txt ul li p {
+    margin: 0;
+    padding-top: 20px;
+    font-family: "Kakao Light";
+    font-size: 16px;
+    line-height: 16px;
+    color: #666;
+  }
+  .video .con ul {
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .video .con ul li {
+    width: 30%;
+    margin-right: 30px;
+  }
+  .video .con ul li a img {
+    width: 100%;
+  }
+  .video .con ul li p {
+    text-align: center;
+  }
+  .video .con ul li:last-child {
+    margin-right: 0;
+  }
+  .video .con ul li:hover p {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+  .news .con ul {
+    padding: 0;
+  }
+  .news .con ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-bottom: 50px;
+  }
+  .news .con ul li a {
+    width: 12%;
+    display: inline-block;
+    border-radius: 90px;
+  }
+  .news .con ul li a img {
+    width: 100%;
+    height: auto;
+  }
+  .news .con ul li .txt {
+    width: 100%;
+    padding-left: 30px;
+  }
+  .news .con ul li .txt h2 {
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: "Kakao Light";
+    font-size: 16px;
+    line-height: 16px;
+    color: #1e1e1e;
+    font-weight: normal;
+  }
+  .news .con ul li .txt h2 span {
+    display: inline-block;
+    margin-left: 15px;
+    font-family: "Kakao Light";
+    font-size: 12px;
+    line-height: 16px;
+    color: #3e3e3e;
+    font-weight: normal;
+  }
+  .news .con ul li .txt p {
+    margin: 0;
+    font-family: "Kakao Light";
+    font-size: 14px;
+    line-height: 22px;
+    color: #666;
+  }
+  .content:last-child {
+    display: none;
+  }
+}
 /*# sourceMappingURL=career_apply_delivery.css.map */

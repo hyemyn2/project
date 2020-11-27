@@ -185,6 +185,83 @@ main.active-convert .page_convert {
     transition: 1s 1s;
     /* transform: translate(0,0); */
 }
+.page1 .sect1 .fun{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+/* .page1 .sect1 .fun:before{
+    content: 'catch me if you can';
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    width: 150px;
+    bottom: 60px;
+}
+
+
+
+.page1 .sect1 .fun .worm{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: moveWorm 60s 0s infinite backwards;
+}
+
+@keyframes moveWorm{
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 1500px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+.page1 .sect1 .fun .worm li{
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+}
+.page1 .sect1 .fun .worm li:nth-of-type(1){left: 0px;}
+.page1 .sect1 .fun .worm li:nth-of-type(2){left: 30px;}
+.page1 .sect1 .fun .worm li:nth-of-type(3){left: 60px;}
+
+.page1 .sect1 .fun .worm li:nth-of-type(1){
+    animation: bod1 1.5s 0s infinite backwards;
+}
+@keyframes bod1{
+    0%{ left: 0px;}
+    70%{ left: 40px;}
+    100%{ left: 0px;}
+}
+.page1 .sect1 .fun .worm li:nth-of-type(2){
+    animation: bod2 1.5s 0s infinite backwards;
+}
+@keyframes bod2{
+    0%{ left: 30px;}
+    70%{ left: 50px;}
+    100%{ left: 30px;}
+}
+.page1 .sect1 .fun .worm li:nth-of-type(3){
+    animation: bod3 1.5s 0s infinite backwards;
+}
+@keyframes bod3{
+    0%{ left: 60px;}
+    70%{ left: 60px;}
+    100%{ left: 60px;}
+}
+
+.page1 .sect1 .fun .worm li span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 1);
+} */
 
 .page1 .sect1.active-move {
     top: -150vh;
@@ -266,6 +343,7 @@ main .page1 .sect1.active3 .pic_group {
     transform: translate(0, 0);
     transition: .5s;
 }
+
 /* ----------------------------------------------------------- lilMoves*/
 
 
@@ -274,74 +352,107 @@ main .page1 .sect1.active3 .pic_group {
 }
 
 @keyframes lilMoves1{
-    0%{transform: translate(0,0px);}
-    10%{transform: translate(0,-60px); opacity: 1;}
-    30%{transform: translate(0,150px); opacity: 1;}
-    31%{transform: translate(0,150px); opacity: 0.1;}
-    80%{transform: translate(0,-0px);}
-    100%{transform: translate(0,-0px); opacity: 1;}
+    0%{transform: translate(0px,0px); opacity: 1;}
+    5%{transform: translate(20px,0px); opacity: 1;}
+    10%{transform: translate(0px,0px);}
+    100%{transform: translate(0px,0px);}
 }
 
 .page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(2) {
     animation: lilMoves2 3s 2s infinite backwards;
 }
-
 @keyframes lilMoves2{
-    0%{transform: translate(0,0px);}
-    15%{transform: translate(0,-50px); opacity: 1;}
-    35%{transform: translate(0,150px); opacity: 1;}
-    36%{transform: translate(0,150px); opacity: 0.15;}
-    80%{transform: translate(0,-0px);}
-    100%{transform: translate(0,-0px); opacity: 1;}
+    0%{transform: translate(0px,0px);}
+    2%{transform: translate(0px,0px); opacity: 1;}
+    5%{transform: translate(0px,0px); opacity: 1;}
+    10%{transform: translate(20px,0px); opacity: 1;}
+    15%{transform: translate(0px,0px); opacity: 1;}
+    100%{transform: translate(0px,0px);}
 }
+
+
 .page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(3) {
     animation: lilMoves3 3s 2s infinite backwards;
 }
 
 @keyframes lilMoves3{
-    0%{transform: translate(0,0px);}
-    20%{transform: translate(0,-40px); opacity: 1;}
-    40%{transform: translate(0,150px); opacity: 1;}
-    41%{transform: translate(0,150px); opacity: 0.20;}
-    80%{transform: translate(0,-0px);}
-    100%{transform: translate(0,-0px); opacity: 1;}
+    0%{transform: translate(0px,0px); opacity: 1;}
+    7%{transform: translate(0px,0px); opacity: 1;}
+    10%{transform: translate(0px,0px); opacity: 1;}
+    15%{transform: translate(20px,0px); opacity: 1;}
+    20%{transform: translate(0px,0px); opacity: 1;}
+    100%{transform: translate(0px,0px);}
 }
 .page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(4) {
     animation: lilMoves4 3s 2s infinite backwards;
 }
 
 @keyframes lilMoves4{
-    0%{transform: translate(0,0px);}
-    25%{transform: translate(0,-30px); opacity: 1;}
-    45%{transform: translate(0,150px); opacity: 1;}
-    46%{transform: translate(0,150px); opacity: 0.25;}
-    80%{transform: translate(0,-0px);}
-    100%{transform: translate(0,-0px); opacity: 1;}
+    0%{transform: translate(0px,0px); opacity: 1;}
+    12%{transform: translate(0px,0px); opacity: 1;}
+    15%{transform: translate(0px,0px); opacity: 1;}
+    20%{transform: translate(20px,0px); opacity: 1;}
+    25%{transform: translate(0px,0px); opacity: 1;}
+    100%{transform: translate(0px,0px);}
 }
 .page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(5) {
     animation: lilMoves5 3s 2s infinite backwards;
 }
 
 @keyframes lilMoves5{
-    0%{transform: translate(0,0px);}
-    30%{transform: translate(0,-20px); opacity: 1;}
-    50%{transform: translate(0,150px); opacity: 1;}
-    51%{transform: translate(0,150px); opacity: 0.3;}
-    80%{transform: translate(0,-0px);}
-    100%{transform: translate(0,-0px); opacity: 1;}
+    0%{transform: translate(0px,0px); opacity: 1;}
+    17%{transform: translate(0px,0px); opacity: 1;}
+    20%{transform: translate(0px,0px); opacity: 1;}
+    25%{transform: translate(20px,0px); opacity: 1;}
+    30%{transform: translate(0px,0px); opacity: 1;}
+    100%{transform: translate(0px,0px);}
 }
 .page1 .sect1 .text_group .intro .iam .name_change .name li:nth-of-type(6) {
     animation: lilMoves6 3s 2s infinite backwards;
 }
 
 @keyframes lilMoves6{
-    0%{transform: translate(0,0px);}
-    35%{transform: translate(0,-10px); opacity: 1;}
-    55%{transform: translate(0,150px); opacity: 1;}
-    56%{transform: translate(0,150px); opacity: 0.35;}
-    80%{transform: translate(0,-0px);}
-    100%{transform: translate(0,-0px); opacity: 1;}
+    0%{transform: translate(0px,0px); opacity: 1;}
+    22%{transform: translate(0px,0px); opacity: 1;}
+    25%{transform: translate(0px,0px); opacity: 1;}
+    30%{transform: translate(20px,0px); opacity: 1;}
+    35%{transform: translate(0px,0px); opacity: 1;}
+    100%{transform: translate(0px,0px);}
 }
+
+
+.page1 .sect1 .text_group .intro .iam .name_change .name .scroll{
+    margin-top: 68px;
+    position: relative;
+    overflow: hidden;
+    animation: lilMovesScroll 3s 2s infinite backwards;
+    transition: .5s;
+}
+
+.page1 .sect1.active1 .text_group .intro .iam .name_change .name .scroll{
+    animation: none;
+}
+
+@keyframes lilMovesScroll{
+    0%{ width:0%; transform: translate(0px,0px); opacity: 1;}
+    27%{ width:0%; transform: translate(0px,0px); opacity: 1;}
+    30%{ transform: translate(0px,0px); opacity: 1;}
+    90%{ width:100%; transform: translate(0px,0px); opacity: 1;}
+    100%{ width:100%; transform: translate(0px,0px); opacity: 0;}
+}
+
+.page1 .sect1 .text_group .intro .iam .name_change .name .scroll span{
+    display: inline-block;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 20px 20px;
+    background: #e9e9e9;
+    color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 
 /* 67a7aa 82423f */
 
@@ -381,11 +492,11 @@ main .page1 .sect1.active3 .pic_group {
 
 .page1 .sect1.active1 .text_group .intro .iam .name_change .web {
     display: inline-block;
-    animation: wordWeb 1s .5s 1 forwards;
+    animation: wordWeb .5s .5s 1 forwards;
 }
 
 .page1 .sect1.active1 .text_group .intro .iam .name_change .dev p {
-    animation: wordDev 1s .5s 1 forwards;
+    animation: wordDev .5s .5s 1 forwards;
 }
 
 @keyframes wordWeb {
@@ -402,16 +513,13 @@ main .page1 .sect1.active3 .pic_group {
     0% {
         transform: translate(0, 100%);
     }
-    30%{
-        transform: translate(0, -100%);
-    }
-    70%{
-        transform: translate(0, 20%);
-    }
+
     100% {
         transform: translate(0, -3%);
     }
 }
+
+
 
 
 /* pics_introduction */
@@ -1084,7 +1192,13 @@ transition: transform 1s 1s, right 1s 2s; */
     position: absolute;
     left: 0;
     top: 0;
+    overflow: hidden;
 }
+
+.page1 .sect1 .pic_group .recent .pic_recent li img{
+    width: 100%;
+}
+
 
 .page1 .sect1.active3 .pic_group .recent .pic_recent li.active-change{
     z-index: 10;
@@ -1172,7 +1286,11 @@ transition: transform 1s 1s, right 1s 2s; */
     right: 0;
     top: 0;
     opacity: 1;
+    overflow: hidden;
 }
+
+.page1 .sect1 .recent_otherbox ul li img{width: 800px;}
+
 
 
 .page1 .sect1 .recent_otherbox ul li:nth-of-type(1){right: 810px; z-index:10; opacity: 0;}

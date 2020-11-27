@@ -10,11 +10,38 @@ $(function () {
         success: function (data) {
 
 
-            $('html').on('mousewheel',function(e){
-                e.stopPropagation();
-                $('main').css({transform:"translateY(0px)"});
-            })
             
+
+
+            // ------------------------responsive
+            var resMsg;
+            var mqT = window.matchMedia("screen and (max-width:768px)");
+            var mqM = window.matchMedia("screen and (max-width:480px)");
+            mqT.addListener(res);
+            mqM.addListener(res);
+
+            
+            function res(e){
+                console.log(e.matches);
+                if(e.matches){
+                    //모바일
+                    resMsg = 'mobile';
+                }else{
+                    //PC
+                    resMsg = 'pc';
+                }
+            }
+            res(mqT);
+            res(mqM);
+
+
+
+            // main : transform
+            
+            // $('html').on('mousewheel',function(e){
+            //     e.stopPropagation();
+            //     $('main').css({transform:"translateY(0px)"});
+            // })
 
             // 아이템 리스트 불러오기
 

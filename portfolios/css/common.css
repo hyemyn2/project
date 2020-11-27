@@ -761,6 +761,7 @@ header .head_2 .mid {
     left: 0%;
     top: -20%;
     transform: translate(-50%, 0%);
+    display: none;
 }
 
 

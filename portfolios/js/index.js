@@ -13,7 +13,8 @@ function init() {
         var main = document.querySelector('main');
         var btnHome, navi, btnWork, mid;
         var pageNum = localStorage.pagenum;
-
+        var recentImg = document.querySelector('main .page1 .sect1 .recent .pic_recent');
+        var recentOrigin = recentImg.innerHTML;
         // console.log(pageNum)
 
         goPage(0);
@@ -120,16 +121,22 @@ function init() {
                 // pixelProfile(idx);
             }
 
+
             if(idx==3){
-                    aaRecent = setInterval(function(){
-                        setTimeout(function(){
-                            var recentImg = document.querySelector('main .page1 .sect1 .recent .pic_recent');
-                            recentImg.append(recentImg.children[0]);
-                        },150);
-                    },150*recentImg.children.length);
-                // console.log(recentImg)
+                    setTimeout(function(){
+
+                        aaRecent = setInterval(function(){
+                            setTimeout(function(){
+                                recentImg = document.querySelector('main .page1 .sect1 .recent .pic_recent');
+                                recentImg.append(recentImg.children[0]);
+                                console.log(recentImg)
+                            },150);
+                        },150*recentImg.children.length);
+                    },500);
+
             } else{
                 clearInterval(aaRecent);
+                recentImg.innerHTML=recentOrigin;
             }
 
 
@@ -262,7 +269,7 @@ function init() {
             if (idx > changeIdx) {
                 //prev
                 for (var idxNow = idx; idxNow >= changeIdx; idxNow--) {
-                    console.log('a')
+                    // console.log('a')
                     goPage(idxNow);
                     // console.log(idxNow)
                     // console.log(idx)

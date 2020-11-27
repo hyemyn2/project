@@ -167,7 +167,7 @@ $(function(){
                         aaAll = setTimeout(function(){
                             var upDown = e.wheelDelta;
                             moveList(upDown, workImg);
-                        },0);
+                        },50);
                     });
                 });
 
@@ -194,12 +194,12 @@ $(function(){
 
 
                 var moveOnce = workPic.offsetHeight;
+                 
 
                 function moveList(upDown){
+                    var workImg = document.querySelectorAll('main .work_pic .imgs li');
+                    //li 위치값 배열에 넣기
                     if(sect1.classList.contains('active-list2')){
-                        var workImg = document.querySelectorAll('main .work_pic .imgs li');
-
-                        console.log(workImg)
                         if(upDown<0){
                             //ul이 위로 올라가기
                             if(idxAll!=workImg.length-1) idxAll++;
@@ -207,12 +207,13 @@ $(function(){
                             //ul이 아래로 내려가기
                             if(idxAll!=0 ) idxAll--;
                         }
-                        workPic.style ="transform: rotateX(50deg) translate(0%,"+(50-moveOnce*idxAll)+"px);";
+
+                        workPic.style ="transform: rotateX(50deg) translate(0%,-"+workImg[idxAll].offsetTop+"px);";
                         workImg.forEach(function(i,k){
                             workImg[k].children[0].style = "opacity:0.4";
                         });
                         workImg[idxAll].children[0].style = "opacity:1";
-                        console.log(idxAll)
+                        // console.log(moveOnce*idxAll)
                     }
 
                 }
