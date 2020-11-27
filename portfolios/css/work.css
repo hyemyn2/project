@@ -126,13 +126,15 @@ main .sect1 .work_pic{
 
 }
 
-main .sect1 .work_pic .imgs{
-
+main .sect1.active-detail .work_pic .imgs{
+    opacity: 0;
+    
 }
 
 
 
 main .sect1 .work_pic .imgs{
+    opacity: 1;
     transition: .5s;
     position: absolute;
     left: 24%;
@@ -673,7 +675,7 @@ main .sect2 .detail_con .cite_map ul li{
 main .sect2 .detail_con .responsive_breakpoints{}
 main .sect2 .detail_con .responsive_breakpoints ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 main .sect2 .detail_con .responsive_breakpoints ul li{
     padding: 8px 0;
