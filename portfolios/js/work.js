@@ -385,11 +385,11 @@ $(function(){
                             console.log(btnGo)
 
                             if(getName.classList.contains('aesop')){
-                                window.open("../../portfolio1/index.html","_blank");
+                                window.open("../portfolio1/index.html","_blank");
                             } else if(getName.classList.contains('coupang')){
-                                window.open("../../portfolio2/index.html","_blank");
+                                window.open("../portfolio2/index.html","_blank");
                             } else if(getName.classList.contains('marina_bay_sands')){
-                                window.open("../../portfolio3/index.html","_blank");
+                                window.open("../portfolio3/index.html","_blank");
                             }
                         });
 
