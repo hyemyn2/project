@@ -114,9 +114,13 @@ function head() {
 
     });
 
+    var navHome = document.querySelector('header .head_2 .mid nav .navi_home');
+    navHome.addEventListener('click',function(){
+        showPage(0);
+    });
+
     var btnHome = document.querySelector('header .head_2 .left');
     btnHome.addEventListener('click', function () {
-        console.log('a')
         showPage(0);
     });
 

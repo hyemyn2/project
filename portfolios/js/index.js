@@ -11,7 +11,7 @@ function init() {
         var recentImg = document.querySelector('main .page1 .sect1 .recent .pic_recent');
         var sectTwo = document.querySelector('main .page1 .sect2');
         var main = document.querySelector('main');
-        var btnHome, navi, btnWork, mid;
+        var btnHome, navi, btnWork, mid, navHome;
         var pageNum = localStorage.pagenum;
         var recentImg = document.querySelector('main .page1 .sect1 .recent .pic_recent');
         var recentOrigin = recentImg.innerHTML;
@@ -83,6 +83,7 @@ function init() {
                     navi = document.querySelectorAll('header .mid .navi li');
                     btnHome = document.querySelector('header .head_2 .left');
                     btnWork = document.querySelector('header .head_2 .right');
+                    navHome = document.querySelector('header .head_2 .mid nav .navi_home');
                     navFunc(navi, btnHome, btnWork, hd, mid);
                     navAct(0);
                     // console.log(navi)
@@ -242,6 +243,11 @@ function init() {
                     // },500);
                 });
             });
+
+            navHome.addEventListener('click',function(){
+                showPage(0);
+                navAct(0);
+            });
     
             btnHome.addEventListener('click', function() {
                 showPage(0);
@@ -341,16 +347,16 @@ function init() {
                     for (var i = 0; i < 360; i++) {
                         controlSpeed(i);
                     }
-                    
+                    // one line * 7400
                     function controlSpeed(i) {
                         setTimeout(function() {
-                            for (var k = 7400 * i; k < 7400 * (i + 1); k += 37) {
-                                for (var p = 0; p < 37; p++) {
+                            for (var k = 7400 * i; k < 7400 * (i + 1); k += 10) {
+                                for (var p = 0; p < 10; p++) {
                                     imgData.data[k + p] = imgData.data[k];
                                 }
                             }
                             ctx.putImageData(imgData, 0, 0);
-                        }, i * 3);
+                        }, i * 5);
                     }
                 } else{
                 //     ctx.putImageData(imgOrigin, 0, 0);

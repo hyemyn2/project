@@ -277,23 +277,23 @@ header .head_2 .mid nav .navi {
     align-items: center;
 }
 
-header .head_2 .mid nav .navi:before {
-    content: 'menu';
+header .head_2 .mid nav .navi_home {
+
     display: inline-block;
     text-align: center;
     position: absolute;
     left: 50%;
-    top: 5%;
+    z-index: 1000;
+    top: 15%;
     transform: translate(-50%,0);
     width: 60px;
     height: 30px;
-    /* border-radius: 50%; */
-    /* background: rgba(233,233,233,0.8); */
-    border-bottom: 2px solid rgba(233,233,233,0.5);
+    /* border-bottom: 2px solid rgba(233,233,233,0.5); */
     opacity: 0;
 }
 
-header .head_2 .mid:hover nav .navi:before {
+
+header .head_2 .mid:hover nav .navi_home {
     opacity: 1;
 }
 
