@@ -960,7 +960,7 @@ main .scroll_down img {
 .con_event_activities .border .btn_next{
     z-index: 1000;
     position: absolute;
-    right: 2%;
+    right: 5%;
     top: 35%;
     transform: translate(0,0%);
 }
@@ -968,7 +968,7 @@ main .scroll_down img {
     display: inline-block;
     width: 60px;
     height: 60px;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0,0,0,0.8);
     position: relative;
 }
 .con_event_activities .border .btn_next span:before{
