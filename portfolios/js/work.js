@@ -169,6 +169,15 @@ $(function(){
                             moveList(upDown, workImg);
                         },50);
                     });
+
+                    window.addEventListener('DOMMouseScroll',function(e){
+                        clearTimeout(aaAll);
+                        aaAll = setTimeout(function(){
+                            var upDown = -e.detail;
+                            moveList(upDown, workImg);
+                        },50);
+                    });
+                    
                 });
 
                 listType[0].addEventListener('click',function(){
@@ -320,6 +329,11 @@ $(function(){
                                 pageMove(e);
                             }
                         });
+                        window.addEventListener('DOMMouseScroll',function(e){
+                            if(main.classList.contains('active-detail')){
+                                pageMoveFirefox(e);
+                            }
+                        });
 
                         // detail off
                         // var main = document.querySelector('main');
@@ -332,28 +346,55 @@ $(function(){
                             hd.classList.remove('active-detail');
                         });
 
-                        function pageMove(e){
-                        var limitSect2 = sect2.offsetHeight-window.innerHeight;
-                            moveDel = e.wheelDelta;
-                            if(moveDel<0){
-                                //sect2 goUp
-                                for(var i=0; i<200; i++){
-                                    if(upDown<limitSect2) upDown+=1;
-                                    if(upDown==limitSect2) upDown=limitSect2;
-                                }
-                            } else if(moveDel>0){
-                                //sect2 goDown
-                                for(var i=0; i<200; i++){
-                                    if(upDown>0) upDown-=1;
-                                    if(upDown==0) upDown=0;
-                                }
+                            function pageMove(e){
+                                var limitSect2 = sect2.offsetHeight-window.innerHeight;
+                                
+                                moveDel = e.wheelDelta;
 
+                                if(moveDel<0){
+                                    //sect2 goUp
+                                    for(var i=0; i<200; i++){
+                                        if(upDown<limitSect2) upDown+=1;
+                                        if(upDown==limitSect2) upDown=limitSect2;
+                                    }
+                                } else if(moveDel>0){
+                                    //sect2 goDown
+                                    for(var i=0; i<200; i++){
+                                        if(upDown>0) upDown-=1;
+                                        if(upDown==0) upDown=0;
+                                    }
+
+                                }
+                                sect2.style="top:-"+upDown+"px;";
+
+                                pictoTop(e,upDown);
+                                pictoScroll(upDown);
                             }
-                            sect2.style="top:-"+upDown+"px;";
 
-                            pictoTop(e,upDown);
-                            pictoScroll(upDown);
-                        }
+                            function pageMoveFirefox(e){
+                                var limitSect2 = sect2.offsetHeight-window.innerHeight;
+                                
+                                moveDel = -e.detail;
+
+                                if(moveDel<0){
+                                    //sect2 goUp
+                                    for(var i=0; i<200; i++){
+                                        if(upDown<limitSect2) upDown+=1;
+                                        if(upDown==limitSect2) upDown=limitSect2;
+                                    }
+                                } else if(moveDel>0){
+                                    //sect2 goDown
+                                    for(var i=0; i<200; i++){
+                                        if(upDown>0) upDown-=1;
+                                        if(upDown==0) upDown=0;
+                                    }
+
+                                }
+                                sect2.style="top:-"+upDown+"px;";
+
+                                pictoTop(e,upDown);
+                                pictoScroll(upDown);
+                            }
 
                         function pictoScroll(upDown){
                             if(upDown!=0){

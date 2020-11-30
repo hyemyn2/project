@@ -50,6 +50,14 @@ function init() {
                     // console.log(idx)
                 }, 500);
             });
+            document.addEventListener('DOMMouseScroll',function(e){
+                upDown = -e.detail;
+                clearTimeout(aa);
+                aa = setTimeout(function() {
+                    move(upDown);
+                    // console.log(idx)
+                }, 500);
+            });
         }, 2500);
 
         // }

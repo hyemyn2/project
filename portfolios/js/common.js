@@ -65,6 +65,15 @@ function head() {
                     move(upDown);
                 }, 500);
             });
+
+            document.addEventListener('DOMMouseScroll',function(e){
+                upDown = -e.detail; 
+
+                clearTimeout(aa);
+                aa = setTimeout(function () {
+                    move(upDown);
+                }, 500);
+            });
         }, 2500);
 
         var pageNum = localStorage.pagenum;
