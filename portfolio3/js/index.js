@@ -111,24 +111,76 @@ function init(){
 
 
     // --------------- con_stay
+    
 
+    $.ajax({
+        url: 'json/con_stay.json',
+        type: 'GET',
+        success: function(data){
 
-    var btns = document.querySelectorAll('.con_stay .img .btn a');
-    var ul = document.querySelector('.con_stay .img ul');
-    var idxStay = 0;
+            var stayPic = document.querySelector('.con_stay .img ul');
+            var tit,imgSrc,tagName='';
 
-    btns.forEach(function(i, k) {
-        i.addEventListener('click', function(e) {
-            e.preventDefault();
-            if (this.classList.contains('arrow_left')) {
-                idxStay--;
-            } else {
-                idxStay++;
+            function loadRoom(k){
+                tagName='';
+                tit = data.rooms[k].tit;
+                imgSrc = data.rooms[k].imgSrc.split(",");
+    
+                imgSrc.forEach(function(i,k){
+                    if(k==0){
+                        tagName += "<li data-num='01' class='active'><img src='"+i+"' alt=''></li>";
+                    } else{
+                        tagName += "<li data-num='01'><img src='"+i+"' alt=''></li>";
+                    }
+                });
+    
+                stayPic.innerHTML = tagName;
             }
-            ul.style = "left:" + idxStay * -91 + "%;";
+
+            loadRoom(0);
 
 
+
+
+
+            var btns = document.querySelectorAll('.con_stay .img .btn a');
+            var ul = document.querySelector('.con_stay .img ul');
+            var ulLi = document.querySelectorAll('.con_stay .img ul li');
+            var idxStay = 0;
+        
+            var rooms = document.querySelector('.con_stay .list_rooms');
+            var roomLi = document.querySelectorAll('.con_stay .list_rooms li');
+        
+            roomLi.forEach(function(i,k){
+                roomLi[k].addEventListener('click',function(){
+                    roomLi.forEach(function(i,k){
+                        i.classList.remove('active');
+                    });
+                    roomLi[k].classList.add('active');
+
+                    loadRoom(k);
+
+                });
+
+            });
+
+            
+        btns.forEach(function(i, k) {
+            i.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (this.classList.contains('arrow_left')) {
+                    if(idxStay!=0) idxStay--;
+                } else {
+                    if(idxStay!=ulLi.length-1) idxStay++;
+                }
+                ul.style = "left:" + idxStay * -91 + "%;";
+
+            });
         });
+
+
+            
+        }
     });
 
 
@@ -192,12 +244,21 @@ function init(){
     var see_indi = document.querySelectorAll('.con_event_activities .title .indi span');
     var see_ul = document.querySelector('.con_event_activities .border .boxes_event');
     var see_li = document.querySelectorAll('.con_event_activities .border .boxes_event .box');
+    var see_btn = document.querySelector('.con_event_activities .border .btn_next')
+    var seeIdx = 0;
 
     function seeAct(){
-        var seeIdx = 0;
+
+        see_btn.addEventListener('click',function(){
+            if(seeIdx!=5) seeIdx++;
+            if(seeIdx==5) seeIdx=0;
+            seeIndi(seeIdx);
+        });
+
         aaSee = setInterval(function(){
-            if(seeIdx!=4) seeIdx++;
-            if(seeIdx==4) seeIdx=0;
+            console.log(seeIdx);
+            if(seeIdx!=5) seeIdx++;
+            if(seeIdx==5) seeIdx=0;
             seeIndi(seeIdx);
         },3500);
     }
@@ -218,6 +279,21 @@ function init(){
         see_ul.append(see_li[0]);
     }
 
+
+    var navLi = document.querySelectorAll('header .head nav ul li')
+
+    navLi.forEach(function(i,k){
+        navLi[k].addEventListener('click',function(){
+            findCon(k);
+        });
+    });
+
+    function findCon(k){
+        idx=k+1;
+        movePage(idx);
+        changeHd(idx);
+        showCon(idx);
+    }
 
 
 

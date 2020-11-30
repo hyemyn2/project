@@ -1,7 +1,7 @@
 $(function(){
 
 
-
+    $('window').reload();
 
     // -------------------------------------------------------animaiton box 1
     // -------------------------------------------------------animaiton box 2
@@ -115,11 +115,14 @@ $(function(){
             
         });
 
-        var video = document.getElementId('video');
-        window.addEventListener('DOMContentLoaded',function(){
-            video.play();
-        });
-
+        // var bigVdo = document.querySelector('.bigVdo');
+        // window.addEventListener('DOMContentLoaded',function(){
+            // console.log('a')
+            
+            // setTimeout(function(){
+            //     $('.bigVdo').play();
+            // },1000);
+        // });
 //     <article class="box box_3">
 //     <div class="txt">
 //         <h2>열정적인 사람들이 모여<br>
