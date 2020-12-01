@@ -1,4 +1,4 @@
-import work from "./work";
+// import work from "./work";
 
 function index() {
 
@@ -378,7 +378,7 @@ function index() {
 
     }
     
-
+    console.log('index')
 
 }
 

@@ -9,12 +9,17 @@ function init(){
     common();
 
     // portfolios/index.html
-    var pathName = location.pathname;
+    var pathName = location.pathname,
+        pathS = pathName.lastIndexOf('/')+1,
+        pathE = pathName.lastIndexOf('.'),
+        pageName = pathName.slice(pathS,pathE);
 
-    switch(pathName){
-        case '/project/portfolios/index.html':index(); break;
-        case '/project/portfolios/work.html':work(); break;
+    if(pageName == 'index' || pageName == ''){
+        index();
+    }else{
+        work();
     }
+  
 }
 
 window.addEventListener('DOMContentLoaded',init);

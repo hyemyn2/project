@@ -236,7 +236,7 @@ function common(){
 
 
 
-    console.log('export');
+    console.log('common');
 
 }
 
