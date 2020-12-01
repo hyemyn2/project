@@ -1,4 +1,6 @@
-function init() {
+import work from "./work";
+
+function index() {
 
     setIndex();
 
@@ -40,7 +42,7 @@ function init() {
         // --------------------------------- mousewheel 함수
 
         // if(pageNum==0){
-
+        var upDown;
         setTimeout(function() {
             document.addEventListener('mousewheel', function(e) {
                 upDown = e.wheelDelta;
@@ -345,9 +347,8 @@ function init() {
                 
                 // 캔버스 그림 그린 후 데이터 get
                 var imgData = ctx.getImageData(0, 0, c.width, c.height);
-                imgOrigin = imgData;
+                var imgOrigin = imgData;
                 // invert colors
-                
                 
                 // console.log(2664000 / 7400)
                 
@@ -381,5 +382,6 @@ function init() {
 
 }
 
+export default index;
 
-window.addEventListener('DOMContentLoaded', init);
+// window.addEventListener('DOMContentLoaded', init);

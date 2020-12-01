@@ -1,4 +1,4 @@
-$(function(){
+function work(){
 
     setTimeout(function(){
 
@@ -28,7 +28,6 @@ $(function(){
             });
 
             workPic.innerHTML = tagName1;
-
             main.classList.add('active-convert')
 
 
@@ -37,7 +36,7 @@ $(function(){
             // put data
 
             function showTxt(idxWork){
-                k = Math.abs(idxWork%3);
+                var k = Math.abs(idxWork%3);
                 // console.log(k)
 
                 tit = data.work[k].tit;
@@ -81,7 +80,7 @@ $(function(){
                                
             // btn event
         
-            btnThumb = document.querySelectorAll('main .work_txt .btn_work_list ul li');
+            var btnThumb = document.querySelectorAll('main .work_txt .btn_work_list ul li');
 
 
             var bln = true;
@@ -456,4 +455,6 @@ $(function(){
 
 
 
-});
+}
+
+export default work;
