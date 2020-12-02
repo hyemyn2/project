@@ -466,11 +466,11 @@ function work(){
                             e.preventDefault();
                             // console.log(btnGo)
 
-                            if(getName.classList.contains('aesop')){
+                            if(getName=='aesop'){
                                 window.open("../portfolio1/index.html","_blank");
-                            } else if(getName.classList.contains('coupang')){
+                            } else if(getName=='coupang'){
                                 window.open("../portfolio2/index.html","_blank");
-                            } else if(getName.classList.contains('marina_bay_sands')){
+                            } else if(getName=='marina_bay_sands'){
                                 window.open("../portfolio3/index.html","_blank");
                             }
                         });
