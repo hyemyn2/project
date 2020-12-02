@@ -87,7 +87,7 @@ function work(){
                     var getName = workTit.getAttribute('value');
                     detailEvent(getName);
                     
-                    console.log(workTit.getAttribute('value'))
+                    // console.log(workTit.getAttribute('value'))
 
 
                 });
@@ -112,49 +112,75 @@ function work(){
 
             });
             
-            function action(k){
-                bln=false;
-                var thumb = workPic.querySelectorAll('li');
-                thumb.forEach((el)=>{
-                    el.classList.remove('action-prev');
-                    el.classList.remove('action-next');
-                });
+                function action(k){
+                    bln=false;
+                    var thumb = workPic.querySelectorAll('li');
+                    thumb.forEach((el)=>{
+                        el.classList.remove('action-prev');
+                        el.classList.remove('action-next');
+                    });
 
-                    if(k==0){
+                        if(k==0){
 
-                        if(idxWork!=0){
-                            idxWork--;
-                        } else if(idxWork==0){
-                            idxWork=2
-                        }
-                        // action-prev
+                            if(idxWork!=0){
+                                idxWork--;
+                            } else if(idxWork==0){
+                                idxWork=2
+                            }
+                            // action-prev
 
-                        thumb[2].classList.add('action-prev');
-                        
-                        setTimeout(function(){
-                            workPic.prepend(thumb[2]);
-                        bln=true;
-
-                        },0)
-
-                    } else if(k==1){
-                        if(idxWork!=2){
-                            idxWork++;
-                        } else if(idxWork==2){
-                            idxWork=0
-                        }
-                        // action-next
-                        thumb[0].classList.add('action-next');
-                        
-                        setTimeout(function(){
-                            workPic.append(thumb[0]);    
+                            thumb[2].classList.add('action-prev');
+                            
+                            setTimeout(function(){
+                                workPic.prepend(thumb[2]);
                             bln=true;
 
-                        },0)
-                    }
-                    showTxt(idxWork);
-                    idxLast = idxWork;
+                            },0)
+
+                        } else if(k==1){
+                            if(idxWork!=2){
+                                idxWork++;
+                            } else if(idxWork==2){
+                                idxWork=0
+                            }
+                            // action-next
+                            thumb[0].classList.add('action-next');
+                            
+                            setTimeout(function(){
+                                workPic.append(thumb[0]);    
+                                bln=true;
+
+                            },0)
+                        }
+                        showTxt(idxWork);
+                        idxLast = idxWork;
+
+
+
+                        // mirrorEffect();
+
+
+
                 }
+
+
+                // function mirrorEffect(){
+
+                    
+                //     var picLi = document.querySelectorAll('main .sect1 .work_pic .imgs li');
+                //     var picFirst = picLi[0];
+                //     var reflectPic = document.createElement('span');
+                //     reflectPic.classList.add('reflection');
+
+                //     picFirst.append(reflectPic);
+
+                //     var imgTag = picFirst.getElementsByTagName('img');
+                //     console.log(imgTag[0].getAttribute('src'));
+                //     var imgTagSrc = imgTag[0].getAttribute('src');
+
+                //     reflectPic.classList.add('active');
+                //     reflectPic.style="background: url('"+imgTagSrc+"') no-repeat; background-size: 100% auto;";
+                // }
 
 
             // ------------------------------------------------- view all
@@ -298,7 +324,7 @@ function work(){
 
             btnAbout.addEventListener('click',function(e){
                 seeAbout(e);
-                console.log(localStorage.pagenum)
+                // console.log(localStorage.pagenum)
             }
             );
 
@@ -420,7 +446,7 @@ function work(){
                         }
 
                         function pictoTop(e,upDown){
-                            console.log(moveDel)
+                            // console.log(moveDel)
                             if(upDown!=0 && moveDel>0){
                                 topArrow.classList.add('active-up');
                             } else {
@@ -438,7 +464,7 @@ function work(){
 
                         btnGo.addEventListener('click',function(e){
                             e.preventDefault();
-                            console.log(btnGo)
+                            // console.log(btnGo)
 
                             if(getName.classList.contains('aesop')){
                                 window.open("../portfolio1/index.html","_blank");
@@ -468,7 +494,7 @@ function work(){
 
     },200);
 
-    console.log('work')
+    // console.log('work')
 
 
 }
