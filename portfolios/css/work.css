@@ -193,6 +193,7 @@ main .sect1.active-list1 .work_pic .imgs{
 }
 
 main .sect1.active-list1 .work_pic{
+    cursor: pointer;
     animation: showThumb 1.5s 0s 1 backwards;
 }
 
@@ -320,6 +321,7 @@ main .sect1.active-list1 .work_pic .imgs li img{
 
 
 main .sect1 .work_txt{
+    cursor: pointer;
     text-shadow: 10px 10px 10px rgba(0,0,0,0.5);
     text-align: right;
     position: absolute;
@@ -350,8 +352,8 @@ main .sect1 .work_txt .btn_work_list ul .prev,
 main .sect1 .work_txt .btn_work_list ul .next{
     text-align: center;
     display: inline-block;
-    width: 52px;
-    height: 37px;
+    width: 100px;
+    height: 42px;
     background: rgba(233,233,233,0.04);
     transition: .2s;
     position: relative;
@@ -362,20 +364,22 @@ main .sect1 .work_txt .btn_work_list ul .next{
 }
 
 main .sect1 .work_txt .btn_work_list ul .prev::after{
-    content: url(../img/picto/half_arrow2_prev_w.png);
+    cursor: pointer;
+    content: url(../img/picto/half_arrow2_prev_w2.png);
     display: inline-block;
     position: absolute;
-    left: 12px;
-    top: 4px;
+    left: 18px;
+    top: 8px;
 }
 main .sect1 .work_txt .btn_work_list ul .next::after{
-    content: url(../img/picto/half_arrow2_next_w.png);
+    cursor: pointer;
+    content: url(../img/picto/half_arrow2_next_w2.png);
     display: inline-block;
     position: absolute;
     /* left: 15px;
     top: 10px; */
-    right: 12px;
-    top: 4px;
+    right: 18px;
+    top: 8px;
 } 
 
 
@@ -460,6 +464,7 @@ main .sect1 .list_type{
     padding-right: 15px;
 } */
 main .sect1 .list_type ul{
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -782,6 +787,7 @@ main .sect2 .detail_con{
 }
 
 main .sect2 .detail_con .go_top{
+    cursor: pointer;
     position: fixed;
     right: 32%;
     bottom: 3%;
@@ -1290,6 +1296,8 @@ main .sect1 .work_txt .btn_work_list ul{
 
 main .sect1 .work_txt .btn_work_list ul .prev,
 main .sect1 .work_txt .btn_work_list ul .next{
+    cursor: pointer;
+
     text-align: center;
     display: inline-block;
     width: 52px;

@@ -102,6 +102,8 @@ header .head_1 p {
 }
 
 header .head_1 p span {
+    cursor: pointer;
+
     display: inline-block;
     width: 100%;
     transition: .5s;
@@ -137,6 +139,8 @@ header .head_2.active {
 }
 
 header .head_2 .left a {
+    cursor: pointer;
+
     display: inline-block;
     width: 18px;
     margin-right: 5px;
@@ -146,9 +150,14 @@ header .head_2 .left a img {
     width: 100%;
 }
 
-header .head_2 .left span {}
+header .head_2 .left span {
+    cursor: pointer;
+
+}
 
 header .head_2 .right .work {
+    cursor: pointer;
+
     position: relative;
     padding: 5px 10px;
     background: transparent;
@@ -241,6 +250,8 @@ header nav .navi li{} */
 /* ------------------------------------- navi */
 
 header .head_2 .mid {
+    cursor: pointer;
+
     width: 10%;
     position: absolute;
     left: 50%;
@@ -397,6 +408,8 @@ header .head_3 .work_detail{
 }
 
 header .head_3 ul .left {
+    cursor: pointer;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -418,6 +431,8 @@ header .head_3 ul .left span {
 }
 
 header .head_3 ul .right {
+    cursor: pointer;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -470,6 +485,8 @@ header .head_3.active-detail .work_detail{
 }
 
 header .head_3.active-detail .work_detail .left a{
+    cursor: pointer;
+
     width: 60%;
 }
 header .head_3.active-detail .work_detail .left a img{

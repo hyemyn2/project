@@ -2,6 +2,8 @@
 
 function index() {
 
+    var idx=0;
+    
     setIndex();
 
     function setIndex(){

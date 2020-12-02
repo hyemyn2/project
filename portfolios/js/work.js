@@ -38,13 +38,13 @@ function work(){
             function showTxt(idxWork){
                 var k = Math.abs(idxWork%3);
                 // console.log(k)
-
+                itemName = data.work[k].item;
                 tit = data.work[k].tit;
                 tags = data.work[k].tags.split(",");
                 // console.log(tags[0]);
 
 
-                tagName2 = "<h1 class='tit'>"+tit+"</h1>";
+                tagName2 = "<h1 class='tit' value='"+itemName+"'>"+tit+"</h1>";
                 tagName2 += "<ul class='tags'>";
                 tags.forEach(function(i,k){
                     tagName2 += "<li>"+i+"</li>";
@@ -66,14 +66,30 @@ function work(){
 
                 var main = document.querySelector('main');
                 var workImg = document.querySelectorAll('main .work_pic .imgs li');
+                // var workTit = workTxtBox.querySelector('h1');
+
 
                 workImg.forEach(function(i,k){
                     i.addEventListener('click',function(){
                         main.classList.add('active-detail');
                         hd.classList.add('active-detail');
-                        var getName = i;
+                        var getName = i.className;
                         detailEvent(getName);
                     });
+                });
+
+                workTxtBox.addEventListener('click',function(){
+                    var workTxtBox = document.querySelector('main .work_txt .txt_box');
+                    var workTit = workTxtBox.querySelector('h1');
+
+                    main.classList.add('active-detail');
+                    hd.classList.add('active-detail');
+                    var getName = workTit.getAttribute('value');
+                    detailEvent(getName);
+                    
+                    console.log(workTit.getAttribute('value'))
+
+
                 });
 
             // ------------------------------------------------- btn
@@ -310,7 +326,7 @@ function work(){
 
                         data.forEach(function(i,k){
                             var checkName = data[k].className;
-                            if(getName.classList.contains(checkName)){
+                            if(getName==checkName){
                             var getData = data[k].innerHTML;
                             sect2.innerHTML = getData;
 
