@@ -270,7 +270,7 @@ header nav .navi li{} */
 
 header .head_2 .mid {
     cursor: pointer;
-    margin-left: 50px;
+    margin-left: 80px;
     width: 30%;
     transition: .5s;
 }
@@ -297,11 +297,11 @@ header .head_2 .mid nav .navi li p:before{
     height: 10px;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 20%;
     transform: translate(-50%,0%);
     border-radius: 100%;
     background: #000;
-    opacity: 0.35;
+    opacity: 0.1;
     transition: .5s;
 }
 header .head_2 .mid nav .navi li.active p:before{
@@ -331,7 +331,7 @@ header .head_2 .mid nav .navi li span{
     position: absolute;
     left: 50%;
     transform: translate(-50%,0);
-    top: 50px;
+    top: 25px;
     opacity: 0;
     text-align: center;
     transition: 0s;
@@ -339,9 +339,14 @@ header .head_2 .mid nav .navi li span{
     font-size: 14px;
 }
 
+header .head_2 .mid nav .navi li.active span{
+    opacity: 1;
+    color: #333;
+
+}
 
 
-header .head_2 .mid nav:hover .navi li span{
+header .head_2 .mid nav .navi li:hover span{
     opacity: 1;
     color: #555;
 }
