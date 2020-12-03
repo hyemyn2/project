@@ -1,3 +1,4 @@
+
 // import * as all from './index.js';
 function common(){
 
@@ -117,18 +118,18 @@ function common(){
         //     showPage(idx);
         // });
 
-        $('.mid').on('mouseover', function () {
-            $('nav .navi').addClass('active');
-            $('.mid').on('mouseout', function () {
-                $('nav .navi').removeClass('active');
-            });
+        // $('.mid').on('mouseover', function () {
+        //     $('nav .navi').addClass('active');
+        //     $('.mid').on('mouseout', function () {
+        //         $('nav .navi').removeClass('active');
+        //     });
 
-        });
+        // });
 
-        var navHome = document.querySelector('header .head_2 .mid nav .navi_home');
-        navHome.addEventListener('click',function(){
-            showPage(0);
-        });
+        // var navHome = document.querySelector('header .head_2 .mid nav .navi_home');
+        // navHome.addEventListener('click',function(){
+        //     showPage(0);
+        // });
 
         var btnHome = document.querySelector('header .head_2 .left');
         btnHome.addEventListener('click', function () {

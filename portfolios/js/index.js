@@ -15,13 +15,15 @@ function index() {
         var recentImg = document.querySelector('main .page1 .sect1 .recent .pic_recent');
         var sectTwo = document.querySelector('main .page1 .sect2');
         var main = document.querySelector('main');
-        var btnHome, navi, btnWork, mid, navHome;
+        var btnHome, navi, btnWork, mid;
         var pageNum = localStorage.pagenum;
         var recentImg = document.querySelector('main .page1 .sect1 .recent .pic_recent');
         var recentOrigin = recentImg.innerHTML;
         // console.log(pageNum)
 
         goPage(0);
+
+        console.log(idx);
 
         function reset(){
             if(pageNum!=''){
@@ -95,7 +97,7 @@ function index() {
                     navi = document.querySelectorAll('header .mid .navi li');
                     btnHome = document.querySelector('header .head_2 .left');
                     btnWork = document.querySelector('header .head_2 .right');
-                    navHome = document.querySelector('header .head_2 .mid nav .navi_home');
+                    // navHome = document.querySelector('header .head_2 .mid nav .navi_home');
                     navFunc(navi, btnHome, btnWork, hd, mid);
                     navAct(0);
                     // console.log(navi)
@@ -136,6 +138,7 @@ function index() {
 
 
             if(idx==3){
+                // console.log(idx)
                     setTimeout(function(){
 
                         aaRecent = setInterval(function(){
@@ -145,7 +148,7 @@ function index() {
                                 console.log(recentImg)
                             },150);
                         },150*recentImg.children.length);
-                    },500);
+                    },100);
 
             } else{
                 clearInterval(aaRecent);
@@ -256,10 +259,10 @@ function index() {
                 });
             });
 
-            navHome.addEventListener('click',function(){
-                showPage(0);
-                navAct(0);
-            });
+            // navHome.addEventListener('click',function(){
+            //     showPage(0);
+            //     navAct(0);
+            // });
     
             btnHome.addEventListener('click', function() {
                 showPage(0);
@@ -275,12 +278,12 @@ function index() {
                 }, 3000);
             });
     
-            mid.addEventListener('mouseover',function(){
-                main.classList.add('active-bg');
-                mid.addEventListener('mouseout',function(){
-                    main.classList.remove('active-bg');
-                });
-            });
+            // mid.addEventListener('mouseover',function(){
+            //     main.classList.add('active-bg');
+            //     mid.addEventListener('mouseout',function(){
+            //         main.classList.remove('active-bg');
+            //     });
+            // });
         }
     
         function showPage(changeIdx) {
