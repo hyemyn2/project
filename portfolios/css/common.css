@@ -298,7 +298,7 @@ header .head_2 .mid nav:hover .navi li p{
 }
 header .head_2 .mid nav .navi li p img{
     transform: scale(0.8);
-    opacity: 0.8;
+    opacity: 0.7;
     transition: .5s;
 
 }
@@ -306,8 +306,8 @@ header .head_2 .mid nav .navi li p img{
 header .head_2 .mid nav .navi li.active p img{
     transform: scale(1.1);
     opacity: 1;
-
 }
+
 
 header .head_2 .mid nav .navi li span{
     text-transform: uppercase;
@@ -329,6 +329,7 @@ header .head_2 .mid nav:hover .navi li span{
 }
 header .head_2 .mid nav .navi li:hover span{
     color: #000;
+    /* border-bottom: 1px solid #000; */
     transition: 0s;
 }
 
