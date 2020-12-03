@@ -289,6 +289,24 @@ header .head_2 .mid nav .navi li{
     align-items: center;
     position: relative;
 }
+header .head_2 .mid nav .navi li p:before{
+    content: '';
+    display: inline-block;
+
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,0%);
+    border-radius: 100%;
+    background: #000;
+    opacity: 1;
+    transition: .5s;
+}
+header .head_2 .mid nav .navi li.active p:before{
+    opacity: 0;
+}
 header .head_2 .mid nav .navi li p{
     opacity: 1;
     transition: 0s;
@@ -298,13 +316,12 @@ header .head_2 .mid nav:hover .navi li p{
 }
 header .head_2 .mid nav .navi li p img{
     transform: scale(0.8);
-    opacity: 0.7;
+    opacity: 0;
     transition: .5s;
 
 }
 
 header .head_2 .mid nav .navi li.active p img{
-    transform: scale(1.1);
     opacity: 1;
 }
 
