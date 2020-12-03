@@ -282,7 +282,7 @@ header .head_2 .mid nav .navi{
     align-items: center;
 }
 header .head_2 .mid nav .navi li{
-    padding: 20px 65px 0 65px;
+    padding: 20px 55px 0 55px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -297,14 +297,14 @@ header .head_2 .mid nav:hover .navi li p{
     opacity: 0.1;
 }
 header .head_2 .mid nav .navi li p img{
-    transform: scale(1);
+    transform: scale(0.8);
     opacity: 0.8;
     transition: .5s;
 
 }
 
 header .head_2 .mid nav .navi li.active p img{
-    transform: scale(1.3);
+    transform: scale(1.1);
     opacity: 1;
 
 }
