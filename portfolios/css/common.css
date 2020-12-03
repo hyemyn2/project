@@ -282,7 +282,7 @@ header .head_2 .mid nav .navi{
     align-items: center;
 }
 header .head_2 .mid nav .navi li{
-    padding: 20px 55px 0 55px;
+    padding: 20px 25px 0 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -301,18 +301,18 @@ header .head_2 .mid nav .navi li p:before{
     transform: translate(-50%,0%);
     border-radius: 100%;
     background: #000;
-    opacity: 1;
+    opacity: 0.35;
     transition: .5s;
 }
 header .head_2 .mid nav .navi li.active p:before{
-    opacity: 0;
+    opacity: 0.7;
 }
 header .head_2 .mid nav .navi li p{
     opacity: 1;
     transition: 0s;
 }
 header .head_2 .mid nav:hover .navi li p{
-    opacity: 0.1;
+    opacity: 1;
 }
 header .head_2 .mid nav .navi li p img{
     transform: scale(0.8);
@@ -322,7 +322,7 @@ header .head_2 .mid nav .navi li p img{
 }
 
 header .head_2 .mid nav .navi li.active p img{
-    opacity: 1;
+    opacity: 0;
 }
 
 
@@ -331,11 +331,12 @@ header .head_2 .mid nav .navi li span{
     position: absolute;
     left: 50%;
     transform: translate(-50%,0);
-    top: 20px;
+    top: 50px;
     opacity: 0;
     text-align: center;
-    transition: .5s;
+    transition: 0s;
     width: 150%;
+    font-size: 14px;
 }
 
 

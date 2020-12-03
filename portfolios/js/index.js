@@ -341,7 +341,7 @@ function index() {
                 var imgTag = document.createElement('img');
                 imgParent.append(imgTag);
             imgTag.setAttribute('id','profile_pic');
-            imgTag.setAttribute('src','img/profile.jpg');
+            imgTag.setAttribute('src','img/profile/profile.jpg');
             
             document.getElementById("profile_pic").onload = function() {
                 var c = document.getElementById("profile");
