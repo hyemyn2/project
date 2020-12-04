@@ -525,7 +525,6 @@ main .page1 .sect1.active3 .pic_group {
 /* pics_introduction */
 
 .page1 .sect1.active1 .pic_group {
-
     position: absolute;
     right: 12%;
     top: 15%;
@@ -716,7 +715,7 @@ transition: transform 1s 1s, right 1s 2s; */
     font-weight: 900;
     font-size: 50px;
     line-height: 50px;
-    width: 800px;
+    width: 100%;
     text-align: center;
     /* transition: position .5s 0s font .5s .5s; */
     transition: 1s 0s;
@@ -1293,7 +1292,7 @@ transition: transform 1s 1s, right 1s 2s; */
 
 
 
-.page1 .sect1 .recent_otherbox ul li:nth-of-type(1){right: 810px; z-index:10; opacity: 0;}
+/* .page1 .sect1 .recent_otherbox ul li:nth-of-type(1){right: 810px; z-index:10; opacity: 0;}
 .page1 .sect1 .recent_otherbox ul li:nth-of-type(2){right: 720px; z-index:9}
 .page1 .sect1 .recent_otherbox ul li:nth-of-type(3){right: 630px; z-index:8}
 .page1 .sect1 .recent_otherbox ul li:nth-of-type(4){right: 540px; z-index:7}
@@ -1302,7 +1301,18 @@ transition: transform 1s 1s, right 1s 2s; */
 .page1 .sect1 .recent_otherbox ul li:nth-of-type(7){right: 270px; z-index:4}
 .page1 .sect1 .recent_otherbox ul li:nth-of-type(8){right: 180px; z-index:3}
 .page1 .sect1 .recent_otherbox ul li:nth-of-type(9){right: 90px; z-index:2}
-.page1 .sect1 .recent_otherbox ul li:nth-of-type(10){right: 0px; z-index:1}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(10){right: 0px; z-index:1} */
+
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(1){right: 45vw; z-index:10; opacity: 0;}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(2){right: 40vw; z-index:9}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(3){right: 35vw; z-index:8}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(4){right: 30vw; z-index:7}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(5){right: 25vw; z-index:6}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(6){right: 20vw; z-index:5}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(7){right: 15vw; z-index:4}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(8){right: 10vw; z-index:3}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(9){right: 5vw; z-index:2}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(10){right: 0vw; z-index:1}
 
 
 .page1 .sect1 .recent_otherbox ul li img{}
@@ -1521,8 +1531,113 @@ main {}
     color: #000;
 }
 
+ /* --------------------------- 2000+ --------------------------- */
+
+@media(min-width:2000px) {
+    
+}
+
+ /* --------------------------- labtop --------------------------- */
+
+@media(max-width:1440px) {
+    .page1 .sect1.active1 .text_group .intro {
+        left: 5%;
+        top: 45%;
+    }
+
+    .page1 .sect1 .text_group .intro {
+        left: 15%;
+        top: 35%;
+    }
+
+    .page1 .sect1 .pic_group .introduction{
+        height: 76vh;
+        overflow: hidden;
+    }
+
+    .page1 .sect1 .pic_group .skill .pic_skill .txt li {
+        opacity: 0;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 50px;
+        width: 100%;
+        text-align: center;
+        /* transition: position .5s 0s font .5s .5s; */
+        transition: 1s 0s;
+    
+        padding: 30px 0;
+    }
+
+    .page1 .sect1.active2 .text_group .skill {
+        right: 15%;
+        top: 40%;
+    }
+    .page1 .sect1 .text_group .skill .list_skill {
+        position: absolute;
+        left: 0;
+        bottom: -80%;
+        display: flex;
+        font-weight: 900;
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+        width: 140%;
+        flex-wrap: wrap;
+    }
+    .page1 .sect1 .text_group .intro,
+    .page1 .sect1 .text_group .skill p,
+    .page1 .sect1 .text_group .recent p,
+    .page1 .sect2 .text_group p,
+    .page1 .sect2 .text_group span{
+        font-size: 10vw;
+        line-height: 8vw;
+    }
 
 
+    .page1 .sect1 .text_group .recent a span{
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
+
+    
+    .page1 .sect1.active2 .text_group .intro {
+        left: -100%;
+    }
+
+    .page1 .sect1 .recent_otherbox ul li img{width: 41.5vw;}
+
+    .page1 .sect2 .pic_group .box_3d {
+        position: absolute;
+        /* z-index: 2000; */
+        left: 50%;
+        top: 56%;
+        transform: translate(-50%, -50%);
+        width: 85%;
+        height: 55vh;
+        /* background: rgba(0,0,0,0.4); */
+    }
+
+    .page1 .sect2.active-move .pic_group .as_person .bord {
+        height: 100%;
+        bottom: 3%;
+    
+        transition: .5s 1s;
+        padding: 70px 0;
+    
+    }
+
+    .page1 .sect2 .pic_group .box_3d .as_person .bord p{
+        font-size: 2vw;
+        line-height: 3vw;
+    }
+
+}
+
+
+/* --------------------------- tab --------------------------- */
+
+@media(max-width:1024px) {
+
+}
 
 
  /* --------------------------- mobile --------------------------- */
