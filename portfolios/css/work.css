@@ -993,7 +993,7 @@ main .sect1.active-list2 .work_pic .imgs li:nth-of-type(3){
 
 
 main .sect1.active-list2 .work_pic .imgs li img{
-
+    width: 100%;
 }
 main .sect1.active-list2 .work_txt{
     opacity: 0;
@@ -1020,7 +1020,7 @@ main .sect1.active-list2 .work_txt .txt_box .tags{}
     }
 
     main .sect1.active-list2 .work_pic .imgs{
-        left: -0.5vw;
+        left: 10vw;
         top: 45%;
     }
 
@@ -1051,6 +1051,30 @@ main .sect1.active-list2 .work_txt .txt_box .tags{}
  @media(max-width:1024px) {
 
     
+
+main .sect1.active-list1 .work_pic .imgs{
+    left: 40%;
+}
+
+main .sect1 .work_txt{
+    cursor: pointer;
+    text-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    text-align: right;
+    position: absolute;
+    z-index: 50000;
+    right: 12%;
+    bottom: 35%;
+    opacity: 1;
+    transition: .5s;
+}
+
+
+main .sect1.active-list2 .work_pic .imgs{
+    left: 10vw;
+    top: 45%;
+}
+
+
 
 }
 

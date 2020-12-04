@@ -3,7 +3,7 @@
 function common(){
 
     var resMsg;    
-    var mq = window.matchMedia("screen and (max-width:768px)");
+    var mq = window.matchMedia("screen and (max-width:1024px)");
     mq.addListener(res);
 
     function eventFun(e) {

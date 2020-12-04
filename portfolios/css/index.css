@@ -282,6 +282,7 @@ main .page1 .sect1 .pic_group {
     transition: 1s;
     height: 76vh;
     transform: translate(0%, 0);
+    transition: .5s;
 }
 
 main .page1 .sect1.active2 .pic_group {
@@ -653,13 +654,13 @@ transition: transform 1s 1s, right 1s 2s; */
     bottom: 0;
     width: 0%;
     overflow: hidden;
-    transition: 1s 0s;
+    transition: .5s 0s;
 }
 
 .page1 .sect1.active2 .pic_group .skill {
-    transition: .5s 1s;
     width: 150%;
     height: 100%;
+    transition: .5s 1s;
 }
 
 .page1 .sect1.active3 .pic_group .skill {
@@ -671,8 +672,6 @@ transition: transform 1s 1s, right 1s 2s; */
 
 
 /* pic_at_work */
-.page1 .sect1 .pic_group .skill {}
-.page1 .sect1.active3 .pic_group .skill {}
 
 .page1 .sect1 .pic_group .skill .pic_skill {
     /* background: rgba(223,54,46,1); */
@@ -687,13 +686,14 @@ transition: transform 1s 1s, right 1s 2s; */
     width: 100%;
     height: 100%;
     transform: translate(-50%,-50%);
+    /* transition: .5s; */
     /* position: relative; */
     /* position: absolute;
     left: 0;
     top: 0; */
 }
 
-.page1 .sect1 .pic_group .skill .pic_skill .txt {
+.page1 .sect1.active1 .pic_group .skill .pic_skill .txt {
     position: absolute;
     z-index: 2000;
     width: 800px;
@@ -863,6 +863,7 @@ transition: transform 1s 1s, right 1s 2s; */
 .page1 .sect1 .pic_group .skill .pic_skill{
     transform-style: preserve-3d;
     perspective: 900px;
+    width: 100%;
 }
 
 .page1 .sect1 .pic_group .skill .pic_skill .sent{
@@ -1304,15 +1305,15 @@ transition: transform 1s 1s, right 1s 2s; */
 .page1 .sect1 .recent_otherbox ul li:nth-of-type(10){right: 0px; z-index:1} */
 
 .page1 .sect1 .recent_otherbox ul li:nth-of-type(1){right: 45vw; z-index:10; opacity: 0;}
-.page1 .sect1 .recent_otherbox ul li:nth-of-type(2){right: 40vw; z-index:9}
-.page1 .sect1 .recent_otherbox ul li:nth-of-type(3){right: 35vw; z-index:8}
-.page1 .sect1 .recent_otherbox ul li:nth-of-type(4){right: 30vw; z-index:7}
-.page1 .sect1 .recent_otherbox ul li:nth-of-type(5){right: 25vw; z-index:6}
-.page1 .sect1 .recent_otherbox ul li:nth-of-type(6){right: 20vw; z-index:5}
-.page1 .sect1 .recent_otherbox ul li:nth-of-type(7){right: 15vw; z-index:4}
-.page1 .sect1 .recent_otherbox ul li:nth-of-type(8){right: 10vw; z-index:3}
-.page1 .sect1 .recent_otherbox ul li:nth-of-type(9){right: 5vw; z-index:2}
-.page1 .sect1 .recent_otherbox ul li:nth-of-type(10){right: 0vw; z-index:1}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(2){right: 40vw; z-index:9; opacity: 0.5;}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(3){right: 35vw; z-index:8; opacity: 0.5;}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(4){right: 30vw; z-index:7; opacity: 0.5;}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(5){right: 25vw; z-index:6; opacity: 0.5;}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(6){right: 20vw; z-index:5; opacity: 0.5;}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(7){right: 15vw; z-index:4; opacity: 0.5;}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(8){right: 10vw; z-index:3; opacity: 0.5;}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(9){right: 5vw; z-index:2; opacity: 0.5;}
+.page1 .sect1 .recent_otherbox ul li:nth-of-type(10){right: 0vw; z-index:1; opacity: 0.5;}
 
 
 .page1 .sect1 .recent_otherbox ul li img{}
@@ -1540,6 +1541,12 @@ main {}
  /* --------------------------- labtop --------------------------- */
 
 @media(max-width:1440px) {
+
+    
+.page1 .sect1 .text_group .intro .iam .name_change .name .scroll{
+    margin-top: 50px;
+}
+
     .page1 .sect1 .text_group .intro {
         left: 15%;
         top: 35%;
@@ -1548,6 +1555,10 @@ main {}
     .page1 .sect1.active1 .text_group .intro {
         left: 5%;
         top: 30%;
+    }
+
+    main .page1 .sect1 .pic_group {
+        width: 28%;
     }
 
     .page1 .sect1.active1 .pic_group {
@@ -1659,6 +1670,16 @@ main {}
 @media(max-width:1024px) {
 
     
+
+    main.active-convert .page1 {
+        transform: rotateX(45deg) translateY(-600px) translateZ(550px);
+        transition: 1s 0s;
+    }
+
+    .page1 .sect1 .text_group .intro .iam .name_change .name .scroll{
+        display: none;
+        margin-top: 75px;
+    }
     .page1 .sect1 {
         width: 100%;
         height: 100vh;
@@ -1671,7 +1692,7 @@ main {}
 
 
     main .page1 .sect1 .pic_group {
-        width: 80%;
+        width: 60%;
         position: absolute;
         right: -100%;
         top: 10%;
@@ -1684,9 +1705,10 @@ main {}
     
     main .page1 .sect1.active2 .pic_group {
         /* right: -100%; */
-        transform: translate(80%, 0);
+        transform: translate(65%, 0);
         /* transition: 1s 1s; */
         transition: transform 1s 1s, right 1s 0s;
+
     }
 
 
@@ -1706,9 +1728,9 @@ main {}
     /* txt_intro */
     
     .page1 .sect1 .text_group .intro {
-        font-size: 80px;
-        line-height: 80px;
-        left: 0%;
+        font-size: 160px;
+        line-height: 160px;
+        left: 15%;
         top: 35%;
         width: 100%;
     }
@@ -1735,10 +1757,10 @@ main {}
     
     
     .page1 .sect1.active1 .text_group .intro {
-        font-size: 60px;
-        line-height: 60px;
-        left: 0%;
-        top: 50%;
+        font-size: 100px;
+        line-height: 100px;
+        left: 10%;
+        top: 65%;
         transition: .5s;
     }
     
@@ -1816,24 +1838,26 @@ main {}
 
 .page1 .sect1 .text_group .skill p {
     font-weight: 900;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 160px;
+    line-height: 160px;
 }
 
 .page1 .sect1 .text_group .skill .list_skill {
     position: absolute;
-    left: 0%;
-    bottom: -280%;
-    display: block;
+    left: -30%;
+    bottom: -100%;
+    display: flex;
     font-weight: 900;
-    font-size: 16px;
-    line-height: 25px;
-    width: 100%;
+    font-size: 40px;
+    line-height: 60px;
+    width: 150%;
     flex-wrap: wrap;
+    justify-content: left;
 }
 
 .page1 .sect1 .text_group .skill .list_skill li {
     margin-right: 0px;
+    margin-left: 20px;
     overflow: hidden;
     text-align: right;
 }
@@ -1952,7 +1976,7 @@ transition: transform 1s 1s, right 1s 2s; */
     font-weight: 900;
     font-size: 30px;
     line-height: 30px;
-    width: 800px;
+    width: 100%;
     text-align: center;
     /* transition: position .5s 0s font .5s .5s; */
     transition: 1s 0s;
@@ -2280,8 +2304,8 @@ transition: transform 1s 1s, right 1s 2s; */
 
 .page1 .sect1 .text_group .recent p {
     font-weight: 900;
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 160px;
+    line-height: 160px;
 }
 
 .page1 .sect1 .text_group .recent a {
@@ -2295,8 +2319,8 @@ transition: transform 1s 1s, right 1s 2s; */
     display: inline-block;
     color: #e9e9e9;
     font-weight: 900;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 40px;
+    line-height: 60px;
     transform: translate(0, 500px);
     transition: .5s 2s;
 }
@@ -2339,8 +2363,8 @@ transition: transform 1s 1s, right 1s 2s; */
 .page1 .sect1.active3 .recent_otherbox .btn_video{
     position: absolute;
     z-index: 1000000;
-    right: 0%;
-    top: 80%;
+    right: -10%;
+    top: 37%;
     background: #000;
     color: #e9e9e9;
     animation: seeVid .8s 2s infinite alternate;
@@ -2735,7 +2759,8 @@ transition: transform 1s 1s, right 1s 2s; */
 
 .page1 .sect2 .pic_group .box_3d .as_person .bord p {
     width: 90%;
-    font-size: 18px;
+    font-size: 4vw;
+    line-height: 5vw;
     font-weight: 200;
     margin: 15px auto;
     mix-blend-mode: difference;

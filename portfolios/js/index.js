@@ -130,7 +130,7 @@ function index() {
     
             if(idx==1){
                 setTimeout(function(){
-                    pixelProfile(idx);
+                    // pixelProfile(idx);
                 },1000);
             } else{
                 // pixelProfile(idx);
