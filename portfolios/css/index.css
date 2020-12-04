@@ -1540,14 +1540,25 @@ main {}
  /* --------------------------- labtop --------------------------- */
 
 @media(max-width:1440px) {
-    .page1 .sect1.active1 .text_group .intro {
-        left: 5%;
-        top: 45%;
-    }
-
     .page1 .sect1 .text_group .intro {
         left: 15%;
         top: 35%;
+    }
+
+    .page1 .sect1.active1 .text_group .intro {
+        left: 5%;
+        top: 30%;
+    }
+
+    .page1 .sect1.active1 .pic_group {
+        position: absolute;
+        right: 6%;
+        top: 15%;
+        transition: .5s;
+    }
+
+    .page1 .sect1.active2 .pic_group {
+        right: 10%;
     }
 
     .page1 .sect1 .pic_group .introduction{
@@ -1592,12 +1603,22 @@ main {}
         line-height: 8vw;
     }
 
+    .page1 .sect1.active1 .text_group .intro{
+        font-size: 8vw;
+        line-height: 7vw;
+        /* transition: .5s; */
+    }
+
 
     .page1 .sect1 .text_group .recent a span{
         font-size: 2.5vw;
         line-height: 2.5vw;
     }
 
+    .page1 .sect1.active3 .recent_otherbox .btn_video{
+        right: 0%;
+        top: 61%;
+    }
     
     .page1 .sect1.active2 .text_group .intro {
         left: -100%;

@@ -725,7 +725,9 @@ header .head.active{z-index: 50000;opacity: 1;}
  /* --------------------------- mobile --------------------------- */
 
  @media(max-width:1440px) {
-
+    header{
+        font-size: 1.2vw;
+    }
  }
 
  
