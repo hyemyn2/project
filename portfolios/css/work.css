@@ -167,6 +167,7 @@ main .sect1 .work_pic .imgs{
     transform-style: preserve-3d;
 }
 
+
 main .sect1.active-list .work_pic .imgs{
     transition: .5s;
     position: absolute;
@@ -390,7 +391,7 @@ main .sect1 .work_txt .btn_work_list ul .prev::after{
     content: url(../img/picto/half_arrow2_prev_w2.png);
     display: inline-block;
     position: absolute;
-    left: 14px;
+    left: 12px;
     top: 5px;
 }
 main .sect1 .work_txt .btn_work_list ul .next::after{
@@ -400,7 +401,7 @@ main .sect1 .work_txt .btn_work_list ul .next::after{
     position: absolute;
     /* left: 15px;
     top: 10px; */
-    right: 14px;
+    right: 12px;
     top: 5px;
 } 
 
@@ -1013,17 +1014,16 @@ main .sect1.active-list2 .work_txt .txt_box .tags{}
 
  @media(max-width:1440px) {
 
-
-    main .sect1 .work_pic .imgs{
-        opacity: 1;
-        transition: .5s;
-        position: absolute;
-        left: 3vw;
-        top: 38%;
-        width: 100%;
-        height: 100%;
-        transform-style: preserve-3d;
+    main .sect1.active-list1 .work_pic .imgs{
+        left: 24%;
+        top: 45%;
     }
+
+    main .sect1.active-list2 .work_pic .imgs{
+        left: -0.5vw;
+        top: 45%;
+    }
+
 
     main .sect1.active-list1 .work_txt .tit{
         font-size: 8vw;
@@ -1034,12 +1034,23 @@ main .sect1.active-list2 .work_txt .txt_box .tags{}
         bottom: -50px;
     }
 
+    main .sect1 .work_txt .btn_work_list ul{
+        position: fixed;
+        z-index: -100000;
+        bottom: 18%;
+        right: 40%;
+    
+    
+    }
+
  }
 
  
  /* --------------------------- tab --------------------------- */
 
  @media(max-width:1024px) {
+
+    
 
 }
 
