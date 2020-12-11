@@ -1,0 +1,34 @@
+{
+    "main":[
+        {
+            "num":"1",
+            "imgSrc":"/project/portfolio1/img/main/main_con1.jpg",
+            "txt":"Travel Kits to escort the mind and senses"
+        },
+        {
+            "num":"2",
+            "imgSrc":"/project//portfolio1/img/main/main_con2.jpg",
+            "txt":"Travel Kits to escort the mind and senses"
+        },
+        {
+            "num":"3",
+            "imgSrc":"/project//portfolio1/img/main/main_con3.jpg",
+            "txt":"Travel Kits to escort the mind and senses"
+        },
+        {
+            "num":"4",
+            "imgSrc":"/project//portfolio1/img/main/main_con1.jpg",
+            "txt":"Travel Kits to escort the mind and senses"
+        },
+        {
+            "num":"5",
+            "imgSrc":"/project//portfolio1/img/main/main_con2.jpg",
+            "txt":"Travel Kits to escort the mind and senses"
+        },
+        {
+            "num":"6",
+            "imgSrc":"/project//portfolio1/img/main/main_con3.jpg",
+            "txt":"Travel Kits to escort the mind and senses"
+        }
+    ]
+}
