@@ -1,0 +1,614 @@
+@import url('common.css');
+
+
+main {
+    padding-bottom: 180px;
+}
+
+.title {
+    background: #c4b7ae;
+}
+
+.title h1 {
+    text-transform: uppercase;
+    width: 80%;
+    margin: 100px auto 0 auto;
+    font-size: 18px;
+    padding: 10px 0 10px 50px;
+}
+
+
+.ban {
+    width: 80%;
+    height: 38vh;
+    margin: auto;
+
+    position: relative;
+    
+
+}
+
+.ban .b_img{
+    position: absolute;
+    left: 0;top: 0;
+    opacity: 0;
+    height: 100%;
+    /* transition: .5s; */
+}
+.ban .b_img img{height: 100%;}
+
+
+.ban .b_img.active {
+    opacity: 1;
+    width: 100%;
+    position: relative;
+}
+
+.ban .b_img.active img {
+    width: 100%;
+}
+
+.ban .b_img.active > div {
+    color: white;
+    white-space: pre-line;
+
+    position: absolute;
+    left: 5%;
+    top: 10%;
+
+}
+
+.ban .b_img:nth-of-type(2).active > div {
+    color: #000;
+}
+
+.ban .b_img.active > div h2 {
+
+    margin: 0;
+
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 2em;
+    line-height: 2em;
+}
+
+.ban .b_img.active > div p {
+    margin: 0;
+
+}
+
+
+
+
+
+.ban .btn {
+
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    left: 50%;
+    bottom: -1%;
+    transform: translateX(-50%) translateY(-10%);
+
+
+}
+
+.ban .btn > a {
+
+    text-align: center;
+    display: inline-block;
+    width: 120px;
+
+    padding: 10px 150px;
+    background: rgba(236, 229, 223, 0.5);
+    transition: .5s;
+
+}
+
+
+.ban .btn > a:hover {
+    background: rgba(236, 229, 223, 0.7);
+}
+
+.ban .btn a.active {
+    background: rgba(236, 229, 223, 1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*content*/
+
+
+.content {
+    width: 80%;
+    height: 1300px;
+
+    margin: auto;
+
+    position: relative;
+
+}
+
+.content .con {
+
+    padding: 100px 0 200px 0;
+    font-size: 14px;
+    line-height: 42px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: none;
+}
+
+.content .con.active {
+    display: block;
+}
+
+
+
+.content .con .fig_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 150px;
+}
+
+.content .con .fig_1 .txt {
+    width: 40%;
+    padding: 30px;
+}
+
+.content .con .fig_1 .txt h2 {
+    font-size: 18px;
+    margin: 0;
+
+}
+
+.content .con .fig_1 .txt p:nth-of-type(1) {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.content .con .fig_1 > p {
+    width: 50%;
+
+}
+
+.content .con .fig_1 > p img {
+    width: 100%;
+}
+
+.content .con .fig_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .con .fig_2 > p {
+    width: 50%;
+
+}
+
+.content .con .fig_2 > p img {
+    width: 100%;
+
+}
+
+.content .con .fig_2 .txt {
+    width: 40%;
+    padding: 30px;
+}
+
+.content .con .fig_2 .txt p {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------tablet : 768px----------------------------------------------------------*/
+
+@media(max-width:768px) {
+
+
+    body {
+        width: 100%;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .title h1 {
+        width: 90%;
+        margin: 0px auto;
+        padding: 10px 0;
+    }
+
+    /*bannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnner*/
+    .ban {
+        width: 100%;
+    }
+
+    .ban .b_img.active {
+        width: 100%;
+        position: relative;
+    }
+
+    .ban .b_img.active img {
+        width: 100%;
+    }
+
+    .ban .b_img.active > div {
+        position: absolute;
+        left: 4%;
+        top: 0%;
+    }
+
+    .ban .b_img.active > div h2 {
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    .ban .b_img.active > div p {
+        font-size: 14px;
+
+    }
+
+
+
+
+
+
+
+
+    /*button   */
+
+
+
+
+
+    .ban .btn {
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        left: 0;
+        bottom: 1%;
+        transform: translateX(0%) translateY(0%);
+        /*    text-align: center;*/
+
+
+    }
+
+    .ban .btn > a {
+        font-size: 14px;
+        display: inline-block;
+        width: 50%;
+        padding: 10px 0;
+
+    }
+
+
+    .content {
+        width: 90%;
+        position: static;
+    }
+
+    .content .con {
+        position: static;
+        padding: 80px 0 50px 0;
+    }
+
+
+
+    .content .con .fig_1 {
+        display: block;
+        margin: 0;
+    }
+
+
+
+
+
+    .content .con .fig_1 {
+        display: block;
+    }
+
+    .content .con .fig_1 .txt {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content .con .fig_1 > p {
+        width: 100%;
+    }
+
+
+    .content .con .fig_1 .txt h2 {
+        font-size: 14px;
+        margin: 0;
+
+
+    }
+
+    .content .con .fig_1 .txt p:nth-of-type(1) {
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .content .con .fig_1 .txt p:nth-of-type(2) {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+
+
+
+
+    .content .con .fig_2 {
+        display: block;
+    }
+
+    .content .con .fig_2 > p {
+        width: 100%;
+
+    }
+
+
+    .content .con .fig_2 .txt {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .content .con .fig_2 .txt p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+
+
+}
+
+
+
+
+
+/*-----------------------------------------------mobile : 480px----------------------------------------------------------*/
+
+@media(max-width:480px) {
+
+    body {
+        width: 100%;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .title h1 {
+        width: 90%;
+        margin: 0px auto;
+        padding: 10px 0;
+    }
+
+    /*bannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnner*/
+    .ban {
+        width: 100%;
+    }
+
+    .ban .b_img.active {
+        width: 100%;
+        position: relative;
+    }
+
+    .ban .b_img.active img {
+        width: 100%;
+    }
+
+    .ban .b_img.active > div {
+        position: absolute;
+        left: 4%;
+        top: 0%;
+        display: none;
+    }
+
+    .ban .b_img.active > div h2 {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .ban .b_img.active > div p {
+        font-size: 12px;
+
+    }
+
+
+
+
+
+
+
+
+    /*button   */
+
+
+
+
+
+    .ban .btn {
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        left: 0;
+        bottom: 3%;
+        transform: translateX(0%) translateY(0%);
+        /*    text-align: center;*/
+
+
+    }
+
+    .ban .btn > a {
+        font-size: 14px;
+        display: inline-block;
+        width: 50%;
+        padding: 10px 0;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .content {
+        width: 90%;
+        position: static;
+    }
+
+    .content .con {
+        position: static;
+        padding: 50px 0 120px 0;
+    }
+
+
+
+    .content .con .fig_1 {
+        display: block;
+        margin: 0;
+    }
+
+
+
+
+
+    .content .con .fig_1 {
+        display: block;
+    }
+
+    .content .con .fig_1 .txt {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content .con .fig_1 > p {
+        width: 100%;
+    }
+
+
+    .content .con .fig_1 .txt h2 {
+        font-size: 14px;
+        margin: 0;
+
+
+    }
+
+    .content .con .fig_1 .txt p:nth-of-type(1) {
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+    .content .con .fig_1 .txt p:nth-of-type(2) {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+
+
+
+
+    .content .con .fig_2 {
+        display: block;
+    }
+
+    .content .con .fig_2 > p {
+        width: 100%;
+
+    }
+
+
+    .content .con .fig_2 .txt {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .content .con .fig_2 .txt p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
