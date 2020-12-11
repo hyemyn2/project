@@ -99,6 +99,7 @@ main {
     .box:nth-of-type(1) {
         position: relative;
         overflow: hidden;
+<<<<<<< HEAD
         animation: changeColor 5s ease infinite normal;
         @keyframes changeColor {
             0% {
@@ -111,6 +112,22 @@ main {
                 background: rgb(255, 255, 255);
             }
         }
+=======
+
+        animation: changeColor 5s ease infinite normal;
+        @keyframes changeColor {
+            0%{
+                background: #f1f1f1;
+            }
+            30%{
+                background: rgb(183, 226, 224);
+            }
+            100%{
+                background: rgb(255,255,255);
+            }
+        }
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         .txt {
             h2 {}
             a {}

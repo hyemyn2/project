@@ -601,6 +601,7 @@ main {
 }
 
 // ============================== mobile
+<<<<<<< HEAD
 @media (max-width:480px) {
     main {
         padding-top: 60px;
@@ -639,6 +640,34 @@ main {
             width: 90%;
             margin: auto;
             padding: 150px 0;
+=======
+
+
+
+
+
+
+
+@media (max-width:480px){
+
+
+main {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    background: #ebebeb;
+
+    .big {
+        padding-top: 60px;
+        position: relative;
+        height: 200px;
+        background: #2d2d2d;
+
+        .txt {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
             span {
                 @include font(#{"Noto Sans KR", sans-serif},
                 16px,
@@ -655,6 +684,7 @@ main {
                 font-weight: normal;
             }
         }
+<<<<<<< HEAD
         //     li:nth-of-type(1) .pic{
         //         // background: rgb(147,186,47);
         //         background: rgb(216,49,40);
@@ -674,6 +704,69 @@ main {
             margin: auto;
             li {
                 margin-bottom: 80px;
+=======
+
+        .video {}
+    }
+
+    .intro {
+        width: 90%;
+        margin: auto;
+        padding: 150px 0;
+
+        span {
+            @include font(#{"Noto Sans KR", sans-serif}, 16px, 28px, #999);
+
+            font-weight: normal;
+        }
+
+        p {
+            @include font(#{"Noto Sans KR", sans-serif}, 16px, 28px, #000);
+            white-space: inherit;
+            font-weight: normal;
+        }
+    }
+
+
+
+
+
+    //     li:nth-of-type(1) .pic{
+    //         // background: rgb(147,186,47);
+    //         background: rgb(216,49,40);
+
+
+    //     }
+    //     li:nth-of-type(2){
+    //         flex-direction: column;
+    //         .pic{
+    //         background: rgb(234,153,27);
+
+    //     }
+
+    //     }
+    //     li:nth-of-type(3) .pic{
+    //         background: rgb(77,164,224);
+    //     }
+    // }
+
+    
+    ul {
+        width: 90%;
+        margin: auto;
+
+        li {
+            margin-bottom: 80px;
+            width: 100%;
+            height: auto;
+
+            display: flex;
+            
+            flex-direction: column;
+
+            .txt {
+                box-sizing: border-box;
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
                 width: 100%;
                 height: auto;
                 display: flex;
@@ -776,6 +869,7 @@ main {
                     -50%);
                 }
             }
+<<<<<<< HEAD
             li:nth-of-type(2) {
                 flex-direction: column;
                 .pic {
@@ -881,6 +975,181 @@ main {
                     animation: box3 3s ease infinite normal;
                 }
             }
+=======
+
+            .pic {
+                width: 100%;
+                height: 400px;
+            }
+        }
+
+        li:nth-of-type(1) .pic{
+            position: relative;
+            // background: rgb(147,186,47);
+            background: rgb(216,49,40);
+            p{
+
+                position: absolute;
+            }
+
+            p:nth-of-type(1){
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+            p:nth-of-type(2){
+                @keyframes box2_p2{
+                    0%{
+                        transform: scale(1);
+                    }
+                    50%{
+                        transform: scale(2);
+                    }
+                    100%{
+                        transform: scale(1);
+                    }
+                }
+                animation: box2_p2 2s ease infinite normal ;
+                left: 10%;
+                top: 15%;
+                transform: translate(-50%,-50%);
+            }
+            p:nth-of-type(3){
+                @keyframes box2_p3{
+                    0%{
+                        transform: scale(1);
+                    }
+                    50%{
+                        transform: scale(1.5);
+                    }
+                    100%{
+                        transform: scale(1);
+                    }
+                }
+                animation: box2_p3 2s ease infinite normal ;
+                left: 80%;
+                top: 35%;
+                transform: translate(-50%,-50%);
+            }
+
+        }
+        li:nth-of-type(2){
+            flex-direction: column;
+            .pic{
+                overflow: hidden;
+                 position: relative;
+
+                 p{
+                     position: absolute;
+                     left: 50%;
+                     top: 50%;
+                     transform: translate(-50%,-50%);
+                }
+
+
+                 p:nth-of-type(1){
+                    @keyframes box3_p1{
+                        0%{
+                            top: 50%;
+                            transform: translate(-50%,-50%) scale(0.5);
+                        }
+                        10%{
+                            top: 50%;
+                            transform: translate(-50%,-50%) scale(1);
+                        }
+                        50%{
+                            top:-50%;
+                            display: none;
+                        }
+                        100%{
+                            top: -50%;
+                            display: block;
+                        }
+                    }
+                    animation: box3_p1 8s ease infinite normal ;
+                 }
+                 p:nth-of-type(2){
+                    @keyframes box3_p2{
+                        0%{
+                            left: 30%;
+                            opacity: 0;
+                            transform: translate(-20%,-50%) scale(0.5);
+                        }
+
+                        35%{
+                            opacity: 0;
+                            left: 30%;
+                            transform: translate(-20%,-50%) scale(0.5);
+                        }
+                        50%{
+                            opacity: 1;
+                            left: 50%;
+                            transform: translate(-60%,-50%) scale(0.8);
+                        }
+                        100%{
+                            left: 200%;
+                            transform: translate(-60%,-50%) scale(0.8);
+                            opacity: 1;
+
+                        }
+                    }
+
+                    left: 30%;
+                    animation: box3_p2 8s ease infinite normal ;
+                 }
+
+                 p:nth-of-type(3){
+                    opacity: 0.4;
+                    transform: translate(-50%,-40%) scale(1);
+
+                    @keyframes box3_p3{
+                        0%{
+                            opacity: 0;
+                        }
+                        70%{
+                            opacity: 0;
+                        }
+                        80%{
+                            opacity: 1;
+                        }
+                        100%{
+                            opacity: 0;
+
+                        }
+                    }
+                    animation: box3_p3 8s ease infinite normal ;
+                 }
+
+            background: rgb(234,153,27);
+
+        }
+
+        }
+        li:nth-of-type(3) .pic{
+            background: rgb(77,164,224);
+            overflow: hidden;
+            position: relative;
+            
+                p{
+                    @keyframes box3{
+                        0%{
+                            bottom : -100%;
+                        }
+                        70%{
+                            bottom : 5%;
+                        }
+                        100%{
+                            bottom : 100%;
+                        }
+                    }
+                    
+                    position: absolute;
+                    left: 50%;
+                    bottom: -100%;
+                    transform: translateX(-50%);
+                    animation: box3 3s ease infinite normal;
+                }
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         }
     }
 }

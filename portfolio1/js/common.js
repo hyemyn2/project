@@ -2,11 +2,19 @@ $(function() {
 
     // index&sub page의 경로가 다를 경우, 절대 경로 잡기 : / 놓기
 
+<<<<<<< HEAD
     ///project/portfolio1/
     $('header').load('/project/portfolio1/inc_head_foot.html header .tie', head);
     $('footer').load('/project/portfolio1/inc_head_foot.html footer .foot');
 
     function head() {
+
+=======
+///project/portfolio1/
+    $('header').load('/project/portfolio1/inc_head_foot.html header .tie',head);
+    $('footer').load('/project/porfolio1/inc_head_foot.html footer .foot');
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
+
 
 
 
@@ -17,7 +25,11 @@ $(function() {
         var subClick = document.querySelectorAll('nav div ul li');
 
 
+<<<<<<< HEAD
         hoverHd.addEventListener('mouseover', showSub);
+=======
+        hoverHd.addEventListener('mouseover',showSub);
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
 
         function showSub() {
             tie.classList.add('active');
@@ -112,12 +124,17 @@ $(function() {
         var burgBtn = document.querySelector('.burg .burger');
         var burgMenu = document.querySelector('.burg .menu');
 
+<<<<<<< HEAD
         burgBtn.addEventListener('click', function() {
+=======
+        burgBtn.addEventListener('click',function(){
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
             burgBtn.classList.toggle('active');
             burgMenu.classList.toggle('active');
         });
 
 
+<<<<<<< HEAD
         var prdNav = document.querySelectorAll('.menu .m_products ul li');
         prdNav.forEach(function(i, k) {
             i.addEventListener('click', goPage);
@@ -128,6 +145,9 @@ $(function() {
             location.href = this.children[0].href;
             localStorage.itemCate = $(clickName).toUpperCase();
         }
+=======
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
 
     }
 
@@ -170,6 +190,7 @@ $(function() {
 
 
     var hd = document.querySelector('header');
+<<<<<<< HEAD
     var viewSize = window.innerHeight - hd.offsetHeight;
     // console.log(viewSize)
     var upDown = 0,
@@ -184,19 +205,40 @@ $(function() {
     // var scrollArrow = document.querySelector('main .sect2 .con_prev .scroll_down');
     // var topArrow = document.querySelector('main .sect2 .go_top');
 
+=======
+    var viewSize = window.innerHeight-hd.offsetHeight;
+    console.log(viewSize)
+    var upDown=0, moveDel=0;
+    var main = document.querySelector('main');
+    var bd = document.querySelector('body');
+    var mainH = main.offsetHeight-viewSize;
+
+    console.log(hd)
+    // var limitSect2 = sect2.offsetHeight-window.innerHeight;
+    // var scrollArrow = document.querySelector('main .sect2 .con_prev .scroll_down');
+    // var topArrow = document.querySelector('main .sect2 .go_top');
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     // html.addEventListener('mousewheel',function(e){
     //         // pageMove(e);
     // });
 
+<<<<<<< HEAD
     $('body').css({ overflow: "hidden" });
 
     document.addEventListener('mousewheel', function(e) {
+=======
+    $('body').css({overflow:"hidden"});
+
+    document.addEventListener('mousewheel',function(e){
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         pageMove(e);
     });
     // $('html').on('mousewheel',function(e){
     //     pageMove(e);
     // });
 
+<<<<<<< HEAD
     function pageMove(e) {
         var main = document.querySelector('main');
         var mainH = main.offsetHeight - viewSize;
@@ -217,6 +259,26 @@ $(function() {
 
         }
         main.style = "transform: translateY(-" + upDown + "px);";
+=======
+    function pageMove(e){
+        moveDel = e.wheelDelta;
+        if(moveDel<0){
+            //goUp
+            for(var i=0; i<200; i++){
+                if(upDown<mainH) upDown+=1;
+                if(upDown==mainH) upDown=mainH;
+            }
+        } else if(moveDel>0){
+
+            //sgoDown
+            for(var i=0; i<200; i++){
+                if(upDown>0) upDown-=1;
+                if(upDown==0) upDown=0;
+            }
+
+        }
+        main.style="transform: translateY(-"+upDown+"px);";
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
 
     }
 

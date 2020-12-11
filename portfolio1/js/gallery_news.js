@@ -1,8 +1,14 @@
 $(function() {
     $.ajax({
+<<<<<<< HEAD
         url: '../json/gallery_news.json',
         type: 'GET',
         success: function(data) {
+=======
+        url:'../json/gallery_news.json',
+        type:'GET',
+        success:function(data){
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
 
             var type, title, intro, ref, imgSrc, txt, tagName = '';
 

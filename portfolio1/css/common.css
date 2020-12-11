@@ -26,11 +26,21 @@ body {
     font-weight: bolder;
 }
 
+<<<<<<< HEAD
 body {
     position: relative;
 }
 
 main {
+=======
+
+body{
+    position: relative;
+}
+
+main{
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     transition: .5s;
 }
 
@@ -234,6 +244,7 @@ nav>div>ul li:hover:before {
     opacity: 1;
 }
 
+<<<<<<< HEAD
 .others .icon a:nth-of-type(1) {
     right: 96px;
 }
@@ -246,6 +257,12 @@ nav>div>ul li:hover:before {
     right: 0px;
     z-index: 10
 }
+=======
+.others .icon a:nth-of-type(1) {right: 96px;}
+.others .icon a:nth-of-type(2) {right: 48px;}
+.others .icon a:nth-of-type(3) {right: 0px; z-index: 10}
+.others .icon a:nth-of-type(4) {right: 0px; display: none; z-index: 5000;}
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
 
 .others .icon a:nth-of-type(4) {
     right: 0px;
@@ -452,7 +469,11 @@ nav>div>ul li:hover:before {
 .detail .txt {
     padding: 60px 120px;
     width: 35%;
+<<<<<<< HEAD
     background: rgba(255, 255, 255, 1);
+=======
+    background: rgba(255,255,255,1);
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1293,12 +1314,22 @@ header:hover nav div ul {
         display: block;
         width: 10%;
     }
+<<<<<<< HEAD
     .head .burg .burger {
+=======
+
+
+    .head .burg .burger{
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         position: absolute;
         left: 0;
         top: -20px;
         z-index: 500;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     .head .burg .burger span {
         display: block;
         margin-bottom: 5px;
@@ -1306,6 +1337,7 @@ header:hover nav div ul {
         height: 2px;
         background: #000;
     }
+<<<<<<< HEAD
     .head .burg .burger.active span:nth-of-type(1) {
         transform: rotate(45deg) translate(0, 10px);
     }
@@ -1315,6 +1347,14 @@ header:hover nav div ul {
     .head .burg .burger.active span:nth-of-type(3) {
         transform: rotate(-45deg) translate(0, -10px);
     }
+=======
+
+    .head .burg .burger.active span:nth-of-type(1) {transform: rotate(45deg) translate(0,10px);}
+    .head .burg .burger.active span:nth-of-type(2) {opacity: 0;}
+    .head .burg .burger.active span:nth-of-type(3) {transform: rotate(-45deg) translate(0,-10px);}
+
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     .burg .menu {
         opacity: 1;
         width: 60%;
@@ -1330,7 +1370,12 @@ header:hover nav div ul {
         flex-direction: column;
         justify-content: center;
         align-content: center;
+<<<<<<< HEAD
         box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.4);
+=======
+        
+        box-shadow: 1px 1px 10px 10px rgba(0,0,0,0.4);
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         padding: 0 0 0 50px;
     }
     .burg .menu div {
@@ -1366,10 +1411,18 @@ header:hover nav div ul {
     }
     .burg .menu {
         transition: .5s;
+<<<<<<< HEAD
         transform: translate(-120%, 0%);
     }
     .burg .menu.active {
         transform: translate(0%, 0%);
+=======
+        transform: translate(-120%,0%);
+    }
+
+    .burg .menu.active {
+        transform: translate(0%,0%);
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     }
     /*logo*/
     .head>a {
@@ -1420,6 +1473,10 @@ header:hover nav div ul {
     /*others*/
     .others {
         width: 70%;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -1467,6 +1524,7 @@ header:hover nav div ul {
         display: none;
         opacity: 0;
     }
+<<<<<<< HEAD
     header:hover .head_2 {
         opacity: 0;
     }
@@ -1489,6 +1547,31 @@ header:hover nav div ul {
         margin-right: 5px;
         border: none;
     }
+=======
+
+    header:hover .head_2 {
+        opacity: 0;
+    }
+
+
+
+
+
+
+.head .burg {
+    display: block;
+}
+
+
+.head .burg .burger{
+    position: absolute;
+    left: 0;
+    top: -15px;
+    z-index: 500;
+}
+
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     /*=============footer=================*/
     footer {
         width: 100%;
@@ -1633,11 +1716,26 @@ header:hover nav div ul {
         width: 90%;
         margin: auto;
         padding: 10px 0 5px 0;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
+<<<<<<< HEAD
     }
+=======
+
+
+
+    }
+
+
+
+    
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     .burg .menu {
         opacity: 1;
         width: 100%;
@@ -1648,16 +1746,30 @@ header:hover nav div ul {
         z-index: 100;
         left: 0;
         top: 0px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
+<<<<<<< HEAD
         box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.4);
+=======
+        
+        box-shadow: 1px 1px 10px 10px rgba(0,0,0,0.4);
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         padding: 0 0 0 50px;
     }
     /*logo*/
+<<<<<<< HEAD
     .head>a {
+=======
+
+    .head > a {
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         position: absolute;
         left: 15px;
         top: 20px;
@@ -1706,6 +1818,10 @@ header:hover nav div ul {
     /*others*/
     .others {
         width: 35%;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -1716,14 +1832,23 @@ header:hover nav div ul {
     .others .icon a {
         padding: 10px;
     }
+<<<<<<< HEAD
     .others .icon a {
         position: absolute;
         right: 0;
         top: 0;
+=======
+
+
+    .others .icon a {
+        position: absolute;
+        right: 0; top: 0;
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         padding: 10px;
         transition: .5s;
         opacity: 1;
     }
+<<<<<<< HEAD
     .others .icon a:nth-of-type(1) {
         right: 80px;
     }
@@ -1739,6 +1864,17 @@ header:hover nav div ul {
         display: none;
         z-index: 5000;
     }
+=======
+    
+    .others .icon a:nth-of-type(1) {right: 80px;}
+    .others .icon a:nth-of-type(2) {right: 40px;}
+    .others .icon a:nth-of-type(3) {right: 0px; z-index: 10}
+    .others .icon a:nth-of-type(4) {right: 0px; display: none; z-index: 5000;}
+
+
+
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     .others .icon a img {}
     .others .lang {
         margin-left: 20px;

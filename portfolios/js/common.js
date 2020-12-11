@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 // import * as all from './index.js';
 function common() {
 
     var resMsg;
+=======
+
+// import * as all from './index.js';
+function common(){
+
+    var resMsg;    
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     var mq = window.matchMedia("screen and (max-width:1024px)");
     mq.addListener(res);
 
@@ -19,13 +27,21 @@ function common() {
     }
 
     function res(e) {
+<<<<<<< HEAD
         (e.matches) ? resMsg = 'mobile': resMsg = 'pc';
+=======
+        (e.matches) ? resMsg = 'mobile' : resMsg = 'pc';
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         eventFun();
     }
     res(mq);
 
+<<<<<<< HEAD
     var touch = { y: 0, y2: 0 };
 
+=======
+    var touch = {y:0,y2:0};
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     function tStart(e) {
         console.log(e)
         touch.y = e.changedTouches[0].clientY;
@@ -33,7 +49,11 @@ function common() {
 
     function tMove(e) {
         touch.y2 = e.changedTouches[0].clientY;
+<<<<<<< HEAD
         console.log(Math.abs(touch.y - touch.y2));
+=======
+        console.log(  Math.abs(touch.y - touch.y2)  );
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     }
 
     function tEnd(e) {
@@ -52,6 +72,7 @@ function common() {
 
 
     $('header').load('inc_head_foot.html header .tie', head);
+<<<<<<< HEAD
     var idx = 0,
         aa, upDown;
 
@@ -65,15 +86,37 @@ function common() {
 
                     clearTimeout(aa);
                     aa = setTimeout(function() {
+=======
+    var idx = 0, aa, upDown;
+
+    function head() {
+        
+
+        if (!location.href.match('work')) {
+            setTimeout(function () {
+                document.addEventListener('mousewheel', function (e) {
+                    upDown = e.wheelDelta;
+
+                    clearTimeout(aa);
+                    aa = setTimeout(function () {
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
                         move(upDown);
                     }, 500);
                 });
 
+<<<<<<< HEAD
                 document.addEventListener('DOMMouseScroll', function(e) {
                     upDown = -e.detail;
 
                     clearTimeout(aa);
                     aa = setTimeout(function() {
+=======
+                document.addEventListener('DOMMouseScroll',function(e){
+                    upDown = -e.detail; 
+
+                    clearTimeout(aa);
+                    aa = setTimeout(function () {
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
                         move(upDown);
                     }, 500);
                 });
@@ -92,7 +135,11 @@ function common() {
                 localStorage.pagenum = '';
             }
 
+<<<<<<< HEAD
             setTimeout(function() {
+=======
+            setTimeout(function () {
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
                 reset();
 
             }, 100);
@@ -133,14 +180,23 @@ function common() {
         // });
 
         var btnHome = document.querySelector('header .head_2 .left');
+<<<<<<< HEAD
         btnHome.addEventListener('click', function() {
+=======
+        btnHome.addEventListener('click', function () {
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
             showPage(0);
         });
 
         var navi = document.querySelectorAll('header .mid .navi li');
         var changeIdx = 0;
+<<<<<<< HEAD
         navi.forEach(function(i, k) {
             navi[k].addEventListener('click', function() {
+=======
+        navi.forEach(function (i, k) {
+            navi[k].addEventListener('click', function () {
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
                 changeIdx = k + 1;
                 showPage(changeIdx);
             });
@@ -148,8 +204,13 @@ function common() {
 
 
         // ----------------------------------- copy mail
+<<<<<<< HEAD
 
 
+=======
+        
+        
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         var emailBtn = document.querySelector('header .head_1 p');
         var emailData = document.querySelector('header .head_1 p span');
         var copyTxt = emailData.innerHTML;
@@ -176,16 +237,23 @@ function common() {
             emailBtn.style = "background: rgba(223,54,46,0.7);";
             emailData.style = "color: #000;";
 
+<<<<<<< HEAD
             setTimeout(function() {
+=======
+            setTimeout(function () {
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
                 emailData.innerHTML = copyTxt;
                 emailBtn.style = "background: rgba(0,0,0,1);";
                 emailData.style = "color: #e9e9e9;";
             }, 1000);
 
         }
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     }
 
     // ----------------------------------- head change
@@ -245,4 +313,9 @@ function common() {
 
 }
 
+<<<<<<< HEAD
 export default common;
+=======
+export default common;
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108

@@ -10,6 +10,7 @@ $(function() {
         success: function(data) {
 
 
+<<<<<<< HEAD
 
 
 
@@ -38,6 +39,40 @@ $(function() {
 
             // main : transform
 
+            // $('html').on('mousewheel',function(e){
+            //     e.stopPropagation();
+            //     $('main').css({transform:"translateY(0px)"});
+            // })
+=======
+            
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
+
+
+            // ------------------------responsive
+            var resMsg;
+            var mqT = window.matchMedia("screen and (max-width:768px)");
+            var mqM = window.matchMedia("screen and (max-width:480px)");
+            mqT.addListener(res);
+            mqM.addListener(res);
+
+            
+            function res(e){
+                console.log(e.matches);
+                if(e.matches){
+                    //모바일
+                    resMsg = 'mobile';
+                }else{
+                    //PC
+                    resMsg = 'pc';
+                }
+            }
+            res(mqT);
+            res(mqM);
+
+
+
+            // main : transform
+            
             // $('html').on('mousewheel',function(e){
             //     e.stopPropagation();
             //     $('main').css({transform:"translateY(0px)"});

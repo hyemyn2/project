@@ -1,7 +1,11 @@
 @import url('common.css');
 main {
     position: relative;
+<<<<<<< HEAD
     padding-bottom: 200px;
+=======
+    padding-bottom: 2000px;
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
 }
 
 .title {

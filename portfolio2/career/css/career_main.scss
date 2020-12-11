@@ -62,6 +62,16 @@ body {
             font-weight: lighter;
         }
     }
+<<<<<<< HEAD
+=======
+    section:nth-of-type(3){
+        h2{
+        @include font(Kakao Light, 15px, 15px, #fff);
+        font-weight: lighter;
+        }
+    }
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
 }
 
 .delivery {
@@ -112,14 +122,23 @@ body {
     }
 }
 
+<<<<<<< HEAD
 .work {
     background: #212636;
     .con {
+=======
+.work{
+    background:#212636;
+
+
+    .con{
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         width: 100%;
         height: 100%;
         display: none;
         justify-content: center;
         align-items: center;
+<<<<<<< HEAD
         p {
             width: 100%;
             @include font(Kakao Light,
@@ -128,6 +147,14 @@ body {
             #fff);
             font-weight: lighter;
             text-align: center;
+=======
+        p{
+        width: 100%;
+        @include font(Kakao Light, 30px, 45px, #fff);
+        font-weight: lighter;
+        text-align: center;
+
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         }
     }
     .con:nth-of-type(1) {
@@ -258,6 +285,7 @@ body {
     }
 }
 
+<<<<<<< HEAD
 // ----------------------------------------------------------- mobile
 @media (max-width:480px) {
     header {
@@ -266,20 +294,47 @@ body {
     .big {
         width: 100%;
         height: 700px;
+=======
+
+
+// ----------------------------------------------------------- mobile
+
+@media (max-width:480px){
+
+    header{
+        width: 100%;
+    }
+
+
+    .big{
+        width: 100%;
+        height: 700px;
+    
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         background: url('../img/career/big_mobile.jpg') no-repeat;
         background-position: bottom;
         background-size: 100% auto;
     }
+<<<<<<< HEAD
     .small {
         height: 400px;
         display: flex;
         flex-direction: column;
         section {
+=======
+    
+    .small{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        section{
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
             width: 100%;
+<<<<<<< HEAD
             h2 {
                 position: absolute;
                 left: 15px;
@@ -303,11 +358,34 @@ body {
     }
     .delivery {
         .con {
+=======
+            h2{
+            position: absolute;
+            left: 15px;
+            top: 10px;
+            @include font(Kakao Light, 15px, 15px, #000);
+            }
+            .con{}
+        }
+
+        section:nth-of-type(3){
+            h2{
+            @include font(Kakao Light, 15px, 15px, #fff);
+            font-weight: lighter;
+            }
+        }
+    
+    }
+    
+    .delivery{
+        .con{
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
             width: 100%;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
+<<<<<<< HEAD
         }
         .con:nth-of-type(1) {
             background: #b9e3f1;
@@ -323,10 +401,34 @@ body {
             p {
                 width: 35%;
                 img {
+=======
+    
+        }
+    
+        .con:nth-of-type(1){
+            background:#b9e3f1;
+            p{
+                width: 20%;
+                img{
+                    width: 100%;
+                }
+            }
+    
+    
+        }
+    
+        .con:nth-of-type(2){
+    
+            background:#f0c582;
+            p{
+                width: 35%;
+                img{
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
                     width: 100%;
                 }
             }
             display: none;
+<<<<<<< HEAD
         }
     }
     .us {
@@ -350,11 +452,40 @@ body {
     .work {
         background: #212636;
         .con {
+=======
+    
+        }
+    
+    }
+    
+    .us{
+        background:#fff;
+        .con{
+            width: 35%;
+            margin: auto;
+            p{
+            width: 100%;
+            @include font(Kakao Regular, 30px, 60px, #000);
+            white-space: pre-line;
+            img{
+            width: 100%;
+    
+            }
+            }
+        }
+    }
+    
+    .work{
+        background:#212636;
+    
+        .con{
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
             width: 100%;
             height: 100%;
             display: none;
             justify-content: center;
             align-items: center;
+<<<<<<< HEAD
             p {
                 width: 100%;
                 @include font(Kakao Light,
@@ -369,4 +500,20 @@ body {
             display: flex;
         }
     }
+=======
+            p{
+            width: 100%;
+            @include font(Kakao Light, 30px, 45px, #fff);
+            font-weight: lighter;
+
+            text-align: center;
+    
+            }
+        }
+        .con:nth-of-type(1){
+            display: flex;
+        }
+    }
+    
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
 }

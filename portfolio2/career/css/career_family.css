@@ -319,6 +319,7 @@ article h2 {
   color: #1e1e1e;
 }
 
+<<<<<<< HEAD
 @media (max-width: 1440px) {
   body {
     margin: 0;
@@ -599,6 +600,8 @@ article h2 {
   }
 }
 
+=======
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
 @media (max-width: 480px) {
   header {
     width: 100%;
@@ -864,8 +867,12 @@ article h2 {
   .txt .adrs {
     margin-bottom: 15px;
   }
+<<<<<<< HEAD
   .txt .adrs,
   .txt .tel {
+=======
+  .txt .adrs, .txt .tel {
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -873,16 +880,24 @@ article h2 {
         -ms-flex-align: center;
             align-items: center;
   }
+<<<<<<< HEAD
   .txt .adrs p,
   .txt .tel p {
+=======
+  .txt .adrs p, .txt .tel p {
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     margin: 0 20px 0 0;
     font-family: "Kakao Bold";
     font-size: 15px;
     line-height: 15px;
     color: #1e1e1e;
   }
+<<<<<<< HEAD
   .txt .adrs span,
   .txt .tel span {
+=======
+  .txt .adrs span, .txt .tel span {
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
     font-family: "Kakao Regular";
     font-size: 15px;
     line-height: 15px;

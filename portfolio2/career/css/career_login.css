@@ -140,6 +140,7 @@ body {
   color: #000;
 }
 
+<<<<<<< HEAD
 @media (max-width: 1440px) {
   header {
     border-bottom: 1px solid #e6e6e6;
@@ -265,6 +266,8 @@ body {
   }
 }
 
+=======
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
 @media (max-width: 480px) {
   legend {
     display: none;

@@ -1,7 +1,11 @@
 $(function() {
 
+<<<<<<< HEAD
 
     // $('window').reload();
+=======
+    $('window').reload();
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
 
     // -------------------------------------------------------animaiton box 1
     // -------------------------------------------------------animaiton box 2
@@ -93,6 +97,7 @@ $(function() {
 
     }
 
+<<<<<<< HEAD
     loop_3();
 
     setInterval(function() {
@@ -148,6 +153,40 @@ $(function() {
     //         </div>
     //     </div>
     // </article>
+=======
+        // var bigVdo = document.querySelector('.bigVdo');
+        // window.addEventListener('DOMContentLoaded',function(){
+            // console.log('a')
+            
+            // setTimeout(function(){
+            //     $('.bigVdo').play();
+            // },1000);
+        // });
+//     <article class="box box_3">
+//     <div class="txt">
+//         <h2>열정적인 사람들이 모여<br>
+//             문제를 해결합니다.</h2>
+//         <a href="#">쿠팡패밀리</a>
+//     </div>
+//     <div class="ani">
+//         <div class="people">
+//             <p><img src="img/index/people_orange.png" alt=""></p>
+//             <p><img src="img/index/people_gray.png" alt=""></p>
+//             <p><img src="img/index/people_gray.png" alt=""></p>
+//             <p><img src="img/index/people_big.png" alt=""></p>
+//         </div>
+//         <div class="arrow">
+//             <p><img src="img/index/arrow_kakao.png" alt=""></p>
+//         </div>
+//         <div class="light">
+//             <p><img src="img/index/light_b.png" alt="">
+//                 <span><img src="img/index/thunder_yellow.png" alt=""></span>
+//             </p>
+            
+//         </div>
+//     </div>
+// </article>
+>>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
 
 
 
