@@ -1,0 +1,257 @@
+@import url('common.css');
+@mixin font ($f,
+$s,
+$lh,
+$c) {
+    font-family: $f;
+    font-size: $s;
+    line-height: $lh;
+    color: $c;
+}
+
+header a {
+    color: black !important;
+}
+
+main {
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.big {
+    position: relative;
+    height: 480px;
+    background: url(../img/location/big.jpg) no-repeat;
+    p {
+        @include font(#{'Noto Sans KR', sans-serif},
+        30px,
+        50px,
+        #fff);
+        font-weight: 700;
+        text-shadow: 0 1px 1px #000;
+        position: absolute;
+        left: 380px;
+        top: 40px;
+    }
+}
+
+.city {
+    ul {
+        padding-top: 55px;
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        flex-wrap: wrap;
+        li {
+            width: 30%;
+            margin-right: 5%;
+            padding-bottom: 80px;
+            .txt {
+                width: 360px;
+                margin-bottom: 20px;
+                p {
+                    margin: 0;
+                    @include font(#{'Noto Sans KR', sans-serif},
+                    16px,
+                    16px,
+                    #000);
+                    font-weight: 600;
+                }
+                span {
+                    display: inline-block;
+                    padding: 15px 0 20px 0;
+                    @include font(#{'Noto Sans KR', sans-serif},
+                    14px,
+                    22px,
+                    #000);
+                    font-weight: 300;
+                }
+            }
+            .pic {
+                img {}
+            }
+        }
+        li:nth-of-type(3n) {
+            margin-right: 0;
+        }
+        li:hover .txt {
+            text-decoration-line: underline;
+        }
+        // span에다가 displany: inline-block;을 주니까 위 .txt hover문에 명령이 먹지 않아서 별도로 명령을 다시 주었다.
+        li:hover .txt span {
+            text-decoration-line: underline;
+        }
+    }
+}
+
+.txt {
+    p {}
+    span {}
+}
+
+.pic {
+    img {}
+}
+
+// ========== mobile ==========
+@media(max-width:1440px) {
+    header a {
+        color: black !important;
+    }
+    main {
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+    .big {
+        position: relative;
+        height: 480px;
+        background: url(../img/location/big.jpg) no-repeat;
+        p {
+            @include font(#{'Noto Sans KR', sans-serif},
+            30px,
+            50px,
+            #fff);
+            font-weight: 700;
+            text-shadow: 0 1px 1px #000;
+            position: absolute;
+            left: 200px;
+            top: 40px;
+        }
+    }
+    .city {
+        ul {
+            padding-top: 55px;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            flex-wrap: wrap;
+            li {
+                width: 30%;
+                margin-right: 5%;
+                padding-bottom: 80px;
+                .txt {
+                    width: 360px;
+                    margin-bottom: 20px;
+                    p {
+                        margin: 0;
+                        @include font(#{'Noto Sans KR', sans-serif},
+                        16px,
+                        16px,
+                        #000);
+                        font-weight: 600;
+                    }
+                    span {
+                        display: inline-block;
+                        padding: 15px 0 20px 0;
+                        @include font(#{'Noto Sans KR', sans-serif},
+                        14px,
+                        22px,
+                        #000);
+                        font-weight: 300;
+                    }
+                }
+                .pic {
+                    img {}
+                }
+            }
+            li:nth-of-type(3n) {
+                margin-right: 0;
+            }
+            li:hover .txt {
+                text-decoration-line: underline;
+            }
+            // span에다가 displany: inline-block;을 주니까 위 .txt hover문에 명령이 먹지 않아서 별도로 명령을 다시 주었다.
+            li:hover .txt span {
+                text-decoration-line: underline;
+            }
+        }
+    }
+    .txt {
+        p {}
+        span {}
+    }
+    .pic {
+        img {}
+    }
+}
+
+// ========== mobile ==========
+@media(max-width:480px) {
+    .big {
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        position: relative;
+        height: 160px;
+        background: url(../img/location/big.jpg) no-repeat;
+        background-size: auto 100%;
+        background-position: center;
+        p {
+            @include font(#{'Noto Sans KR', sans-serif},
+            14px,
+            20px,
+            #000);
+            font-weight: normal;
+            text-shadow: 0 0px 0px #000;
+            position: absolute;
+            left: 0%;
+            bottom: -50%;
+            margin: 0;
+            top: inherit;
+        }
+    }
+    .city {
+        ul {
+            padding-top: 160px;
+            width: 90%;
+            margin: auto;
+            display: block;
+            li {
+                width: 100%;
+                margin-right: 0;
+                padding-bottom: 80px;
+                .txt {
+                    width: 100%;
+                    margin-bottom: 5px;
+                    p {
+                        margin: 0;
+                        @include font(#{'Noto Sans KR', sans-serif},
+                        16px,
+                        16px,
+                        #000);
+                        font-weight: 600;
+                    }
+                    span {
+                        display: inline-block;
+                        padding: 15px 0 0px 0;
+                        @include font(#{'Noto Sans KR', sans-serif},
+                        14px,
+                        22px,
+                        #000);
+                        font-weight: 300;
+                    }
+                }
+                .pic {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            li:nth-of-type(3n) {
+                margin-right: 0;
+            }
+            li:hover .txt {
+                text-decoration-line: underline;
+            }
+            // span에다가 displany: inline-block;을 주니까 위 .txt hover문에 명령이 먹지 않아서 별도로 명령을 다시 주었다.
+            li:hover .txt span {
+                text-decoration-line: underline;
+            }
+        }
+    }
+}

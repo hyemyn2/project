@@ -1,0 +1,829 @@
+    @import url('common.css');
+    @mixin font ($f,
+    $s,
+    $lh,
+    $c) {
+        font-family: '#{$f}';
+        font-size: $s;
+        line-height: $lh;
+        color: $c;
+    }
+    
+    main {}
+    
+    body {
+        margin: 0;
+        position: relative;
+    }
+    
+    .big {
+        background: url(../img/career/career_family/main.jpg) no-repeat;
+        background-position-x: center;
+        width: 100%;
+        height: 600px;
+        p {
+            white-space: pre-line;
+            @include font(KakaoLight,
+            48px,
+            72px,
+            #fff);
+            font-weight: normal;
+            margin: 0;
+            margin-left: 420px;
+            padding-top: 200px;
+        }
+    }
+    
+    //모든 article의 h2 tag
+    article h2 {
+        @include font(Kakao Light,
+        30px,
+        30px,
+        #000);
+        width: 50%;
+        padding-top: 100px;
+        margin: 0 auto 50px auto;
+    }
+    
+    .resolution {
+        background: url('../img/career/career_family/resolution_bg.jpg') no-repeat;
+        background-position: bottom;
+        ul {
+            width: 50%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: center;
+            padding-bottom: 70px;
+            li {
+                font-family: 'KakaoRegular';
+                font-size: 18px;
+                width: 30%;
+                // white-space: pre-line;
+                padding-bottom: 0px;
+                h3 {
+                    @include font(Kakao Light,
+                    30px,
+                    60px,
+                    #cccccc);
+                    padding-bottom: 15px;
+                    width: 100%;
+                    border-bottom: 1px solid #e6e6e6;
+                    margin: 0;
+                }
+                p {
+                    margin: 20px 0 50px 0;
+                    @include font(Kakao Light,
+                    20px,
+                    40px,
+                    #1e1e1e);
+                }
+                p:hover {
+                    text-decoration-line: underline;
+                }
+            }
+        }
+    }
+    
+    // .detail - display:none
+    .detail {
+        width: 100%;
+        ;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.4);
+        .box {
+            box-sizing: border-box;
+            position: relative;
+            background: #fff;
+            width: 50%;
+            height: 570px;
+            margin: auto;
+            padding: 60px 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .txt {
+                width: 100%;
+                ;
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                p {
+                    width: 50%;
+                    @include font(Kakao Light,
+                    30px,
+                    34px,
+                    #1e1e1e);
+                }
+                span {
+                    width: 45%;
+                    @include font(Kakao Light,
+                    15px,
+                    30px,
+                    #1e1e1e);
+                }
+            }
+            .off {
+                position: absolute;
+                span {}
+            }
+            .arrow {
+                position: relative;
+                p {
+                    position: absolute;
+                    img {}
+                }
+                p:nth-of-type(1) {
+                    left: 0;
+                    bottom: -40px;
+                }
+                p:nth-of-type(2) {
+                    right: 0;
+                    bottom: -40px;
+                }
+            }
+        }
+        display: none; // js 처리 필요 (off, 페이지표시 미완료)
+    }
+    
+    .welfare {
+        ul {
+            width: 50%;
+            margin: auto;
+            padding: 0;
+            li {
+                border-bottom: 1px solid #e2e2e2;
+                padding: 80px 0;
+                width: 100%;
+                ;
+                display: flex;
+                justify-content: space-between;
+                h3 {
+                    margin: 0;
+                    width: 25%;
+                    @include font(Kakao Light,
+                    30px,
+                    40px,
+                    #1e1e1e);
+                    font-weight: 500;
+                }
+                .box {
+                    width: 75%;
+                    div {
+                        margin-bottom: 50px;
+                        span {
+                            @include font(Kakao Regular,
+                            18px,
+                            18px,
+                            #1e1e1e);
+                        }
+                        p {
+                            @include font(Kakao Light,
+                            15px,
+                            15px,
+                            #1e1e1e);
+                        }
+                    }
+                    div:nth-of-type(3) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            li:nth-of-type(3) {
+                border-bottom: none;
+            }
+        }
+    }
+    
+    .pics {
+        display: flex;
+        left {
+            width: 40%;
+            p {
+                img {}
+            }
+        }
+        right {
+            width: 60%;
+            p {
+                img {}
+            }
+        }
+        div {
+            p {
+                margin: 0;
+                font-size: 0;
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    .map {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 150px;
+    }
+    
+    .cont {
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+    
+    .pic {
+        overflow: hidden;
+        margin: auto;
+        a {
+            img {}
+        }
+    }
+    
+    .txt {
+        width: 30%;
+        margin: 20px 0 0 30px;
+        h3 {
+            margin: 25px 0;
+            @include font(Kakao Regular,
+            18px,
+            18px,
+            #1e1e1e);
+        }
+        .adrs {
+            margin-bottom: 15px;
+        }
+        .adrs,
+        .tel {
+            display: flex;
+            align-items: center;
+            p {
+                margin: 0 20px 0 0;
+                @include font(Kakao Bold,
+                15px,
+                15px,
+                #1e1e1e);
+            }
+            span {
+                @include font(Kakao Regular,
+                15px,
+                15px,
+                #1e1e1e);
+            }
+        }
+    }
+    
+    .adrs {
+        span {}
+    }
+    
+    .tel {
+        p {}
+        span {}
+    }
+    
+    // laptop
+    @media (max-width: 1440px) {
+        main {}
+        body {
+            margin: 0;
+            position: relative;
+        }
+        .big {
+            background: url(../img/career/career_family/main.jpg) no-repeat;
+            background-position-x: center;
+            width: 100%;
+            height: 520px;
+            p {
+                white-space: pre-line;
+                @include font(KakaoLight,
+                36px,
+                56px,
+                #fff);
+                font-weight: normal;
+                margin: 0;
+                margin-left: 320px;
+                padding-top: 200px;
+            }
+        }
+        //모든 article의 h2 tag
+        article h2 {
+            @include font(Kakao Light,
+            30px,
+            30px,
+            #000);
+            width: 70%;
+            padding-top: 100px;
+            margin: 0 auto 50px auto;
+        }
+        .resolution {
+            background: url('../img/career/career_family/resolution_bg.jpg') no-repeat;
+            background-position: bottom;
+            ul {
+                width: 70%;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: center;
+                padding-bottom: 70px;
+                li {
+                    font-family: 'KakaoRegular';
+                    font-size: 18px;
+                    width: 30%;
+                    // white-space: pre-line;
+                    padding-bottom: 0px;
+                    h3 {
+                        @include font(Kakao Light,
+                        30px,
+                        60px,
+                        #cccccc);
+                        padding-bottom: 15px;
+                        width: 100%;
+                        border-bottom: 1px solid #e6e6e6;
+                        margin: 0;
+                    }
+                    p {
+                        margin: 20px 0 50px 0;
+                        @include font(Kakao Light,
+                        20px,
+                        40px,
+                        #1e1e1e);
+                    }
+                    p:hover {
+                        text-decoration-line: underline;
+                    }
+                }
+            }
+        }
+        // .detail - display:none
+        .detail {
+            width: 100%;
+            ;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.4);
+            .box {
+                box-sizing: border-box;
+                position: relative;
+                background: #fff;
+                width: 50%;
+                height: 570px;
+                margin: auto;
+                padding: 60px 80px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .txt {
+                    width: 100%;
+                    ;
+                    margin: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    p {
+                        width: 50%;
+                        @include font(Kakao Light,
+                        30px,
+                        34px,
+                        #1e1e1e);
+                    }
+                    span {
+                        width: 45%;
+                        @include font(Kakao Light,
+                        15px,
+                        30px,
+                        #1e1e1e);
+                    }
+                }
+                .off {
+                    position: absolute;
+                    span {}
+                }
+                .arrow {
+                    position: relative;
+                    p {
+                        position: absolute;
+                        img {}
+                    }
+                    p:nth-of-type(1) {
+                        left: 0;
+                        bottom: -40px;
+                    }
+                    p:nth-of-type(2) {
+                        right: 0;
+                        bottom: -40px;
+                    }
+                }
+            }
+            display: none; // js 처리 필요 (off, 페이지표시 미완료)
+        }
+        .welfare {
+            ul {
+                width: 70%;
+                margin: auto;
+                padding: 0;
+                li {
+                    border-bottom: 1px solid #e2e2e2;
+                    padding: 80px 0;
+                    width: 100%;
+                    ;
+                    display: flex;
+                    justify-content: space-between;
+                    h3 {
+                        margin: 0;
+                        width: 25%;
+                        @include font(Kakao Light,
+                        30px,
+                        40px,
+                        #1e1e1e);
+                        font-weight: 500;
+                    }
+                    .box {
+                        width: 75%;
+                        div {
+                            margin-bottom: 50px;
+                            span {
+                                @include font(Kakao Regular,
+                                18px,
+                                18px,
+                                #1e1e1e);
+                            }
+                            p {
+                                @include font(Kakao Light,
+                                15px,
+                                15px,
+                                #1e1e1e);
+                            }
+                        }
+                        div:nth-of-type(3) {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                li:nth-of-type(3) {
+                    border-bottom: none;
+                }
+            }
+        }
+        .pics {
+            display: flex;
+            left {
+                width: 40%;
+                p {
+                    img {}
+                }
+            }
+            right {
+                width: 60%;
+                p {
+                    img {}
+                }
+            }
+            div {
+                p {
+                    margin: 0;
+                    font-size: 0;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .map {
+            width: 100%;
+            margin: auto;
+            margin-bottom: 150px;
+        }
+        .cont {
+            display: flex;
+            width: 70%;
+            margin: auto;
+        }
+        .pic {
+            overflow: hidden;
+            margin: auto;
+            a {
+                img {}
+            }
+        }
+        .txt {
+            width: 30%;
+            margin: 20px 0 0 30px;
+            h3 {
+                margin: 25px 0;
+                @include font(Kakao Regular,
+                18px,
+                18px,
+                #1e1e1e);
+            }
+            .adrs {
+                margin-bottom: 15px;
+            }
+            .adrs,
+            .tel {
+                display: flex;
+                align-items: center;
+                p {
+                    margin: 0 20px 0 0;
+                    @include font(Kakao Bold,
+                    15px,
+                    15px,
+                    #1e1e1e);
+                }
+                span {
+                    @include font(Kakao Regular,
+                    15px,
+                    15px,
+                    #1e1e1e);
+                }
+            }
+        }
+        .adrs {
+            span {}
+        }
+        .tel {
+            p {}
+            span {}
+        }
+    }
+    
+    // mobile
+    @media (max-width: 480px) {
+        header {
+            width: 100%;
+        }
+        .big {
+            margin-top: 60px;
+            background: url(../img/career/career_family/main.jpg) no-repeat;
+            background-size: auto 180px;
+            background-position-x: right;
+            width: 100%;
+            height: 180px;
+            p {
+                white-space: pre-line;
+                @include font(KakaoLight,
+                14px,
+                20px,
+                #fff);
+                font-weight: normal;
+                margin: 0;
+                margin-left: 20px;
+                padding-top: 10px;
+            }
+        }
+        //모든 article의 h2 tag
+        article h2 {
+            @include font(Kakao Light,
+            30px,
+            30px,
+            #000);
+            width: 90%;
+            padding-top: 100px;
+            margin: 0 auto 50px auto;
+        }
+        .resolution {
+            background: url('../img/career/career_family/resolution_bg.jpg') no-repeat;
+            background-position: bottom;
+            ul {
+                width: 90%;
+                margin: auto;
+                padding: 0 0 70px 0;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: center;
+                li {
+                    font-family: 'KakaoRegular';
+                    font-size: 18px;
+                    width: 100%;
+                    // white-space: pre-line;
+                    padding-bottom: 0px;
+                    h3 {
+                        @include font(Kakao Light,
+                        30px,
+                        60px,
+                        #cccccc);
+                        padding-bottom: 15px;
+                        width: 100%;
+                        border-bottom: 1px solid #e6e6e6;
+                        margin: 0;
+                    }
+                    p {
+                        margin: 20px 0 50px 0;
+                        @include font(Kakao Light,
+                        20px,
+                        40px,
+                        #1e1e1e);
+                    }
+                    p:hover {
+                        text-decoration-line: underline;
+                    }
+                }
+            }
+        }
+        // .detail - display:none
+        .detail {
+            width: 100%;
+            ;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.4);
+            .box {
+                box-sizing: border-box;
+                position: relative;
+                background: #fff;
+                width: 50%;
+                height: 570px;
+                margin: auto;
+                padding: 60px 80px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .txt {
+                    width: 100%;
+                    ;
+                    margin: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    p {
+                        width: 50%;
+                        @include font(Kakao Light,
+                        30px,
+                        34px,
+                        #1e1e1e);
+                    }
+                    span {
+                        width: 45%;
+                        @include font(Kakao Light,
+                        15px,
+                        30px,
+                        #1e1e1e);
+                    }
+                }
+                .off {
+                    position: absolute;
+                    span {}
+                }
+                .arrow {
+                    position: relative;
+                    p {
+                        position: absolute;
+                        img {}
+                    }
+                    p:nth-of-type(1) {
+                        left: 0;
+                        bottom: -40px;
+                    }
+                    p:nth-of-type(2) {
+                        right: 0;
+                        bottom: -40px;
+                    }
+                }
+            }
+            display: none; // js 처리 필요 (off, 페이지표시 미완료)
+        }
+        .welfare {
+            ul {
+                width: 90%;
+                margin: auto;
+                padding: 0;
+                li {
+                    border-bottom: 1px solid #e2e2e2;
+                    padding: 30px 0;
+                    width: 100%;
+                    ;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    h3 {
+                        margin: 60px 0 60px 0;
+                        width: 90%;
+                        @include font(Kakao Light,
+                        30px,
+                        40px,
+                        #1e1e1e);
+                        font-weight: 500;
+                    }
+                    .box {
+                        width: 90%;
+                        div {
+                            margin-bottom: 50px;
+                            span {
+                                @include font(Kakao Regular,
+                                18px,
+                                30px,
+                                #1e1e1e);
+                            }
+                            p {
+                                @include font(Kakao Light,
+                                15px,
+                                25px,
+                                #1e1e1e);
+                            }
+                        }
+                        div:nth-of-type(3) {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                li:nth-of-type(3) {
+                    border-bottom: none;
+                }
+            }
+        }
+        .pics {
+            display: flex;
+            left {
+                width: 40%;
+                p {
+                    img {}
+                }
+            }
+            right {
+                width: 60%;
+                p {
+                    img {}
+                }
+            }
+            div {
+                p {
+                    margin: 0;
+                    font-size: 0;
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .map {
+            width: 100%;
+            margin: auto;
+            margin-bottom: 150px;
+        }
+        .cont {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: auto;
+        }
+        .pic {
+            width: 95%;
+            overflow: hidden;
+            margin: 0;
+            a {
+                img {}
+            }
+        }
+        .txt {
+            width: 90%;
+            margin: 20px 0 0 30px;
+            h3 {
+                margin: 25px 0;
+                @include font(Kakao Regular,
+                18px,
+                18px,
+                #1e1e1e);
+            }
+            .adrs {
+                margin-bottom: 15px;
+            }
+            .adrs,
+            .tel {
+                display: flex;
+                align-items: center;
+                p {
+                    margin: 0 20px 0 0;
+                    @include font(Kakao Bold,
+                    15px,
+                    15px,
+                    #1e1e1e);
+                }
+                span {
+                    @include font(Kakao Regular,
+                    15px,
+                    15px,
+                    #1e1e1e);
+                }
+            }
+        }
+    }

@@ -1,0 +1,372 @@
+@import url("common.css");
+@mixin font($f,
+$s,
+$lh,
+$c) {
+    font-family: "#{$f}";
+    font-size: $s;
+    line-height: $lh;
+    color: $c;
+}
+
+header {
+    .bg {
+        background: transparent;
+        border-bottom: none;
+    }
+    a {}
+    background: transparent !important;
+}
+
+header:hover .bg {
+    background: #fff;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+body {
+    background: #f9f9f9;
+}
+
+.big {
+    width: 100%;
+    height: 720px;
+    background: url('../img/career/big.jpg') no-repeat;
+}
+
+.small {
+    height: 400px;
+    display: flex;
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 33.33%;
+        h2 {
+            position: absolute;
+            left: 15px;
+            top: 10px;
+            @include font(Kakao Light,
+            15px,
+            15px,
+            #000);
+        }
+        .con {}
+    }
+    section:nth-of-type(3) {
+        h2 {
+            @include font(Kakao Light,
+            15px,
+            15px,
+            #fff);
+            font-weight: lighter;
+        }
+    }
+}
+
+.delivery {
+    .con {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .con:nth-of-type(1) {
+        background: #b9e3f1;
+        p {
+            width: 20%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .con:nth-of-type(2) {
+        background: #f0c582;
+        p {
+            width: 35%;
+            img {
+                width: 100%;
+            }
+        }
+        display: none;
+    }
+}
+
+.us {
+    background: #fff;
+    .con {
+        width: 35%;
+        margin: auto;
+        p {
+            width: 100%;
+            @include font(Kakao Regular,
+            30px,
+            60px,
+            #000);
+            white-space: pre-line;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.work {
+    background: #212636;
+    .con {
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        p {
+            width: 100%;
+            @include font(Kakao Light,
+            30px,
+            45px,
+            #fff);
+            font-weight: lighter;
+            text-align: center;
+        }
+    }
+    .con:nth-of-type(1) {
+        display: flex;
+    }
+}
+
+// ----------------------------------------------------------- laptop
+@media (max-width:1440px) {
+    header {
+        .bg {
+            background: transparent;
+            border-bottom: none;
+        }
+        a {}
+        background: transparent !important;
+    }
+    header:hover .bg {
+        background: #fff;
+        border-bottom: 1px solid #e8e8e8;
+    }
+    body {
+        background: #f9f9f9;
+    }
+    .big {
+        width: 100%;
+        height: 65vh;
+        background: url('../img/career/big.jpg') no-repeat;
+        background-size: auto 100%;
+    }
+    .small {
+        height: 280px;
+        display: flex;
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 33.33%;
+            h2 {
+                position: absolute;
+                left: 15px;
+                top: 10px;
+                @include font(Kakao Light,
+                15px,
+                15px,
+                #000);
+            }
+            .con {}
+        }
+        section:nth-of-type(3) {
+            h2 {
+                @include font(Kakao Light,
+                15px,
+                15px,
+                #fff);
+                font-weight: lighter;
+            }
+        }
+    }
+    .delivery {
+        .con {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .con:nth-of-type(1) {
+            background: #b9e3f1;
+            p {
+                width: 20%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .con:nth-of-type(2) {
+            background: #f0c582;
+            p {
+                width: 35%;
+                img {
+                    width: 100%;
+                }
+            }
+            display: none;
+        }
+    }
+    .us {
+        background: #fff;
+        .con {
+            width: 35%;
+            margin: auto;
+            p {
+                width: 100%;
+                @include font(Kakao Regular,
+                30px,
+                60px,
+                #000);
+                white-space: pre-line;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .work {
+        background: #212636;
+        .con {
+            width: 100%;
+            height: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            p {
+                width: 100%;
+                @include font(Kakao Light,
+                30px,
+                45px,
+                #fff);
+                font-weight: lighter;
+                text-align: center;
+            }
+        }
+        .con:nth-of-type(1) {
+            display: flex;
+        }
+    }
+}
+
+// ----------------------------------------------------------- mobile
+@media (max-width:480px) {
+    header {
+        width: 100%;
+    }
+    .big {
+        width: 100%;
+        height: 700px;
+        background: url('../img/career/big_mobile.jpg') no-repeat;
+        background-position: bottom;
+        background-size: 100% auto;
+    }
+    .small {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            h2 {
+                position: absolute;
+                left: 15px;
+                top: 10px;
+                @include font(Kakao Light,
+                15px,
+                15px,
+                #000);
+            }
+            .con {}
+        }
+        section:nth-of-type(3) {
+            h2 {
+                @include font(Kakao Light,
+                15px,
+                15px,
+                #fff);
+                font-weight: lighter;
+            }
+        }
+    }
+    .delivery {
+        .con {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .con:nth-of-type(1) {
+            background: #b9e3f1;
+            p {
+                width: 20%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .con:nth-of-type(2) {
+            background: #f0c582;
+            p {
+                width: 35%;
+                img {
+                    width: 100%;
+                }
+            }
+            display: none;
+        }
+    }
+    .us {
+        background: #fff;
+        .con {
+            width: 35%;
+            margin: auto;
+            p {
+                width: 100%;
+                @include font(Kakao Regular,
+                30px,
+                60px,
+                #000);
+                white-space: pre-line;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .work {
+        background: #212636;
+        .con {
+            width: 100%;
+            height: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            p {
+                width: 100%;
+                @include font(Kakao Light,
+                30px,
+                45px,
+                #fff);
+                font-weight: lighter;
+                text-align: center;
+            }
+        }
+        .con:nth-of-type(1) {
+            display: flex;
+        }
+    }
+}
