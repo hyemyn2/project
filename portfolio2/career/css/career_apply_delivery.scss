@@ -1,8 +1,6 @@
 @import url("common.css");
-@mixin font($f,
-$s,
-$lh,
-$c) {
+
+@mixin font($f, $s, $lh, $c) {
     font-family: "#{$f}";
     font-size: $s;
     line-height: $lh;
@@ -11,29 +9,32 @@ $c) {
 
 // 참고
 // https://www.kakaocorp.com/socialImpact/withJeju/youthItEducation
-header {
-    a {
-        color: #000 !important;
-    }
-}
 
-body {
+header{
+
+    a{
+        color : #000 !important;
+     }
+    }
+
+body{
     background: #f9f9f9;
 }
 
-main {
+main{
     padding-top: 120px;
 }
+
+
 
 .intro {
     width: 60%;
     margin: auto;
+
     h2 {
         margin: 0;
-        @include font(Kakao Regular,
-        22px,
-        35px,
-        #000);
+
+        @include font(Kakao Regular, 22px, 35px, #000);
     }
 }
 
@@ -42,15 +43,15 @@ main {
     width: 60%;
     margin: auto;
     padding: 90px 0 60px 0;
+
     a {
-        @include font(Kakao Light,
-        20px,
-        35px,
-        #666);
+        @include font(Kakao Light, 20px, 35px, #666);
+
         display: inline-block;
         margin-right: 40px;
         position: relative;
     }
+
     a::after {
         content: '';
         display: none;
@@ -60,72 +61,76 @@ main {
         left: 0;
         bottom: 0;
     }
+
     a:hover {
-        @include font(Kakao Regular,
-        20px,
-        35px,
-        #000);
+        @include font(Kakao Regular, 20px, 35px, #000);
+
         font-weight: 600;
     }
+
     a:hover::after {
         display: block;
     }
+
     /* js 이용한 후 제거 */
     a.active {
-        @include font(Kakao Regular,
-        20px,
-        35px,
-        #000);
+        @include font(Kakao Regular, 20px, 35px, #000);
+
         font-weight: 600;
     }
+
     a.active::after {
         display: block;
     }
+
     /* 여기까지 */
 }
 
 .change {
     width: 60%;
     margin: auto;
+
+
     .content {
         display: none;
         .big {}
+
         article {
             padding-top: 50px;
             display: flex;
+
             span {
                 width: 25%;
-                @include font(Kakao Regular,
-                18px,
-                30px,
-                #000);
+
+                @include font(Kakao Regular, 18px, 30px, #000);
             }
+
             .con {
                 width: 75%;
                 border-bottom: 1px solid #e6e6e6;
                 padding-bottom: 50px;
             }
         }
+
         article:last-child .con {
             border-bottom: none;
         }
     }
-    .content.active {
-        display: block;
-    }
+
+    .content.active{display: block;}
 }
 
 // 각각의 article
+
 .about {
-    margin-top: 50px;
+        margin-top: 50px;
     span {}
+
     .con {
         span {
-            @include font(Kakao Regular,
-            18px,
-            30px,
-            #000);
+            @include font(Kakao Regular, 18px, 30px, #000);
         }
+
         .wrap {
             position: relative;
             .pic {
@@ -138,65 +143,70 @@ main {
                     display: flex;
                     justify-content: flex-end;
                     transition: .5s;
+
                     li {
                         width: 100%;
-                        img {
-                            width: 100%;
-                        }
+                        img {width: 100%;}
                     }
                 }
             }
-            .btn {
-                button {
+
+            .btn{
+                button{
                     display: inline-block;
                     width: 40px;
                     height: 40px;
                     background: #000;
                     border: none;
                     position: absolute;
-                    top: 50%;
+                    top:50%;
                     transform: translateY(-50%);
-                    img {
+                    img{
                         position: absolute;
                     }
                 }
-                button:first-child {
-                    left: 0;
+
+                button:first-child{
+                    left:0;
                 }
-                button:last-child {
-                    right: 0;
+
+                button:last-child{
+                    right:0;
                 }
-                button:first-child img {
-                    right: 0;
-                    top: 50%;
+
+
+                
+                button:first-child img{
+                    right:0;
+                    top:50%;
                     transform: translateY(-50%);
                 }
-                button:last-child img {
-                    left: 0;
-                    top: 50%;
+
+                button:last-child img{
+                    left:0;
+                    top:50%;
                     transform: translateY(-50%);
                 }
             }
         }
+
         .txt {
             ul {
                 margin: 0;
                 padding: 30px 0 0 0;
+
                 li {
                     padding: 30px 0;
+
                     span {
-                        @include font(Kakao Regular,
-                        18px,
-                        18px,
-                        #1e1e1e);
+                        @include font(Kakao Regular, 18px, 18px, #1e1e1e);
                     }
+
                     p {
                         margin: 0;
                         padding-top: 20px;
-                        @include font(Kakao Light,
-                        16px,
-                        16px,
-                        #666);
+
+                        @include font(Kakao Light, 16px, 16px, #666);
                     }
                 }
             }
@@ -211,21 +221,24 @@ main {
             margin: 0;
             display: flex;
             justify-content: flex-start;
+
             li {
                 width: 30%;
                 margin-right: 30px;
+
                 a {
                     img {
                         width: 100%;
                     }
                 }
+
                 p {
                     text-align: center;
                 }
             }
-            li:last-child {
-                margin-right: 0;
-            }
+
+            li:last-child{margin-right:0;}
+
             li:hover p {
                 text-decoration-line: underline;
             }
@@ -236,6 +249,7 @@ main {
 // .video:nth-of-type(2) .con{
 //     display: flex;
 //     justify-content: left !important;}
+
 .news {
     .con {
         ul {
@@ -243,42 +257,44 @@ main {
                 display: flex;
                 justify-content: start;
                 padding-bottom: 50px;
+
                 a {
                     width: 12%;
                     display: inline-block;
                     border-radius: 90px;
+
                     img {
                         width: 100%;
                         height: auto;
                     }
                 }
+
                 .txt {
                     width: 88%;
                     padding-left: 30px;
+
                     h2 {
                         margin: 0;
                         padding-bottom: 20px;
-                        @include font(Kakao Light,
-                        16px,
-                        16px,
-                        #1e1e1e);
+
+                        @include font(Kakao Light, 16px, 16px, #1e1e1e);
+
                         font-weight: normal;
+
                         span {
                             display: inline-block;
                             margin-left: 15px;
-                            @include font(Kakao Light,
-                            12px,
-                            16px,
-                            #3e3e3e);
+
+                            @include font(Kakao Light, 12px, 16px, #3e3e3e);
+
                             font-weight: normal;
                         }
                     }
+
                     p {
                         margin: 0;
-                        @include font(Kakao Light,
-                        14px,
-                        22px,
-                        #666);
+
+                        @include font(Kakao Light, 14px, 22px, #666);
                     }
                 }
             }
@@ -286,545 +302,6 @@ main {
     }
 }
 
-.content:last-child {
-    display: none;
-}
-
-// ----------------------------------------------------------- laptop
-@media(max-width:1440px) {
-    header {
-        a {
-            color: #000 !important;
-        }
-    }
-    body {
-        background: #f9f9f9;
-    }
-    main {
-        padding-top: 120px;
-    }
-    .intro {
-        width: 80%;
-        margin: auto;
-        h2 {
-            margin: 0;
-            @include font(Kakao Regular,
-            22px,
-            35px,
-            #000);
-        }
-    }
-    .menu {
-        display: flex;
-        width: 80%;
-        margin: auto;
-        padding: 90px 0 60px 0;
-        a {
-            @include font(Kakao Light,
-            20px,
-            35px,
-            #666);
-            display: inline-block;
-            margin-right: 40px;
-            position: relative;
-        }
-        a::after {
-            content: '';
-            display: none;
-            width: 100%;
-            border-top: 1px solid #000;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-        }
-        a:hover {
-            @include font(Kakao Regular,
-            20px,
-            35px,
-            #000);
-            font-weight: 600;
-        }
-        a:hover::after {
-            display: block;
-        }
-        /* js 이용한 후 제거 */
-        a.active {
-            @include font(Kakao Regular,
-            20px,
-            35px,
-            #000);
-            font-weight: 600;
-        }
-        a.active::after {
-            display: block;
-        }
-        /* 여기까지 */
-    }
-    .change {
-        width: 80%;
-        margin: auto;
-        .content {
-            display: none;
-            .big {}
-            article {
-                padding-top: 50px;
-                display: flex;
-                span {
-                    width: 25%;
-                    @include font(Kakao Regular,
-                    18px,
-                    30px,
-                    #000);
-                }
-                .con {
-                    width: 75%;
-                    border-bottom: 1px solid #e6e6e6;
-                    padding-bottom: 50px;
-                }
-            }
-            article:last-child .con {
-                border-bottom: none;
-            }
-        }
-        .content.active {
-            display: block;
-        }
-    }
-    // 각각의 article
-    .about {
-        margin-top: 50px;
-        span {}
-        .con {
-            span {
-                @include font(Kakao Regular,
-                18px,
-                30px,
-                #000);
-            }
-            .wrap {
-                position: relative;
-                .pic {
-                    width: 100%;
-                    overflow: hidden;
-                    ul {
-                        width: 300%;
-                        padding: 0;
-                        margin: 0;
-                        display: flex;
-                        justify-content: flex-end;
-                        transition: .5s;
-                        li {
-                            width: 100%;
-                            img {
-                                width: 100%;
-                            }
-                        }
-                    }
-                }
-                .btn {
-                    button {
-                        display: inline-block;
-                        width: 40px;
-                        height: 40px;
-                        background: #000;
-                        border: none;
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        img {
-                            position: absolute;
-                        }
-                    }
-                    button:first-child {
-                        left: 0;
-                    }
-                    button:last-child {
-                        right: 0;
-                    }
-                    button:first-child img {
-                        right: 0;
-                        top: 50%;
-                        transform: translateY(-50%);
-                    }
-                    button:last-child img {
-                        left: 0;
-                        top: 50%;
-                        transform: translateY(-50%);
-                    }
-                }
-            }
-            .txt {
-                ul {
-                    margin: 0;
-                    padding: 30px 0 0 0;
-                    li {
-                        padding: 30px 0;
-                        span {
-                            @include font(Kakao Regular,
-                            18px,
-                            18px,
-                            #1e1e1e);
-                        }
-                        p {
-                            margin: 0;
-                            padding-top: 20px;
-                            @include font(Kakao Light,
-                            16px,
-                            16px,
-                            #666);
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .video {
-        .con {
-            ul {
-                padding: 0;
-                margin: 0;
-                display: flex;
-                justify-content: flex-start;
-                li {
-                    width: 30%;
-                    margin-right: 30px;
-                    a {
-                        img {
-                            width: 100%;
-                        }
-                    }
-                    p {
-                        text-align: center;
-                    }
-                }
-                li:last-child {
-                    margin-right: 0;
-                }
-                li:hover p {
-                    text-decoration-line: underline;
-                }
-            }
-        }
-    }
-    // .video:nth-of-type(2) .con{
-    //     display: flex;
-    //     justify-content: left !important;}
-    .news {
-        .con {
-            ul {
-                li {
-                    display: flex;
-                    justify-content: start;
-                    padding-bottom: 50px;
-                    a {
-                        width: 12%;
-                        display: inline-block;
-                        border-radius: 90px;
-                        img {
-                            width: 100%;
-                            height: auto;
-                        }
-                    }
-                    .txt {
-                        width: 88%;
-                        padding-left: 30px;
-                        h2 {
-                            margin: 0;
-                            padding-bottom: 20px;
-                            @include font(Kakao Light,
-                            16px,
-                            16px,
-                            #1e1e1e);
-                            font-weight: normal;
-                            span {
-                                display: inline-block;
-                                margin-left: 15px;
-                                @include font(Kakao Light,
-                                12px,
-                                16px,
-                                #3e3e3e);
-                                font-weight: normal;
-                            }
-                        }
-                        p {
-                            margin: 0;
-                            @include font(Kakao Light,
-                            14px,
-                            22px,
-                            #666);
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .content:last-child {
-        display: none;
-    }
-}
-
-<<<<<<< HEAD
-// ----------------------------------------------------------- mobile
-@media(max-width:480px) {
-    .intro {
-        width: 90%;
-        margin: auto;
-        h2 {
-            margin: 0;
-            @include font(Kakao Regular,
-            22px,
-            35px,
-            #000);
-        }
-    }
-    .menu {
-        display: flex;
-        width: 90%;
-        margin: auto;
-        padding: 90px 0 60px 0;
-        a {
-            @include font(Kakao Light,
-            20px,
-            35px,
-            #666);
-            display: inline-block;
-            margin-right: 40px;
-            position: relative;
-        }
-        a::after {
-            content: '';
-            display: none;
-            width: 100%;
-            border-top: 1px solid #000;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-        }
-        a:hover {
-            @include font(Kakao Regular,
-            20px,
-            35px,
-            #000);
-            font-weight: 600;
-        }
-        a:hover::after {
-            display: block;
-        }
-        /* js 이용한 후 제거 */
-        a.active {
-            @include font(Kakao Regular,
-            20px,
-            35px,
-            #000);
-            font-weight: 600;
-        }
-        a.active::after {
-            display: block;
-        }
-        /* 여기까지 */
-    }
-    .change {
-        width: 90%;
-        margin: auto;
-        .content {
-            display: none;
-            .big {
-                img {
-                    width: 100%;
-                }
-            }
-            article {
-                padding-top: 50px;
-                display: flex;
-                flex-direction: column;
-                span {
-                    width: 100%;
-                    margin-bottom: 40px;
-                    @include font(Kakao Regular,
-                    18px,
-                    30px,
-                    #000);
-                }
-                .con {
-                    width: 100%;
-                    border-bottom: 1px solid #e6e6e6;
-                    padding-bottom: 50px;
-                }
-            }
-            article:last-child .con {
-                border-bottom: none;
-            }
-        }
-        .content.active {
-            display: block;
-        }
-    }
-    // 각각의 article
-    .about {
-        margin-top: 50px;
-        span {}
-        .con {
-            span {
-                @include font(Kakao Regular,
-                18px,
-                30px,
-                #000);
-            }
-            .wrap {
-                position: relative;
-                .pic {
-                    width: 100%;
-                    overflow: hidden;
-                    ul {
-                        width: 300%;
-                        padding: 0;
-                        margin: 0;
-                        display: flex;
-                        justify-content: flex-end;
-                        transition: .5s;
-                        li {
-                            width: 100%;
-                            img {
-                                width: 100%;
-                            }
-                        }
-                    }
-                }
-                .btn {
-                    button {
-                        display: inline-block;
-                        width: 40px;
-                        height: 40px;
-                        background: #000;
-                        border: none;
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        img {
-                            position: absolute;
-                        }
-                    }
-                    button:first-child {
-                        left: 0;
-                    }
-                    button:last-child {
-                        right: 0;
-                    }
-                    button:first-child img {
-                        right: 0;
-                        top: 50%;
-                        transform: translateY(-50%);
-                    }
-                    button:last-child img {
-                        left: 0;
-                        top: 50%;
-                        transform: translateY(-50%);
-                    }
-                }
-            }
-            .txt {
-                ul {
-                    margin: 0;
-                    padding: 30px 0 0 0;
-                    li {
-                        padding: 30px 0;
-                        span {
-                            @include font(Kakao Regular,
-                            18px,
-                            18px,
-                            #1e1e1e);
-                        }
-                        p {
-                            margin: 0;
-                            padding-top: 20px;
-                            @include font(Kakao Light,
-                            16px,
-                            16px,
-                            #666);
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .video {
-        .con {
-            ul {
-                padding: 0;
-                margin: 0;
-                display: flex;
-                justify-content: flex-start;
-                li {
-                    width: 30%;
-                    margin-right: 30px;
-                    a {
-                        img {
-                            width: 100%;
-                        }
-                    }
-                    p {
-                        text-align: center;
-                    }
-                }
-                li:last-child {
-                    margin-right: 0;
-                }
-                li:hover p {
-                    text-decoration-line: underline;
-                }
-            }
-        }
-    }
-    // .video:nth-of-type(2) .con{
-    //     display: flex;
-    //     justify-content: left !important;}
-    .news {
-        .con {
-            ul {
-                padding: 0;
-                li {
-                    display: flex;
-                    justify-content: start;
-                    padding-bottom: 50px;
-                    a {
-                        width: 12%;
-                        display: inline-block;
-                        border-radius: 90px;
-                        img {
-                            width: 100%;
-                            height: auto;
-                        }
-                    }
-                    .txt {
-                        width: 100%;
-                        padding-left: 30px;
-                        h2 {
-                            margin: 0;
-                            padding-bottom: 20px;
-                            @include font(Kakao Light,
-                            16px,
-                            16px,
-                            #1e1e1e);
-                            font-weight: normal;
-                            span {
-                                display: inline-block;
-                                margin-left: 15px;
-                                @include font(Kakao Light,
-                                12px,
-                                16px,
-                                #3e3e3e);
-                                font-weight: normal;
-                            }
-                        }
-                        p {
-                            margin: 0;
-                            @include font(Kakao Light,
-                            14px,
-                            22px,
-                            #666);
-                        }
-                    }
-=======
 .content:last-child{display: none;}
 
 // ----------------------------------------------------------- mobile
@@ -1108,18 +585,11 @@ main {
 
                         @include font(Kakao Light, 14px, 22px, #666);
                     }
->>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
                 }
             }
         }
     }
-<<<<<<< HEAD
-    .content:last-child {
-        display: none;
-    }
-=======
 }
 
 .content:last-child{display: none;}
->>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
 }

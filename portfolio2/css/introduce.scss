@@ -1,10 +1,10 @@
 @charset "UTF-8";
+
 @import url("common.css");
+
 @import url("common.css");
-@mixin font($f,
-$s,
-$lh,
-$c) {
+
+@mixin font($f, $s, $lh, $c) {
     font-family: $f;
     font-size: $s;
     line-height: $lh;
@@ -14,6 +14,7 @@ $c) {
 header {
     .location {
         // display: none;
+   
     }
 }
 
@@ -25,6 +26,7 @@ main {
     padding-top: 120px;
     padding-bottom: 100px;
     background: #ebebeb;
+
     .big {
         position: relative;
         overflow: hidden;
@@ -34,32 +36,33 @@ main {
             z-index: 100;
             left: 360px;
             top: 160px;
+
             span {
                 margin: 0;
-                @include font(#{"Noto Sans KR", sans-serif},
-                18px,
-                18px,
-                #fff);
+
+                @include font(#{"Noto Sans KR", sans-serif}, 18px, 18px, #fff);
+
                 font-weight: bold;
             }
+
             p {
                 padding-top: 30px;
                 margin: 0;
-                @include font(#{"Noto Sans KR", sans-serif},
-                42px,
-                42px,
-                #fff);
+
+                @include font(#{"Noto Sans KR", sans-serif}, 42px, 42px, #fff);
+
                 font-weight: bold;
             }
         }
         .video {
             height: 895px;
             overflow: hidden;
-            iframe {
+            iframe{
                 transform: scale(1.3);
             }
         }
     }
+
     .big::after {
         content: '';
         display: block;
@@ -70,29 +73,29 @@ main {
         top: 0;
         z-index: 1000;
     }
+
     .intro {
         width: 60%;
         margin: auto;
         padding: 150px 0;
+
         span {
-            @include font(#{"Noto Sans KR", sans-serif},
-            18px,
-            20px,
-            #999);
+            @include font(#{"Noto Sans KR", sans-serif}, 18px, 20px, #999);
+
             font-weight: bolder;
         }
+
         p {
-            @include font(#{"Noto Sans KR", sans-serif},
-            36px,
-            50px,
-            #000);
+            @include font(#{"Noto Sans KR", sans-serif}, 36px, 50px, #000);
             white-space: pre-line;
             font-weight: bold;
         }
     }
+
     ul {
         width: 60%;
         margin: auto;
+
         li {
             overflow: hidden;
             background: #fff;
@@ -100,8 +103,10 @@ main {
             margin-bottom: 80px;
             width: 100%;
             height: 680px;
+
             display: flex;
             justify-content: center;
+
             .txt {
                 box-sizing: border-box;
                 width: 50%;
@@ -109,538 +114,212 @@ main {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                .title {
-                    p {
+
+                .title{
+                    p{
                         margin: 0;
                         padding-bottom: 20px;
-                        @include font(#{"Noto Sans KR", sans-serif},
-                        36px,
-                        50px,
-                        #000);
+                        @include font(#{"Noto Sans KR", sans-serif}, 36px, 50px, #000);
                         font-weight: bold;
-                        white-space: pre-line;
+                    white-space: pre-line;
+
                     }
-                    span {
-                        @include font(#{"Noto Sans KR", sans-serif},
-                        18px,
-                        18px,
-                        #999);
+                    span{
+                        @include font(#{"Noto Sans KR", sans-serif}, 18px, 18px, #999);
                         font-weight: bold;
+
                     }
+
                 }
-                .con {
-                    p {
-                        @include font(#{"Noto Sans KR", sans-serif},
-                        18px,
-                        30px,
-                        #000);
+                .con{
+                    p{
+                        @include font(#{"Noto Sans KR", sans-serif}, 18px, 30px, #000);
                         font-weight: 600;
-                        white-space: pre-line;
+                    white-space: pre-line;
                     }
-                    span {
-                        @include font(#{"Noto Sans KR", sans-serif},
-                        18px,
-                        18px,
-                        #999);
+                    span{
+                        @include font(#{"Noto Sans KR", sans-serif}, 18px, 18px, #999);
                     }
                 }
             }
+
             .pic {
                 width: 50%;
             }
         }
-        li:nth-of-type(1) .pic {
+
+        li:nth-of-type(1) .pic{
             position: relative;
             // background: rgb(147,186,47);
-            background: rgb(216, 49, 40);
-            p {
+            background: rgb(216,49,40);
+            p{
+
                 position: absolute;
             }
-            p:nth-of-type(1) {
+
+            p:nth-of-type(1){
                 left: 50%;
                 top: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate(-50%,-50%);
             }
-            p:nth-of-type(2) {
-                @keyframes box2_p2 {
-                    0% {
+            p:nth-of-type(2){
+                @keyframes box2_p2{
+                    0%{
                         transform: scale(1);
                     }
-                    50% {
+                    50%{
                         transform: scale(2);
                     }
-                    100% {
+                    100%{
                         transform: scale(1);
                     }
                 }
-                animation: box2_p2 2s ease infinite normal;
+                animation: box2_p2 2s ease infinite normal ;
                 left: 30%;
                 top: 15%;
-                transform: translate(-50%,
-                -50%);
+                transform: translate(-50%,-50%);
             }
-            p:nth-of-type(3) {
-                @keyframes box2_p3 {
-                    0% {
+            p:nth-of-type(3){
+                @keyframes box2_p3{
+                    0%{
                         transform: scale(1);
                     }
-                    50% {
+                    50%{
                         transform: scale(1.5);
                     }
-                    100% {
+                    100%{
                         transform: scale(1);
                     }
                 }
-                animation: box2_p3 2s ease infinite normal;
+                animation: box2_p3 2s ease infinite normal ;
                 left: 70%;
                 top: 40%;
-                transform: translate(-50%,
-                -50%);
+                transform: translate(-50%,-50%);
             }
+
         }
-        li:nth-of-type(2) {
+        li:nth-of-type(2){
             flex-direction: row-reverse;
-            .pic {
+            .pic{
                 overflow: hidden;
-                position: relative;
-                p {
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
+                 position: relative;
+
+                 p{
+                     position: absolute;
+                     left: 50%;
+                     top: 50%;
+                     transform: translate(-50%,-50%);
                 }
-                p:nth-of-type(1) {
-                    @keyframes box3_p1 {
-                        0% {
+
+
+                 p:nth-of-type(1){
+                    @keyframes box3_p1{
+                        0%{
                             top: 50%;
-                            transform: translate(-50%, -50%) scale(0.5);
+                            transform: translate(-50%,-50%) scale(0.5);
                         }
-                        10% {
+                        10%{
                             top: 50%;
-                            transform: translate(-50%, -50%) scale(1.2);
+                            transform: translate(-50%,-50%) scale(1.2);
                         }
-                        50% {
-                            top: -50%;
+                        50%{
+                            top:-50%;
                             display: none;
                         }
-                        100% {
+                        100%{
                             top: -50%;
                             display: block;
                         }
                     }
-                    animation: box3_p1 8s ease infinite normal;
-                }
-                p:nth-of-type(2) {
-                    @keyframes box3_p2 {
-                        0% {
+                    animation: box3_p1 8s ease infinite normal ;
+                 }
+                 p:nth-of-type(2){
+                    @keyframes box3_p2{
+                        0%{
                             left: 50%;
                             opacity: 0;
-                            transform: translate(-50%, -50%) scale(0.5);
+                            transform: translate(-50%,-50%) scale(0.5);
                         }
-                        35% {
-                            opacity: 0;
-                            left: 50%;
-                            transform: translate(-50%, -50%) scale(0.5);
-                        }
-                        50% {
-                            opacity: 1;
-                            left: 50%;
-                            transform: translate(-50%, -50%) scale(1.2);
-                        }
-                        100% {
-                            left: 200%;
-                            transform: translate(-50%, -50%) scale(1.2);
-                            opacity: 1;
-                        }
-                    }
-                    animation: box3_p2 8s ease infinite normal;
-                }
-                p:nth-of-type(3) {
-                    opacity: 0.4;
-                    transform: translate(-50%, -50%) scale(1.5);
-                    @keyframes box3_p3 {
-                        0% {
-                            opacity: 0;
-                        }
-                        70% {
-                            opacity: 0;
-                        }
-                        80% {
-                            opacity: 1;
-                        }
-                        100% {
-                            opacity: 0;
-                        }
-                    }
-                    animation: box3_p3 8s ease infinite normal;
-                }
-                background: rgb(234,
-                153,
-                27);
-            }
-        }
-        li:nth-of-type(3) .pic {
-            background: rgb(77, 164, 224);
-            overflow: hidden;
-            position: relative;
-            p {
-                @keyframes box3 {
-                    0% {
-                        bottom: -100%;
-                    }
-                    70% {
-                        bottom: 20%;
-                    }
-                    100% {
-                        bottom: 100%;
-                    }
-                }
-                position: absolute;
-                left: 50%;
-                bottom: -100%;
-                transform: translateX(-50%);
-                animation: box3 3s ease infinite normal;
-            }
-        }
-    }
-}
 
-// ============================== laptop
-@media (max-width:1440px) {
-    header {
-        .location {
-            // display: none;
+                        35%{
+                            opacity: 0;
+                            left: 50%;
+                            transform: translate(-50%,-50%) scale(0.5);
+                        }
+                        50%{
+                            opacity: 1;
+                            left: 50%;
+                            transform: translate(-50%,-50%) scale(1.2);
+                        }
+                        100%{
+                            left: 200%;
+                            transform: translate(-50%,-50%) scale(1.2);
+                            opacity: 1;
+
+                        }
+                    }
+                    animation: box3_p2 8s ease infinite normal ;
+                 }
+
+                 p:nth-of-type(3){
+                    opacity: 0.4;
+                    transform: translate(-50%,-50%) scale(1.5);
+
+                    @keyframes box3_p3{
+                        0%{
+                            opacity: 0;
+                        }
+                        70%{
+                            opacity: 0;
+                        }
+                        80%{
+                            opacity: 1;
+                        }
+                        100%{
+                            opacity: 0;
+
+                        }
+                    }
+                    animation: box3_p3 8s ease infinite normal ;
+                 }
+
+            background: rgb(234,153,27);
+
         }
-    }
-    header a {
-        color: black !important;
-    }
-    main {
-        padding-top: 120px;
-        padding-bottom: 100px;
-        background: #ebebeb;
-        .big {
-            position: relative;
+
+        }
+        li:nth-of-type(3) .pic{
+            background: rgb(77,164,224);
             overflow: hidden;
-            height: 770px;
-            .txt {
-                position: absolute;
-                z-index: 100;
-                left: 120px;
-                top: 120px;
-                span {
-                    margin: 0;
-                    @include font(#{"Noto Sans KR", sans-serif},
-                    18px,
-                    18px,
-                    #fff);
-                    font-weight: bold;
-                }
-                p {
-                    padding-top: 30px;
-                    margin: 0;
-                    @include font(#{"Noto Sans KR", sans-serif},
-                    42px,
-                    42px,
-                    #fff);
-                    font-weight: bold;
-                }
-            }
-            .video {
-                height: 770px;
-                overflow: hidden;
-                iframe {
-                    transform: scale(1.3);
-                }
-            }
-        }
-        .big::after {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 770px;
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: 1000;
-        }
-        .intro {
-            width: 70%;
-            margin: auto;
-            padding: 150px 0;
-            span {
-                @include font(#{"Noto Sans KR", sans-serif},
-                18px,
-                20px,
-                #999);
-                font-weight: bolder;
-            }
-            p {
-                @include font(#{"Noto Sans KR", sans-serif},
-                30px,
-                45px,
-                #000);
-                white-space: inherit;
-                font-weight: bold;
-            }
-        }
-        ul {
-            width: 70%;
-            margin: auto;
-            li {
-                overflow: hidden;
-                background: #fff;
-                border-radius: 20px;
-                margin-bottom: 80px;
-                width: 100%;
-                height: 680px;
-                display: flex;
-                justify-content: center;
-                .txt {
-                    box-sizing: border-box;
-                    width: 50%;
-                    padding: 60px 60px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    .title {
-                        p {
-                            margin: 0;
-                            padding-bottom: 20px;
-                            @include font(#{"Noto Sans KR", sans-serif},
-                            36px,
-                            50px,
-                            #000);
-                            font-weight: bold;
-                            white-space: pre-line;
+            position: relative;
+            
+                p{
+                    @keyframes box3{
+                        0%{
+                            bottom : -100%;
                         }
-                        span {
-                            @include font(#{"Noto Sans KR", sans-serif},
-                            18px,
-                            18px,
-                            #999);
-                            font-weight: bold;
+                        70%{
+                            bottom : 20%;
+                        }
+                        100%{
+                            bottom : 100%;
                         }
                     }
-                    .con {
-                        p {
-                            @include font(#{"Noto Sans KR", sans-serif},
-                            18px,
-                            30px,
-                            #000);
-                            font-weight: 600;
-                            white-space: pre-line;
-                        }
-                        span {
-                            @include font(#{"Noto Sans KR", sans-serif},
-                            18px,
-                            18px,
-                            #999);
-                        }
-                    }
-                }
-                .pic {
-                    width: 50%;
-                }
-            }
-            li:nth-of-type(1) .pic {
-                position: relative;
-                // background: rgb(147,186,47);
-                background: rgb(216, 49, 40);
-                p {
-                    position: absolute;
-                }
-                p:nth-of-type(1) {
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                }
-                p:nth-of-type(2) {
-                    @keyframes box2_p2 {
-                        0% {
-                            transform: scale(1);
-                        }
-                        50% {
-                            transform: scale(2);
-                        }
-                        100% {
-                            transform: scale(1);
-                        }
-                    }
-                    animation: box2_p2 2s ease infinite normal;
-                    left: 30%;
-                    top: 15%;
-                    transform: translate(-50%,
-                    -50%);
-                }
-                p:nth-of-type(3) {
-                    @keyframes box2_p3 {
-                        0% {
-                            transform: scale(1);
-                        }
-                        50% {
-                            transform: scale(1.5);
-                        }
-                        100% {
-                            transform: scale(1);
-                        }
-                    }
-                    animation: box2_p3 2s ease infinite normal;
-                    left: 70%;
-                    top: 40%;
-                    transform: translate(-50%,
-                    -50%);
-                }
-            }
-            li:nth-of-type(2) {
-                flex-direction: row-reverse;
-                .pic {
-                    overflow: hidden;
-                    position: relative;
-                    p {
-                        position: absolute;
-                        left: 50%;
-                        top: 50%;
-                        transform: translate(-50%, -50%);
-                    }
-                    p:nth-of-type(1) {
-                        @keyframes box3_p1 {
-                            0% {
-                                top: 50%;
-                                transform: translate(-50%, -50%) scale(0.5);
-                            }
-                            10% {
-                                top: 50%;
-                                transform: translate(-50%, -50%) scale(1.2);
-                            }
-                            50% {
-                                top: -50%;
-                                display: none;
-                            }
-                            100% {
-                                top: -50%;
-                                display: block;
-                            }
-                        }
-                        animation: box3_p1 8s ease infinite normal;
-                    }
-                    p:nth-of-type(2) {
-                        @keyframes box3_p2 {
-                            0% {
-                                left: 50%;
-                                opacity: 0;
-                                transform: translate(-50%, -50%) scale(0.5);
-                            }
-                            35% {
-                                opacity: 0;
-                                left: 50%;
-                                transform: translate(-50%, -50%) scale(0.5);
-                            }
-                            50% {
-                                opacity: 1;
-                                left: 50%;
-                                transform: translate(-50%, -50%) scale(1.2);
-                            }
-                            100% {
-                                left: 200%;
-                                transform: translate(-50%, -50%) scale(1.2);
-                                opacity: 1;
-                            }
-                        }
-                        animation: box3_p2 8s ease infinite normal;
-                    }
-                    p:nth-of-type(3) {
-                        opacity: 0.4;
-                        transform: translate(-50%, -50%) scale(1.5);
-                        @keyframes box3_p3 {
-                            0% {
-                                opacity: 0;
-                            }
-                            70% {
-                                opacity: 0;
-                            }
-                            80% {
-                                opacity: 1;
-                            }
-                            100% {
-                                opacity: 0;
-                            }
-                        }
-                        animation: box3_p3 8s ease infinite normal;
-                    }
-                    background: rgb(234,
-                    153,
-                    27);
-                }
-            }
-            li:nth-of-type(3) .pic {
-                background: rgb(77, 164, 224);
-                overflow: hidden;
-                position: relative;
-                p {
-                    @keyframes box3 {
-                        0% {
-                            bottom: -100%;
-                        }
-                        70% {
-                            bottom: 20%;
-                        }
-                        100% {
-                            bottom: 100%;
-                        }
-                    }
+                    
                     position: absolute;
                     left: 50%;
                     bottom: -100%;
                     transform: translateX(-50%);
                     animation: box3 3s ease infinite normal;
                 }
-            }
         }
     }
 }
 
+
+
+
 // ============================== mobile
-<<<<<<< HEAD
-@media (max-width:480px) {
-    main {
-        padding-top: 60px;
-        padding-bottom: 100px;
-        background: #ebebeb;
-        .big {
-            padding-top: 60px;
-            position: relative;
-            height: 200px;
-            background: #2d2d2d;
-            .txt {
-                position: absolute;
-                left: 0px;
-                top: 0px;
-                span {
-                    margin: 0;
-                    @include font(#{"Noto Sans KR", sans-serif},
-                    14px,
-                    14px,
-                    #fff);
-                    font-weight: inherit;
-                }
-                p {
-                    padding-top: 5px;
-                    margin: 0;
-                    @include font(#{"Noto Sans KR", sans-serif},
-                    18px,
-                    18px,
-                    #fff);
-                    font-weight: inherit;
-                }
-            }
-            .video {}
-        }
-        .intro {
-            width: 90%;
-            margin: auto;
-            padding: 150px 0;
-=======
 
 
 
@@ -667,44 +346,23 @@ main {
             left: 0px;
             top: 0px;
 
->>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
             span {
-                @include font(#{"Noto Sans KR", sans-serif},
-                16px,
-                28px,
-                #999);
-                font-weight: normal;
+                margin: 0;
+
+                @include font(#{"Noto Sans KR", sans-serif}, 14px, 14px, #fff);
+
+                font-weight: inherit;
             }
+
             p {
-                @include font(#{"Noto Sans KR", sans-serif},
-                16px,
-                28px,
-                #000);
-                white-space: inherit;
-                font-weight: normal;
+                padding-top: 5px;
+                margin: 0;
+
+                @include font(#{"Noto Sans KR", sans-serif}, 18px, 18px, #fff);
+
+                font-weight: inherit;
             }
         }
-<<<<<<< HEAD
-        //     li:nth-of-type(1) .pic{
-        //         // background: rgb(147,186,47);
-        //         background: rgb(216,49,40);
-        //     }
-        //     li:nth-of-type(2){
-        //         flex-direction: column;
-        //         .pic{
-        //         background: rgb(234,153,27);
-        //     }
-        //     }
-        //     li:nth-of-type(3) .pic{
-        //         background: rgb(77,164,224);
-        //     }
-        // }
-        ul {
-            width: 90%;
-            margin: auto;
-            li {
-                margin-bottom: 80px;
-=======
 
         .video {}
     }
@@ -766,216 +424,42 @@ main {
 
             .txt {
                 box-sizing: border-box;
->>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
                 width: 100%;
-                height: auto;
+                padding: 30px;
                 display: flex;
                 flex-direction: column;
-                .txt {
-                    box-sizing: border-box;
-                    width: 100%;
-                    padding: 30px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    .title {
-                        padding-bottom: 60px;
-                        p {
-                            margin: 0;
-                            padding-bottom: 5px;
-                            @include font(#{"Noto Sans KR", sans-serif},
-                            18px,
-                            32px,
-                            #000);
-                            white-space: inherit;
-                        }
-                        span {
-                            @include font(#{"Noto Sans KR", sans-serif},
-                            14px,
-                            22px,
-                            #999);
-                            font-weight: inherit;
-                        }
+                justify-content: space-between;
+
+                .title{
+                    padding-bottom: 60px;
+                    p{
+                        margin: 0;
+                        padding-bottom: 5px;
+                        @include font(#{"Noto Sans KR", sans-serif}, 18px, 32px, #000);
+                        white-space: inherit;
+
+
                     }
-                    .con {
-                        p {
-                            @include font(#{"Noto Sans KR", sans-serif},
-                            16px,
-                            28px,
-                            #000);
-                            font-weight: inherit;
-                            white-space: inherit;
-                            margin: 0;
-                        }
-                        span {
-                            @include font(#{"Noto Sans KR", sans-serif},
-                            14px,
-                            22px,
-                            #999);
-                        }
+                    span{
+                        @include font(#{"Noto Sans KR", sans-serif}, 14px, 22px, #999);
+                        font-weight: inherit;
+
                     }
+
                 }
-                .pic {
-                    width: 100%;
-                    height: 400px;
+                .con{
+                    p{
+                        @include font(#{"Noto Sans KR", sans-serif}, 16px, 28px, #000);
+                        font-weight: inherit;
+                        white-space: inherit;
+                        margin: 0;
+                    }
+                    span{
+                        @include font(#{"Noto Sans KR", sans-serif}, 14px, 22px, #999);
+
+                    }
                 }
             }
-            li:nth-of-type(1) .pic {
-                position: relative;
-                // background: rgb(147,186,47);
-                background: rgb(216, 49, 40);
-                p {
-                    position: absolute;
-                }
-                p:nth-of-type(1) {
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                }
-                p:nth-of-type(2) {
-                    @keyframes box2_p2 {
-                        0% {
-                            transform: scale(1);
-                        }
-                        50% {
-                            transform: scale(2);
-                        }
-                        100% {
-                            transform: scale(1);
-                        }
-                    }
-                    animation: box2_p2 2s ease infinite normal;
-                    left: 10%;
-                    top: 15%;
-                    transform: translate(-50%,
-                    -50%);
-                }
-                p:nth-of-type(3) {
-                    @keyframes box2_p3 {
-                        0% {
-                            transform: scale(1);
-                        }
-                        50% {
-                            transform: scale(1.5);
-                        }
-                        100% {
-                            transform: scale(1);
-                        }
-                    }
-                    animation: box2_p3 2s ease infinite normal;
-                    left: 80%;
-                    top: 35%;
-                    transform: translate(-50%,
-                    -50%);
-                }
-            }
-<<<<<<< HEAD
-            li:nth-of-type(2) {
-                flex-direction: column;
-                .pic {
-                    overflow: hidden;
-                    position: relative;
-                    p {
-                        position: absolute;
-                        left: 50%;
-                        top: 50%;
-                        transform: translate(-50%, -50%);
-                    }
-                    p:nth-of-type(1) {
-                        @keyframes box3_p1 {
-                            0% {
-                                top: 50%;
-                                transform: translate(-50%, -50%) scale(0.5);
-                            }
-                            10% {
-                                top: 50%;
-                                transform: translate(-50%, -50%) scale(1);
-                            }
-                            50% {
-                                top: -50%;
-                                display: none;
-                            }
-                            100% {
-                                top: -50%;
-                                display: block;
-                            }
-                        }
-                        animation: box3_p1 8s ease infinite normal;
-                    }
-                    p:nth-of-type(2) {
-                        @keyframes box3_p2 {
-                            0% {
-                                left: 30%;
-                                opacity: 0;
-                                transform: translate(-20%, -50%) scale(0.5);
-                            }
-                            35% {
-                                opacity: 0;
-                                left: 30%;
-                                transform: translate(-20%, -50%) scale(0.5);
-                            }
-                            50% {
-                                opacity: 1;
-                                left: 50%;
-                                transform: translate(-60%, -50%) scale(0.8);
-                            }
-                            100% {
-                                left: 200%;
-                                transform: translate(-60%, -50%) scale(0.8);
-                                opacity: 1;
-                            }
-                        }
-                        left: 30%;
-                        animation: box3_p2 8s ease infinite normal;
-                    }
-                    p:nth-of-type(3) {
-                        opacity: 0.4;
-                        transform: translate(-50%, -40%) scale(1);
-                        @keyframes box3_p3 {
-                            0% {
-                                opacity: 0;
-                            }
-                            70% {
-                                opacity: 0;
-                            }
-                            80% {
-                                opacity: 1;
-                            }
-                            100% {
-                                opacity: 0;
-                            }
-                        }
-                        animation: box3_p3 8s ease infinite normal;
-                    }
-                    background: rgb(234,
-                    153,
-                    27);
-                }
-            }
-            li:nth-of-type(3) .pic {
-                background: rgb(77, 164, 224);
-                overflow: hidden;
-                position: relative;
-                p {
-                    @keyframes box3 {
-                        0% {
-                            bottom: -100%;
-                        }
-                        70% {
-                            bottom: 5%;
-                        }
-                        100% {
-                            bottom: 100%;
-                        }
-                    }
-                    position: absolute;
-                    left: 50%;
-                    bottom: -100%;
-                    transform: translateX(-50%);
-                    animation: box3 3s ease infinite normal;
-                }
-            }
-=======
 
             .pic {
                 width: 100%;
@@ -1149,7 +633,10 @@ main {
                     transform: translateX(-50%);
                     animation: box3 3s ease infinite normal;
                 }
->>>>>>> 0e829456a7dd51970a576ecad2250d92d421a108
         }
     }
+}
+
+
+
 }
