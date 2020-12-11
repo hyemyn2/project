@@ -1,12 +1,12 @@
-$(function(){
+$(function() {
     $.ajax({
-        url:'/json/gallery_news.json',
-        type:'GET',
-        success:function(data){
+        url: '../json/gallery_news.json',
+        type: 'GET',
+        success: function(data) {
 
-            var type, title, intro, ref, imgSrc, txt, tagName='';
+            var type, title, intro, ref, imgSrc, txt, tagName = '';
 
-            data.news.forEach(function(i,k){
+            data.news.forEach(function(i, k) {
                 type = i.type;
                 title = i.title;
                 intro = i.intro;
@@ -14,48 +14,48 @@ $(function(){
                 imgSrc = i.imgSrc;
                 txt = i.txt;
 
-                tagName= "<li>";
-                tagName+= "<div class='ttl'>";
-                tagName+= "<div class='tag'>";
-                tagName+= "<p>"+ref+"</p>";
-                tagName+= "</div>";
-                tagName+= "<div class='about'>";
-                tagName+= "<div class='name'>";
-                tagName+= "<p>"+type+"</p>";
-                tagName+= "<h2>"+title+"</h2>";
-                tagName+= "</div>";
-                tagName+= "<p>"+intro+"</p>";
-                tagName+= "</div>";
-                tagName+= "</div>";
-                tagName+= "<div class='detail'>";
-                tagName+= "<p>";
-                tagName+= "<img src='"+imgSrc+"' alt=''>";
-                tagName+= "</p>";
-                tagName+= "<p>"+txt+"</p>";
-                tagName+= "</div>";
+                tagName = "<li>";
+                tagName += "<div class='ttl'>";
+                tagName += "<div class='tag'>";
+                tagName += "<p>" + ref + "</p>";
+                tagName += "</div>";
+                tagName += "<div class='about'>";
+                tagName += "<div class='name'>";
+                tagName += "<p>" + type + "</p>";
+                tagName += "<h2>" + title + "</h2>";
+                tagName += "</div>";
+                tagName += "<p>" + intro + "</p>";
+                tagName += "</div>";
+                tagName += "</div>";
+                tagName += "<div class='detail'>";
+                tagName += "<p>";
+                tagName += "<img src='" + imgSrc + "' alt=''>";
+                tagName += "</p>";
+                tagName += "<p>" + txt + "</p>";
+                tagName += "</div>";
                 // tagName+= "<div class='fold'>";
                 // tagName+= "<p><img src='../img/gallery/below2.png' alt=''></p>";
                 // tagName+= "</div>";
-                tagName+= "</li>";
+                tagName += "</li>";
 
 
                 $('.content .list ul').append(tagName);
             });
 
-            $('.content .list ul li').on('click',showDetail);
+            $('.content .list ul li').on('click', showDetail);
 
-            function showDetail(){
+            function showDetail() {
                 $(this).toggleClass('active');
             }
-            
+
 
 
             $('.ttl .box .button a').on('click', goRead);
 
-            function goRead(e){
+            function goRead(e) {
                 e.preventDefault();
-                $('.content .list ul li').each(function(i,k){
-                    if($(this).find('h2').text() === $('.ttl .box .button a').parent().parent().find('h2').text()){
+                $('.content .list ul li').each(function(i, k) {
+                    if ($(this).find('h2').text() === $('.ttl .box .button a').parent().parent().find('h2').text()) {
                         $(this).addClass('active');
 
                         var latest = $(this);
@@ -64,21 +64,21 @@ $(function(){
                 });
             }
 
-            function goScroll(latest){
+            function goScroll(latest) {
                 window.scrollTo({
-                    left:0,
-                    top:$(latest).offset().top-150,
-                    behavior:'smooth'
+                    left: 0,
+                    top: $(latest).offset().top - 150,
+                    behavior: 'smooth'
                 });
 
             }
 
 
 
-    // $('html').css({overflow:"hidden"});
-    // console.log($(document).height());
+            // $('html').css({overflow:"hidden"});
+            // console.log($(document).height());
 
-    // window.scrollY = $(document).height();
+            // window.scrollY = $(document).height();
 
 
 
@@ -130,11 +130,3 @@ $(function(){
 
 
 });
-
-
-
-
-
-
-
-

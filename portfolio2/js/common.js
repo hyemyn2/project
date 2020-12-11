@@ -2,7 +2,7 @@
 $(function(){
 
     $('header').load('/project/portfolio2/inc_head_foot.html header .tie',head);
-    $('footer').load('/project/portfolio2/inc_head_foot.html footer .foot');
+    $('footer').load('/project/portfolio2//inc_head_foot.html footer .foot');
     
 
 

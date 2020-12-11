@@ -5,7 +5,16 @@ $(function(){
     $('footer').load('/project/portfolio2/inc_head_foot.html footer .foot_2');
 
     function head(){
-        
+
+        var bg = document.querySelector('.head .burger');
+        var bgNav = document.querySelector('.head nav');
+
+        bg.addEventListener('click',function(){
+            bg.classList.toggle('active');
+            bgNav.classList.toggle('active');
+        });
+
+
     }
     
 })

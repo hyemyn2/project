@@ -1,6 +1,6 @@
 $(function(){
     $.ajax({
-        url:"/json/main.json",
+        url:"json/main.json",
         type:"GET",
         success:function(data){
 

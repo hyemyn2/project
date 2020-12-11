@@ -1,6 +1,7 @@
 @import url('common.css');
 
 /*display:none;*/
+
 .keyword:nth-of-type(2),
 .keyword:nth-of-type(3),
 .keyword:nth-of-type(4),
@@ -10,19 +11,9 @@
     display: none;
 }
 
-
-
-
-
-
-
-
 main {
     margin-bottom: 50px;
-
     position: relative;
-
-
 }
 
 .title {
@@ -45,24 +36,19 @@ main {
     left: 0;
     top: 0;
     z-index: 3000;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .background .content {
-
     width: 50%;
     height: 400px;
     margin: auto;
-
     background: #e4dcd6;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     position: relative;
 }
 
@@ -70,25 +56,19 @@ main {
     width: 80%;
     height: 80%;
     margin: auto;
-
     display: flex;
     justify-content: space-between;
-
     position: relative;
 }
 
 .content .con .search {
     width: 65%;
     height: 100%;
-
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
 }
-
 
 .search .find {
     width: 100%;
@@ -97,29 +77,26 @@ main {
     background: #ece5df;
 }
 
-.search .find > h1 {
+.search .find>h1 {
     font-family: 'Julius Sans One', sans-serif;
     font-weight: bolder;
     font-size: 18px;
     line-height: 18px;
     margin: 0 0 10px 0;
-
-
 }
 
-.search .find > h1 > p {
+.search .find>h1>p {
     margin: 0;
     display: inline-block;
 }
 
-.search .find > h1 p:nth-of-type(2) {
+.search .find>h1 p:nth-of-type(2) {
     width: 15px;
 }
 
-.search .find > h1 p img {
+.search .find>h1 p img {
     width: 100%;
 }
-
 
 .search .find .in {}
 
@@ -132,21 +109,17 @@ main {
 .search .find .in input {
     width: 45%;
     padding: 3px 5px;
-
 }
 
 .search .keyword {
     width: 100%;
     background: #ece5df;
     padding: 5px 0;
-
-
 }
 
 .search .keyword h2 {
     padding-left: 30px;
     font-size: 1em;
-
 }
 
 .search .keyword h2 p {
@@ -162,21 +135,15 @@ main {
 }
 
 .content .con .ad {
-
     width: 30%;
     background: url('../img/search/ad.jpg') no-repeat rgba(255, 254, 242, 1);
     background-size: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-
 }
 
-
-
-.ad > h2 {
+.ad>h2 {
     font-family: 'Julius Sans One', sans-serif;
     white-space: pre-line;
     line-height: 1.5em;
@@ -191,7 +158,6 @@ main {
     font-family: 'Julius Sans One', sans-serif;
     margin: 20px 0;
     font-size: 14px;
-
 }
 
 .ad .txt a {
@@ -202,13 +168,8 @@ main {
     color: #fff;
     font-size: 14px;
     padding: 7px 0;
-
     text-transform: capitalize;
-
-
 }
-
-
 
 .content .off {
     position: absolute;
@@ -232,86 +193,59 @@ main {
 }
 
 
-
 /*-----------------------------------------------mobile : 768px----------------------------------------------------------*/
 
 @media(max-width:768px) {
-
     .title {
         width: 100%;
     }
-
     .title h1 {
         width: 90%;
         margin: 0px auto;
         padding: 10px 0;
     }
-
-
     .background .content {
-
         width: 80%;
         height: 400px;
         margin: auto;
-
         background: #e4dcd6;
-
         display: flex;
         justify-content: center;
         align-items: center;
-
         position: relative;
     }
-
-
-
     .content .con {
         width: 80%;
         height: 80%;
         margin: auto;
-
         display: flex;
         justify-content: space-between;
-
         position: relative;
     }
-
     .content .con .search {
         width: 100%;
         height: 100%;
     }
-
-
     /*ad*/
     .content .con .ad {
-
         width: 30%;
         height: 60%;
         background: url('../img/search/ad.jpg') no-repeat rgba(255, 254, 242, 1);
         background-size: 100%;
         background-position: center;
-
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
         position: absolute;
         right: 1%;
         bottom: 1%;
-
-
     }
-
-
-
-    .ad > h2 {
+    .ad>h2 {
         white-space: normal;
         font-size: 14px;
         line-height: 28px;
         padding: 0 10px;
     }
-
-
     .ad .txt p {
         text-align: center;
         margin: 0;
@@ -320,200 +254,138 @@ main {
         color: #fff;
         padding: 5px 0;
     }
-
     .ad .txt a {
         display: none;
     }
-
     .content .off {
         position: absolute;
         right: 3%;
         top: 5%;
     }
-
-
-
-
-
 }
-
-
 
 
 /*-----------------------------------------------mobile : 480px----------------------------------------------------------*/
 
 @media(max-width:480px) {
-
-
-
     .title {
         width: 100%;
     }
-
     .title h1 {
         width: 80%;
         margin: 0px auto;
         padding: 10px 0;
     }
-
-
     .background .content {
-
         width: 90%;
         height: 70%;
         margin: auto;
-
         background: #ece5df;
-
         display: block;
         position: relative;
     }
-
-
     .content .con {
         width: 100%;
         height: 100%;
         margin: 0;
-
         display: block;
         position: relative;
     }
-
     .content .con .search {
-
         justify-content: center;
         width: 100%;
         height: 80%;
         padding-top: 10px;
     }
-
-
-
     .search .find {
         width: 100%;
         padding: 0;
         text-align: center;
     }
-
-
-    .search .find > h1 {
+    .search .find>h1 {
         font-family: 'Julius Sans One', sans-serif;
         font-weight: bolder;
         font-size: 18px;
         line-height: 18px;
         margin: 0 0 10px 0;
-
-
     }
-
-    .search .find > h1 > p {
+    .search .find>h1>p {
         margin: 0;
         display: inline-block;
     }
-
-    .search .find > h1 p:nth-of-type(2) {
+    .search .find>h1 p:nth-of-type(2) {
         width: 15px;
     }
-
-    .search .find > h1 p img {
+    .search .find>h1 p img {
         width: 100%;
     }
-
-
     .search .find .in {
         width: 80%;
         margin: auto;
         display: flex;
         flex-direction: column;
     }
-
     .search .find .in select {
         padding: 3px 5px;
         margin-bottom: 7px;
-
-
     }
-
     .search .find .in select option {}
-
     .search .find .in input {
         width: 100%;
         padding: 3px 5px;
     }
-
     .search .keyword {
         width: 100%;
         margin: 15px 0 0 0;
-
-
     }
-
     .search .keyword h2 {
         padding-left: 30px;
         font-size: 12px;
         margin: 0;
-
     }
-
     .search .keyword h2 p {
         display: inline-block;
         margin: 0;
     }
-
     .search .keyword ul {
         margin: 5px 0;
     }
-
     .search .keyword ul li {
         padding: 5px 0;
         font-size: 12px;
     }
-
-
     /*ad*/
     .content .con .ad {
-
         width: 288px;
         height: 80px;
         margin: 0 auto;
         background: url('../img/search/ad.jpg') no-repeat rgba(255, 254, 242, 1);
         background-size: 22%;
         background-position: right;
-
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
         position: relative;
-        left:0; bottom: 0;
-
-
+        left: 0;
+        bottom: 0;
     }
-
-    .ad > h2 {
+    .ad>h2 {
         white-space: normal;
         font-size: 20px;
         line-height: 20px;
         margin: 0;
-
         position: absolute;
         left: 3%;
         top: 28%;
-
     }
-
-
     .ad .txt {
         width: 100%;
         position: absolute;
         left: 0;
         bottom: 0;
-
     }
-
     .ad .txt p {
         display: block;
-
         text-align: center;
         margin: 0;
         font-size: 12px;
@@ -521,22 +393,13 @@ main {
         color: #fff;
         padding: 5px 0;
         width: auto;
-
-
     }
-
     .ad .txt a {
         display: none;
     }
-
     .content .off {
         position: absolute;
         right: 3%;
         top: 5%;
     }
-
-
-
-
-
 }

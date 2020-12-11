@@ -1,6 +1,8 @@
 @import url("common.css");
-
-@mixin font($f, $s, $lh, $c) {
+@mixin font($f,
+$s,
+$lh,
+$c) {
     font-family: $f;
     font-size: $s;
     line-height: $lh;
@@ -10,43 +12,40 @@
 main {
     padding-top: 120px;
     padding-bottom: 120px;
-
     h2 {
         width: 60%;
         margin: auto;
         padding: 80px 0;
-
-        @include font(#{"Noto Sans KR", sans-serif}, 22px, 34px, #000);
+        @include font(#{"Noto Sans KR", sans-serif},
+        22px,
+        34px,
+        #000);
     }
-
     .big {
         width: 60%;
         margin: auto;
-
         p {
             img {}
         }
     }
-
     .con {
         width: 60%;
         margin: auto;
         padding-top: 20px;
-
         .about {
             display: flex;
             justify-content: center;
-
             .title {
                 width: 25%;
-
                 p {
-                    @include font(#{"Noto Sans", sans-serif}, 18px, 30px, #000);
+                    @include font(#{"Noto Sans", sans-serif},
+                    18px,
+                    30px,
+                    #000);
                     white-space: pre-line;
                     font-weight: 600;
                 }
             }
-
             .explain {
                 width: 75%;
             }
@@ -57,32 +56,33 @@ main {
 .explain {
     .detail {
         p {
-            @include font(#{"Noto Sans", sans-serif}, 18px, 30px, #000);
-
+            @include font(#{"Noto Sans", sans-serif},
+            18px,
+            30px,
+            #000);
             font-weight: 600;
         }
-
         span {
-            @include font(#{"Noto Sans", sans-serif}, 16px, 30px, #666);
-
+            @include font(#{"Noto Sans", sans-serif},
+            16px,
+            30px,
+            #666);
             font-weight: 300;
         }
     }
-
     .btn {
         display: inline-block;
         border: 1px solid #000;
         margin: 25px 0;
         padding: 12px 15px;
-
-        @include font(#{"Noto Sans", sans-serif}, 14px, 14px, #000);
-
+        @include font(#{"Noto Sans", sans-serif},
+        14px,
+        14px,
+        #000);
         font-weight: 300;
-
         span {
             display: inline-block;
             padding-left: 25px;
-
             img {}
         }
     }
@@ -91,177 +91,267 @@ main {
 .map {
     display: flex;
     margin-top: 80px;
-
     .detail {
-      width: 25%;
-      p {
-          @include font(#{"Noto Sans", sans-serif}, 18px, 30px, #000);
-          font-weight: 600;
-      }
-
-      span {
-          @include font(#{"Noto Sans", sans-serif}, 16px, 30px, #666);
-
-          font-weight: 300;
-      }
+        width: 25%;
+        p {
+            @include font(#{"Noto Sans", sans-serif},
+            18px,
+            30px,
+            #000);
+            font-weight: 600;
+        }
+        span {
+            @include font(#{"Noto Sans", sans-serif},
+            16px,
+            30px,
+            #666);
+            font-weight: 300;
+        }
     }
-
     .pic {
-      width: 75%;
-      height: 280px;
-    //   border: 1px solid #000;
+        width: 75%;
+        height: 280px;
+        //   border: 1px solid #000;
     }
+}
 
-
+// ========== laptop ==========
+@media(max-width:1440px) {
+    main {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        h2 {
+            width: 80%;
+            margin: auto;
+            padding: 80px 0;
+            @include font(#{"Noto Sans KR", sans-serif},
+            22px,
+            34px,
+            #000);
+        }
+        .big {
+            width: 80%;
+            margin: auto;
+            p {
+                img {}
+            }
+        }
+        .con {
+            width: 70%;
+            margin: auto;
+            padding-top: 20px;
+            .about {
+                display: flex;
+                justify-content: center;
+                .title {
+                    width: 25%;
+                    p {
+                        @include font(#{"Noto Sans", sans-serif},
+                        18px,
+                        30px,
+                        #000);
+                        white-space: pre-line;
+                        font-weight: 600;
+                    }
+                }
+                .explain {
+                    width: 75%;
+                }
+            }
+        }
+    }
+    .explain {
+        .detail {
+            p {
+                @include font(#{"Noto Sans", sans-serif},
+                18px,
+                30px,
+                #000);
+                font-weight: 600;
+            }
+            span {
+                @include font(#{"Noto Sans", sans-serif},
+                16px,
+                30px,
+                #666);
+                font-weight: 300;
+            }
+        }
+        .btn {
+            display: inline-block;
+            border: 1px solid #000;
+            margin: 25px 0;
+            padding: 12px 15px;
+            @include font(#{"Noto Sans", sans-serif},
+            14px,
+            14px,
+            #000);
+            font-weight: 300;
+            span {
+                display: inline-block;
+                padding-left: 25px;
+                img {}
+            }
+        }
+    }
+    .map {
+        display: flex;
+        margin-top: 80px;
+        .detail {
+            width: 25%;
+            p {
+                @include font(#{"Noto Sans", sans-serif},
+                18px,
+                30px,
+                #000);
+                font-weight: 600;
+            }
+            span {
+                @include font(#{"Noto Sans", sans-serif},
+                16px,
+                30px,
+                #666);
+                font-weight: 300;
+            }
+        }
+        .pic {
+            width: 75%;
+            height: 280px;
+            //   border: 1px solid #000;
+        }
+    }
 }
 
 // ========== mobile ==========
-
 @media(max-width:480px) {
-
-
-main{
-
-  h2 {
-    width: 90%;
-    margin: auto;
-    padding: 40px 0;
-
-    @include font(#{"Noto Sans KR", sans-serif}, 14px, 20px, #000);
-}
-
-.big {
-  width: 90%;
-  margin: auto;
-
-  p {
-    width: 100%;
-    margin: 0;
-      img {
+    main {
+        h2 {
+            width: 90%;
+            margin: auto;
+            padding: 40px 0;
+            @include font(#{"Noto Sans KR", sans-serif},
+            14px,
+            20px,
+            #000);
+        }
+        .big {
+            width: 90%;
+            margin: auto;
+            p {
+                width: 100%;
+                margin: 0;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .con {
+            width: 90%;
+            margin: auto;
+            padding-top: 50px;
+            .about {
+                display: inline-block;
+                .title {
+                    width: 100%;
+                    padding-bottom: 30px;
+                    p {
+                        @include font(#{"Noto Sans", sans-serif},
+                        18px,
+                        25px,
+                        #000);
+                        margin: 0;
+                        font-weight: 600;
+                        white-space: inherit;
+                    }
+                }
+                .explain {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .explain {
+        .detail {
+            p {
+                @include font(#{"Noto Sans", sans-serif},
+                14px,
+                20px,
+                #000);
+                margin: 0;
+                font-weight: 600;
+            }
+            span {
+                @include font(#{"Noto Sans", sans-serif},
+                14px,
+                20px,
+                #666);
+                font-weight: 300;
+            }
+        }
+        .btn {
+            display: inline-block;
+            border: 1px solid transparent;
+            background: #eee;
+            margin: 25px 0;
+            padding: 12px 15px;
+            @include font(#{"Noto Sans", sans-serif},
+            14px,
+            14px,
+            #000);
+            font-weight: 700;
+            span {
+                display: inline-block;
+                padding-left: 25px;
+                img {}
+            }
+        }
+    }
+    .map {
+        display: inline-block;
         width: 100%;
-      }
-  }
-
-}
-
-.con {
-  width: 90%;
-  margin: auto;
-  padding-top: 50px;
-
-  .about {
-      display: inline-block;
-
-      .title {
-        width: 100%;
-        padding-bottom: 30px;
-
-          p {
-              @include font(#{"Noto Sans", sans-serif}, 18px, 25px, #000);
-              margin: 0;
-              font-weight: 600;
-              white-space: inherit;
-
-          }
-      }
-
-      .explain{width: 100%;}
-
-  }
-}
-}
-
-.explain {
-.detail {
-  p {
-      @include font(#{"Noto Sans", sans-serif}, 14px, 20px, #000);
-      margin: 0;
-      font-weight: 600;
-  }
-
-  span {
-      @include font(#{"Noto Sans", sans-serif}, 14px, 20px, #666);
-
-      font-weight: 300;
-  }
-}
-
-.btn {
-  display: inline-block;
-  border: 1px solid transparent;
-  background: #eee;
-  margin: 25px 0;
-  padding: 12px 15px;
-
-  @include font(#{"Noto Sans", sans-serif}, 14px, 14px, #000);
-
-  font-weight: 700;
-
-  span {
-      display: inline-block;
-      padding-left: 25px;
-
-      img {}
-  }
-}
-
-
-}
-
-.map {
-display: inline-block;
-width: 100%;
-margin: auto;
-margin-top: 50px;
-
-.detail{
-    width: 100%;
-}
-
-
-.title {
-width: 100%;
-p {
-    @include font(#{"Noto Sans", sans-serif}, 18px, 30px, #000);
-    margin: 0;
-    padding-bottom: 30px;
-    font-weight: 600;
-}
-
-span {
-  @include font(#{"Noto Sans", sans-serif}, 14px, 20px, #000);
-
-
-    font-weight: 300;
-}
-}
-
-.pic {
-width: 100%;
-height: 150px;
-border: none;
-
-iframe{position: relative; width: 100%; height: 100%;}
-iframe:after{
-    content:'';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1000;
-}
-
-
-  
-}
-
-}
-
-
-
-  
-
-
+        margin: auto;
+        margin-top: 50px;
+        .detail {
+            width: 100%;
+        }
+        .title {
+            width: 100%;
+            p {
+                @include font(#{"Noto Sans", sans-serif},
+                18px,
+                30px,
+                #000);
+                margin: 0;
+                padding-bottom: 30px;
+                font-weight: 600;
+            }
+            span {
+                @include font(#{"Noto Sans", sans-serif},
+                14px,
+                20px,
+                #000);
+                font-weight: 300;
+            }
+        }
+        .pic {
+            width: 100%;
+            height: 150px;
+            border: none;
+            iframe {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+            iframe:after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 1000;
+            }
+        }
+    }
 }

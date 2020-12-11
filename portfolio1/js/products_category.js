@@ -8,11 +8,9 @@ function init() {
     var menu = document.querySelectorAll('ul li');
     var all = document.querySelector('.cate .all a');
 
-    menu.forEach(function (i, k) {
+    menu.forEach(function(i, k) {
         i.addEventListener('click', goPage);
     });
-
-    all.addEventListener('click', goAll);
 
     function goPage(e) {
         e.preventDefault();
@@ -20,7 +18,11 @@ function init() {
         location.href = this.children[0].href;
     };
 
-    function goAll(e){
+
+
+    all.addEventListener('click', goAll);
+
+    function goAll(e) {
         e.preventDefault();
         localStorage.itemCate = 'ALL';
         // console.log(this.children[0].href);
@@ -30,7 +32,7 @@ function init() {
 
     // if(window.innerWidth > 480){}
     // var m = matchMedia("screen and (min-width: 1024px)");
-    
+
     // m.addListener(function(){
     //     if(m.matches){
 

@@ -3,14 +3,11 @@
 */
 
 @import url('common.css');
-
-
-
 main {}
 
-
-footer{position: fixed !important;}
-
+footer {
+    position: fixed !important;
+}
 
 .title {
     background: #c4b7ae;
@@ -24,13 +21,6 @@ footer{position: fixed !important;}
     padding: 10px 0 10px 50px;
 }
 
-
-
-
-
-
-
-
 .cate {
     width: 80%;
     margin: 70px auto 100px auto;
@@ -41,7 +31,9 @@ footer{position: fixed !important;}
     margin-bottom: 30px;
 }
 
-.cate .all a {border-bottom: 2px solid #000;}
+.cate .all a {
+    border-bottom: 2px solid #000;
+}
 
 .cate .all img {
     padding: 1px 5px;
@@ -52,68 +44,55 @@ footer{position: fixed !important;}
     justify-content: space-between;
     align-content: space-between;
     flex-wrap: wrap;
-
 }
 
 .cate ul li {
     width: 12%;
     position: relative;
     transition: .5s;
-    box-shadow: 10px 10px 10px rgba(0,0,0,0.4) ;
-
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
     /*    margin-bottom: 35px;*/
-
 }
 
-.cate ul li > a {
+.cate ul li>a {
     display: inline-block;
     width: 100%;
     height: 100%;
     overflow: hidden;
     margin: 0;
-
 }
 
-.cate ul li > a > img {
+.cate ul li>a>img {
     width: 100%;
     opacity: .2;
     transition: .5s;
-
 }
 
-
-
-.cate ul li > .txt {
+.cate ul li>.txt {
     position: absolute;
     left: 0;
     top: 0;
-
     width: 100%;
     height: 100%;
     margin: 0;
-
     text-transform: capitalize;
     text-align: center;
     font-weight: 200;
-
-    background:rgba(150,126,114,0.7);
+    background: rgba(150, 126, 114, 0.7);
     /* background:linear-gradient(to bottom, #967e72 100%,transparent),fixed; */
     color: #fff;
     transition: .5s;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    
 }
 
-.cate ul li > .txt p {
-}
+.cate ul li>.txt p {}
 
-.cate ul li:hover{
+.cate ul li:hover {
     transform: scale(1.05);
 }
+
 .cate ul li:hover .txt {
     opacity: 0;
 }
@@ -124,274 +103,173 @@ footer{position: fixed !important;}
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /*-----------------------------------------------tablet : 768px----------------------------------------------------------*/
 
-@media(max-width:768px) {
-    
-    
-
+@media(max-width:1024px) {
     .title {
         width: 100%;
     }
-
     .title h1 {
         width: 90%;
         margin: 0px auto;
         padding: 10px 0;
     }
-
-
-
     .cate {
         width: 90%;
         margin: 40px auto 100px auto;
     }
-
     .cate .all {
         margin-bottom: 20px;
     }
-
     .cate .all a {
         font-size: 12px;
     }
-
     .cate .all img {
         padding: 1px 5px 0 5px;
     }
-
-
-
-
     .cate ul {
         display: block;
         justify-content: space-between;
         align-content: space-between;
         flex-wrap: wrap;
-
-        margin: 0;
+        margin: 40px 0 0 0;
         padding: 0;
-
     }
-
     .cate ul li {
-        width: 100%;
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
         height: auto;
         position: static;
     }
-
-    .cate ul li > a {
+    .cate ul li>a {
         display: none;
     }
-
-
-    .cate ul li > .txt {
+    .cate ul li>.txt {
         position: static;
-
         width: 100%;
         height: 80px;
         margin: 20px auto;
         color: #000;
     }
-
-    .cate ul li:nth-of-type(1) > .txt {
-
+    .cate ul li:nth-of-type(1)>.txt {
         background: rgba(232, 232, 222, 0.1) url('../img/products/1_skin.jpg') no-repeat;
         background-size: 12%;
         background-position: right;
     }
-
-    .cate ul li:nth-of-type(2) > .txt {
+    .cate ul li:nth-of-type(2)>.txt {
         background: rgba(217, 212, 208, 1) url('../img/products/2_hair.jpg') no-repeat;
         background-size: 12%;
         background-position: right;
     }
-
-    .cate ul li:nth-of-type(3) > .txt {
+    .cate ul li:nth-of-type(3)>.txt {
         background: rgba(223, 215, 202, 1) url('../img/products/3_hand&body.jpg') no-repeat;
         background-size: 12%;
         background-position: right;
     }
-
-    .cate ul li:nth-of-type(4) > .txt {
+    .cate ul li:nth-of-type(4)>.txt {
         background: rgba(255, 254, 242, 1) url('../img/products/4_perfume.jpg') no-repeat;
         background-size: 12%;
         background-position: right;
     }
-
-    .cate ul li:nth-of-type(5) > .txt {
+    .cate ul li:nth-of-type(5)>.txt {
         background: rgba(255, 254, 242, 1) url('../img/products/5_home.jpg') no-repeat;
         background-size: 12%;
         background-position: right;
     }
-
-    .cate ul li:nth-of-type(6) > .txt {
+    .cate ul li:nth-of-type(6)>.txt {
         background: rgba(235, 235, 223, 1) url('../img/products/6_travelkit.jpg') no-repeat;
         background-size: 12%;
         background-position: right;
     }
-
-    .cate ul li:nth-of-type(7) > .txt {
+    .cate ul li:nth-of-type(7)>.txt {
         background: rgba(221, 207, 181, 1) url('../img/products/7_giftguide.jpg') no-repeat;
         background-size: 12%;
         background-position: right;
     }
-
-
-
-    
-    
-    
 }
-
-
-
-
 
 
 /*-----------------------------------------------mobile : 480px----------------------------------------------------------*/
 
 @media(max-width:480px) {
-
-
-
-
     .title {
         width: 100%;
     }
-
     .title h1 {
         width: 90%;
         margin: 0px auto;
         padding: 10px 0;
     }
-
-
-
     .cate {
         width: 90%;
         margin: 40px auto 100px auto;
     }
-
     .cate .all {
         margin-bottom: 20px;
     }
-
     .cate .all a {
         font-size: 12px;
     }
-
     .cate .all img {
         padding: 1px 5px 0 5px;
     }
-
-
-
-
     .cate ul {
         display: block;
         justify-content: space-between;
         align-content: space-between;
         flex-wrap: wrap;
-
         margin: 0;
         padding: 0;
-
     }
-
     .cate ul li {
         width: 100%;
         height: auto;
         position: static;
     }
-
-    .cate ul li > a {
+    .cate ul li>a {
         display: none;
     }
-
-
-    .cate ul li > .txt {
+    .cate ul li>.txt {
         position: static;
-
         width: 100%;
         height: 80px;
         margin: 20px auto;
         color: #000;
     }
-
-    .cate ul li:nth-of-type(1) > .txt {
-
+    .cate ul li:nth-of-type(1)>.txt {
         background: rgba(232, 232, 222, 0.1) url('../img/products/1_skin.jpg') no-repeat;
         background-size: 24%;
         background-position: right;
     }
-
-    .cate ul li:nth-of-type(2) > .txt {
+    .cate ul li:nth-of-type(2)>.txt {
         background: rgba(217, 212, 208, 1) url('../img/products/2_hair.jpg') no-repeat;
         background-size: 24%;
         background-position: right;
     }
-
-    .cate ul li:nth-of-type(3) > .txt {
+    .cate ul li:nth-of-type(3)>.txt {
         background: rgba(223, 215, 202, 1) url('../img/products/3_hand&body.jpg') no-repeat;
         background-size: 24%;
         background-position: right;
     }
-
-    .cate ul li:nth-of-type(4) > .txt {
+    .cate ul li:nth-of-type(4)>.txt {
         background: rgba(255, 254, 242, 1) url('../img/products/4_perfume.jpg') no-repeat;
         background-size: 24%;
         background-position: right;
     }
-
-    .cate ul li:nth-of-type(5) > .txt {
+    .cate ul li:nth-of-type(5)>.txt {
         background: rgba(255, 254, 242, 1) url('../img/products/5_home.jpg') no-repeat;
         background-size: 24%;
         background-position: right;
     }
-
-    .cate ul li:nth-of-type(6) > .txt {
+    .cate ul li:nth-of-type(6)>.txt {
         background: rgba(235, 235, 223, 1) url('../img/products/6_travelkit.jpg') no-repeat;
         background-size: 24%;
         background-position: right;
     }
-
-    .cate ul li:nth-of-type(7) > .txt {
+    .cate ul li:nth-of-type(7)>.txt {
         background: rgba(221, 207, 181, 1) url('../img/products/7_giftguide.jpg') no-repeat;
         background-size: 24%;
         background-position: right;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
