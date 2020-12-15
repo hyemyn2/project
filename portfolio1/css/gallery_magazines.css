@@ -204,7 +204,7 @@ main {
     /*content*/
     .content {
         width: 80%;
-        margin: 200px auto;
+        margin: 200px auto 50px auto;
         display: flex;
         justify-content: space-between;
         align-content: space-between;

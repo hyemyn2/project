@@ -190,37 +190,38 @@ $(function() {
     //         // pageMove(e);
     // });
 
-    $('body').css({ overflow: "hidden" });
 
-    document.addEventListener('mousewheel', function(e) {
-        pageMove(e);
-    });
+
+    // 부드러운 스크롤
+    // $('body').css({ overflow: "hidden" });
+
+    // document.addEventListener('mousewheel', function(e) {
+    //     pageMove(e);
+    // });
     // $('html').on('mousewheel',function(e){
     //     pageMove(e);
     // });
 
-    function pageMove(e) {
-        var main = document.querySelector('main');
-        var mainH = main.offsetHeight - viewSize;
-        moveDel = e.wheelDelta;
-        if (moveDel < 0) {
-            //goUp
-            for (var i = 0; i < 200; i++) {
-                if (upDown < mainH) upDown += 1;
-                if (upDown == mainH) upDown = mainH;
-            }
-        } else if (moveDel > 0) {
+    // function pageMove(e) {
+    //     var main = document.querySelector('main');
+    //     var mainH = main.offsetHeight - viewSize;
+    //     moveDel = e.wheelDelta;
+    //     if (moveDel < 0) {
+    //         for (var i = 0; i < 200; i++) {
+    //             if (upDown < mainH) upDown += 1;
+    //             if (upDown == mainH) upDown = mainH;
+    //         }
+    //     } else if (moveDel > 0) {
 
-            //goDown
-            for (var i = 0; i < 200; i++) {
-                if (upDown > 0) upDown -= 1;
-                if (upDown == 0) upDown = 0;
-            }
+    //         for (var i = 0; i < 200; i++) {
+    //             if (upDown > 0) upDown -= 1;
+    //             if (upDown == 0) upDown = 0;
+    //         }
 
-        }
-        main.style = "transform: translateY(-" + upDown + "px);";
+    //     }
+    //     main.style = "transform: translateY(-" + upDown + "px);";
 
-    }
+    // }
 
 
 

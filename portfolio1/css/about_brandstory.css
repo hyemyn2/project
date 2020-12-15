@@ -36,14 +36,14 @@ main {
 main .content:after {
     content: '';
     width: 80%;
-    height: 117%;
+    height: 90%;
     background: #c4a790;
     opacity: 0.2;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-45%);
-    z-index: -1;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
 }
 
 .content .txt_1 {
