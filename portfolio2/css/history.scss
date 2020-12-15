@@ -10,7 +10,7 @@ $c) {
 }
 
 header a {
-    color: #000 !important;
+    // color: #000 !important;
 }
 
 main {
@@ -87,7 +87,83 @@ article {
 // ================================= laptop
 @media(max-width:1440px) {
     header a {
-        color: #000 !important;
+        // color: #000 !important;
+    }
+    main {
+        padding-top: 180px;
+    }
+    article {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        .words {
+            @include font(Kakao Regular,
+            18px,
+            30px,
+            #000);
+            width: 25%;
+            padding-right: 30px;
+            p {}
+        }
+        ul {
+            border-top: 2px solid #000;
+            width: 75%;
+            li {
+                border-bottom: 1px solid #e2e2e2;
+                padding: 40px 0;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                .year {
+                    width: 20%;
+                    p {
+                        margin: 0;
+                    }
+                }
+                // 2018년도 story
+                >div {
+                    width: 80%;
+                    .story {
+                        width: 100%;
+                    }
+                    >div:nth-of-type(1) {
+                        padding-bottom: 20px;
+                    }
+                }
+                .story {
+                    width: 80%;
+                    display: flex;
+                    // justify-content: flex-start;
+                    align-items: flex-start;
+                    h2 {
+                        width: 20%;
+                        padding-right: 40px;
+                        margin: 0;
+                        @include font(Kakao Light,
+                        18px,
+                        30px,
+                        #000);
+                    }
+                    p {
+                        width: 80%;
+                        margin: 0;
+                        @include font(Kakao Light,
+                        18px,
+                        30px,
+                        #000);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ================================= tab
+@media(max-width:1024px) {
+    header a {
+        // color: #000 !important;
     }
     main {
         padding-top: 180px;

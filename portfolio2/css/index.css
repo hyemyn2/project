@@ -1071,7 +1071,7 @@ main .etc .pic ul li:nth-of-type(2) a {
   main .box:nth-of-type(3) .ani .arrow {
     position: absolute;
     left: 42%;
-    top: -80px;
+    top: -50px;
     opacity: 0;
     width: 0%;
     -webkit-transition: .5s;

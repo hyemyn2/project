@@ -222,6 +222,119 @@ main {
     }
 }
 
+// ========== tab ==========
+@media(max-width:1024px) {
+    main {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        h2 {
+            width: 80%;
+            margin: auto;
+            padding: 80px 0;
+            @include font(#{"Noto Sans KR", sans-serif},
+            22px,
+            34px,
+            #000);
+        }
+        .big {
+            width: 80%;
+            margin: auto;
+            p {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .con {
+            width: 80%;
+            margin: auto;
+            padding-top: 20px;
+            .about {
+                display: flex;
+                justify-content: center;
+                .title {
+                    width: 25%;
+                    p {
+                        @include font(#{"Noto Sans", sans-serif},
+                        18px,
+                        30px,
+                        #000);
+                        white-space: pre-line;
+                        font-weight: 600;
+                    }
+                }
+                .explain {
+                    width: 75%;
+                }
+            }
+        }
+    }
+    .explain {
+        .detail {
+            p {
+                @include font(#{"Noto Sans", sans-serif},
+                18px,
+                30px,
+                #000);
+                font-weight: 600;
+            }
+            span {
+                @include font(#{"Noto Sans", sans-serif},
+                16px,
+                30px,
+                #666);
+                font-weight: 300;
+            }
+        }
+        .btn {
+            display: inline-block;
+            border: 1px solid #000;
+            margin: 25px 0;
+            padding: 12px 15px;
+            @include font(#{"Noto Sans", sans-serif},
+            14px,
+            14px,
+            #000);
+            font-weight: 300;
+            span {
+                display: inline-block;
+                padding-left: 25px;
+                img {}
+            }
+        }
+    }
+    .map {
+        display: flex;
+        margin-top: 80px;
+        .detail {
+            width: 25%;
+            p {
+                @include font(#{"Noto Sans", sans-serif},
+                18px,
+                30px,
+                #000);
+                font-weight: 600;
+            }
+            span {
+                @include font(#{"Noto Sans", sans-serif},
+                16px,
+                30px,
+                #666);
+                font-weight: 300;
+            }
+        }
+        .pic {
+            width: 75%;
+            height: 280px;
+            //   border: 1px solid #000;
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+}
+
 // ========== mobile ==========
 @media(max-width:480px) {
     main {

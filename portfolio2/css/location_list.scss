@@ -10,7 +10,7 @@ $c) {
 }
 
 header a {
-    color: black !important;
+    // color: black !important;
 }
 
 main {
@@ -49,7 +49,7 @@ main {
             margin-right: 5%;
             padding-bottom: 80px;
             .txt {
-                width: 360px;
+                width: 100%;
                 margin-bottom: 20px;
                 p {
                     margin: 0;
@@ -58,6 +58,7 @@ main {
                     16px,
                     #000);
                     font-weight: 600;
+                    width: 100%;
                 }
                 span {
                     display: inline-block;
@@ -70,7 +71,9 @@ main {
                 }
             }
             .pic {
-                img {}
+                img {
+                    width: 100%;
+                }
             }
         }
         li:nth-of-type(3n) {
@@ -95,10 +98,10 @@ main {
     img {}
 }
 
-// ========== mobile ==========
+// ========== laptop ==========
 @media(max-width:1440px) {
     header a {
-        color: black !important;
+        // color: black !important;
     }
     main {
         padding-top: 120px;
@@ -156,6 +159,93 @@ main {
                 }
                 .pic {
                     img {}
+                }
+            }
+            li:nth-of-type(3n) {
+                margin-right: 0;
+            }
+            li:hover .txt {
+                text-decoration-line: underline;
+            }
+            // span에다가 displany: inline-block;을 주니까 위 .txt hover문에 명령이 먹지 않아서 별도로 명령을 다시 주었다.
+            li:hover .txt span {
+                text-decoration-line: underline;
+            }
+        }
+    }
+    .txt {
+        p {}
+        span {}
+    }
+    .pic {
+        img {}
+    }
+}
+
+// ========== tab ==========
+@media(max-width:1024px) {
+    header a {
+        // color: black !important;
+    }
+    main {
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+    .big {
+        position: relative;
+        height: 480px;
+        background: url(../img/location/big.jpg) no-repeat;
+        p {
+            @include font(#{'Noto Sans KR', sans-serif},
+            30px,
+            50px,
+            #fff);
+            font-weight: 700;
+            text-shadow: 0 1px 1px #000;
+            position: absolute;
+            left: 200px;
+            top: 40px;
+        }
+    }
+    .city {
+        ul {
+            padding-top: 55px;
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            flex-wrap: wrap;
+            li {
+                width: 30%;
+                margin-right: 5%;
+                padding-bottom: 80px;
+                .txt {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    p {
+                        margin: 0;
+                        @include font(#{'Noto Sans KR', sans-serif},
+                        16px,
+                        16px,
+                        #000);
+                        font-weight: 600;
+                        width: 100%;
+                    }
+                    span {
+                        display: inline-block;
+                        padding: 15px 0 20px 0;
+                        @include font(#{'Noto Sans KR', sans-serif},
+                        14px,
+                        22px,
+                        #000);
+                        font-weight: 300;
+                    }
+                }
+                .pic {
+                    img {
+                        width: 100%;
+                    }
                 }
             }
             li:nth-of-type(3n) {

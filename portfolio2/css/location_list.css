@@ -1,8 +1,4 @@
 @import url("common.css");
-header a {
-  color: black !important;
-}
-
 main {
   padding-top: 120px;
   padding-bottom: 100px;
@@ -50,7 +46,7 @@ main {
 }
 
 .city ul li .txt {
-  width: 360px;
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -61,6 +57,7 @@ main {
   line-height: 16px;
   color: #000;
   font-weight: 600;
+  width: 100%;
 }
 
 .city ul li .txt span {
@@ -71,6 +68,10 @@ main {
   line-height: 22px;
   color: #000;
   font-weight: 300;
+}
+
+.city ul li .pic img {
+  width: 100%;
 }
 
 .city ul li:nth-of-type(3n) {
@@ -88,9 +89,6 @@ main {
 }
 
 @media (max-width: 1440px) {
-  header a {
-    color: black !important;
-  }
   main {
     padding-top: 120px;
     padding-bottom: 100px;
@@ -152,6 +150,86 @@ main {
     line-height: 22px;
     color: #000;
     font-weight: 300;
+  }
+  .city ul li:nth-of-type(3n) {
+    margin-right: 0;
+  }
+  .city ul li:hover .txt {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+  .city ul li:hover .txt span {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding-top: 120px;
+    padding-bottom: 100px;
+  }
+  .big {
+    position: relative;
+    height: 480px;
+    background: url(../img/location/big.jpg) no-repeat;
+  }
+  .big p {
+    font-family: Noto Sans KR, sans-serif;
+    font-size: 30px;
+    line-height: 50px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 1px 1px #000;
+    position: absolute;
+    left: 200px;
+    top: 40px;
+  }
+  .city ul {
+    padding-top: 55px;
+    width: 90%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .city ul li {
+    width: 30%;
+    margin-right: 5%;
+    padding-bottom: 80px;
+  }
+  .city ul li .txt {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .city ul li .txt p {
+    margin: 0;
+    font-family: Noto Sans KR, sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000;
+    font-weight: 600;
+    width: 100%;
+  }
+  .city ul li .txt span {
+    display: inline-block;
+    padding: 15px 0 20px 0;
+    font-family: Noto Sans KR, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    font-weight: 300;
+  }
+  .city ul li .pic img {
+    width: 100%;
   }
   .city ul li:nth-of-type(3n) {
     margin-right: 0;

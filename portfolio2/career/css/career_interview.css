@@ -1,11 +1,11 @@
 @import url("common.css");
 header {
   border-bottom: 1px solid #e6e6e6;
-  background: #fff !important;
+  background: #fff;
 }
 
 header a {
-  color: #000 !important;
+  color: #000;
 }
 
 body {
@@ -159,16 +159,17 @@ main {
 @media (max-width: 1440px) {
   header {
     border-bottom: 1px solid #e6e6e6;
-    background: #fff !important;
+    background: #fff;
   }
   header a {
-    color: #000 !important;
+    color: #000;
   }
   body {
     background: #f9f9f9;
   }
   main {
     padding-top: 150px;
+    padding-bottom: 200px;
   }
   .team .title {
     width: 70%;

@@ -1,92 +1,77 @@
 // font
 // font-family: 'NotoSans Regular','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;
-
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
-
 // font-family: 'Noto Sans', sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
-
 // font-family: 'Noto Sans KR', sans-serif;
-
 // function
-@mixin font ($f,$s,$lh,$c){
+@mixin font ($f,
+$s,
+$lh,
+$c) {
     font-family: '#{$f}';
-    font-size:$s;
+    font-size: $s;
     line-height: $lh;
     color: $c;
 }
 
 // basic
-
 @font-face {
     font-family: 'Kakao Light';
-    src:url(fonts/Kakao-aLt.eot);
-    src:local("☺"),
-    url(fonts/Kakao-aLt.eot?#iefix) format('embedded-opentype'),
-    url(fonts/Kakao-aLt.woff) format('woff');
+    src: url(fonts/Kakao-aLt.eot);
+    src: local("☺"), url(fonts/Kakao-aLt.eot?#iefix) format('embedded-opentype'), url(fonts/Kakao-aLt.woff) format('woff');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Kakao Regular';
-    src:url(fonts/Kakao-bRg.eot);
-    src:local("☺"),
-    url(fonts/Kakao-bRg.eot?#iefix) format('embedded-opentype'),
-    url(fonts/Kakao-bRg.woff) format('woff');
+    src: url(fonts/Kakao-bRg.eot);
+    src: local("☺"), url(fonts/Kakao-bRg.eot?#iefix) format('embedded-opentype'), url(fonts/Kakao-bRg.woff) format('woff');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'Kakao Bold';
-    src:url(fonts/Kakao-cBd.eot);
-    src:local("☺"),
-    url(fonts/Kakao-cBd.eot?#iefix) format('embedded-opentype'),
-    url(fonts/Kakao-cBd.woff) format('woff');
+    src: url(fonts/Kakao-cBd.eot);
+    src: local("☺"), url(fonts/Kakao-cBd.eot?#iefix) format('embedded-opentype'), url(fonts/Kakao-cBd.woff) format('woff');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'KakaoLight';
-    src:url(fonts/KakaoLight.eot);
-    src:local("☺"),
-    url(fonts/KakaoLight.eot?#iefix) format('embedded-opentype'),
-    url(fonts/KakaoLight.woff) format('woff');
+    src: url(fonts/KakaoLight.eot);
+    src: local("☺"), url(fonts/KakaoLight.eot?#iefix) format('embedded-opentype'), url(fonts/KakaoLight.woff) format('woff');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'KakaoRegular';
-    src:url(fonts/KakaoRegular.eot);
-    src:local("☺"),
-    url(fonts/KakaoRegular.eot?#iefix) format('embedded-opentype'),
-    url(fonts/KakaoRegular.woff) format('woff');
+    src: url(fonts/KakaoRegular.eot);
+    src: local("☺"), url(fonts/KakaoRegular.eot?#iefix) format('embedded-opentype'), url(fonts/KakaoRegular.woff) format('woff');
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'KakaoBold';
-    src:url(fonts/KakaoBold.eot);
-    src:local("☺"),
-    url(fonts/KakaoBold.eot?#iefix) format('embedded-opentype'),
-    url(fonts/KakaoBold.woff) format('woff');
+    src: url(fonts/KakaoBold.eot);
+    src: local("☺"), url(fonts/KakaoBold.eot?#iefix) format('embedded-opentype'), url(fonts/KakaoBold.woff) format('woff');
     font-style: normal;
     font-weight: normal;
 }
 
-
-
-
 // body{font-family: 'Noto Sans KR', sans-serif;}
-
-html{
-    @include font(Kakao Light,11px,0px,#000);
-    
+html {
+    @include font(Kakao Light,
+    11px,
+    0px,
+    #000);
 }
+
 body {
     font-family: 'Kakao Regular';
     color: #333;
@@ -103,7 +88,6 @@ a {
 }
 
 // body
-
 html {
     margin: 0;
 }
@@ -117,25 +101,22 @@ body {
 }
 
 // header
-
 header {
     position: fixed;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
     width: 100%;
     z-index: 1000;
-
-    .bg{
+    .bg {
         // display: none;
         width: 100%;
         height: 60px;
-        background:#fff;
+        background: #fff;
         border-bottom: 1px solid #e8e8e8;
-
         position: absolute;
-        left: 0; top:0;
+        left: 0;
+        top: 0;
     }
-
     .head {
         width: 100%;
         display: flex;
@@ -144,17 +125,14 @@ header {
         margin: 0px auto;
         position: relative;
         z-index: 1000;
-
-          
-                        
-        .burger{
+        .burger {
             position: absolute;
             left: 5%;
             top: 50%;
             transform: translateY(-50%);
             z-index: 100;
             display: none;
-            span{
+            span {
                 transition: .5s;
                 display: block;
                 width: 20px;
@@ -163,66 +141,57 @@ header {
                 margin: 5px;
             }
         }
-
-        .burger.active{
-            span:nth-of-type(1){
+        .burger.active {
+            span:nth-of-type(1) {
                 display: none;
             }
-            span:nth-of-type(2){
+            span:nth-of-type(2) {
                 width: 0px;
                 height: 0px;
                 border: 8px solid transparent;
                 border-bottom: 10px solid #555;
-                border-radius: 3px;;
+                border-radius: 3px;
+                ;
                 margin: 5px;
                 background: transparent;
             }
-            span:nth-of-type(3){
+            span:nth-of-type(3) {
                 display: none;
             }
         }
-
         .logo {
             width: 15%;
             text-align: left;
             margin-left: 15px;
-
             a {
                 font-size: 18px;
-
                 span:nth-of-type(1) {
                     font-size: 24px;
                 }
-
                 span:nth-of-type(2) {
                     font-family: 'Kakao Light';
                 }
-
                 font-weight: 100;
             }
         }
-
         nav {
-
             ul {
                 display: flex;
                 justify-content: space-between;
                 margin: 0;
-                padding:0px 0;
-
+                padding: 0px 0;
                 li {
                     padding: 20px 25px;
-
-                    
-
-                    > a {
-                        @include font(Kakao Light,16px,16px,#000);
+                    >a {
+                        @include font(Kakao Light,
+                        16px,
+                        16px,
+                        #000);
                         display: inline-block;
-                        padding:3px 0;
+                        padding: 3px 0;
                         position: relative;
-                        z-index:2000;
+                        z-index: 2000;
                     }
-
                     .sub {
                         border-bottom: none;
                         width: 100%;
@@ -230,56 +199,51 @@ header {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-
                         position: absolute;
                         left: 0;
                         top: 61px;
                         height: 0px;
                         z-index: 10;
-                        overflow:hidden;
-
+                        overflow: hidden;
                         transition: .1s;
-
-                        a{
+                        a {
                             display: block;
                             margin: 0 25px;
-                            span{
-                                padding:3px 0;
-                                @include font(Kakao Light,16px,16px,#000);
+                            span {
+                                padding: 3px 0;
+                                @include font(Kakao Light,
+                                16px,
+                                16px,
+                                #000);
                             }
                         }
-
                         span:hover {
                             display: inline-block;
                             border-bottom: 1px solid #555;
                         }
                     }
                 }
-
-                li:hover > a{
+                li:hover>a {
                     display: inline-block;
                     border-bottom: 1px solid #555;
                 }
-
-
-                li:nth-of-type(3):hover > div{
-                    height:60px;
+                li:nth-of-type(3):hover>div {
+                    height: 60px;
                     border-bottom: 1px solid #e8e8e8;
                 }
-
+            }
+            .nav_etc {
+                display: none;
             }
         }
-
         .login {
             width: 15%;
             text-align: right;
             margin-right: 40px;
-
             a {
                 font-size: 13px;
                 position: relative;
             }
-
             a:after {
                 content: '';
                 display: inline-block;
@@ -295,389 +259,119 @@ header {
     }
 }
 
+header.active-scroll .bg {
+    background: #fff;
+    border-bottom: 1px solid #e8e8e8;
+}
 
-footer{
+footer {
     background: #fff;
     border-top: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
-    padding:20px 0 25px 0;
-
-    .foot, .foot_2{
+    padding: 20px 0 25px 0;
+    .foot,
+    .foot_2 {
         display: flex;
         justify-content: space-between;
-        @include font(Kakao Light,11px,11px,#000);
-
-
-        .left{
+        @include font(Kakao Light,
+        11px,
+        11px,
+        #000);
+        .left {
             margin-left: 20px;
-            .laws{
-                a:first-child{font-weight: bold;}
-                a:first-child:after{
+            .laws {
+                a:first-child {
+                    font-weight: bold;
+                }
+                a:first-child:after {
                     content: '|';
                     display: inline-block;
-
                     padding-left: 8px;
                 }
-                a:last-child{
+                a:last-child {
                     display: inline-block;
-                    margin-left:5px;
+                    margin-left: 5px;
                 }
             }
-
-            p{}
+            p {}
         }
-
-        .right{
+        .right {
             margin-right: 30px;
             display: flex;
-            .select{
+            .select {
                 position: relative;
                 margin-left: 35px;
-                a{
+                a {
                     position: relative;
                 }
-
-                a:after{
+                a:after {
                     content: '';
                     display: block;
-                    width:0px;
+                    width: 0px;
                     height: 0px;
                     border: 3px solid transparent;
                     border-top: 3px solid #555;
                     position: absolute;
-                    right:-12px;
+                    right: -12px;
                     top: 5px;
                 }
-
-                ul{
+                ul {
                     position: absolute;
-                    right:-12px;
-                    bottom:55px;
-
+                    right: -12px;
+                    bottom: 55px;
                     background: #fff;
                     border: 1px solid #bbb;
-
                     margin: 0;
                     padding: 10px 20px 10px 20px;
                     display: none;
-
-
-                    li{
-                    @include font(Kakao Light,11px,22px,#000);
-                    white-space: nowrap;
-
-
+                    li {
+                        @include font(Kakao Light,
+                        11px,
+                        22px,
+                        #000);
+                        white-space: nowrap;
                     }
                 }
-            }
-        }
-
-
-
-    }
-
-
-}
-
-
-
-
-// mobile
-@media (max-width:480px){
-
-// header
-
-header {
-    position: fixed;
-    left:0;
-    top:0;
-    width: 100%;
-    z-index: 1000;
-    height: 62px;
-
-    .bg{
-        // display: none;
-        width: 100%;
-        height: 62px;
-        background:#fff;
-        border-bottom: 1px solid #e8e8e8;
-
-        position: absolute;
-        left: 0; top:0;
-    }
-
-    .head {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0px auto;
-        position: relative;
-        z-index: 1000;
-
-
-        .logo {
-            width: 15%;
-            text-align: left;
-            margin-left: 15px;
-
-            a {
-                font-size: 18px;
-
-                span:nth-of-type(1) {
-                    font-size: 24px;
-                }
-
-                span:nth-of-type(2) {
-                    font-family: 'Kakao Light';
-                }
-
-                font-weight: 100;
-            }
-        }
-
-        nav {
-
-            ul {
-                display: flex;
-                justify-content: space-between;
-                margin: 0;
-                padding:0px 0;
-
-                li {
-                    padding: 20px 25px;
-
-                    
-
-                    > a {
-                        @include font(Kakao Light,16px,16px,#000);
-                        display: inline-block;
-                        padding:3px 0;
-                        position: relative;
-                        z-index:2000;
-                    }
-
-                    .sub {
-                        background: rgba(255, 255, 255, 0);
-
-                        margin: 0%;
-                        border-bottom: none;
-                        width: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        
-                        position: static;
-                        left: 0;
-                        top: -70px;
-                        height: 70px;
-                        z-index: 10;
-                        // overflow:hidden;
-
-                        transition: .1s;
-
-                        a{
-                            position: relative;
-                            // text-align: center;
-                            font-size: 14px;
-                            line-height: 14px;
-                            display: block;
-                            
-                            margin: 0 0px 0 0;
-                            span{
-                                padding:3px 0;
-                                @include font(Kakao Light,16px,16px,#000);
-                            }
-                        }
-                        a::before{
-                            content: '';
-                            position: absolute;
-                            left: 0;
-                            top: 8px;
-                            display: inline-block;
-                            width: 10px;
-                            height: 1px;
-                            background: #555;
-                        }
-                        a:nth-of-type(1){
-                            width: 30%;
-                        }
-                        a:nth-of-type(2){
-                            width: 20%;
-                        }
-
-
-                        span:hover {
-                            display: block;
-                            border-bottom: transparent;
-                        }
-                    }
-                }
-
-                li:hover > a{
-                    display: block;
-                    text-align: center;
-                    border-bottom: transparent;
-                }
-
-
-                li:nth-of-type(3):hover > div{
-                    display: flex;
-                    height:70px;
-                    border-bottom: 1px solid #e8e8e8;
-                }
-
-            }
-        }
-
-        .login {
-            width: 15%;
-            text-align: right;
-            margin-right: 40px;
-
-            a {
-                font-size: 13px;
-                position: relative;
-            }
-
-            a:after {
-                content: '';
-                display: inline-block;
-                width: 0px;
-                height: 0px;
-                border: 5px solid transparent;
-                border-top: 5px solid #999;
-                position: absolute;
-                right: -70%;
-                top: 35%;
             }
         }
     }
 }
 
-
-footer{
-    background: #fff;
-    border-top: 1px solid #e6e6e6;
-    border-bottom: 1px solid #e6e6e6;
-    padding:20px 0 25px 0;
-
-    .foot, .foot_2{
-        display: flex;
-        justify-content: space-between;
-        @include font(Kakao Light,11px,11px,#000);
-
-
-        .left{
-            margin-left: 20px;
-            .laws{
-                a:first-child{font-weight: bold;}
-                a:first-child:after{
-                    content: '|';
-                    display: inline-block;
-
-                    padding-left: 8px;
-                }
-                a:last-child{
-                    display: inline-block;
-                    margin-left:5px;
-                }
-            }
-
-            p{}
-        }
-
-        .right{
-            margin-right: 30px;
-            display: flex;
-            .select{
-                position: relative;
-                margin-left: 35px;
-                a{
-                    position: relative;
-                }
-
-                a:after{
-                    content: '';
-                    display: block;
-                    width:0px;
-                    height: 0px;
-                    border: 3px solid transparent;
-                    border-top: 3px solid #555;
-                    position: absolute;
-                    right:-12px;
-                    top: 5px;
-                }
-
-                ul{
-                    position: absolute;
-                    right:-12px;
-                    bottom:55px;
-
-                    background: #fff;
-                    border: 1px solid #bbb;
-
-                    margin: 0;
-                    padding: 10px 20px 10px 20px;
-                    display: none;
-
-
-                    li{
-                    @include font(Kakao Light,11px,22px,#000);
-                    white-space: nowrap;
-
-
-                    }
-                }
-            }
-        }
-
-
-
-    }
-
-
-}
-
-@media (max-width: 480px) {
-
+// laptop
+@media (max-width:1440px) {
+    // header
     header {
         position: fixed;
-        left:0;
-        top:0;
+        left: 0;
+        top: 0;
         width: 100%;
         z-index: 1000;
-    
-        .bg{
+        .bg {
             // display: none;
             width: 100%;
             height: 60px;
-            background:#fff;
+            background: #fff;
             border-bottom: 1px solid #e8e8e8;
-    
             position: absolute;
-            left: 0; top:0;
+            left: 0;
+            top: 0;
         }
-    
         .head {
             width: 100%;
-            height: 60px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 0px auto;
             position: relative;
             z-index: 1000;
-    
-                        
-            .burger{
+            .burger {
                 position: absolute;
                 left: 5%;
                 top: 50%;
                 transform: translateY(-50%);
                 z-index: 100;
-                display: block;
-                span{
+                display: none;
+                span {
                     transition: .5s;
                     display: block;
                     width: 20px;
@@ -686,118 +380,110 @@ footer{
                     margin: 5px;
                 }
             }
-
-            .burger.active{
-                span:nth-of-type(1){
+            .burger.active {
+                span:nth-of-type(1) {
                     display: none;
                 }
-                span:nth-of-type(2){
+                span:nth-of-type(2) {
                     width: 0px;
                     height: 0px;
                     border: 8px solid transparent;
                     border-bottom: 10px solid #555;
-                    border-radius: 3px;;
+                    border-radius: 3px;
+                    ;
                     margin: 5px;
-                    background: transparent;
+                    background: #eee;
+                    z-index: 1000;
                 }
-                span:nth-of-type(3){
+                span:nth-of-type(3) {
                     display: none;
                 }
             }
-    
             .logo {
-                width: 100%;
+                width: 15%;
                 text-align: left;
-
+                margin-left: 40px;
                 a {
-                    // display: inline-block;
-
-                    margin-left: 60px;
-                    margin-top: 0px;
                     font-size: 18px;
-                    display: flex;
-    
                     span:nth-of-type(1) {
                         font-size: 24px;
-                        display: inline-block;
-                        margin-right: 10px;
                     }
-    
                     span:nth-of-type(2) {
                         font-family: 'Kakao Light';
                     }
-    
                     font-weight: 100;
                 }
             }
-    
-    
             nav {
-                transition: .5s;
-                display: none;
-                background : rgba(255,255,255,0.9);
-                position: absolute;
-                z-index: 100;
-
-                left: 0;
-                top:0px;
-                width: 100%;
-                box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
-                ul {
-                    transition: .5s;
-                    position: relative;
-                    margin: 0;
+                .burger_menu {
                     display: flex;
-                    flex-direction: column;
                     justify-content: space-between;
-
-
-    
+                    margin: 0;
+                    padding: 0px 0;
                     li {
-                        transition: .5s;
-                        background : rgba(255,255,255,0.9);
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        width: 100%;
-                        border-top: 1px solid #eee;
-                        padding: 0;
-                        a {
-                            @include font(#{"Noto Sans KR", sans-serif}, 18px, 70px, #333);
+                        padding: 18px 25px;
+                        >a {
+                            @include font(Kakao Light,
+                            16px,
+                            16px,
+                            #000);
+                            display: inline-block;
+                            padding: 3px 0;
+                            position: relative;
+                            z-index: 2000;
+                        }
+                        .sub {
+                            border-bottom: none;
+                            width: 100%;
+                            background: #fff;
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            padding: 0 25px;
-                            font-weight: 400;
+                            position: absolute;
+                            left: 0;
+                            top: 61px;
+                            height: 0px;
+                            z-index: 10;
+                            overflow: hidden;
+                            transition: .1s;
+                            a {
+                                display: block;
+                                margin: 0 25px;
+                                span {
+                                    padding: 3px 0;
+                                    @include font(Kakao Light,
+                                    16px,
+                                    16px,
+                                    #000);
+                                }
+                            }
+                            span:hover {
+                                display: inline-block;
+                                border-bottom: 1px solid #555;
+                            }
                         }
-    
+                    }
+                    li:hover>a {
+                        display: inline-block;
+                        border-bottom: 1px solid #555;
+                    }
+                    li:nth-of-type(3):hover>div {
+                        height: 60px;
+                        border-bottom: 1px solid #e8e8e8;
                     }
                 }
-            }
-
-            nav.active{
-                display: block;
-                top: 60px;
-                
-                li:nth-of-type(1){top:0}
-                li:nth-of-type(2){top: 70px;}
-                li:nth-of-type(3){top: 140px;}
-                li:nth-of-type(4){top: 280px; 
-                    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+                .nav_etc {
+                    display: none;
                 }
-
             }
-    
             .login {
                 width: 15%;
                 text-align: right;
-                margin-right: 40px;
-    
+                margin-right: 50px;
                 a {
                     font-size: 13px;
                     position: relative;
                 }
-    
                 a:after {
                     content: '';
                     display: inline-block;
@@ -812,90 +498,644 @@ footer{
             }
         }
     }
-    
-    
-    footer{
+    footer {
         background: #fff;
         border-top: 1px solid #e6e6e6;
         border-bottom: 1px solid #e6e6e6;
-        padding:20px 0 25px 0;
-    
-        .foot, .foot_2{
+        padding: 20px 0 25px 0;
+        .foot,
+        .foot_2 {
             display: flex;
             justify-content: space-between;
-            @include font(Kakao Light,11px,11px,#000);
-    
-    
-            .left{
+            @include font(Kakao Light,
+            11px,
+            11px,
+            #000);
+            .left {
                 margin-left: 20px;
-                .laws{
-                    a:first-child{font-weight: bold;}
-                    a:first-child:after{
+                .laws {
+                    a:first-child {
+                        font-weight: bold;
+                    }
+                    a:first-child:after {
                         content: '|';
                         display: inline-block;
-    
                         padding-left: 8px;
                     }
-                    a:last-child{
+                    a:last-child {
                         display: inline-block;
-                        margin-left:5px;
+                        margin-left: 5px;
                     }
                 }
-    
-                p{}
+                p {}
             }
-    
-            .right{
+            .right {
                 margin-right: 30px;
                 display: flex;
-                .select{
+                .select {
                     position: relative;
                     margin-left: 35px;
-                    a{
+                    a {
                         position: relative;
                     }
-    
-                    a:after{
+                    a:after {
                         content: '';
                         display: block;
-                        width:0px;
+                        width: 0px;
                         height: 0px;
                         border: 3px solid transparent;
                         border-top: 3px solid #555;
                         position: absolute;
-                        right:-12px;
+                        right: -12px;
                         top: 5px;
                     }
-    
-                    ul{
+                    ul {
                         position: absolute;
-                        right:-12px;
-                        bottom:55px;
-    
+                        right: -12px;
+                        bottom: 55px;
                         background: #fff;
                         border: 1px solid #bbb;
-    
                         margin: 0;
                         padding: 10px 20px 10px 20px;
                         display: none;
-    
-    
-                        li{
-                        @include font(Kakao Light,11px,22px,#000);
-                        white-space: nowrap;
-    
-    
+                        li {
+                            @include font(Kakao Light,
+                            11px,
+                            22px,
+                            #000);
+                            white-space: nowrap;
                         }
                     }
                 }
             }
-    
-    
-    
         }
-    
-    
     }
 }
 
+// tab
+@media (max-width: 1024px) {
+    header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        .bg {
+            // display: none;
+            width: 100%;
+            height: 60px;
+            background: #fff;
+            border-bottom: 1px solid #e8e8e8;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .head {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px auto;
+            position: relative;
+            z-index: 1000;
+            .burger {
+                position: absolute;
+                left: 5%;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 100;
+                display: block;
+                span {
+                    transition: 0s;
+                    display: block;
+                    width: 20px;
+                    height: 2px;
+                    background: #333;
+                    margin: 5px;
+                }
+            }
+            .burger.active {
+                span:nth-of-type(1) {
+                    width: 24px;
+                    transform: rotate(45deg) translate(10px, 12px);
+                    display: block;
+                }
+                span:nth-of-type(2) {
+                    opacity: 0;
+                }
+                span:nth-of-type(3) {
+                    width: 24px;
+                    transform: rotate(-45deg) translate(10px, -12px);
+                    display: block;
+                }
+            }
+            .logo {
+                width: 100%;
+                text-align: left;
+                a {
+                    // display: inline-block;
+                    margin-left: 60px;
+                    margin-top: 0px;
+                    font-size: 18px;
+                    display: flex;
+                    span:nth-of-type(1) {
+                        font-size: 24px;
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                    span:nth-of-type(2) {
+                        font-family: 'Kakao Light';
+                    }
+                    font-weight: 100;
+                }
+            }
+            nav {
+                transition: .5s;
+                display: none;
+                background: rgba(3, 3, 3, 1);
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                top: 0px;
+                width: 100%;
+                height: 100vh;
+                .burger_menu {
+                    transition: .5s;
+                    position: relative;
+                    margin: 100px auto 0 auto;
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    li {
+                        padding: 0;
+                        position: relative;
+                        transition: .5s;
+                        width: 100%;
+                        border-bottom: 1px solid rgba(233, 233, 233, 0.2);
+                        a {
+                            display: inline-block;
+                            width: 100%;
+                            @include font(#{"Noto Sans KR", sans-serif},
+                            24px,
+                            80px,
+                            #eee);
+                            padding: 0;
+                            font-weight: 200;
+                        }
+                    }
+                    li:nth-of-type(3):after {
+                        content: '';
+                        display: inline-block;
+                        width: 18px;
+                        height: 10px;
+                        // background: url(../../img/sign/arrow2_next_w.png) no-repeat;
+                        background: url(../../img/sign/below2.png) no-repeat;
+                        background-size: 100% 100%;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        margin-right: 10px;
+                        opacity: 0.8;
+                        z-index: 10000;
+                    }
+                }
+                .nav_etc {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    bottom: 5vh;
+                    width: 90%;
+                    margin: auto;
+                    margin-left: 5%;
+                    // display: none;
+                    p {
+                        margin: 0;
+                        @include font(#{"Noto Sans KR", sans-serif},
+                        24px,
+                        30px,
+                        #999);
+                        font-weight: 200;
+                    }
+                }
+            }
+            nav.active {
+                display: block;
+            }
+            .login {
+                width: 15%;
+                text-align: right;
+                margin-right: 40px;
+                a {
+                    font-size: 13px;
+                    position: relative;
+                }
+                a:after {
+                    content: '';
+                    display: inline-block;
+                    width: 0px;
+                    height: 0px;
+                    border: 5px solid transparent;
+                    border-top: 5px solid #999;
+                    position: absolute;
+                    right: -70%;
+                    top: 35%;
+                }
+            }
+        }
+        .head.active-black {
+            .logo {
+                a {
+                    span {
+                        color: #eee;
+                    }
+                }
+            }
+            .login {
+                opacity: 0;
+            }
+            .burger {
+                span {
+                    display: block;
+                    background: #eee;
+                }
+            }
+        }
+    }
+    footer {
+        background: #fff;
+        border-top: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+        padding: 20px 0 25px 0;
+        .foot,
+        .foot_2 {
+            display: flex;
+            justify-content: space-between;
+            @include font(Kakao Light,
+            11px,
+            11px,
+            #000);
+            .left {
+                width: 70%;
+                margin-left: 20px;
+                .laws {
+                    a:first-child {
+                        font-weight: bold;
+                    }
+                    a:first-child:after {
+                        content: '|';
+                        display: inline-block;
+                        padding-left: 8px;
+                    }
+                    a:last-child {
+                        display: inline-block;
+                        margin-left: 5px;
+                    }
+                }
+                p {}
+            }
+            .right {
+                text-align: right;
+                margin-right: 30px;
+                display: block;
+                width: 30%;
+                .select {
+                    position: relative;
+                    // margin-left: 10px;
+                    margin: 5px 0px 5px 10px;
+                    a {
+                        position: relative;
+                    }
+                    a:after {
+                        content: '';
+                        display: block;
+                        width: 0px;
+                        height: 0px;
+                        border: 3px solid transparent;
+                        border-top: 3px solid #555;
+                        position: absolute;
+                        right: -12px;
+                        top: 5px;
+                    }
+                    ul {
+                        position: absolute;
+                        right: -12px;
+                        bottom: 55px;
+                        background: #fff;
+                        border: 1px solid #bbb;
+                        margin: 0;
+                        padding: 10px 20px 10px 20px;
+                        display: none;
+                        li {
+                            @include font(Kakao Light,
+                            11px,
+                            22px,
+                            #000);
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// mobile
+@media (max-width: 480px) {
+    header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        .bg {
+            // display: none;
+            width: 100%;
+            height: 60px;
+            background: #fff;
+            border-bottom: 1px solid #e8e8e8;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .head {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px auto;
+            position: relative;
+            z-index: 1000;
+            .burger {
+                position: absolute;
+                left: 5%;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 100;
+                display: block;
+                span {
+                    transition: 0s;
+                    display: block;
+                    width: 20px;
+                    height: 2px;
+                    background: #333;
+                    margin: 5px;
+                }
+            }
+            .burger.active {
+                span:nth-of-type(1) {
+                    width: 24px;
+                    transform: rotate(45deg) translate(10px, 12px);
+                    display: block;
+                }
+                span:nth-of-type(2) {
+                    opacity: 0;
+                }
+                span:nth-of-type(3) {
+                    width: 24px;
+                    transform: rotate(-45deg) translate(10px, -12px);
+                    display: block;
+                }
+            }
+            .logo {
+                width: 100%;
+                text-align: left;
+                a {
+                    // display: inline-block;
+                    margin-left: 60px;
+                    margin-top: 0px;
+                    font-size: 18px;
+                    display: flex;
+                    span:nth-of-type(1) {
+                        font-size: 24px;
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                    span:nth-of-type(2) {
+                        font-family: 'Kakao Light';
+                    }
+                    font-weight: 100;
+                }
+            }
+            nav {
+                transition: .5s;
+                display: none;
+                background: rgba(3, 3, 3, 1);
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                top: 0px;
+                width: 100%;
+                height: 100vh;
+                .burger_menu {
+                    transition: .5s;
+                    position: relative;
+                    margin: 100px auto 0 auto;
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    li {
+                        padding: 0;
+                        position: relative;
+                        transition: .5s;
+                        width: 100%;
+                        border-bottom: 1px solid rgba(233, 233, 233, 0.2);
+                        a {
+                            display: inline-block;
+                            width: 100%;
+                            @include font(#{"Noto Sans KR", sans-serif},
+                            18px,
+                            70px,
+                            #eee);
+                            padding: 0;
+                            font-weight: 200;
+                        }
+                    }
+                    li:after {
+                        content: '';
+                        display: inline-block;
+                        width: 8px;
+                        height: 15px;
+                        background: url(../img/sign/arrow2_next_w.png) no-repeat;
+                        background-size: 100% 100%;
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        margin-right: 10px;
+                        opacity: 0.8;
+                        z-index: 10000;
+                    }
+                }
+                .nav_etc {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    bottom: 5vh;
+                    width: 90%;
+                    margin: auto;
+                    margin-left: 5%;
+                    // display: none;
+                    .burger_lang {
+                        margin: 0;
+                        display: flex;
+                        li {
+                            padding: 0 15px 0 0;
+                            text-transform: uppercase;
+                            @include font(#{"Noto Sans KR", sans-serif},
+                            14px,
+                            26px,
+                            #999);
+                            font-weight: 200;
+                        }
+                        li:after {
+                            content: '';
+                            display: inline-block;
+                            width: 1px;
+                            height: 10px;
+                            background: #999;
+                            margin-left: 15px;
+                        }
+                        li:last-child:after {
+                            content: '';
+                            display: none;
+                            width: 1px;
+                            height: 10px;
+                            background: #999;
+                            margin-left: 15px;
+                        }
+                    }
+                    p {
+                        margin: 0;
+                        @include font(#{"Noto Sans KR", sans-serif},
+                        14px,
+                        26px,
+                        #999);
+                        font-weight: 200;
+                    }
+                }
+            }
+            nav.active {
+                display: block;
+            }
+            .login {
+                width: 15%;
+                text-align: right;
+                margin-right: 40px;
+                a {
+                    font-size: 13px;
+                    position: relative;
+                }
+                a:after {
+                    content: '';
+                    display: inline-block;
+                    width: 0px;
+                    height: 0px;
+                    border: 5px solid transparent;
+                    border-top: 5px solid #999;
+                    position: absolute;
+                    right: -70%;
+                    top: 35%;
+                }
+            }
+        }
+        .head.active-black {
+            .logo {
+                a {
+                    span {
+                        color: #eee;
+                    }
+                }
+            }
+            .login {
+                opacity: 0;
+            }
+            .burger {
+                span {
+                    display: block;
+                    background: #eee;
+                }
+            }
+        }
+    }
+    footer {
+        background: #fff;
+        border-top: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+        padding: 20px 0 25px 0;
+        .foot,
+        .foot_2 {
+            display: flex;
+            justify-content: space-between;
+            @include font(Kakao Light,
+            11px,
+            11px,
+            #000);
+            .left {
+                width: 70%;
+                margin-left: 20px;
+                .laws {
+                    a:first-child {
+                        font-weight: bold;
+                    }
+                    a:first-child:after {
+                        content: '|';
+                        display: inline-block;
+                        padding-left: 8px;
+                    }
+                    a:last-child {
+                        display: inline-block;
+                        margin-left: 5px;
+                    }
+                }
+                p {}
+            }
+            .right {
+                text-align: right;
+                margin-right: 30px;
+                display: block;
+                width: 30%;
+                .select {
+                    position: relative;
+                    // margin-left: 10px;
+                    margin: 5px 0px 5px 10px;
+                    a {
+                        position: relative;
+                    }
+                    a:after {
+                        content: '';
+                        display: block;
+                        width: 0px;
+                        height: 0px;
+                        border: 3px solid transparent;
+                        border-top: 3px solid #555;
+                        position: absolute;
+                        right: -12px;
+                        top: 5px;
+                    }
+                    ul {
+                        position: absolute;
+                        right: -12px;
+                        bottom: 55px;
+                        background: #fff;
+                        border: 1px solid #bbb;
+                        margin: 0;
+                        padding: 10px 20px 10px 20px;
+                        display: none;
+                        li {
+                            @include font(Kakao Light,
+                            11px,
+                            22px,
+                            #000);
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
