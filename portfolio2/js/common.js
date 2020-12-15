@@ -33,29 +33,28 @@ $(function() {
 
 
     $('html').scrollTop(0);
-    $('html').css({ overflow: "hidden" });
-    $('html').on('mousewheel', function(e) {
-        goDown(e);
-    });
+    // $('html').css({ overflow: "hidden" });
+    // $('html').on('mousewheel', function(e) {
+    //     goDown(e);
+    // });
 
-    var idx = 0,
-        plus = 200;
-    var main = document.querySelector('main');
-    // var ft = document.querySelector('.foot');
+    // var idx = 0,
+    //     plus = 200;
+    // var main = document.querySelector('main');
 
-    function goDown(e) {
-        var delta = e.originalEvent.wheelDeltaY;
-        var eleHeight = document.body.offsetHeight - window.innerHeight;
-        (delta < 0) ? idx += plus: idx -= plus;
+    // function goDown(e) {
+    //     var delta = e.originalEvent.wheelDeltaY;
+    //     var eleHeight = document.body.offsetHeight - window.innerHeight;
+    //     (delta < 0) ? idx += plus: idx -= plus;
 
-        if (eleHeight <= idx) {
-            idx = eleHeight;
-        } else if (idx < 0) {
-            idx = 0;
-        }
-        $('main,footer').css({ transform: "translateY(-" + idx + "px)" });
+    //     if (eleHeight <= idx) {
+    //         idx = eleHeight;
+    //     } else if (idx < 0) {
+    //         idx = 0;
+    //     }
+    //     $('main,footer').css({ transform: "translateY(-" + idx + "px)" });
 
-    }
+    // }
 
     // --------------------- header
 
