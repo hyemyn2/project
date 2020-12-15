@@ -1,20 +1,19 @@
 {
-    "rooms":[
-        {
-            "tit":"deluxe room",
-            "imgSrc":"img/con_stay/con_stay_1.jpg,img/con_stay/con_stay_2.jpg,img/con_stay/con_stay_3.jpg"
+    "rooms": [{
+            "tit": "deluxe room",
+            "imgSrc": "img/con_stay/con_stay_1.jpg,img/con_stay/con_stay_2.jpg,img/con_stay/con_stay_3.jpg"
         },
         {
-            "tit":"premier room",
-            "imgSrc":"img/con_stay/con_stay_2.jpg,img/con_stay/con_stay_3.jpg,img/con_stay/con_stay_1.jpg"
+            "tit": "premier room",
+            "imgSrc": "img/con_stay/con_stay_2.jpg,img/con_stay/con_stay_3.jpg,img/con_stay/con_stay_1.jpg"
         },
         {
-            "tit":"club room",
-            "imgSrc":"img/con_stay/con_stay_3.jpg,img/con_stay/con_stay_1.jpg,img/con_stay/con_stay_2.jpg"
+            "tit": "club room",
+            "imgSrc": "img/con_stay/con_stay_3.jpg,img/con_stay/con_stay_1.jpg,img/con_stay/con_stay_2.jpg"
         },
         {
-            "tit":"orchid suite",
-            "imgSrc":"img/con_stay/con_stay_1.jpg,img/con_stay/con_stay_3.jpg,img/con_stay/con_stay_2.jpg"
+            "tit": "orchid suite",
+            "imgSrc": "img/con_stay/con_stay_1.jpg,img/con_stay/con_stay_3.jpg,img/con_stay/con_stay_2.jpg"
         }
     ]
 }
