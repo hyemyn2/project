@@ -460,7 +460,7 @@ footer .foot_2 .right .select ul li {
   header .head .logo a span:nth-of-type(2) {
     font-family: 'Kakao Light';
   }
-  header .head nav .burger_menu {
+  header .head nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -470,10 +470,10 @@ footer .foot_2 .right .select ul li {
     margin: 0;
     padding: 0px 0;
   }
-  header .head nav .burger_menu li {
-    padding: 18px 25px;
+  header .head nav ul li {
+    padding: 20px 25px;
   }
-  header .head nav .burger_menu li > a {
+  header .head nav ul li > a {
     font-family: "Kakao Light";
     font-size: 16px;
     line-height: 16px;
@@ -483,7 +483,7 @@ footer .foot_2 .right .select ul li {
     position: relative;
     z-index: 2000;
   }
-  header .head nav .burger_menu li .sub {
+  header .head nav ul li .sub {
     border-bottom: none;
     width: 100%;
     background: #fff;
@@ -505,26 +505,26 @@ footer .foot_2 .right .select ul li {
     -webkit-transition: .1s;
     transition: .1s;
   }
-  header .head nav .burger_menu li .sub a {
+  header .head nav ul li .sub a {
     display: block;
     margin: 0 25px;
   }
-  header .head nav .burger_menu li .sub a span {
+  header .head nav ul li .sub a span {
     padding: 3px 0;
     font-family: "Kakao Light";
     font-size: 16px;
     line-height: 16px;
     color: #000;
   }
-  header .head nav .burger_menu li .sub span:hover {
+  header .head nav ul li .sub span:hover {
     display: inline-block;
     border-bottom: 1px solid #555;
   }
-  header .head nav .burger_menu li:hover > a {
+  header .head nav ul li:hover > a {
     display: inline-block;
     border-bottom: 1px solid #555;
   }
-  header .head nav .burger_menu li:nth-of-type(3):hover > div {
+  header .head nav ul li:nth-of-type(3):hover > div {
     height: 60px;
     border-bottom: 1px solid #e8e8e8;
   }
@@ -760,9 +760,10 @@ footer .foot_2 .right .select ul li {
     -webkit-transition: .5s;
     transition: .5s;
     width: 100%;
+    height: auto;
     border-bottom: 1px solid rgba(233, 233, 233, 0.2);
   }
-  header .head nav .burger_menu li a {
+  header .head nav .burger_menu li > a {
     display: inline-block;
     width: 100%;
     font-family: "Noto Sans KR, sans-serif";
@@ -772,7 +773,58 @@ footer .foot_2 .right .select ul li {
     padding: 0;
     font-weight: 200;
   }
-  header .head nav .burger_menu li:nth-of-type(3):after {
+  header .head nav .burger_menu li .sub {
+    border-bottom: none;
+    width: 100%;
+    background: #030303;
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: static;
+    height: auto;
+    z-index: 10;
+    overflow: inherit;
+    -webkit-transition: .1s;
+    transition: .1s;
+  }
+  header .head nav .burger_menu li .sub a {
+    position: relative;
+    display: block;
+    margin: 0 0px;
+  }
+  header .head nav .burger_menu li .sub a span {
+    padding: 3px 50px;
+    font-family: "Kakao Light";
+    font-size: 16px;
+    line-height: 60px;
+    color: #eee;
+  }
+  header .head nav .burger_menu li .sub a span:before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 1px;
+    background: #eee;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+  }
+  header .head nav .burger_menu li .sub span:hover {
+    display: inline-block;
+    border-bottom: 1px solid #555;
+  }
+  header .head nav .burger_menu li:nth-of-type(3).active-open .sub {
+    display: block;
+  }
+  header .head nav .burger_menu li:nth-of-type(3).active-open a:after {
+    -webkit-transform: rotate(180deg) translate(0, 5px);
+            transform: rotate(180deg) translate(0, 5px);
+  }
+  header .head nav .burger_menu li:nth-of-type(3) > a:after {
     content: '';
     display: inline-block;
     width: 18px;
@@ -787,6 +839,10 @@ footer .foot_2 .right .select ul li {
     margin-right: 10px;
     opacity: 0.8;
     z-index: 10000;
+  }
+  header .head nav .burger_menu li:nth-of-type(3):hover > div {
+    height: auto;
+    border-bottom: none;
   }
   header .head nav .nav_etc {
     display: block;
@@ -1048,24 +1104,76 @@ footer .foot_2 .right .select ul li {
     -webkit-transition: .5s;
     transition: .5s;
     width: 100%;
+    height: auto;
     border-bottom: 1px solid rgba(233, 233, 233, 0.2);
   }
-  header .head nav .burger_menu li a {
+  header .head nav .burger_menu li > a {
     display: inline-block;
     width: 100%;
     font-family: "Noto Sans KR, sans-serif";
     font-size: 18px;
-    line-height: 70px;
+    line-height: 60px;
     color: #eee;
     padding: 0;
     font-weight: 200;
   }
-  header .head nav .burger_menu li:after {
+  header .head nav .burger_menu li .sub {
+    border-bottom: none;
+    width: 100%;
+    background: #030303;
+    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: static;
+    height: auto;
+    z-index: 10;
+    overflow: inherit;
+    -webkit-transition: .1s;
+    transition: .1s;
+  }
+  header .head nav .burger_menu li .sub a {
+    position: relative;
+    display: block;
+    margin: 0 0px;
+  }
+  header .head nav .burger_menu li .sub a span {
+    padding: 3px 50px;
+    font-family: "Kakao Light";
+    font-size: 16px;
+    line-height: 60px;
+    color: #eee;
+  }
+  header .head nav .burger_menu li .sub a span:before {
     content: '';
     display: inline-block;
-    width: 8px;
-    height: 15px;
-    background: url(../img/sign/arrow2_next_w.png) no-repeat;
+    width: 15px;
+    height: 1px;
+    background: #eee;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+  }
+  header .head nav .burger_menu li .sub span:hover {
+    display: inline-block;
+    border-bottom: 1px solid #555;
+  }
+  header .head nav .burger_menu li:nth-of-type(3).active-open .sub {
+    display: block;
+  }
+  header .head nav .burger_menu li:nth-of-type(3).active-open a:after {
+    -webkit-transform: rotate(180deg) translate(0, 5px);
+            transform: rotate(180deg) translate(0, 5px);
+  }
+  header .head nav .burger_menu li:nth-of-type(3) > a:after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 8px;
+    background: url(../../img/sign/below2.png) no-repeat;
     background-size: 100% 100%;
     position: absolute;
     right: 0;
@@ -1076,6 +1184,10 @@ footer .foot_2 .right .select ul li {
     opacity: 0.8;
     z-index: 10000;
   }
+  header .head nav .burger_menu li:nth-of-type(3):hover > div {
+    height: auto;
+    border-bottom: none;
+  }
   header .head nav .nav_etc {
     display: block;
     position: absolute;
@@ -1085,42 +1197,11 @@ footer .foot_2 .right .select ul li {
     margin: auto;
     margin-left: 5%;
   }
-  header .head nav .nav_etc .burger_lang {
-    margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  header .head nav .nav_etc .burger_lang li {
-    padding: 0 15px 0 0;
-    text-transform: uppercase;
-    font-family: "Noto Sans KR, sans-serif";
-    font-size: 14px;
-    line-height: 26px;
-    color: #999;
-    font-weight: 200;
-  }
-  header .head nav .nav_etc .burger_lang li:after {
-    content: '';
-    display: inline-block;
-    width: 1px;
-    height: 10px;
-    background: #999;
-    margin-left: 15px;
-  }
-  header .head nav .nav_etc .burger_lang li:last-child:after {
-    content: '';
-    display: none;
-    width: 1px;
-    height: 10px;
-    background: #999;
-    margin-left: 15px;
-  }
   header .head nav .nav_etc p {
     margin: 0;
     font-family: "Noto Sans KR, sans-serif";
     font-size: 14px;
-    line-height: 26px;
+    line-height: 14px;
     color: #999;
     font-weight: 200;
   }

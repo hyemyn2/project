@@ -415,13 +415,13 @@ footer {
                 }
             }
             nav {
-                .burger_menu {
+                ul {
                     display: flex;
                     justify-content: space-between;
                     margin: 0;
                     padding: 0px 0;
                     li {
-                        padding: 18px 25px;
+                        padding: 20px 25px;
                         >a {
                             @include font(Kakao Light,
                             16px,
@@ -673,8 +673,9 @@ footer {
                         position: relative;
                         transition: .5s;
                         width: 100%;
+                        height: auto;
                         border-bottom: 1px solid rgba(233, 233, 233, 0.2);
-                        a {
+                        >a {
                             display: inline-block;
                             width: 100%;
                             @include font(#{"Noto Sans KR", sans-serif},
@@ -684,8 +685,57 @@ footer {
                             padding: 0;
                             font-weight: 200;
                         }
+                        .sub {
+                            border-bottom: none;
+                            width: 100%;
+                            background: #030303;
+                            display: none;
+                            justify-content: center;
+                            align-items: center;
+                            position: static;
+                            // left: 0;
+                            // top: 61px;
+                            height: auto;
+                            z-index: 10;
+                            overflow: inherit;
+                            transition: .1s;
+                            a {
+                                position: relative;
+                                display: block;
+                                margin: 0 0px;
+                                span {
+                                    padding: 3px 50px;
+                                    @include font(Kakao Light,
+                                    16px,
+                                    60px,
+                                    #eee);
+                                }
+                                span:before {
+                                    content: '';
+                                    display: inline-block;
+                                    width: 15px;
+                                    height: 1px;
+                                    background: #eee;
+                                    position: absolute;
+                                    left: 10px;
+                                    top: 50%;
+                                }
+                            }
+                            span:hover {
+                                display: inline-block;
+                                border-bottom: 1px solid #555;
+                            }
+                        }
                     }
-                    li:nth-of-type(3):after {
+                    li:nth-of-type(3).active-open {
+                        .sub {
+                            display: block;
+                        }
+                        a:after {
+                            transform: rotate(180deg) translate(0, 5px);
+                        }
+                    }
+                    li:nth-of-type(3)>a:after {
                         content: '';
                         display: inline-block;
                         width: 18px;
@@ -700,6 +750,10 @@ footer {
                         margin-right: 10px;
                         opacity: 0.8;
                         z-index: 10000;
+                    }
+                    li:nth-of-type(3):hover>div {
+                        height: auto;
+                        border-bottom: none;
                     }
                 }
                 .nav_etc {
@@ -943,24 +997,75 @@ footer {
                         position: relative;
                         transition: .5s;
                         width: 100%;
+                        height: auto;
                         border-bottom: 1px solid rgba(233, 233, 233, 0.2);
-                        a {
+                        >a {
                             display: inline-block;
                             width: 100%;
                             @include font(#{"Noto Sans KR", sans-serif},
                             18px,
-                            70px,
+                            60px,
                             #eee);
                             padding: 0;
                             font-weight: 200;
                         }
+                        .sub {
+                            border-bottom: none;
+                            width: 100%;
+                            background: #030303;
+                            display: none;
+                            justify-content: center;
+                            align-items: center;
+                            position: static;
+                            // left: 0;
+                            // top: 61px;
+                            height: auto;
+                            z-index: 10;
+                            overflow: inherit;
+                            transition: .1s;
+                            a {
+                                position: relative;
+                                display: block;
+                                margin: 0 0px;
+                                span {
+                                    padding: 3px 50px;
+                                    @include font(Kakao Light,
+                                    16px,
+                                    60px,
+                                    #eee);
+                                }
+                                span:before {
+                                    content: '';
+                                    display: inline-block;
+                                    width: 15px;
+                                    height: 1px;
+                                    background: #eee;
+                                    position: absolute;
+                                    left: 10px;
+                                    top: 50%;
+                                }
+                            }
+                            span:hover {
+                                display: inline-block;
+                                border-bottom: 1px solid #555;
+                            }
+                        }
                     }
-                    li:after {
+                    li:nth-of-type(3).active-open {
+                        .sub {
+                            display: block;
+                        }
+                        a:after {
+                            transform: rotate(180deg) translate(0, 5px);
+                        }
+                    }
+                    li:nth-of-type(3)>a:after {
                         content: '';
                         display: inline-block;
-                        width: 8px;
-                        height: 15px;
-                        background: url(../img/sign/arrow2_next_w.png) no-repeat;
+                        width: 14px;
+                        height: 8px;
+                        // background: url(../../img/sign/arrow2_next_w.png) no-repeat;
+                        background: url(../../img/sign/below2.png) no-repeat;
                         background-size: 100% 100%;
                         position: absolute;
                         right: 0;
@@ -969,6 +1074,10 @@ footer {
                         margin-right: 10px;
                         opacity: 0.8;
                         z-index: 10000;
+                    }
+                    li:nth-of-type(3):hover>div {
+                        height: auto;
+                        border-bottom: none;
                     }
                 }
                 .nav_etc {
@@ -980,40 +1089,11 @@ footer {
                     margin: auto;
                     margin-left: 5%;
                     // display: none;
-                    .burger_lang {
-                        margin: 0;
-                        display: flex;
-                        li {
-                            padding: 0 15px 0 0;
-                            text-transform: uppercase;
-                            @include font(#{"Noto Sans KR", sans-serif},
-                            14px,
-                            26px,
-                            #999);
-                            font-weight: 200;
-                        }
-                        li:after {
-                            content: '';
-                            display: inline-block;
-                            width: 1px;
-                            height: 10px;
-                            background: #999;
-                            margin-left: 15px;
-                        }
-                        li:last-child:after {
-                            content: '';
-                            display: none;
-                            width: 1px;
-                            height: 10px;
-                            background: #999;
-                            margin-left: 15px;
-                        }
-                    }
                     p {
                         margin: 0;
                         @include font(#{"Noto Sans KR", sans-serif},
                         14px,
-                        26px,
+                        14px,
                         #999);
                         font-weight: 200;
                     }

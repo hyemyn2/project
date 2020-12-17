@@ -15,6 +15,12 @@ $(function() {
             hd.classList.toggle('active-black');
         });
 
+        var bgNavLi = document.querySelectorAll('header .head nav .burger_menu li');
+        bgNavLi[2].children[0].addEventListener('click', function(e) {
+            e.preventDefault();
+            bgNavLi[2].classList.toggle('active-open');
+        });
+
 
     }
 
