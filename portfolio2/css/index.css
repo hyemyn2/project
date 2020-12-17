@@ -1191,26 +1191,28 @@ main .etc .pic ul li:nth-of-type(2) a {
     padding-bottom: 100px;
   }
   main .big {
+    width: 100%;
     position: relative;
     overflow: hidden;
   }
   main .big h2 {
     font-family: Noto Sans KR, sans-serif;
-    font-size: 2.8vw;
-    line-height: 3.6vw;
+    font-size: 3.6vw;
+    line-height: 4.8vw;
     color: #fff;
     position: absolute;
-    left: 120px;
-    top: 100px;
+    left: 60px;
+    top: 80px;
     z-index: 100;
     color: #fff;
   }
   main .big .video {
     position: relative;
-    height: 660px;
+    height: 1000px;
     overflow: hidden;
     background: url("../img/index/exchange_video.jpg") no-repeat;
-    background-size: 130% auto;
+    background-size: 180% auto;
+    background-position: 35% 0;
   }
   main .big .video iframe {
     -webkit-transform: scale(1.3);
@@ -1220,7 +1222,7 @@ main .etc .pic ul li:nth-of-type(2) a {
     content: '';
     display: block;
     width: 100%;
-    height: 660px;
+    height: 1000px;
     position: absolute;
     left: 0;
     top: 0;

@@ -929,25 +929,27 @@ main {
         padding-top: 60px;
         padding-bottom: 100px;
         .big {
+            width: 100%;
             position: relative;
             overflow: hidden;
             h2 {
                 @include font(#{"Noto Sans KR", sans-serif},
-                2.8vw,
                 3.6vw,
+                4.8vw,
                 #fff);
                 position: absolute;
-                left: 120px;
-                top: 100px;
+                left: 60px;
+                top: 80px;
                 z-index: 100;
                 color: #fff;
             }
             .video {
                 position: relative;
-                height: 660px;
+                height: 1000px;
                 overflow: hidden;
                 background: url('../img/index/exchange_video.jpg') no-repeat;
-                background-size: 130% auto;
+                background-size: 180% auto;
+                background-position: 35% 0;
                 iframe {
                     transform: scale(1.3);
                 }
@@ -957,7 +959,7 @@ main {
             content: '';
             display: block;
             width: 100%;
-            height: 660px;
+            height: 1000px;
             position: absolute;
             left: 0;
             top: 0;
