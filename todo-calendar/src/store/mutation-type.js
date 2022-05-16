@@ -1,2 +1,0 @@
-export const CHANGE_FETCHED_DATE = 'CHANGE_FETCHED_DATE'
-
